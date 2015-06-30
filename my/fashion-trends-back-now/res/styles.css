@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-size: 50%;
+}
+
+body {
+    display: block;
+}
+
+img {
+    border: 0;
+}
+
+#loader {
+    position: absolute;
+    width: 100%;
+    height: 2000%;
+    z-index: 1000;
+    background-color: #e6e6e6; /* TODO */
+}
+
+#load { /* TODO */
+    position: fixed;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px; 
+    top: 50%;
+    margin-top: -75px;
+}
+
+#load img {
+    position: absolute;
+}
+
+
+#share {
+	float:left;
+	position:fixed;
+	z-index:50;
+	left:40px;
+	bottom:40px;
+}
+
+
+#content {
+	width:210px;
+	float:left;
+	position:absolute;
+	bottom: 4px;
+	height:41px;
+	z-index:50;
+	list-style: none;
+	border-radius:0 3px 3px 0;
+	background-color: rgba(255,255,255,0.4);
+}
+
+
+#content li {
+	margin-top:10px;
+	margin-left:10px;
+	display:inline;
+	float:left;
+	width:95px;
+	
+}
+
+#content li a{
+	width:88px;
+}
+
+#content .fb-share-button span,
+#content .fb-share-button iframe  {
+	width: 95px !important;
+	height: 20px !important;
+}
+
+#nav {
+    list-style: none;
+    position: fixed;
+    right: 44px;
+    z-index: 999;
+    margin-top: 40px;
+}
+
+#nav li {
+    margin: 0 0 10px;
+    height: 10px;
+}
+
+#nav li a {
+    opacity: 0.4;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#nav li a:hover {
+    opacity: 1;
+}
+
+#nav img {
+    height: 10px;
+}
+
+#nom {
+    opacity: 1;
+    right: 20px;
+    position: absolute;
+}
+
+#nom li a {
+    opacity: 1;
+    display: none;
+    float: right;
+}
+
+#intro {
+    background: url(images/en/intro.png) 0 no-repeat;
+    background-color: #48C1C5; /* TODO */
+    background-position: center;
+    background-size: auto;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#intro a {
+    border: none;
+    background-color: transparent;
+    opacity: 0.6;
+    bottom: 15px;
+    position: fixed;
+    left: 50%;
+    width: 30px;
+    margin-left: -15px;
+    z-index: 999;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#intro a:hover {
+    opacity: 1;
+}
+
+@-moz-document url-prefix() {
+    #intro a {
+        bottom: 0px;
+    }
+}
+
+footer {
+    position: relative;
+    z-index: -10;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #48C1C4; /* TODO */
+    text-align: center;
+}
+
+#exit {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    margin-top: -180px;
+    margin-left: -300px;
+    width: 600px;
+    left: 50%;
+}
+
+#exit a {
+    opacity: 1;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#exit a:hover {
+    opacity: 0.6;
+}
+
+footer p {
+    left: 40px;
+    z-index: 0;
+    position: fixed;
+    float: left;
+    bottom: 6px;
+    font-family: "Lucida Grande", sans-serif;  /* TODO */
+    font-size: 11px;
+    color: #ffffff;x
+}
+
+.fg {
+    background-size: 1071px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    color: white;
+    height: 120%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (min-height: 679px) {
+	.fg {
+        background-size: 1200px;
+    }
+}
+
+@media (min-height: 1070px) {
+    .fg {
+        background-size: 1300px;
+    }
+}
+
+.bg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	z-index: 10;
+}
+
+#six {
+    background-image: url(images/en/six-bg.png);
+    background-color: #E3CDA9; /* TODO */
+}
+
+#six > div > .map {
+	top: 50%;
+    margin-top: -350px;
+}
+
+#seven {
+	background-image: url(images/en/seven-bg.png);
+    background-color: #EF8073; /* TODO */
+}
+
+#seven > div > .map {
+    top: 50%;
+    margin-top: -350px;
+}
+
+#eight {
+    background-image: url(images/en/eight-bg.png);
+    background-color: #59EFEA; /* TODO */
+}
+
+#eight > div >  .map {   
+    top: 50%;
+    margin-top: -350px;
+}
+
+#nine {
+    background-image: url(images/en/nine-bg.png);
+    background-color: #285A8B; /* TODO */
+}
+
+#nine > div >  .map {
+    top: 50%;
+    margin-top: -350px;
+}
+
+#zero {
+    background-image: url(images/en/zero-bg.png);
+    background-color: #EAEDEF; /* TODO */
+}
+
+#zero > div > o .map {
+    top: 50%;
+    margin-top: -350px;
+}
+
+.ui-tooltip {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 2px;
+    font: 14px "Lucida Grande", Sans-Serif;
+    box-shadow: none;
+    background: rgba(100, 100, 100, 0.9);;
+  }

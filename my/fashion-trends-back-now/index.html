@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Fashion trends from back then that you can buy again now</title>
+
+  <link rel="stylesheet" href="res/vendor/normalize.css" />
+  <link rel="stylesheet" href="res/vendor/jquery-ui.min.css" />
+  <link rel="stylesheet" href="res/vendor/jquery-ui.structure.min.css" />
+  <link rel="stylesheet" href="res/styles.css" />
+
+  <link rel="icon" type="image/png" href="res/images/favicon.png" />
+
+  <script type="text/javascript" src="res/vendor/jquery.js"></script>
+  <script type="text/javascript" src="res/vendor/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="res/iprice.js"></script>
+
+  <script type="text/javascript" src="res/vendor/jquery.parallax-1.1.3.js"></script>
+  <script type="text/javascript" src="res/vendor/jquery.localscroll-1.2.7-min.js"></script>
+  <script type="text/javascript" src="res/vendor/jquery.scrollTo-1.4.2-min.js"></script>
+  <script type="text/javascript" src="res/vendor/jquery.maphilight.js"></script>
+
+
+  <script type="text/javascript">
+    $(window).load(function(){	
+      $('body, html').scrollTop(0);
+      $("#loader").fadeToggle({display:"none"}, "slow");
+    });
+  </script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#six').parallax("50%", 0.5);
+		$('#seven').parallax("50%", 0.5);
+		$('#eight').parallax("50%", 0.5);
+		$('#nine').parallax("50%", 0.5);
+		$('#zero').parallax("50%", 0.5);
+		$('#exit').parallax("50%", 0.5);
+
+		$('#intro a,#nav li a').click(function(){
+			var el = $(this).attr('href');
+			var elWrapped = $(el);
+			scrollToDiv(elWrapped,40);
+			return false;
+		});
+
+        function scrollToDiv(element,navheight){
+            var offset = element.offset();
+            var offsetTop = offset.top;
+            var totalScroll = offsetTop - $("header").outerHeight() + "px";
+
+            $('body,html').animate({scrollTop: totalScroll}, 700);
+        }
+	
+		$("#n1").css({opacity:'1'}, 1);
+		$("#n1").hover(function(){
+			$("#b1").fadeToggle(0.5);
+		});
+		$("#n2").hover(function(){
+			$("#b2").fadeToggle(0.5);
+		});
+		$("#n3").hover(function(){
+			$("#b3").fadeToggle(0.5);
+		});
+		$("#n4").hover(function(){
+			$("#b4").fadeToggle(0.5);
+		});
+		$("#n5").hover(function(){
+			$("#b5").fadeToggle(0.5);
+		});
+		$("#n6").hover(function(){
+			$("#b6").fadeToggle(0.5);
+		});
+		$("#n7").hover(function(){
+			$("#b7").fadeToggle(0.5);
+		});
+
+		$('.map').maphilight();
+    	$("area").tooltip({ track: true });
+  });
+  </script>
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="loader">
+	<div id="load">
+		<img alt="loader" src="res/images/load.png"/>
+	</div>
+</div>
+
+<div id="share">
+	<div id="content">
+	<li>
+		<div class="fb-share-button" data-href="http://iprice.my/info/fashion-trends-back-now/" data-layout="button_count" style="width:95px; height:20px;"></div>
+	</li>
+	<li>
+		<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</li>
+	</div>
+</div>
+
+<ul id="nav">
+	<div id="nom">
+		<li><a id="b1" href="#intro" title="Next Section"><img src="res/images/en/title1.png" alt="Link" /></a></li>
+		<li><a id="b2"	href="#six" title="Next Section"><img src="res/images/en/title2.png" alt="Link" /></a></li>
+		<li><a id="b3" href="#seven" title="Next Section"><img src="res/images/en/title3.png" alt="Link" /></a></li>
+		<li><a id="b4" href="#eight" title="Next Section"><img src="res/images/en/title4.png" alt="Link" /></a></li>
+		<li><a id="b5" href="#nine" title="Next Section"><img src="res/images/en/title5.png" alt="Link" /></a></li>
+		<li><a id="b6" href="#zero" title="Next Section"><img src="res/images/en/title6.png" alt="Link" /></a></li>
+		<li><a id="b7" href="footer" title="Next Section"><img src="res/images/en/title7.png" alt="Link" /></a></li>
+	</div>
+
+	<li><a id="n1" href="#intro" title="Next Section"><img src="res/images/button.png" alt="Link" /></a></li>
+	<li><a id="n2" href="#six" title="Next Section"><img src="res/images/button.png" alt="Link" /></a></li>
+	<li><a id="n3" href="#seven" title="Next Section"><img src="res/images/button.png" alt="Link" /></a></li>
+	<li><a id="n4" href="#eight" title="Next Section"><img src="res/images/button.png" alt="Link" /></a></li>
+	<li><a id="n5" href="#nine" title="Next Section"><img src="res/images/button.png" alt="Link" /></a></li>
+	<li><a id="n6" href="#zero" title="Next Section"><img src="res/images/button.png" alt="Link" /></a></li>
+	<li><a id="n7" href="footer" title="Next Section"><img src="res/images/button.png" alt="Link" /></a></li>
+</ul>
+
+<div alt="intro" id="intro">
+	<a href="#six"><img alt="arrow" src="res/images/arrow.png"></a>
+</div>
+
+<div alt="60s - The Groovy 60s" id="six" class="fg">
+	<div class="story"><img src="res/images/en/six-fg.png" class="bg map" usemap="#sixmap"></img></div> 
+
+	<map name="sixmap">
+    <area alt="A-line Dress" title="<b>A-line Dress: </b>: Nothing flatters the figure quite like an A-line dress can. It comes as no surprise then that this trend has been a style saver for decades. The silhouette that resembles the letter ‘A’ works for most figures and even things out for those who are heavier on the bottom. Dress up or down with confidence as this shape will make you an ace fashionista either way." href="http://iprice.my/clothing/dresses/?term=a%20line%20dress" target="_blank" shape="poly" coords="423,189,410,194,416,199,415,332,420,336,423,340,425,368,491,369,475,283,471,258,475,241,481,223,479,207,480,199,484,195,465,188,458,198,446,201,431,199" />
+    <area alt="Vinyl Handbag" title="<b>Vinyl Handbag</b>: Going somewhere? Tote along with your vinyl handbag for that unforgettable touch of retro-chic. Tacky is a thing of the past here as these vinyl selections are anything but. From the sleek top handles to its varied structured form, these bags make a fashion statement worthy of your 21st century style." href="http://iprice.my/bags/top-handle-bags/" target="_blank" shape="poly" coords="401,333,381,333,377,338,376,341,375,347,376,383,423,385,423,348,421,337,414,333,414,339,421,344,421,352,416,354,413,357,407,358,400,359,396,354,394,348,396,344,399,339" />
+    <area alt="Mary Jane Shoes" title="<b>Mary Jane Shoes</b>: This style isn’t just a nostalgia trip for your feet, it’s a well-loved classic that was especially popular in the 60s. Button up those Mary Janes ladies, because these steppers are out of this world. The Mary Jane got its name from a Buster Brown comic strip drawn by R F Outcault. The character, Mary Jane wore the shoes and first appeared in 1902, in the pages of the New York Herald. " href="http://iprice.my/shoes/?term=mary%20jane" target="_blank" shape="poly" coords="416,486,430,500,436,498,441,503,440,510,432,514,426,514,420,519,412,523,399,522,392,521,388,516,387,510,400,506" />
+    <area alt="Mary Jane Shoes" title="<b>Mary Jane Shoes</b>: Going somewhere? Tote along with your vinyl handbag for that unforgettable touch of retro-chic. Tacky is a thing of the past here as these vinyl selections are anything but. From the sleek top handles to its varied structured form, these bags make a fashion statement worthy of your 21st century style." href="http://iprice.my/shoes/?term=mary%20jane" target="_blank" shape="poly" coords="448,499,453,495,460,498,467,504,476,508,482,511,484,514,483,519,476,522,465,521,459,515,457,519,449,519" />
+	</map>
+
+</div>
+
+<div alt="70s - Peace, Love & 70s" id="seven" class="fg">
+	<div class="story"><img src="res/images/en/seven-fg.png" class="bg map" usemap="#sevenmap"></img></div> 
+
+	<map name="sevenmap">
+	  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun" title="Conquer the world with style and strut your stuff like Heidi Klum on the runway with the right pair of ladies shoes. Whether you prefer to go with a pair of flats or platform high heels, shoes are the key to walking with confidence.">
+	</map>
+</div>
+
+<div alt="80s - The Funky 80s" id="eight" class="fg">
+	<div class="story"><img src="res/images/en/eight-fg.png" class="bg map" usemap="#eightmap"></img></div> 
+
+	<map name="eightmap">
+	  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun" title="Conquer the world with style and strut your stuff like Heidi Klum on the runway with the right pair of ladies shoes. Whether you prefer to go with a pair of flats or platform high heels, shoes are the key to walking with confidence.">
+	</map>
+</div>
+
+<div alt="90s - Grunge Out 90s" id="nine" class="fg">
+	<div class="story"><img src="res/images/en/nine-fg.png" class="bg map" usemap="#ninemap"></img></div> 
+
+	<map name="ninemap">
+	  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun" title="Conquer the world with style and strut your stuff like Heidi Klum on the runway with the right pair of ladies shoes. Whether you prefer to go with a pair of flats or platform high heels, shoes are the key to walking with confidence.">
+	</map>
+</div>
+
+<div alt="00s - Mash Up 2000s" id="zero" class="fg">
+	<div class="story"><img src="res/images/en/zero-fg.png" class="bg map" usemap="#zeromap"></img></div> 
+
+	<map name="zeromap">
+	  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun" title="Conquer the world with style and strut your stuff like Heidi Klum on the runway with the right pair of ladies shoes. Whether you prefer to go with a pair of flats or platform high heels, shoes are the key to walking with confidence.">
+	</map>
+</div>
+
+<footer>
+	<div id="exit">
+		<a href="/"><img alt="shop at iprice" src="res/images/en/outro.png"/></a>
+	</div>
+	<div class="story">
+		<p>© iprice group 2015 — All rights reserved</p>
+	</div>
+</footer>
+
+<script>
+$(function () {
+	var element = $("#load");
+    (function(){
+        element
+            .animate({ opacity:'0.2'}, 400)
+            .animate({ opacity:'0.8'}, 400,arguments.callee)
+            
+    }());
+});
+</script>
+
+</body>
+
+</html>
