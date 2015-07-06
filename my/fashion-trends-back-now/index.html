@@ -170,28 +170,38 @@
 </div>
 
 <div alt="60s - The Groovy 60s" id="sixties" class="fg">
-	<div class="story"><img src="res/images/en/six-fg.png" class="bg map" usemap="#sixties-map"></img></div> 
-
+	<div class="story">
+		<img src="res/images/six-overlay.png" class="bg map overlay" usemap="#sixties-map"></img>
+		<img src="res/images/en/six-fg.png" class="bg map"></img>
+	</div> 
 </div>
 
 <div alt="70s - Peace, Love & 70s" id="seventies" class="fg">
-	<div class="story"><img src="res/images/en/seven-fg.png" class="bg map" usemap="#seventies-map"></img></div> 
-
+	<div class="story">
+		<img src="res/images/seven-overlay.png" class="bg map overlay" usemap="#seventies-map"></img>
+		<img src="res/images/en/seven-fg.png" class="bg map"></img>
+	</div> 
 </div>
 
 <div alt="80s - The Funky 80s" id="eighties" class="fg">
-	<div class="story"><img src="res/images/en/eight-fg.png" class="bg map" usemap="#eighties-map"></img></div> 
-
+	<div class="story">
+		<img src="res/images/eight-overlay.png" class="bg map overlay" usemap="#eighties-map"></img>
+		<img src="res/images/en/eight-fg.png" class="bg map"></img>
+	</div> 
 </div>
 
 <div alt="90s - Grunge Out 90s" id="nineties" class="fg">
-	<div class="story"><img src="res/images/en/nine-fg.png" class="bg map" usemap="#nineties-map"></img></div> 
-
+	<div class="story">
+		<img src="res/images/nine-overlay.png" class="bg map overlay" usemap="#nineties-map"></img>
+		<img src="res/images/en/nine-fg.png" class="bg map"></img>
+	</div> 
 </div>
 
 <div alt="00s - Mash Up 2000s" id="noughties" class="fg">
-	<div class="story"><img src="res/images/en/zero-fg.png" class="bg map" usemap="#noughties-map"></img></div> 
-
+	<div class="story">
+		<img src="res/images/zero-overlay.png" class="bg map overlay" usemap="#noughties-map"></img>
+		<img src="res/images/en/zero-fg.png" class="bg map"></img>
+	</div> 
 </div>
 
 <footer id="exit">
@@ -289,6 +299,12 @@ $(function () {
             .animate({ opacity:'0.2'}, 400)
             .animate({ opacity:'0.8'}, 400,arguments.callee)
             
+    }());
+
+    (function(){
+        $(".overlay")
+        .animate({ opacity:'0.2'}, 1400)
+        .animate({ opacity:'1.0'}, 1400,arguments.callee)
     }());
 });
 </script>

@@ -275,6 +275,10 @@ footer p {
 	z-index: 10;
 }
 
+.overlay {
+    z-index: 15;
+}
+
 #sixties {
     background-color: #fbb600;
 }
