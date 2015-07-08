@@ -238,7 +238,7 @@ footer p {
     bottom: 6px;
     font-family: "Lucida Grande", sans-serif;
     font-size: 11px;
-    color: #ffffff;x
+    color: #ffffff;
 }
 
 .fg {
@@ -316,7 +316,7 @@ footer p {
 }
 
 #noughties {
-    background-color: #ededed;
+    background-color: #dfdede;
 }
 
 #noughties > div > .map {
