@@ -21,14 +21,14 @@ img {
     width: 100%;
     height: 2000%;
     z-index: 1000;
-    background-color: #e6e6e6; 
+    background-color: #e6e6e6;
 }
 
 #load {
     position: fixed;
     width: 150px;
     left: 50%;
-    margin-left: -75px; 
+    margin-left: -75px;
     top: 50%;
     margin-top: -75px;
 }
@@ -37,46 +37,41 @@ img {
     position: absolute;
 }
 
-
 #share {
-	float:left;
-	position:fixed;
-	z-index:50;
-	left:40px;
-	bottom:40px;
+    float: left;
+    position: fixed;
+    z-index: 50;
+    left: 40px;
+    bottom: 40px;
 }
-
 
 #content {
-	width:210px;
-	float:left;
-	position:absolute;
-	bottom: 4px;
-	height:41px;
-	z-index:50;
-	list-style: none;
-	border-radius:0 3px 3px 0;
-	background-color: rgba(255,255,255,0.4);
+    width: 210px;
+    float: left;
+    position: absolute;
+    bottom: 4px;
+    height: 41px;
+    z-index: 50;
+    list-style: none;
+    border-radius: 0 3px 3px 0;
 }
-
 
 #content li {
-	margin-top:10px;
-	margin-left:10px;
-	display:inline;
-	float:left;
-	width:95px;
-	
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline;
+    float: left;
+    width: 95px;
 }
 
-#content li a{
-	width:88px;
+#content li a {
+    width: 88px;
 }
 
 #content .fb-share-button span,
-#content .fb-share-button iframe  {
-	width: 95px !important;
-	height: 20px !important;
+#content .fb-share-button iframe {
+    width: 95px !important;
+    height: 20px !important;
 }
 
 #nav {
@@ -104,39 +99,39 @@ img {
 }
 
 #menu {
-    float:left;
-    position:fixed;
-    top:40px;
-    left:40px;
-    z-index:50;
-    
+    float: left;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 50;
+
 }
+
 #shop {
-    opacity:0.5;
+    opacity: 0.5;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
-    -o-transition:all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 #shop:hover {
-    opacity:1;
+    opacity: 1;
 }
 
 #coupon {
-    opacity:0.5;
+    opacity: 0.5;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
-    -o-transition:all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 #coupon:hover {
-    opacity:1;
+    opacity: 1;
 }
 
 #menu img {
-    margin-right:30px;
+    margin-right: 30px;
 }
-
 
 #nom {
     opacity: 1;
@@ -151,9 +146,7 @@ img {
 }
 
 #intro {
-    background-repeat: no-repeat;
-    background-color: #48c1c4; 
-    background-position: center;
+    background: #48c1c4 no-repeat center;
     background-size: auto;
     position: relative;
     height: 100%;
@@ -184,7 +177,7 @@ img {
 
 @-moz-document url-prefix() {
     #intro a {
-        bottom: 0px;
+        bottom: 0;
     }
 }
 
@@ -220,15 +213,14 @@ footer {
 }
 
 #outro hr {
-    border:none;
-    width:280px;
-    color:#ffffff;
-    height:5px;
-    background-color:#FFF;
-    margin-top:20px;
-    margin-bottom:20px;
+    border: none;
+    width: 280px;
+    color: #ffffff;
+    height: 5px;
+    background-color: #FFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
 
 footer p {
     left: 40px;
@@ -243,9 +235,7 @@ footer p {
 
 .fg {
     background-size: 1071px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50%;
+    background: no-repeat fixed 50%;
     color: white;
     height: 120%;
     width: 100%;
@@ -256,7 +246,7 @@ footer p {
 }
 
 @media (min-height: 679px) {
-	.fg {
+    .fg {
         background-size: 1200px;
     }
 }
@@ -268,11 +258,11 @@ footer p {
 }
 
 .bg {
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: 0px auto;
-	z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
 }
 
 .overlay {
@@ -284,7 +274,7 @@ footer p {
 }
 
 #sixties > div > .map {
-	top: 50%;
+    top: 50%;
     margin-top: -500px;
 }
 
@@ -301,7 +291,7 @@ footer p {
     background-color: #191c4d;
 }
 
-#eighties > div >  .map {   
+#eighties > div > .map {
     top: 50%;
     margin-top: -500px;
 }
@@ -310,7 +300,7 @@ footer p {
     background-color: #6358af;
 }
 
-#nineties > div >  .map {
+#nineties > div > .map {
     top: 50%;
     margin-top: -500px;
 }
@@ -331,4 +321,4 @@ footer p {
     font: 14px "Lucida Grande", Sans-Serif;
     box-shadow: none;
     background: rgba(100, 100, 100, 0.9);;
-  }
+}
