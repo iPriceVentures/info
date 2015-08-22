@@ -103,9 +103,6 @@ a {
   .rslider-container {
     padding-top: 48px;
   }
-  .header-image {
-    background-image: $background_80s_image;
-  }
   .product-description {
     min-height: 127px;
   }
@@ -170,6 +167,9 @@ a {
   min-height: 480px;
   margin: 0 auto;
   text-align: center;
+  > .side-padding-25 {
+    position: relative;
+  }
 }
 
 .side-padding-30 {
@@ -294,6 +294,10 @@ a {
 
 #seventies .header-image {
   background-image: $background_70s_image;
+}
+
+#eighties .header-image {
+  background-image: $background_80s_image;
 }
 
 #nighties .header-image {
