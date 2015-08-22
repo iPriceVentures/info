@@ -32,13 +32,21 @@ $background_2000s_image: url(../images/bg-2000s.png);
   font-style: normal;
 }
 
-* {
-  padding: 0;
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body, p {
   margin: 0;
 }
 
 body, p, div, span {
   font-family: $font_noto_sans_5, $default_faultback_font;
+}
+
+body {
+  width: 100%;
 }
 
 a {
