@@ -203,14 +203,13 @@ a {
 }
 
 .header-image {
-  overflow-x: hidden;
-  overflow-y: hidden;
   position: absolute;
-  margin: 0 auto;
   background: transparent no-repeat fixed 50%;
-  min-height: 420px;
-  width: 270px;
-  height: auto;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .product-description {
