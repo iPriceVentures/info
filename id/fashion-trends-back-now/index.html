@@ -25,11 +25,12 @@
 
 
     <script type="text/javascript">
-        if ($(document).outerWidth() <= 800) {
-            window.location = "mobile/";
-        }
         $(window).load(function () {
-            $("#loader").fadeToggle({display: "none"}, "slow");
+            if ($(document).outerWidth() <= 800) {
+                window.location = "mobile/";
+            } else {
+                $("#loader").fadeToggle({display: "none"}, "slow");
+            }
         });
     </script>
 

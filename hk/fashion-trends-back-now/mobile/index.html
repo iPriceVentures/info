@@ -7,9 +7,11 @@
     <script type="text/javascript" src="../res/mobile/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="../res/mobile/vendor/responsiveslides.min.js"></script>
     <script type="text/javascript">
-        if ($(document).outerWidth() > 800) {
-            window.location = "../";
-        }
+        $(window).load(function () {
+            if ($(document).outerWidth() > 800) {
+                window.location = "../";
+            }
+        });
     </script>
 </head>
 <body>
