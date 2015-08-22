@@ -1094,6 +1094,15 @@
             nextText: ">"
         });
     });
+    var win = $(window).on('scroll', function() {
+        $('.header-image').each(function() {
+            var _this = $(this);
+            var parent = _this.parents('.side-padding-25');
+            _this.css({
+                top: win.scrollTop() - parent.offset()['top']
+            });
+        });
+    });
 </script>
 </body>
 </html>
