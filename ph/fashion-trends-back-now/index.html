@@ -25,6 +25,9 @@
 
 
     <script type="text/javascript">
+        if ($(window).outerWidth() <= 800) {
+            window.location = "mobile/";
+        }
         $(window).load(function () {
             $("#loader").fadeToggle({display: "none"}, "slow");
         });

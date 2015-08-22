@@ -1,0 +1,297 @@
+//colors
+$white: white;
+$black_26: rgba(0, 0, 0, 0.26);
+$color_gray_approx: #818181;
+$color_fountain_blue_approx: #46c2c4;
+$color_selective_yellow_approx: #fab300;
+$color_bittersweet_approx: #ff695e;
+$color_bunting_approx: #191d4f;
+$color_blue_violet_approx: #6258b0;
+$color_bon_jour_approx: #e0dedf;
+$color_orient_approx: #066b87;
+
+//fonts
+$font_noto_sans_5: __Noto Sans_5;
+$default_faultback_font: serif;
+
+//urls
+$noto_sans_eot: url(../fonts/notosans-regular.eot);
+$noto_sans_woff_url: url(../fonts/notosans-regular.woff);
+$noto_sans_svg_url: url(../fonts/notosans-regular.svg);
+$background_60s_image: url(../images/bg-60s.png);
+$background_70s_image: url(../images/bg-70s.png);
+$background_80s_image: url(../images/bg-80s.png);
+$background_90s_image: url(../images/bg-90s.png);
+$background_2000s_image: url(../images/bg-2000s.png);
+
+@font-face {
+  font-family: $font_noto_sans_5;
+  src: $noto_sans_eot;
+  src: local('☺'), $noto_sans_woff_url format('woff'), $noto_sans_svg_url format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, p, div, span {
+  font-family: $font_noto_sans_5, $default_faultback_font;
+}
+
+a {
+  color: $white;
+  &.rslides_nav {
+    text-decoration: none;
+    color: $black_26;
+    font-size: 22px;
+  }
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &:first-child {
+      position: relative;
+      display: block;
+      float: left;
+    }
+    div:first-child {
+    }
+  }
+}
+
+.rslides_nav {
+  z-index: 3;
+  position: absolute;
+  opacity: 0.7;
+  overflow: hidden;
+  bottom: 0;
+  width: 38px;
+  top: 340px;
+  &.prev {
+    right: auto;
+    left: 0;
+  }
+  &.next {
+    right: 0;
+    left: auto;
+  }
+}
+
+#eighties {
+  .rslider-container {
+    padding-top: 48px;
+  }
+  .header-image {
+    background-image: $background_80s_image;
+  }
+  .product-description {
+    min-height: 127px;
+  }
+  a.rslides_nav {
+    color: $color_gray_approx;
+  }
+}
+
+.rslider-container {
+  position: relative;
+  width: 100%;
+  padding-top: 59px;
+}
+
+.bg-blue {
+  background-color: $color_fountain_blue_approx;
+}
+
+.bg-yellow {
+  background-color: $color_selective_yellow_approx;
+}
+
+.bg-pink {
+  background-color: $color_bittersweet_approx;
+}
+
+.bg-dark-blue {
+  background-color: $color_bunting_approx;
+}
+
+.bg-purple {
+  background-color: $color_blue_violet_approx;
+}
+
+.bg-gray {
+  background-color: $color_bon_jour_approx;
+}
+
+.text-dark-blue {
+  color: $color_orient_approx;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.slide {
+  width: 100%;
+  color: $white;
+}
+
+.slide-container {
+  max-width: 320px;
+  min-height: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.side-padding-30 {
+  padding: 0 30px;
+}
+
+.side-padding-25 {
+  padding: 0 25px;
+}
+
+.slide-text-bold {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.slide-text-description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.xsmall-text {
+  font-size: 9.5px;
+}
+
+.logo-description {
+  position: relative;
+  top: -22px;
+  left: 70px;
+  text-align: left;
+  width: 70%;
+}
+
+.header-image {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  margin: 0 auto;
+  background: transparent no-repeat fixed 50%;
+  min-height: 420px;
+  width: 270px;
+  height: auto;
+}
+
+.product-description {
+  font-weight: normal;
+  width: 168px;
+  min-height: 116px;
+  background-color: $black_26;
+  margin: 15px auto 0;
+  .title {
+    font-size: 9px;
+  }
+  a {
+    font-size: 9px;
+    text-transform: uppercase;
+  }
+  .text {
+    font-size: 8px;
+    margin-top: 5px;
+  }
+  > div {
+    padding: 5px 10px;
+  }
+}
+
+#bottom {
+  hr {
+    height: 3px;
+    background-color: $white;
+    border: 0;
+    margin: 25px;
+  }
+  a > img {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(180deg);
+  }
+}
+
+.menu {
+  float: left;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  a {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      color: $color_orient_approx;
+    }
+  }
+}
+
+#share {
+  float: left;
+  position: fixed;
+  z-index: 50;
+  left: 20px;
+  bottom: 0;
+}
+
+#content {
+  width: 110px;
+  float: left;
+  position: absolute;
+  bottom: 4px;
+  height: 41px;
+  z-index: 50;
+  list-style: none;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0 3px 3px 0;
+}
+
+#sixties .header-image {
+  background-image: $background_60s_image;
+}
+
+#seventies .header-image {
+  background-image: $background_70s_image;
+}
+
+#nighties .header-image {
+  background-image: $background_90s_image;
+}
+
+#noughties .header-image {
+  background-image: $background_2000s_image;
+}
