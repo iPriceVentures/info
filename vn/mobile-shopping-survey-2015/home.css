@@ -409,9 +409,11 @@
     width: 100.039437%;
     max-width: none;
     height: 38.46875px;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 32px;
+    margin-top: 15px;
     clear: none;
+    width: 55px;
+    height: 56px;
     color: rgb(0, 0, 0);
     margin-right: 0%;
 }
@@ -1846,7 +1848,7 @@
     }
 
     #image14 {
-        width: 94.03125px;
+        width: 55px;
     }
 
     #desktop {
@@ -1946,7 +1948,7 @@
         margin-right: auto;
         float: none;
         clear: none;
-        margin-top: 0px;
+        margin-top: 20px;
         height: auto;
     }
 
@@ -2467,7 +2469,7 @@
     }
 
     #answer {
-        margin-top: 0px;
+        margin-top: 20px;
         clear: none;
     }
 
@@ -2533,8 +2535,8 @@
     }
 
     #image14 {
-        height: 48.796875px;
-        width: 119.3125px;
+        height: 44px;
+        width: 48px;
         max-width: none;
     }
 
@@ -3165,9 +3167,9 @@
     #image14 {
         margin-top: 0px;
         margin-right: 0%;
-        margin-left: 0px;
+        margin-left: 10px;
         clear: none;
-        width: 76.03px;
+        width: 55px;
     }
 
     #connection {
@@ -3970,7 +3972,7 @@
 
     #image14 {
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 10px;
         clear: none;
     }
 
