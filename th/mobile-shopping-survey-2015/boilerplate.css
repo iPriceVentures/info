@@ -50,8 +50,9 @@ body, button, input, select, textarea { font-family: helvetica, arial,"lucida gr
    ========================================================================== */
 
 a { color: #00e; }
+
+a:hover { color: #FFFFFF; }
 a:visited { color: #551a8b; }
-a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */

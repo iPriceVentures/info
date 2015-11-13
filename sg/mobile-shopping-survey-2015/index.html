@@ -2,6 +2,8 @@
 <html>
     
     <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <link rel="stylesheet" href="boilerplate.css" />
         <link rel="stylesheet" href="home.css" />
         <link rel="stylesheet" href="main.css" />
@@ -27,6 +29,11 @@
         <div id="primaryContainer" class="primaryContainer clearfix">
         
         <div id="inner-container" class="clearfix">
+          <div id="menu">
+    <a class="goTop buttons" >HOME</a>
+    <a class="buttons" href="http://iprice.my" target="_blank">SHOP</a>
+    <a class="buttons"  href="ipricethailand.com/coupons/" target="_blank">COUPON</a>
+      </div>
 
 
             <ul class="share">
@@ -317,6 +324,17 @@
         </div>
         </div>
         </div>
+        <script>
+    console.log("IM HERE");
+$( document ).ready(function() {
+	console.log("IM CLICKED");
+	$('.goTop').click(function() {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 'slow');
+		return false;
+	});
+});</script>
 
         
     </body>
