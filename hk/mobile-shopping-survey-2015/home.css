@@ -19,6 +19,29 @@
     margin-right: auto;
 }
 
+#menu{
+float:left;
+position:fixed;
+top:10px;
+z-index:50;	
+width:250px;
+color:#49C2C6;
+}
+
+.buttons {
+color:#49C2C6;
+margin-left:20px;
+font-weight:900;
+font-size:13px;
+float:left;
+cursor:pointer;
+}
+
+.buttons:hover{
+color: rgb(255, 102, 51);
+
+}
+
 #image {
     float: none;
     width: auto;
