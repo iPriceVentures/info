@@ -1,0 +1,1705 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#background {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+}
+
+#menu{
+float:left;
+position:fixed;
+top:10px;
+z-index:50;	
+width:250px;
+color:#49C2C6;
+}
+
+.buttons {
+color:#49C2C6;
+margin-left:20px;
+font-weight:900;
+font-size:13px;
+float:left;
+cursor:pointer;
+}
+
+.buttons:hover{
+color: rgb(255, 102, 51);
+
+}
+
+
+#header {
+    float: none;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+}
+
+#_1880 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(51, 204, 204);
+}
+
+#person {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 140.30917929499998px;
+    margin-right: 70px;
+}
+
+#image2 {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
+#_1900 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(224, 224, 224);
+    margin-right: 0%;
+}
+
+#milk {
+    float: left;
+    height: 137px;
+    margin: 0px 0px 0px 33px;
+    clear: none;
+    width: 158.3932528px;
+}
+
+#_1930 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(255, 102, 51);
+}
+
+#thimb-up {
+    float: left;
+    height: 228.625px;
+    margin-left: 1.822917%;
+    margin-top: 14.15625px;
+    clear: none;
+    width: 115.423312px;
+}
+
+#_1940 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(8, 106, 135);
+}
+
+#house {
+    float: left;
+    height: 200px;
+    margin-left: 0.00231139%;
+    margin-top: 24.15625px;
+    clear: none;
+    width: 173.7041933px;
+}
+
+#_1960 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(224, 224, 224);
+}
+
+#ball {
+    float: left;
+    height: auto;
+    margin-left: 0.09014423%;
+    margin-top: 84.15625px;
+    clear: none;
+    width: 189.4604627px;
+}
+
+#_1980 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(51, 204, 204);
+}
+
+#news {
+    float: left;
+    height: auto;
+    margin-left: 1.456176%;
+    margin-top: 52.15625px;
+    clear: none;
+    width: 140.3132961px;
+}
+
+#_1990 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(8, 106, 135);
+}
+
+#signle {
+    float: left;
+    height: auto;
+    margin-left: 2.538454%;
+    margin-top: 44.15625px;
+    clear: none;
+    width: 140.3132961px;
+}
+
+#_2000 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(224, 224, 224);
+}
+
+#mobile {
+    float: left;
+    height: auto;
+    margin-left: 1.456176%;
+    margin-top: 44.15625px;
+    clear: none;
+    width: 140.3132961px;
+}
+
+#_2014 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    width: 100%;
+    min-width: 0px;
+    background-color: rgb(51, 204, 204);
+}
+
+#case {
+    float: left;
+    height: auto;
+    margin-left: 12.015625px;
+    margin-top: 54.15625px;
+    clear: none;
+    width: 140.3132961px;
+}
+
+#image4 {
+    float: left;
+    width: 98.701737%;
+    max-width: none;
+    height: 138px;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#image6 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: 214.63px;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#image8 {
+    float: left;
+    width: 100%;
+    height: 197.72px;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    max-width: none;
+    min-width: 0px;
+}
+
+#image10 {
+    float: left;
+    width: 100%;
+    height: 90.84375px;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+    max-width: none;
+    min-width: 0px;
+}
+
+#image12 {
+    float: left;
+    width: 94.280845%;
+    max-width: none;
+    height: 161.546875px;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#image14 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: 166.46875px;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#image16 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: 183.125px;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#image18 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: 165.21875px;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#_80 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 110px;
+    clear: none;
+    width: auto;
+    margin-right: 0%;
+}
+
+#image1 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#_90 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 110px;
+    clear: none;
+    width: auto;
+    display: block;
+    margin-right: 0%;
+}
+
+#_30 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 110px;
+    clear: none;
+    width: auto;
+    display: block;
+    margin-right: 0%;
+}
+
+#_40 {
+    float: left;
+    height: auto;
+    margin-left: 0.02264493%;
+    margin-top: 115px;
+    clear: none;
+    width: auto;
+    display: block;
+    margin-right: 0%;
+}
+
+#_60 {
+    float: left;
+    height: auto;
+    margin-left: 0.02264493%;
+    margin-top: 130px;
+    clear: none;
+    width: auto;
+    display: block;
+    margin-right: 0%;
+}
+
+#_801 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 110px;
+    clear: none;
+    width: auto;
+    display: block;
+    margin-right: 0%;
+}
+
+#_901 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 110px;
+    clear: none;
+    width: auto;
+    display: block;
+    margin-right: 0%;
+}
+
+#_14 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 130px;
+    clear: none;
+    width: auto;
+    display: block;
+    margin-right: 0%;
+}
+
+#_802 {
+    float: left;
+    height: auto;
+    margin-left: 0.02264493%;
+    margin-top: 130px;
+    clear: none;
+    width: auto;
+    display: block;
+    margin-right: 0%;
+}
+
+#text {
+    float: left;
+    font-size: 16px;
+    width: 84.955106%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 0px;
+    margin-top: 34.84375px;
+    clear: none;
+    min-height: 120px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans';
+    margin-right: 0%;
+    padding-left: 0px;
+}
+
+#text1 {
+    float: left;
+    font-size: 16px;
+    width: 59.01%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 0px;
+    margin-top: 26.96875px;
+    clear: both;
+    min-height: 0px;
+    color: rgb(8, 106, 135);
+    font-family: 'Noto Sans';
+    display: block;
+    margin-right: 0%;
+}
+
+#text2 {
+    float: left;
+    font-size: 16px;
+    width: 43.869256%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 16.372177%;
+    margin-top: 67.515625px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans';
+    display: block;
+    margin-right: 0%;
+}
+
+#text3 {
+    float: left;
+    font-size: 16px;
+    width: 43.869256%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 9.039848%;
+    margin-top: 79.15625px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans';
+    display: block;
+    margin-right: 0%;
+}
+
+#text4 {
+    float: left;
+    font-size: 16px;
+    width: 43.869256%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 8.462001%;
+    margin-top: 84.015625px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(8, 106, 135);
+    font-family: 'Noto Sans';
+    display: block;
+    margin-right: 0%;
+}
+
+#text5 {
+    float: left;
+    font-size: 16px;
+    width: 43.869256%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 14.476246%;
+    margin-top: 72.234375px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(8, 106, 135);
+    font-family: 'Noto Sans';
+    display: block;
+    margin-right: 0%;
+}
+
+#text6 {
+    float: left;
+    font-size: 16px;
+    width: 43.869256%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 13.956176%;
+    margin-top: 84.296875px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans';
+    display: block;
+    margin-right: 0%;
+}
+
+#image3 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image5 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+}
+
+#image7 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image9 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image11 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image13 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image15 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#text7 {
+    float: left;
+    font-size: 16px;
+    width: 43.869256%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 14.790206%;
+    margin-top: 98.15625px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(8, 106, 135);
+    font-family: 'Noto Sans';
+    display: block;
+    margin-right: 0%;
+}
+
+#text8 {
+    float: left;
+    font-size: 16px;
+    width: 43.869256%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 19px;
+    margin-left: 14.263591%;
+    margin-top: 79.59375px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans';
+    display: block;
+    margin-right: 0%;
+}
+
+#image17 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#child1 {
+    float: left;
+    height: auto;
+    margin-left: 2.6875%;
+    margin-top: 20px;
+    clear: none;
+    width: 71.35%;
+    margin-right: 0px;
+}
+
+#line1 {
+    float: left;
+    height: 535.84375px;
+    margin-left: 1.867604%;
+    margin-top: 0px;
+    clear: none;
+    width: 70.0000028px;
+    background-image:url("img/line.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box {
+    float: left;
+    height: 397.96875px;
+    margin-left: 1.867604%;
+    margin-top: 0px;
+    clear: none;
+    width: 70.0000028px;
+    background-image:url("img/line%201.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box2 {
+    float: left;
+    height: 254.15625px;
+    margin-left: 1.867604%;
+    margin-top: 0px;
+    clear: none;
+    width: 70.0000028px;
+    background-image:url("img/line%202.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box4 {
+    float: left;
+    height: 254.15625px;
+    margin-left: 2.265163%;
+    margin-top: 0px;
+    clear: none;
+    width: 69.00000276px;
+    background-image:url("img/line-white.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box6 {
+    float: left;
+    height: 254.15625px;
+    margin-left: 2.265163%;
+    margin-top: 0px;
+    clear: none;
+    width: 69.00000276px;
+    background-image:url("img/line%203.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box8 {
+    float: left;
+    height: 254.15625px;
+    margin-left: 2.163462%;
+    margin-top: 0px;
+    clear: none;
+    width: 69.00000276px;
+    background-image:url("img/line%204.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box10 {
+    float: left;
+    height: 254.15625px;
+    margin-left: 2.352996%;
+    margin-top: 0px;
+    clear: none;
+    width: 69.00000276px;
+    background-image:url("img/line-white%203.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box12 {
+    float: left;
+    height: 254.15625px;
+    margin-left: 2.163462%;
+    margin-top: 0px;
+    clear: none;
+    width: 69.00000276px;
+    background-image:url("img/line%205.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box14 {
+    float: left;
+    height: 254.15625px;
+    margin-left: 2.265163%;
+    margin-top: 0px;
+    clear: none;
+    width: 69.00000276px;
+    background-image:url("img/line%206.svg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box1 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 67px;
+    clear: none;
+    width: 77.35%;
+}
+
+#box3 {
+    float: left;
+    height: auto;
+    margin-left: 1.822917%;
+    margin-top: 14.15625px;
+    clear: none;
+    width: 78.219918%;
+}
+
+#box5 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 24.15625px;
+    clear: none;
+    width: 57.901042%;
+}
+
+#box7 {
+    float: left;
+    height: auto;
+    margin-left: 0.08854167%;
+    margin-top: 84.15625px;
+    clear: none;
+    width: 63.151042%;
+}
+
+#box9 {
+    float: left;
+    height: auto;
+    margin-left: 1.453125%;
+    margin-top: 52.15625px;
+    clear: none;
+    width: 56.885417%;
+}
+
+#box11 {
+    float: left;
+    height: auto;
+    margin-left: 2.53125%;
+    margin-top: 17px;
+    clear: none;
+    width: 55.28125%;
+    margin-right: 0px;
+}
+
+#box13 {
+    float: left;
+    height: auto;
+    margin-left: 1.453125%;
+    margin-top: 44.15625px;
+    clear: none;
+    width: 57.197917%;
+}
+
+#box15 {
+    float: left;
+    height: auto;
+    margin-left: 4.005208%;
+    margin-top: 54.15625px;
+    clear: none;
+    width: 54.119792%;
+}
+
+#box16 {
+    float: left;
+    height: auto;
+    margin-left: 5.134302%;
+    margin-top: 0px;
+    clear: both;
+    width: auto;
+}
+
+#image19 {
+    float: left;
+    width: auto;
+    max-width: none;
+    height: 38px;
+    margin: 0px;
+    clear: both;
+    color: rgb(0, 0, 0);
+}
+
+#footer {
+    float: none;
+    height: 106px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    margin-right: auto;
+}
+
+#bottom {
+    float: left;
+    height: 170px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    padding: 30px;
+}
+
+#iprice-logo {
+    float: left;
+    height: auto;
+    margin: 20px 0px 0px;
+    clear: none;
+    width: auto;
+    display: block;
+}
+
+#image20 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#coupon-logo {
+    float: right;
+    height: 120.078125px;
+    margin: 0px;
+    clear: none;
+    width: 102.88px;
+    display: block;
+}
+
+#image21 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: 120.08px;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
+@media only screen and (min-width: 300px) {
+    #box1 {
+        width: 71.35%;
+    }
+
+    #text1 {
+        height: auto;
+        width: 94.554347%;
+    }
+
+    #box3 {
+        width: 71.35%;
+    }
+
+    #text2 {
+        height: auto;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #box2 {
+        height: 477.15625px;
+    }
+
+    #box5 {
+        float: left;
+        height: auto;
+        margin-left: 0%;
+        margin-top: 24.15625px;
+        clear: none;
+        width: 72.9%;
+    }
+
+    #house {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+        margin-right: 0%;
+    }
+
+    #text3 {
+        margin-top: 20px;
+        margin-left: 0%;
+        clear: both;
+        margin-right: 0%;
+        width: 100%;
+        height: auto;
+    }
+
+    #_1960 {
+        margin: 0px;
+        clear: none;
+    }
+
+    #_1900 {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: both;
+    }
+
+    #_1930 {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #_1980 {
+        margin: 0px;
+        clear: none;
+    }
+
+    #_1990 {
+        margin: 0px;
+        clear: none;
+    }
+
+    #_2000 {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: none;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #_2014 {
+        margin: 0px;
+        clear: none;
+        height: 525.15625px;
+    }
+
+    #box4 {
+        height: 451.15625px;
+    }
+
+    #box6 {
+        height: 418.15625px;
+    }
+
+    #box7 {
+        float: left;
+        height: auto;
+        margin-left: 0.08854167%;
+        margin-top: 84.15625px;
+        clear: none;
+        width: 73.15%;
+    }
+
+    #ball {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+        margin-right: 0%;
+    }
+
+    #text4 {
+        margin: 20px 0px 0px;
+        clear: both;
+        width: 100%;
+    }
+
+    #_1940 {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #box9 {
+        float: left;
+        height: auto;
+        margin-left: 1.453125%;
+        margin-top: 52.15625px;
+        clear: none;
+        width: 71.89%;
+    }
+
+    #news {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+        margin-right: 0%;
+    }
+
+    #text5 {
+        margin-top: 20px;
+        margin-left: 0px;
+        clear: both;
+        margin-right: 0%;
+        width: 100%;
+        height: auto;
+    }
+
+    #box8 {
+        height: 418.9375px;
+    }
+
+    #box10 {
+        height: 491.1875px;
+        margin-top: 0px;
+        margin-left: 2.348958%;
+        clear: none;
+    }
+
+    #box11 {
+        float: left;
+        height: auto;
+        margin-left: 2.529457%;
+        margin-top: 82px;
+        clear: none;
+        width: 71.28%;
+        margin-right: 0px;
+    }
+
+    #signle {
+        margin-top: 0px;
+        margin-left: 0.01884304%;
+        clear: none;
+        margin-right: 0%;
+    }
+
+    #text6 {
+        margin-top: 30.296875px;
+        margin-left: 0%;
+        clear: both;
+        margin-right: 0%;
+        width: 100.022994%;
+        height: auto;
+    }
+
+    #box13 {
+        float: left;
+        height: auto;
+        margin-left: 1.453125%;
+        margin-top: 44.15625px;
+        clear: none;
+        width: 72.2%;
+    }
+
+    #mobile {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+        margin-right: 0%;
+    }
+
+    #text7 {
+        margin: 20px 0px 0px;
+        clear: both;
+        width: 100%;
+    }
+
+    #box12 {
+        height: 500.96875px;
+    }
+
+    #box15 {
+        float: left;
+        height: auto;
+        margin-left: 4.005208%;
+        margin-top: 54.15625px;
+        clear: none;
+        width: 54.119792%;
+    }
+
+    #case {
+        margin-top: 0px;
+        margin-left: 0.015625px;
+        clear: none;
+        margin-right: 0%;
+    }
+
+    #text8 {
+        margin: 20px 0px 0px;
+        clear: both;
+        width: 100%;
+    }
+
+    #box14 {
+        height: 468.15625px;
+    }
+
+    #box16 {
+        float: left;
+        height: auto;
+        margin-left: 5.134302%;
+        margin-top: 0px;
+        clear: both;
+        width: auto;
+    }
+
+    #image19 {
+        float: left;
+        width: auto;
+        max-width: none;
+        height: 38px;
+        margin: 0px;
+        clear: both;
+        color: rgb(0, 0, 0);
+    }
+
+    #footer {
+        display: none;
+    }
+
+    #bottom {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 628px) {
+    #text {
+        padding-left: 0px;
+        width: 53.218702%;
+        margin-left: 26.375px;
+        margin-right: 0px;
+        float: left;
+        margin-top: 39.6875px;
+        clear: none;
+        height: auto;
+    }
+
+    #image2 {
+        padding-right: 0px;
+    }
+
+    #text1 {
+        clear: none;
+        width: 51.471228%;
+        height: auto;
+        margin-top: 50.9375px;
+        margin-left: 25.0625px;
+    }
+
+    #milk {
+        margin-right: 40px;
+    }
+
+    #box1 {
+        width: 83.35%;
+    }
+
+    #line1 {
+        height: 251px;
+    }
+
+    #box {
+        height: 251px;
+    }
+
+    #box3 {
+        float: left;
+        height: auto;
+        margin-left: 1.822917%;
+        margin-top: 14.15625px;
+        clear: none;
+        width: 81.02%;
+    }
+
+    #thimb-up {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+        margin-right: 95px;
+    }
+
+    #text2 {
+        margin-top: 56.34375px;
+        margin-left: 31.9375px;
+        clear: none;
+        margin-right: 0%;
+        width: 52.384621%;
+        height: auto;
+    }
+
+    #_1900 {
+        margin-top: 0px;
+        margin-left: 0%;
+        clear: none;
+    }
+
+    #_1940 {
+        clear: none;
+    }
+
+    #_1960 {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #_1980 {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #_1990 {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #_2000 {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #_2014 {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+        height: 320px;
+    }
+
+    #_1930 {
+        clear: none;
+    }
+
+    #background {
+        width: 100%;
+    }
+
+    #child1 {
+        width: 80.45%;
+    }
+
+    #box2 {
+        height: 251px;
+    }
+
+    #text3 {
+        height: auto;
+        width: 46.990651%;
+        clear: none;
+        margin-top: 64px;
+        margin-left: 6.25682%;
+    }
+
+    #image8 {
+        margin-right: 0px;
+    }
+
+    #house {
+        margin-right: 45px;
+    }
+
+    #box5 {
+        width: 82.7%;
+        margin-top: 24.15625px;
+        margin-left: 0.30539773%;
+        clear: none;
+    }
+
+    #box4 {
+        height: 251px;
+        margin-top: 0px;
+        margin-left: 1.95786%;
+        clear: none;
+    }
+
+    #text4 {
+        height: auto;
+        width: 51.531662%;
+        clear: none;
+        margin-top: 19.84375px;
+        margin-left: 15.09375px;
+    }
+
+    #box7 {
+        width: 83.15%;
+    }
+
+    #ball {
+        margin-right: 50px;
+    }
+
+    #box6 {
+        height: 251px;
+    }
+
+    #text5 {
+        height: auto;
+        width: 52.147894%;
+        clear: none;
+        margin-top: 40.546875px;
+        margin-left: 53.53125px;
+    }
+
+    #box9 {
+        width: 81.09%;
+    }
+
+    #news {
+        margin-right: 50px;
+    }
+
+    #box8 {
+        height: 251px;
+    }
+
+    #box11 {
+        width: 80.28%;
+        margin-top: 42px;
+    }
+
+    #text6 {
+        width: 53.323301%;
+        clear: none;
+        margin-top: 41.59375px;
+        margin-left: 9.918064%;
+        height: auto;
+    }
+
+    #signle {
+        margin-right: 40px;
+    }
+
+    #box10 {
+        height: 251px;
+    }
+
+    #box13 {
+        width: 81.2%;
+    }
+
+    #text7 {
+        width: 51.404766%;
+        clear: none;
+        margin-top: 56px;
+        height: auto;
+        margin-right: 0px;
+        margin-left: 55.640625px;
+    }
+
+    #mobile {
+        margin-right: 50px;
+    }
+
+    #box12 {
+        height: 251px;
+    }
+
+    #box15 {
+        width: 81.54%;
+        margin-top: 54.15625px;
+        margin-left: 1.349866%;
+        clear: none;
+    }
+
+    #text8 {
+        height: auto;
+        width: 52.533584%;
+        clear: none;
+        margin-top: 28px;
+        margin-left: 55.640625px;
+    }
+
+    #case {
+        margin-right: 50px;
+    }
+
+    #box14 {
+        height: 251px;
+    }
+
+    #footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 829px) {
+    #background {
+        width: 831.25px;
+        -webkit-box-shadow: rgba(91, 91, 91, 0.478431) 0px 2px 3px 3px;
+        box-shadow: rgba(91, 91, 91, 0.478431) 0px 2px 3px 3px;
+        height: 2832.15625px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #text5 {
+        margin-top: 56px;
+        margin-left: 115px;
+        clear: none;
+    }
+
+    #_2014 {
+        height: 306.15625px;
+    }
+
+    #footer {
+        float: none;
+        height: 106px;
+        margin-left: auto;
+        margin-top: 0px;
+        clear: none;
+        width: 100%;
+        min-width: 0px;
+        margin-right: auto;
+        display: block;
+    }
+
+    #text2 {
+        margin-top: 53.359375px;
+        margin-left: 94px;
+        clear: none;
+    }
+
+    #box3 {
+        width: 84.22%;
+    }
+
+    #text3 {
+        height: auto;
+        width: 51.620948%;
+        max-width: none;
+        margin-top: 53px;
+        margin-left: 13.650488%;
+        clear: none;
+    }
+
+    #box7 {
+        width: 86.206767%;
+    }
+
+    #text4 {
+        margin-top: 20px;
+        margin-left: 73px;
+        clear: none;
+    }
+
+    #text6 {
+        margin-top: 38.296875px;
+        margin-left: 16.244688%;
+        clear: none;
+        height: auto;
+        width: 49.477801%;
+    }
+
+    #box11 {
+        width: 83.150376%;
+    }
+
+    #box13 {
+        width: 84.81391%;
+    }
+
+    #text7 {
+        margin-top: 54px;
+        margin-left: 115px;
+        clear: none;
+    }
+
+    #text8 {
+        height: auto;
+        width: 58.832511%;
+        margin-top: 32px;
+        margin-left: 90px;
+        clear: none;
+    }
+
+    #box15 {
+        width: 84.945489%;
+    }
+
+    #child1 {
+        width: 82.640977%;
+        margin-left: 2.684211%;
+        clear: none;
+    }
+
+    #text {
+        height: auto;
+        width: 56.201524%;
+        max-width: none;
+        margin-top: 50.84375px;
+        margin-left: 86px;
+        clear: none;
+    }
+
+    #box1 {
+        width: 86.573308%;
+    }
+
+    #text1 {
+        margin-top: 36.96875px;
+        margin-left: 86px;
+        clear: none;
+        width: 51.09%;
+    }
+
+    #box5 {
+        width: 85.9%;
+    }
+
+    #box9 {
+        width: 83.89%;
+    }
+
+    #bottom {
+        float: left;
+        height: 170px;
+        margin: 0px;
+        clear: none;
+        width: 100%;
+        padding: 30px;
+    }
+
+    #iprice-logo {
+        float: left;
+        height: auto;
+        margin: 20px 0px 0px;
+        clear: none;
+        width: auto;
+        display: block;
+    }
+
+    #image20 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #coupon-logo {
+        float: right;
+        height: 120.078125px;
+        margin: 0px;
+        clear: none;
+        display: block;
+    }
+
+    #image21 {
+        float: left;
+        width: 100%;
+        max-width: none;
+        height: 120.08px;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image {
+        float: left;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+        min-width: 0px;
+    }
+
+    #textspan {
+        float: none;
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: 900;
+    }
+
+    #textspan1 {
+        float: none;
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: 900;
+    }
+}
+

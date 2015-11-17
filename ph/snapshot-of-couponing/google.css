@@ -1,0 +1,89 @@
+/* CSS Document */
+
+
+
+.share li:nth-of-type(3) .socials-links,
+.share li:nth-of-type(3) .socials-links:hover {
+	background-repeat: no-repeat;
+	background-position: 50% 50% no-repeat;
+	background-image: url("http://i.imgur.com/WFBchID.png");
+	background-color: #dd4b38;
+	background-size: 25px auto;
+}
+
+.share li:nth-of-type(3) .navi-labels {
+  -moz-transition: background 0.4s ease, -moz-transform 0.4s ease 0.1s;
+  -o-transition: background 0.4s ease, -o-transform 0.4s ease 0.1s;
+  -webkit-transition: background 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition-delay: 0s, 0.1s;
+  transition: background 0.4s ease, transform 0.4s ease 0.1s;
+  background: #a62c15;
+}
+
+.share li:nth-of-type(3) .socials-links:hover .navi-labels {
+  -moz-transition: -moz-transform 0.4s ease, background 0.4s ease 0.1s;
+  -o-transition: -o-transform 0.4s ease, background 0.4s ease 0.1s;
+  -webkit-transition: -webkit-transform 0.4s ease, background 0.4s ease;
+  -webkit-transition-delay: 0s, 0.1s;
+  transition: transform 0.4s ease, background 0.4s ease 0.1s;
+  background: #dd4b38;
+}
+
+.share li .socials-links {
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  padding: 15px 20px;
+  background: #dd4b38;
+	background-image: url("http://i.imgur.com/WFBchID.png");
+	background-position: 50% 50%;
+	background-size: 25px auto;
+	background-repeat: no-repeat;
+}
+
+.share li .socials-links .navi-labels {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: white;
+  display: block;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  top: 0rem;
+  margin-left: 40px;
+  line-height: 64px;
+  padding: 0 20px;
+  white-space: nowrap;
+  z-index: 4;
+  -moz-transition: -moz-transform 0.4s ease;
+  -o-transition: -o-transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -webkit-transform-origin: left 50%;
+  transform-origin: left 50%;
+  -moz-transform: rotateY(-90deg);
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  background: #dd4b38;
+}
+
+.share li .socials-links .navi-labels span {
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -webkit-transform-origin: left 50%;
+  transform-origin: left 50%;
+  -moz-transform: rotateY(-90deg);
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+.share li .socials-links:hover .navi-labels,
+.share li .socials-links:hover .navi-labels span {
+  -moz-transform: rotateY(0);
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}

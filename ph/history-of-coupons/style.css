@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+}
+
+.share {
+	position: fixed;
+	left: 0;
+	top: 50%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#facebook{
+	}
+
+#whatsapp{
+	}
+
+.share li {
+  position: relative;
+}
+
+.share li:nth-of-type(1) .social-link,
+.share li:nth-of-type(1) .social-link:hover {
+  background: #3B5998 url("http://i.imgur.com/u9gLigk.png") 50% 50% no-repeat;
+  background-size: 25px auto; 
+}
+
+.share li:nth-of-type(1) .nav-label {
+  -moz-transition: background 0.4s ease, -moz-transform 0.4s ease 0.1s;
+  -o-transition: background 0.4s ease, -o-transform 0.4s ease 0.1s;
+  -webkit-transition: background 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition-delay: 0s, 0.1s;
+  transition: background 0.4s ease, transform 0.4s ease 0.1s;
+  background: #1e2e4f;
+}
+
+.share li:nth-of-type(1) .social-link:hover .nav-label {
+  -moz-transition: -moz-transform 0.4s ease, background 0.4s ease 0.1s;
+  -o-transition: -o-transform 0.4s ease, background 0.4s ease 0.1s;
+  -webkit-transition: -webkit-transform 0.4s ease, background 0.4s ease;
+  -webkit-transition-delay: 0s, 0.1s;
+  transition: transform 0.4s ease, background 0.4s ease 0.1s;
+  background: #3B5998;
+}
+
+.share li:nth-of-type(2) .social-link,
+.share li:nth-of-type(2) .social-link:hover {
+	background: rgba(0, 0, 0, 0) url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M16.2%204.76c-6.05%200-10.95%204.9-10.95%2010.95%200%202.07.57%204%201.57%205.649l-1.98%205.881%206.06-1.94c1.57.87%203.37%201.36%205.29%201.36%206.05%200%2010.951-4.9%2010.951-10.95.019-6.05-4.891-10.95-10.941-10.95zm0%2020.07c-1.85%200-3.58-.561-5.02-1.51l-3.5%201.119%201.14-3.39c-1.09-1.5-1.74-3.35-1.74-5.35%200-5.03%204.09-9.12%209.12-9.12s9.12%204.09%209.12%209.12c0%205.041-4.09%209.131-9.12%209.131zm5.14-6.63c-.27-.15-1.619-.88-1.88-.98-.26-.1-.44-.159-.63.12-.2.27-.76.88-.93%201.061-.17.18-.33.199-.61.05-.271-.15-1.16-.48-2.2-1.47-.8-.771-1.33-1.71-1.48-1.99-.15-.29%200-.43.14-.57l.44-.47c.15-.15.2-.27.3-.46.1-.18.06-.35-.01-.49-.06-.14-.57-1.54-.78-2.11-.21-.57-.45-.48-.61-.49l-.53-.04s-.49.05-.76.32-1.01.92-1.07%202.3.9%202.74%201.03%202.93c.13.19%201.82%203.17%204.62%204.4%202.8%201.229%202.82.85%203.33.83.511-.031%201.681-.61%201.94-1.261.26-.64.279-1.2.209-1.319-.059-.131-.25-.211-.519-.361z%22%2F%3E%3C%2Fsvg%3E") no-repeat scroll center;
+}
+  background-size: 25px auto;
+}
+
+.share li:nth-of-type(2) .nav-label {
+  -moz-transition: background 0.4s ease, -moz-transform 0.4s ease 0.1s;
+  -o-transition: background 0.4s ease, -o-transform 0.4s ease 0.1s;
+  -webkit-transition: background 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition-delay: 0s, 0.1s;
+  transition: background 0.4s ease, transform 0.4s ease 0.1s;
+  background: #0065d9;
+}
+
+.share li:nth-of-type(2) .social-link:hover .nav-label {
+  -moz-transition: -moz-transform 0.4s ease, background 0.4s ease 0.1s;
+  -o-transition: -o-transform 0.4s ease, background 0.4s ease 0.1s;
+  -webkit-transition: -webkit-transform 0.4s ease, background 0.4s ease;
+  -webkit-transition-delay: 0s, 0.1s;
+  transition: transform 0.4s ease, background 0.4s ease 0.1s;
+  background: #29a628 ;
+}
+
+.share li .social-link {
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  padding: 15px 20px;
+  background: #29a628  none repeat scroll 0 0; 
+  
+}
+
+
+.share li .social-link .nav-label {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: white;
+  display: block;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  top: 0rem;
+  margin-left: 40px;
+  line-height: 64px;
+  padding: 0 20px;
+  white-space: nowrap;
+  z-index: 4;
+  -moz-transition: -moz-transform 0.4s ease;
+  -o-transition: -o-transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -webkit-transform-origin: left 50%;
+  transform-origin: left 50%;
+  -moz-transform: rotateY(-90deg);
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+.share li .social-link .nav-label span {
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -webkit-transform-origin: left 50%;
+  transform-origin: left 50%;
+  -moz-transform: rotateY(-90deg);
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+.share li .social-link:hover .nav-label,
+.share li .social-link:hover .nav-label span {
+  -moz-transform: rotateY(0);
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
