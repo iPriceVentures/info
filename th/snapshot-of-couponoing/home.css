@@ -1,0 +1,2049 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+#menu{
+float:left;
+position:fixed;
+top:10px;
+z-index:50;	
+width:250px;
+color:#49C2C6;
+}
+
+.buttons {
+color:#49C2C6;
+margin-left:20px;
+font-weight:900;
+font-size:13px;
+float:left;
+cursor:pointer;
+}
+
+.buttons:hover{
+color: rgb(255, 102, 51);
+
+}
+
+#headr {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+}
+
+#popular-coupons {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+#image {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 0px;
+}
+
+#inner-container {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+}
+
+#H-G {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#tech {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#text {
+    float: left;
+    font-size: 30px;
+    width: 84.133065%;
+    height: auto;
+    text-align: center;
+    font-weight: 900;
+    line-height: 25px;
+    margin-left: 7.328629%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 38px;
+    color: rgb(255, 102, 51);
+    font-family: 'Noto Sans';
+}
+
+#travel {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#sport {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#baby {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#gift {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#fashion {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#books {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#going_out {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#others {
+    float: left;
+    height: 154px;
+    margin: 0px;
+    clear: none;
+    width: 151px;
+    padding: 15px;
+    max-width: none;
+}
+
+#catigories {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 55px;
+    clear: none;
+    width: 94.57%;
+    margin-right: auto;
+    max-width: 757px;
+}
+
+#light-blue {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    width: 100%;
+    background-color: rgb(51, 204, 204);
+    padding: 40px 0px;
+}
+
+#wrapper {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 88.81%;
+    margin-right: auto;
+    max-width: 762px;
+}
+
+#text1 {
+    float: none;
+    font-size: 30px;
+    width: 71.37%;
+    height: auto;
+    text-align: center;
+    font-weight: 900;
+    line-height: 25px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    min-height: 52px;
+    color: rgb(8, 106, 135);
+    margin-right: auto;
+}
+
+#consumers {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: both;
+    width: 233px;
+    padding: 34px 15px 0px 26px;
+    min-width: 0px;
+    max-width: 382px;
+}
+
+#couponers {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 265.22px;
+    padding: 34px 15px 0px 26px;
+    max-width: 382px;
+}
+
+#nearly {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 240px;
+    padding: 34px 15px 0px 26px;
+    max-width: 382px;
+}
+
+#child {
+    float: none;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    max-width: 741px;
+}
+
+#line {
+    float: right;
+    height: 2px;
+    margin: 22px 20px 0px 0px;
+    clear: none;
+    width: 89.219313%;
+    min-width: 0px;
+    border: 1px dashed rgb(8, 106, 135);
+}
+
+#cecear {
+    float: left;
+    height: 42.03125px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 6.319864%;
+    margin-right: 0%;
+}
+
+#image11 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: 42.45px;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    min-width: 36.31px;
+}
+
+#lins {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: auto;
+    min-width: 0px;
+}
+
+#blue {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: -0.015625px;
+    clear: none;
+    width: 100%;
+    background-color: rgb(8, 106, 135);
+    margin-right: auto;
+    padding: 0px 0px 40px;
+}
+
+#box {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: auto;
+    padding: 45px 45px 0px 0px;
+}
+
+#image12 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#text6 {
+    float: left;
+    font-size: 18px;
+    width: 100.001187%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    max-width: 319px;
+    margin-right: 0px;
+}
+
+#coupon-code {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    width: 99.444278%;
+}
+
+#sms {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    width: 100.000748%;
+}
+
+#box1 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: auto;
+    padding: 45px 45px 0px 0px;
+}
+
+#text7 {
+    float: left;
+    font-size: 18px;
+    width: 100.001187%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    max-width: 319px;
+    margin-right: 0px;
+}
+
+#image13 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#geo {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    width: 100.000748%;
+}
+
+#box2 {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 32.898641%;
+    padding: 45px 45px 0px 0px;
+    min-width: 149px;
+    max-width: 149px;
+}
+
+#text8 {
+    float: left;
+    font-size: 18px;
+    width: 100.001187%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 255, 255);
+    max-width: 319px;
+    margin-right: 0px;
+}
+
+#textspan7 {
+    float: none;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: 900;
+}
+
+#image14 {
+    float: left;
+    width: 68.654105%;
+    height: 82.421875px;
+    margin: 0.03813374125866176px 0px 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    max-width: none;
+}
+
+#avarage {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: auto;
+    margin-right: 0%;
+}
+
+#subject {
+    float: right;
+    height: 84px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 99.96%;
+    margin-right: 0px;
+    border: 5px solid rgb(51, 204, 204);
+    padding: 10px;
+    max-width: none;
+    min-width: 0px;
+}
+
+#white {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 89.15%;
+    margin-right: auto;
+    padding: 40px 0px;
+}
+
+#text9 {
+    float: left;
+    font-size: 25px;
+    width: 101.231637%;
+    height: auto;
+    text-align: left;
+    font-weight: 900;
+    line-height: 25px;
+    margin: 0px 0px 0px 0.5px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(255, 102, 51);
+    min-width: 0px;
+}
+
+#chart {
+    float: left;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 32px;
+    clear: none;
+    width: 99.209206%;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-width: 0px;
+    margin-right: 0%;
+}
+
+#title {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    width: 303.35px;
+}
+
+#text5 {
+    float: left;
+    font-size: 25px;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    font-weight: 900;
+    line-height: 25px;
+    margin: 0px auto;
+    clear: none;
+    min-height: 34.046875px;
+    color: rgb(51, 204, 204);
+    min-width: 0px;
+}
+
+#sub-container {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 42.9375px;
+    clear: none;
+    width: 85.96%;
+    margin-right: auto;
+}
+
+#consequence {
+    float: left;
+    height: auto;
+    margin: 118px 0px 0px;
+    clear: both;
+    width: 100%;
+}
+
+#sec-inner {
+    float: left;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    min-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#sec-blue {
+    float: left;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    background-color: rgb(8, 106, 135);
+    min-width: 0px;
+}
+
+#topic {
+    float: left;
+    height: 114.15625px;
+    margin: 0px;
+    clear: none;
+    width: 100%;
+}
+
+#the-start {
+    float: left;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    width: 262.45px;
+}
+
+#products {
+    float: left;
+    height: auto;
+    margin: 25px 0px 0px;
+    clear: none;
+    width: 262.45px;
+    display: block;
+}
+
+#weekends {
+    float: left;
+    height: auto;
+    margin: 25px 0px 0px;
+    clear: both;
+    width: 262.45px;
+    display: block;
+}
+
+#special {
+    float: left;
+    height: auto;
+    margin: 0px 0px 0px 20px;
+    clear: none;
+    width: 262.45px;
+    display: block;
+}
+
+#holiday {
+    float: left;
+    height: auto;
+    margin: 25px 0px 0px 20px;
+    clear: both;
+    width: 262.45px;
+    display: block;
+}
+
+#inner {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+#sec-child {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+}
+
+#_1-2-3 {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    max-width: 262.44px;
+    margin-right: auto;
+}
+
+#_4-5 {
+    float: none;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    max-width: 262.44px;
+    margin-right: auto;
+}
+
+#background {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+}
+
+#box3 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 19.328125px;
+    clear: both;
+    width: 100%;
+    border: 2px dashed rgb(51, 204, 204);
+    padding: 40px 25px;
+}
+
+#footer {
+    float: left;
+    height: 98px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    display: none;
+}
+
+#text10 {
+    float: left;
+    font-size: 1em;
+    width: 255.37px;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0px;
+    margin-top: 15.734375px;
+    clear: none;
+    min-height: 106px;
+}
+
+#textspan9 {
+    float: none;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 900;
+    font-family: 'Noto Sans';
+    color: rgb(8, 106, 135);
+}
+
+#textspan11 {
+    float: none;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 900;
+    font-family: 'Noto Sans';
+    color: rgb(255, 102, 51);
+}
+
+#coupons-logo {
+    float: right;
+    height: 128px;
+    margin-left: 0px;
+    margin-top: 161.734375px;
+    clear: none;
+    width: 132.37px;
+    margin-right: 36.922554%;
+}
+
+#image23 {
+    float: left;
+    width: 100%;
+    max-width: none;
+    height: 128.3px;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#text2 {
+    float: left;
+    font-size: 20px;
+    width: 90.852866%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 0px;
+    clear: none;
+    min-height: 94px;
+    color: rgb(8, 106, 135);
+    font-family: 'Noto Sans';
+}
+
+#text3 {
+    float: left;
+    font-size: 20px;
+    width: 85.79791%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 0px;
+    clear: none;
+    min-height: 146px;
+    color: rgb(8, 106, 135);
+    font-family: 'Noto Sans';
+}
+
+#text4 {
+    float: left;
+    font-size: 20px;
+    width: 85.552764%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 0px;
+    clear: none;
+    min-height: 0px;
+    font-family: 'Noto Sans';
+    color: rgb(8, 106, 135);
+}
+
+#textspan {
+    font-size: 43px;
+    font-weight: 900;
+}
+
+#iprice-logo {
+    float: right;
+    height: 61.875px;
+    margin-left: 0px;
+    margin-top: 11px;
+    clear: none;
+    width: 197.42px;
+    margin-right: 1.945963%;
+}
+
+#image24 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#textspan10 {
+    float: none;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 900;
+    font-family: 'Noto Sans';
+    color: rgb(255, 102, 51);
+}
+
+#textspan12 {
+    float: none;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 900;
+    font-family: 'Noto Sans';
+    color: rgb(255, 102, 51);
+}
+
+#image1 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image2 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image3 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image4 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image5 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image6 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image7 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image8 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image9 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image10 {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image18 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image17 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image19 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image20 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image21 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image22 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image15 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image16 {
+    float: left;
+    width: 93.8699%;
+    max-width: none;
+    height: 303.5px;
+    margin: 0px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#textspan5 {
+    font-size: 33px;
+    font-weight: 900;
+}
+
+#textspan3 {
+    font-size: 33px;
+    font-weight: 900;
+}
+
+#textspan2 {
+    font-size: 27px;
+}
+
+#textspan1 {
+    font-size: 31px;
+}
+
+@media only screen and (min-width: 300px) {
+    #sec-child {
+        width: 89%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+        margin-top: 142px;
+    }
+
+    #topic {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: none;
+    }
+	
+	#title {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    width: 100%;
+}
+
+
+    #light-blue {
+        clear: none;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-top: 0px;
+    }
+
+    #blue {
+        margin-top: 0px;
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+    }
+
+    #white {
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #sec-blue {
+        margin-left: 0px;
+        clear: none;
+    }
+
+    #consequence {
+        margin-top: 34px;
+    }
+
+    #headr {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+
+    #inner-container {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+
+    #text9 {
+	height: auto;
+	width: 100%;
+	margin-left: auto;
+	float: none;
+	clear: none;
+	margin-top: 0px;
+	margin-right: auto;
+    }
+
+    #inner {
+        margin: 40px 0px;
+    }
+
+    #text5 {
+        float: none;
+        clear: none;
+    }
+
+    #subject {
+        height: auto;
+    }
+
+    #text8 {
+        width: 68.979964%;
+    }
+
+    #text7 {
+        width: 92%;
+    }
+
+    #text6 {
+        width: 92%;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    #text10 {
+        height: auto;
+        margin-top: 35px;
+        clear: none;
+    }
+
+    #image23 {
+        width: 100%;
+    }
+
+    #coupons-logo {
+        clear: none;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+    }
+
+    #holiday {
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+    #special {
+        margin-left: 0px;
+    }
+
+    #_4-5 {
+        max-width: none;
+        width: 262px;
+        margin-top: 20px;
+    }
+
+    #weekends {
+        clear: none;
+    }
+
+    #_1-2-3 {
+        width: 262px;
+    }
+
+    #iprice-logo {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+        margin-top: 35px;
+    }
+
+    #image24 {
+        width: 197.40625px;
+        max-width: none;
+        height: 60.546875px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+
+    #couponers {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #nearly {
+        margin: 0px;
+        clear: none;
+    }
+
+    #cecear {
+        width: 12.912945%;
+    }
+
+    #line {
+        width: 79.62%;
+    }
+
+    #image17 {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+
+    #image16 {
+        height: 283.33px;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+	
+	#text9{
+	width:320px;
+	}
+	}
+
+
+@media only screen and (min-width: 650px) {
+    #topic {
+        max-width: 476px;
+        width: 70.103093%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+        margin-top: 0px;
+    }
+
+    #sec-child {
+        margin-top: 25.84px;
+        clear: none;
+        margin-left: auto;
+        width: 87.99%;
+        margin-right: auto;
+        min-width: 0px;
+        float: none;
+        max-width: none;
+    }
+
+    #_4-5 {
+        max-width: 262.44px;
+        margin-left: 0px;
+        margin-right: 0px;
+        float: right;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #special {
+        width: 240.45px;
+        clear: none;
+    }
+
+    #holiday {
+        width: 242.45px;
+        clear: both;
+    }
+
+    #inner {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+        margin-top: 0px;
+    }
+
+    #chart {
+        width: 66.621199%;
+        margin-left: 0px;
+        clear: none;
+        height: 335.5px;
+        min-width: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #consequence {
+        width: 100%;
+        min-width: 0px;
+        clear: none;
+        margin-top: 19px;
+    }
+
+    #text9 {
+	margin-left: auto;
+	float: none;
+	clear: none;
+	height: auto;
+	margin-top: 0px;
+	width: 56.1%;
+	margin-right: auto;
+	max-width: none;
+    }
+
+    #subject {
+        height: auto;
+    }
+
+    #white {
+        width: 100%;
+        min-width: 0px;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #sec-inner {
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+    }
+
+    #_1-2-3 {
+        margin-left: 0px;
+        margin-right: 0px;
+        float: left;
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #coupon-code {
+        margin-top: 0px;
+        clear: none;
+    }
+
+    #image {
+        max-width: none;
+        width: 100%;
+        height: auto;
+    }
+
+    #background {
+        float: left;
+        margin-left: 0%;
+        margin-top: 0px;
+        clear: none;
+        width: 100%;
+    }
+
+    #inner-container {
+        margin-top: 0px;
+        clear: none;
+        width: 100%;
+    }
+
+    #light-blue {
+        margin-top: 0px;
+        clear: none;
+        width: 100%;
+    }
+
+    #headr {
+        width: 100%;
+    }
+
+    #blue {
+        margin-top: 0px;
+        clear: none;
+        width: 100%;
+    }
+
+    #sec-blue {
+        margin-left: 0px;
+        clear: none;
+        margin-right: 0%;
+        width: 100%;
+    }
+
+    #title {
+        clear: none;
+		width:300px;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    #consumers {
+        clear: none;
+    }
+
+    #image23 {
+        margin-left: 0px;
+        margin-right: 0px;
+        float: left;
+    }
+
+    #coupons-logo {
+        margin-top: 0px;
+        clear: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        float: right;
+    }
+
+    #text10 {
+        margin-top: 0px;
+        clear: none;
+        margin-left: 0px;
+    }
+
+    #text2 {
+        width: 99.707273%;
+        height: auto;
+    }
+
+    #couponers {
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: none;
+    }
+
+    #text6 {
+        margin-left: 0px;
+        margin-right: 0px;
+        float: right;
+        margin-top: 20px;
+        clear: none;
+        height: auto;
+        width: 68.563712%;
+        max-width: none;
+    }
+
+    #text7 {
+        margin-left: 0px;
+        margin-right: 0px;
+        float: right;
+        margin-top: 20px;
+        clear: none;
+        height: auto;
+        width: 68.460432%;
+        max-width: none;
+    }
+
+    #text8 {
+        margin-left: 0px;
+        margin-right: 0px;
+        float: right;
+        margin-top: 20px;
+        clear: none;
+        height: auto;
+        width: 68.460432%;
+        max-width: none;
+    }
+
+    #iprice-logo {
+        margin-right: 4.573228%;
+        margin-top: 29px;
+        clear: none;
+        margin-left: 0px;
+        float: right;
+    }
+
+    #sub-container {
+        width: 83.96%;
+    }
+
+    #image16 {
+        height: 321.203125px;
+        width: 99.344026%;
+        max-width: none;
+    }
+}
+
+@media only screen and (min-width: 808px) {
+    #background {
+        width: 831.25px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        clear: none;
+        -webkit-box-shadow: rgba(91, 91, 91, 0.470588) 0px 2px 3px 3px;
+        box-shadow: rgba(91, 91, 91, 0.470588) 0px 2px 3px 3px;
+    }
+
+    #coupon-code {
+        width: auto;
+        margin-top: 0px;
+    }
+
+    #sms {
+        width: auto;
+    }
+
+    #geo {
+        width: auto;
+    }
+
+    #text9 {
+        height: auto;
+        margin-top: 0px;
+        margin-left: auto;
+        clear: none;
+        width: 64.871157%;
+        margin-right: auto;
+        line-height: 32px;
+    }
+
+    #subject {
+	width: 47.4174%;
+	margin-right: 92.61px;
+	margin-top: 0px;
+	clear: none;
+    }
+
+    #consequence {
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+        margin-top: 125px;
+    }
+
+    #chart {
+        width: 63.763943%;
+        margin: 0px 0px 0px 38px;
+        clear: none;
+    }
+
+    #products {
+        margin: 24px 0px 0px;
+        clear: both;
+    }
+
+    #weekends {
+        margin-top: 24.625px;
+        margin-left: 0px;
+        clear: both;
+    }
+
+    #holiday {
+        width: 300px;
+    }
+
+    #box3 {
+        float: left;
+        margin-left: 0%;
+        margin-top: 19.328125px;
+        clear: none;
+        width: 100%;
+        border: 2px dashed rgb(51, 204, 204);
+        padding-right: 25px;
+    }
+
+    #footer {
+        float: left;
+        height: 98px;
+        margin-left: 0%;
+        margin-top: 0px;
+        clear: none;
+        width: 100%;
+        display: block;
+    }
+
+    #coupons-logo {
+        margin-top: 0px;
+        clear: none;
+        display: block;
+    }
+
+    #text10 {
+        height: auto;
+        min-height: 76px;
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: none;
+    }
+
+    #nearly {
+        height: 227px;
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: none;
+    }
+
+    #couponers {
+        height: 227px;
+        margin-top: 0px;
+        margin-left: 0px;
+        clear: none;
+    }
+
+    #consumers {
+        height: 227px;
+    }
+
+    #text2 {
+        float: left;
+        font-size: 20px;
+        width: 90.852866%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        line-height: 25px;
+        margin: 0px;
+        clear: none;
+        min-height: 94px;
+        font-family: 'Noto Sans';
+    }
+
+    #wrapper {
+        margin-top: 0px;
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+        height: auto;
+    }
+
+    #textspan {
+        float: none;
+    }
+
+    #text3 {
+        float: left;
+        width: 85.79791%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        margin: 0px;
+        clear: none;
+        min-height: 146px;
+        font-family: 'Noto Sans';
+    }
+
+    #child {
+        clear: none;
+    }
+
+    #text4 {
+        float: left;
+        width: 85.552764%;
+        height: auto;
+        text-align: left;
+        font-weight: normal;
+        margin: 0px;
+        clear: none;
+        min-height: 0px;
+        font-family: 'Noto Sans';
+    }
+
+    #textspan9 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    #textspan11 {
+        line-height: 28px;
+    }
+
+    #_4-5 {
+        margin: -234.96875px 0px 0px 166.42px;
+        width: 300px;
+        max-width: none;
+        clear: both;
+    }
+
+    #text5 {
+        min-height: 0px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #image12 {
+        max-width: none;
+        height: 121px;
+        width: 98.732123%;
+    }
+
+    #box {
+        height: 166px;
+        width: 27.856987%;
+        margin-top: 0px;
+        margin-left: 10px;
+        clear: none;
+    }
+
+    #box1 {
+        height: 185.171875px;
+        width: 27.856987%;
+        margin-top: 0px;
+        margin-left: 10px;
+        clear: none;
+    }
+
+    #image13 {
+        height: 130.84375px;
+        width: 100%;
+        max-width: none;
+    }
+
+    #box2 {
+        height: 154.453125px;
+        width: 23.682484%;
+        max-width: none;
+        margin-top: 0px;
+        margin-left: 10px;
+        clear: none;
+    }
+
+    #image14 {
+        height: 109.421875px;
+        width: 91.132075%;
+        max-width: none;
+    }
+
+    #text6 {
+        height: auto;
+        width: 61.07588%;
+        max-width: none;
+        margin-top: 62px;
+    }
+
+    #text7 {
+        height: auto;
+        width: 60.70632%;
+        max-width: none;
+        margin-top: 52px;
+    }
+
+    #text8 {
+	height: auto;
+	width: 60.70632%;
+	max-width: none;
+	margin-top: 50px;
+    }
+
+    #image23 {
+        display: block;
+    }
+
+    #iprice-logo {
+        float: right;
+        height: 61.875px;
+        margin-left: 0px;
+        margin-top: 11px;
+        clear: none;
+        margin-right: 1.945963%;
+        display: block;
+    }
+
+    #image24 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+        display: block;
+    }
+
+    #title {
+        margin-top: 0px;
+        clear: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #textspan10 {
+        float: none;
+        font-size: 1em;
+        line-height: 28px;
+    }
+
+    #textspan12 {
+        float: none;
+        font-size: 1em;
+        line-height: 28px;
+    }
+
+    #textspan6 {
+        float: none;
+        font-size: 20px;
+        line-height: 1em;
+        font-weight: 900;
+    }
+
+    #textspan8 {
+        float: none;
+        font-size: 20px;
+        line-height: 1em;
+        font-weight: 900;
+    }
+
+    #special {
+        width: 300px;
+    }
+
+    #textspan1 {
+        float: none;
+        line-height: 1em;
+    }
+
+    #textspan2 {
+        float: none;
+        line-height: 1em;
+    }
+
+    #textspan4 {
+        float: none;
+        font-size: 33px;
+        line-height: 1em;
+        font-weight: 900;
+    }
+
+    #textspan5 {
+        float: none;
+        line-height: 1em;
+    }
+
+    #image1 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image2 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image3 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image4 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image5 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image6 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image7 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image8 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image9 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image10 {
+        float: none;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px auto;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image18 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image17 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image19 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image20 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image21 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image22 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image15 {
+        float: left;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #image16 {
+        float: left;
+        width: 93.8699%;
+        max-width: none;
+        height: 303.5px;
+        margin: 0px;
+        clear: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #textspan3 {
+        float: none;
+        line-height: 1em;
+    }
+}
