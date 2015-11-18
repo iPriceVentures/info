@@ -1,0 +1,39 @@
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="172.3px" height="148px" viewBox="0 0 172.3 148" style="enable-background:new 0 0 172.3 148;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#33CCCC;}
+	.st1{fill:#FFFFFF;stroke:#FF6633;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#FF6633;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#086A87;}
+	.st4{fill:#FF6633;}
+	.st5{fill:#FFFFFF;}
+</style>
+<defs>
+</defs>
+<g>
+	<rect x="14.2" y="25" class="st0" width="147" height="29"/>
+	<rect x="14.2" y="54" class="st1" width="144" height="93"/>
+	<polygon class="st1" points="170.7,83 1.5,83 14,54 157.9,54 	"/>
+	<rect x="66.2" y="92" class="st0" width="45" height="55"/>
+	<line class="st2" x1="74.7" y1="126.8" x2="94.6" y2="106.9"/>
+	<line class="st2" x1="75.7" y1="136.8" x2="95.6" y2="116.9"/>
+	<path class="st3" d="M105.2,130.5c0,0.8-0.7,1.5-1.5,1.5l0,0c-0.8,0-1.5-0.7-1.5-1.5v-17c0-0.8,0.7-1.5,1.5-1.5l0,0
+		c0.8,0,1.5,0.7,1.5,1.5V130.5z"/>
+	<rect x="58.2" y="92" class="st1" width="61" height="8"/>
+	<rect x="86.2" class="st4" width="51" height="54"/>
+	<g>
+		<circle class="st5" cx="94" cy="11.3" r="3.2"/>
+		<path class="st5" d="M130.4,15h-9.6c-0.5,0-1,0.4-1.4,0.7l-18,18.1c-0.8,0.8-0.8,2,0,2.8l9.6,9.6c0.8,0.8,2,0.8,2.7,0l17.9-18
+			c0.4-0.4,0.5-0.9,0.5-1.4v-9.6C132.2,16.2,131.5,15,130.4,15z"/>
+		<circle class="st4" cx="125.2" cy="22.3" r="2.3"/>
+		<circle class="st5" cx="100.4" cy="6.1" r="3.2"/>
+		<circle class="st4" cx="100.4" cy="6.1" r="2.1"/>
+		<circle class="st4" cx="94" cy="11.3" r="2.1"/>
+		<path class="st5" d="M102.1,22.2L99.3,8.3l-2.1-1.2l2.8,13.6c0,0.2,0.1,0.4,0.2,0.6C100.5,21.9,101.1,22.4,102.1,22.2z"/>
+		<path class="st5" d="M107.4,16.3L96,8.8l0.4,2.5l11.8,7.8c0.6-0.9,0.2-1.7-0.3-2.3C107.8,16.6,107.6,16.4,107.4,16.3z"/>
+	</g>
+</g>
+</svg>
