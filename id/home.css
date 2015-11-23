@@ -6,17 +6,14 @@
 }
 
 #placeholder{
-background-color:#4ac2c6;
-width:100%;
-height: 250px;
 
+width:100%;
+height: auto;
+margin-top:10px;
+margin-bottom:10px;
 margin-right:auto;
 margin-left:auto;
-background-image: url("img/bg.svg");
-background-size: 100%;
-background-max-size:100%;
-   
-background-repeat: no-repeat no-repeat;
+
 
 
 }
@@ -95,10 +92,8 @@ outline: 0;
 
 #office {
 	float: none;
-	height: 116px;
-	margin: 40px auto 0px;
+	margin: 40px auto ;
 	clear: none;
-	width: 100%;
 	background-image: url("img/office1.svg");
 	background-attachment: scroll;
 	-webkit-background-size: 80%;
@@ -106,6 +101,22 @@ outline: 0;
 	background-position: 50% 0%;
 	background-repeat: no-repeat no-repeat;
 }
+
+#coupons {
+	float: none;
+	margin-left:auto;
+	margin-right:auto;
+	clear: none;
+	width: 100%;
+	background-image: url("img/cp.svg");
+	background-attachment: scroll;
+	-webkit-background-size: 80%;
+	background-size: 60%;
+	background-position: 50% 0%;
+	background-repeat: no-repeat no-repeat;
+	
+}
+
 
 #characters {
 	float: none;
@@ -122,6 +133,21 @@ outline: 0;
 	margin-top: 40px;
 }
 
+#history {
+	float: none;
+	height: 190px;
+	margin: auto 0px;
+	clear: none;
+	width: 100%;
+	background-image: url("img/time1.svg");
+	background-attachment: scroll;
+	-webkit-background-size: 80%;
+	background-size: 60%;
+	background-position: 50% 0%;
+	background-repeat: no-repeat no-repeat;
+	
+}
+
 #blue:hover #characters{
     background-image:url("img/characters2.svg");
     background-attachment: scroll;
@@ -131,12 +157,31 @@ outline: 0;
     background-repeat: no-repeat no-repeat;
 }
 
+#pink:hover #history{
+    background-image:url("img/time.svg");
+    background-attachment: scroll;
+    -webkit-background-size: 80%;
+    background-size: 60%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#purple:hover #coupons{
+    background-image:url("img/couponing.svg");
+    background-attachment: scroll;
+    -webkit-background-size: 80%;
+    background-size: 80%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+
 #orange:hover #office {
 	background-image: url("img/office2.svg");
 	background-attachment: scroll;
 	-webkit-background-size: 80%;
 	background-size: 80%;
-	height: 301px;
+	
 	background-position: 50% 0%;
 	background-repeat: no-repeat no-repeat;
 }
@@ -529,36 +574,49 @@ outline: 0;
     height:auto;
     margin-right: auto;
 	margin-left:auto;
+	
     background-color: rgb(8, 106, 135);
-}
-
-#yellow {
-    float: left;
-    height: 480px;
-    margin-left: 0%;
-    margin-top: 0px;
-    clear: none;
-    width: 100%;
-    margin-right: 0%;
-    background-color: rgb(255, 192, 51);
+	position:relative;
+	z-index:1;
 }
 
 #pink {
-    float: left;
-    height: 480px;
-    margin-left: 0%;
-    margin-top: 0px;
-    clear: none;
-    width: 100%;
-    margin-right: 0px;
-    background-color: rgb(233, 104, 148);
+    
+	padding-top:40px;
+	padding-bottom:40px;
+	padding-right:40px;
+	padding-left:40px;
+    clear: both;
+    height:auto;
+    margin-right: auto;
+	margin-left:auto;
+    background-color: #E86894;
+	position:relative;
+	z-index:0;
 }
+
+#purple {
+    
+	padding-top:40px;
+	padding-bottom:40px;
+	padding-right:40px;
+	padding-left:40px;
+    clear: both;
+    height:auto;
+    margin-right: auto;
+	margin-left:auto;
+    background-color: #4782B9;
+	position:relative;
+	z-index:0;
+}
+
 
 #orange {
     
     height: 480px;
     margin-left: auto;
 	margin-right: auto;
+	
 	padding-top:40px;
 	padding-bottom:40px;
 	padding-left: 40px;
@@ -566,6 +624,8 @@ outline: 0;
     clear: none;
     width: 100%;
     background-color: rgb(255, 102, 51);
+	position:relative;
+	z-index:1;
 }
 
 #body-container {
@@ -600,6 +660,20 @@ outline: 0;
     margin-right: auto;
 }
 
+#pink-text {
+    float: none;
+    font-size: 41px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: 500;
+    margin-left: auto;
+    clear: none;
+    color: #FFB5CE;
+    font-family: noto sans;
+    margin-right: auto;
+}
+
 #text1 {
 	float: none;
 	font-size: 41px;
@@ -613,6 +687,22 @@ outline: 0;
 	clear: none;
 	min-height: 0px;
 	color: rgb(255, 222, 148);
+	font-family: noto sans;
+	margin-right: auto;
+}
+
+#purple-text {
+	float: none;
+	font-size: 41px;
+	width: auto;
+	height: auto;
+	text-align: center;
+	font-weight: 500;
+	line-height: 42px;
+	margin-left: auto;
+	clear: none;
+	min-height: 0px;
+	color: #8EC0E8;
 	font-family: noto sans;
 	margin-right: auto;
 }
@@ -663,53 +753,32 @@ outline: 0;
 }
 
 #blue:hover {
-	opacity: 1;
-	margin-left: auto;
-	clear: both;
-	-webkit-box-shadow: rgba(74, 74, 74, 0.6) 0px 8px 8px 0px;
-	box-shadow: rgba(74, 74, 74, 0.6) 0px 8px 8px 0px;
-	margin-right: auto;
+	
 	
 	
 }
 
 #pink:hover {
-    -webkit-box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    opacity: 0.67;
+	
+	
 }
 
-#yellow:hover {
-    -webkit-box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    opacity: 0.67;
-}
 
 #orange:hover {
-	-webkit-box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-	box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-	opacity: 1;
+	
+	
+	
+	}
+	
+	#purple:hover {
+	
 	
 	
 	}
 
-#green:hover {
-    -webkit-box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    opacity: 0.67;
-}
 
-#D_blue:hover {
-    -webkit-box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    opacity: 0.67;
-}
 
-#purple:hover {
-    -webkit-box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    box-shadow: rgba(81, 81, 81, 0.792157) 0px 8px 8px 0px;
-    opacity: 0.67;
-}
+
 
 #box2 {
     float: none;
@@ -853,17 +922,7 @@ outline: 0;
     width: 100%;
 }
 
-#green {
-    float: left;
-    height: 480px;
-    margin-left: 0%;
-    margin-top: 0px;
-    clear: both;
-    width: 100%;
-    margin-right: 0%;
-    background-color: rgb(27, 157, 166);
-    min-height: 0px;
-}
+
 
 #text4 {
 	float: none;
@@ -880,16 +939,7 @@ outline: 0;
 	font-family: Roboto;
 }
 
-#D_blue {
-    float: left;
-    height: 480px;
-    margin-left: 0px;
-    margin-top: 0px;
-    clear: none;
-    width: 100%;
-    margin-right: 0%;
-    background-color: rgb(70, 130, 185);
-}
+
 
 #text5 {
     float: none;
@@ -929,17 +979,6 @@ outline: 0;
     color: rgb(0, 0, 0);
 }
 
-#purple {
-    float: left;
-    height: 480px;
-    margin-left: 0%;
-    margin-top: 0px;
-    clear: both;
-    width: 100%;
-    min-width: 0px;
-    margin-right: 0px;
-    background-color: rgb(113, 126, 201);
-}
 
 #text6 {
     float: none;
@@ -1011,12 +1050,11 @@ outline: 0;
     }
 	
 	#placeholder{
-		margin-right:auto;
-		margin-left:auto;
-		background-color: #4BC2C6;
-		background-size: 200%;
-		background-max-size:100%;
-		
+	margin-right: auto;
+	
+	height:auto;
+	width: 100%;
+	
 		}
 	
 	#icons{
@@ -1056,7 +1094,17 @@ margin-top:80px;
 	
 	#office {
         clear: none;
-		height:259px
+		height:260px;
+		
+    }
+	
+		#coupons {
+	clear: none;
+	margin-top: 40px;
+	width: 100%;
+	height: 300px;
+	background-size:80%;
+		
     }
 	
 
@@ -1064,6 +1112,14 @@ margin-top:80px;
 	#characters {
         clear: none;
         width: 100%;
+        float: none;
+    }
+	
+	#history {
+        clear: none;
+        width: 100%;
+		height:320px;
+		margin-top:40px;
         float: none;
     }
 	
@@ -1127,15 +1183,7 @@ margin-top:80px;
 	margin-left: 0px;	
 	}
 
-    #pink {
-        margin-top: 0px;
-        clear: none;
-        margin-left: 0%;
-        margin-right: 0px;
-        float: left;
-        height: auto;
-    }
-
+    
     #blue {
         height: auto;
         width: 100%;
@@ -1144,6 +1192,16 @@ margin-top:80px;
 		padding-top:40px;
 		padding-bottom:40px;
     }
+	
+	#pink {
+        height: auto;
+        width: 100%;
+		margin-left:auto;
+		margin-right:auto;
+		padding-top:40px;
+		padding-bottom:40px;
+    }
+
 
     #text {
 	
@@ -1157,15 +1215,20 @@ margin-top:80px;
 		margin-left:auto;
 		margin-right:auto;
 		display:block;
+   
+    }
+	
+	  #purple {
         
-        
-        
+        clear: none;
+        height: 480px;
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+   
     }
 
-    #yellow {
-        height: auto;
-    }
-
+    
     #text1 {
         
         clear: none;
@@ -1237,14 +1300,7 @@ margin-top:80px;
         width: 100%;
     }
 
-    #green {
-        margin-top: 0px;
-        margin-left: 0px;
-        clear: none;
-        width: 100%;
-        height: 480px;
-        margin-right: 0px;
-    }
+   
 
     #text4 {
         margin-left: auto;
@@ -1256,25 +1312,13 @@ margin-top:80px;
         margin-right: auto;
     }
 
-    #D_blue {
-        margin-top: 0px;
-        margin-left: 0%;
-        clear: both;
-        width: 100%;
-        height: auto;
-    }
+    
 
     #text5 {
         margin-top: 33px;
     }
 
-    #purple {
-        margin-top: 0px;
-        margin-left: 0%;
-        clear: both;
-        height: 480px;
-    }
-
+   
     #text6 {
         margin-top: 228px;
     }
@@ -1320,6 +1364,8 @@ margin-top:80px;
 }
 
 @media only screen and (min-width: 480px) {
+	
+	
 	
 	#quick{
 	width:200px;	
@@ -1422,10 +1468,10 @@ margin-top:50px;
         margin-top:52px;	
      }	
 	#placeholder{
-	height: 300px;
-	background-color: #4BC2C6;
-	background-size:100%;
-	height:200px;
+	
+	
+	
+	height:auto;
 	}
 	
 	#list{
@@ -1443,11 +1489,30 @@ margin-top:50px;
 	
 	#office {
         clear: none;
-		height:190px;
+		margin-top:40px;
+		height:120px;
+		
+		margin-left:auto;
+		margin-right:auto;
+    }
+	
+	#coupons {
+	clear: none;
+	width: 200px;
+	margin-top: 40px;
+	background-size:80%;
     }
 	
 	#characters {
         width: 100%;
+        float: none;
+        clear: none;
+    }
+	
+	#history {
+        height:100px;
+		width:200px;
+		margin-top:40px;
         float: none;
         clear: none;
     }
@@ -1506,18 +1571,7 @@ margin-top:50px;
 	margin-top:42px;	
 	}
 	
-    #pink {
-        margin-left: 0px;
-        margin-top: 0px;
-        clear: none;
-        margin-right: 0px;
-        float: left;
-        opacity: 1;
-        background-color: rgb(233, 104, 148);
-        width: 50%;
-        height: auto;
-        max-width: none;
-    }
+   
 
     #inner {
         height: auto;
@@ -1532,20 +1586,27 @@ margin-top:50px;
     #orange {
         
         opacity: 1;
-        width: 50%;
+        width: 49%;
 		height:350px;
 		float:left;
-		margin:0px;
+		margin-left:5px;
+		margin-top:10px;
+       
+    }
+	
+	 #purple {
+        
+        opacity: 1;
+        width: 49%;
+		height:350px;
+		float:left;
+		
+		margin-top:10px;
+		margin-left:5px;
        
     }
 
-    #yellow {
-        height: 283px;
-        opacity: 1;
-        background-color: rgb(255, 192, 51);
-        width: 100%;
-        max-width: none;
-    }
+   
 
     #text2 {
         margin-top: 24px;
@@ -1568,6 +1629,8 @@ margin-top:50px;
 	margin-left:auto;
 	height: auto;
 	width: 70%;
+	margin-top:10px;
+	margin-bottom:10px;
     }
 
     #text {
@@ -1625,11 +1688,24 @@ margin-top:50px;
         
         clear: none;
         height: auto;
-		width:50%;
+		width:49%;
 		height:350px;
 		float:left;
-		margin:0px;
+		margin-right:5px;
+		margin-top:10px;
     }
+	
+	#pink {
+        
+        clear: none;
+        height: auto;
+		width:49%;
+		height:350px;
+		float:left;
+		margin-top:10px;
+		margin-right:5px;
+    }
+
 
     #box8 {
 	background-color: rgb(51, 204, 204);
@@ -1681,47 +1757,21 @@ margin-top:50px;
         margin-right: auto;
     }
 
-    #green {
-        margin: 0px;
-        clear: none;
-        width: 38.08948%;
-        height: 508px;
-        opacity: 1;
-        background-color: rgb(27, 157, 166);
-    }
+   
 
     #text4 {
         margin-top: 181px;
         clear: none;
     }
 
-    #D_blue {
-        margin-top: 0px;
-        margin-left: 0px;
-        clear: none;
-        width: 61.85%;
-        margin-right: 0px;
-        height: 508px;
-        opacity: 1;
-        background-color: rgb(70, 130, 185);
-    }
-
+   
     #text5 {
         margin-top: 24px;
         margin-left: 0%;
         clear: none;
     }
 
-    #purple {
-        margin-top: 0px;
-        margin-left: auto;
-        clear: both;
-        height: 383px;
-        opacity: 1;
-        background-color: rgb(113, 126, 201);
-        margin-right: auto;
-        float: none;
-    }
+    
 
     #text6 {
         margin-top: 178px;
@@ -1925,7 +1975,17 @@ margin-top:50px;
 }
 	#office {
         clear: none;
+		margin-top:40px;
         width: 100%;
+		height:120px;
+		
+    }
+	
+	#coupons {
+        clear: none;
+        
+		background-size: 80%;
+		margin-top:30px;
 		
     }
 	
@@ -1933,10 +1993,23 @@ margin-top:50px;
         float: none;
         clear: none;
         width: 100%;
+		height:150px;
         min-width: 0px;
         margin-left: auto;
         margin-right: auto;
     }
+	
+	#history {
+        float: none;
+        clear: none;
+        width: 100%;
+        width: 300px;
+		height: 200px;
+		margin-top:30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+	
 	
 	#search{
 	min-width: 260px;
@@ -1991,6 +2064,7 @@ margin-top:50px;
 	height: 105.11px;
 	margin-left: 0px;
 	margin-top: 0px;
+
 	clear: none;
 	width: 106.733px;
 	margin-right: 0px;
@@ -2042,6 +2116,10 @@ margin-top:50px;
     #blue {
         height:350px;
     }
+	
+	#pink {
+        height:350px;
+    }
 
     #text3 {
         margin-left: 0%;
@@ -2072,17 +2150,7 @@ margin-top:50px;
         min-height: 0px;
     }
 
-    #pink {
-        height: auto;
-        margin-left: 0px;
-        margin-right: 0px;
-        float: left;
-        margin-top: 0px;
-        clear: none;
-        width: 50%;
-        min-height: 0px;
-    }
-
+   
     #box3 {
 
         height: auto;
@@ -2118,20 +2186,24 @@ margin-top:50px;
     #orange {
         
         height: 350px;
+ 
+    }
+	
+	 #purple {
         
-        
-        
+        height: 350px;
+		padding-left:10px;
+		padding-right:10px;
+ 
     }
 
-    #yellow {
-        
-        padding-top: 59px;
-        width: 100%;
-    }
+
+    
 
     #text1 {
         
         clear: none;
+		
         
     }
 
@@ -2176,24 +2248,9 @@ margin-top:50px;
         margin-right: 0px;
     }
 
-    #green {
-        margin-top: 0px;
-        margin-left: 0%;
-        clear: none;
-        height: 604.1718727096875px;
-        margin-right: 0px;
-        width: 38.08948%;
-        min-height: 0px;
-    }
+   
 
-    #D_blue {
-        height: 604.171875px;
-        margin-top: 0px;
-        margin-left: 0px;
-        clear: none;
-        margin-right: 0px;
-        width: 61.85%;
-    }
+    
 
     #text5 {
         margin-top: 36px;
@@ -2222,13 +2279,7 @@ margin-top:50px;
         color: rgb(0, 0, 0);
     }
 
-    #purple {
-        margin-top: 0px;
-        margin-left: 0%;
-        clear: both;
-        margin-right: 0px;
-        width: 100%;
-    }
+    
 
     #box6 {
         float: left;
@@ -2257,4 +2308,42 @@ margin-top:50px;
 	margin-top:26%;
 	margin-left:50%;
 	}
+	
+	#coupons{
+		margin-top:10px;
+		width: 480px;
+		height: 190px;
+		background-size:60%;
+	}
+	
+	#purple:hover #coupons{
+		background-size:60%;
+		}
+	
+	#history{
+		margin-top:10px;
+		margin-left:auto;
+		margin-right:auto;
+		width: 400px;
+		height: 200px;
+	}
+	
+	#office {
+        clear: none;
+        width: 100%;
+		
+		height:180px;
+		margin-top:40px;
+		
+    }
+	
+	#orange:hover #office {
+	
+	}
+	
+	#characters {
+	width: 100%;
+	height:200px;
+	}
+	
 	}
