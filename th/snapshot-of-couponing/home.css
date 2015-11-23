@@ -1,4 +1,4 @@
-/* This code is only meant for previewing your Reflow design. */
+
 .primaryContainer {
     height: auto;
     margin-left: auto;
@@ -1235,11 +1235,11 @@ color: rgb(255, 102, 51);
     }
 
     #cecear {
-        width: 12.912945%;
+        width: 8%;
     }
 
     #line {
-        width: 79.62%;
+        width: 88.62%;
     }
 
     #image17 {
@@ -1634,6 +1634,7 @@ color: rgb(255, 102, 51);
 
     #consumers {
         height: 227px;
+        margin-top:8px
     }
 
     #text2 {

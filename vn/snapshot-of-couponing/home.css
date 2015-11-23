@@ -1582,6 +1582,7 @@ color: rgb(255, 102, 51);
     #consumers {
         width: 233px;
         height: 227px;
+        margin-top:8px;
     }
 
     #text2 {
