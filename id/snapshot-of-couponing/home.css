@@ -1329,7 +1329,7 @@ color: rgb(255, 102, 51);
     }
 
     #coupon-code {
-        margin-top: 47.953125px;
+        margin-top: 17px;
         clear: none;
     }
 
@@ -1597,6 +1597,7 @@ color: rgb(255, 102, 51);
     #consumers {
         width: 233px;
         height: 291px;
+        margin-top: 8px;
     }
 
     #text2 {
