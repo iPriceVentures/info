@@ -401,13 +401,13 @@ outline: 0;
 		}
 		
 	#social  {
-	margin-right: 40px;
+	margin-right: 30px;
 	margin-top:40px;
 		}
 		
 	#international  {
 	
-	margin-right: 5px;	
+	margin-right: 0px;	
 	width:110px;
 	margin-top:40px;
 	margin-left:0px;
@@ -435,6 +435,7 @@ outline: 0;
 		float:left;
 		margin-bottom:10px;
 		}
+		
 		.fonts-size2{
 		font-size: 16px;
 		width:102px;
@@ -574,7 +575,6 @@ outline: 0;
     height:auto;
     margin-right: auto;
 	margin-left:auto;
-	
     background-color: rgb(8, 106, 135);
 	position:relative;
 	z-index:1;
@@ -1051,9 +1051,10 @@ outline: 0;
 	
 	#placeholder{
 	margin-right: auto;
-	
+	margin-top:20px;
+	margin-bottom:20px;
 	height:auto;
-	width: 100%;
+	width: 95%;
 	
 		}
 	
@@ -1180,7 +1181,8 @@ margin-top:80px;
 	
 	#international2 {
 	
-	margin-left: 0px;	
+	margin-left: 0px;
+		
 	}
 
     
@@ -1386,7 +1388,7 @@ margin-top:80px;
 	}
 	
 	#international{
-		margin-left:30px;
+		margin-left:0px;
 		}
 	#ipricegroup  {
 	margin-left: 15px;
@@ -1467,11 +1469,12 @@ margin-top:50px;
 	#ipricegroup2{
         margin-top:52px;	
      }	
+	 
 	#placeholder{
-	
-	
-	
 	height:auto;
+	width:100%;
+	margin-top:0px;
+	margin-bottom:0px;
 	}
 	
 	#list{
@@ -1557,7 +1560,7 @@ margin-top:50px;
 		
 		
 	#social  {
-	margin-left: 50px;
+	margin-left: 30px;
 		}
 		
 	#international  {
@@ -1568,7 +1571,7 @@ margin-top:50px;
 	#international2 {
 	
 	margin-left: 20px;
-	margin-top:42px;	
+	margin-top:52px;	
 	}
 	
    
