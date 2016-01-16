@@ -643,7 +643,7 @@
     margin-left: 0px;
     margin-top: 0px;
     clear: both;
-    width: 49.747396%;
+    width: 50%;
     background-color: rgb(234, 232, 233);
     margin-right: 0%;
 }
@@ -654,7 +654,7 @@
 	margin-left: 0px;
 	margin-top: 0px;
 	clear: none;
-	width: 49.949999%;
+	width: 50%;
 	margin-right: 0%;
 	background-color: rgb(8, 106, 135);
 }
@@ -799,7 +799,7 @@
     height: 306px;
     margin: 0px;
     clear: both;
-    width: 49.747396%;
+    width: 50%;
     background-color: rgb(234, 232, 233);
 }
 
@@ -808,7 +808,7 @@
     height: 306px;
     margin: 0px;
     clear: none;
-    width: 49.949998%;
+    width: 50%;
     background-color: rgb(8, 106, 135);
 }
 
@@ -882,7 +882,7 @@
     height: 340px;
     margin: 0px;
     clear: both;
-    width: 49.747396%;
+    width: 50%;
     background-color: rgb(234, 232, 233);
 }
 
@@ -908,7 +908,7 @@
     height: 340px;
     margin: 0px;
     clear: none;
-    width: 49.949998%;
+    width: 50%;
     background-color: rgb(8, 106, 135);
 }
 
@@ -972,7 +972,7 @@
     height: 340px;
     margin: 0px;
     clear: both;
-    width: 49.747396%;
+    width: 50%;
     background-color: rgb(234, 232, 233);
 }
 
@@ -998,7 +998,7 @@
     height: 340px;
     margin: 0px;
     clear: none;
-    width: 49.949998%;
+    width: 50%;
     background-color: rgb(8, 106, 135);
 }
 
@@ -1055,7 +1055,7 @@
     height: 340px;
     margin: 0px;
     clear: both;
-    width: 49.747396%;
+    width: 50%;
     background-color: rgb(234, 232, 233);
 }
 
@@ -1081,7 +1081,7 @@
     height: 340px;
     margin: 0px;
     clear: none;
-    width: 49.949998%;
+    width: 50%;
     background-color: rgb(8, 106, 135);
 }
 
@@ -1451,7 +1451,7 @@
     height: auto;
     margin: -0.015625px auto 0px;
     clear: none;
-    width: 99.913874%;
+    width: 100%;
 }
 
 #p3 {
@@ -1460,7 +1460,7 @@
     margin-left: auto;
     margin-top: 0px;
     clear: none;
-    width: 99.913874%;
+    width: 100%;
     margin-right: auto;
 }
 
@@ -1470,7 +1470,7 @@
     margin-left: auto;
     margin-top: 0px;
     clear: none;
-    width: 99.913874%;
+    width: 100%;
     margin-right: auto;
 }
 
@@ -1480,7 +1480,7 @@
     margin-left: auto;
     margin-top: 0px;
     clear: none;
-    width: 99.913874%;
+    width: 100%;
     margin-right: auto;
 }
 
@@ -1490,7 +1490,7 @@
     margin-left: auto;
     margin-top: 0px;
     clear: none;
-    width: 99.913874%;
+    width: 100%;
     margin-right: auto;
 }
 
@@ -2198,14 +2198,14 @@
 	clear: none;
 	height: 369px;
 	margin-right: 0%;
-	width: 298.484376001875px;
+	width: 50%;
     }
 
     #three {
 	margin: 0px;
 	clear: none;
 	height: 340px;
-	width: 298.484376001875px;
+	width: 50%;
     }
 
     #five {
@@ -2214,7 +2214,7 @@
 	clear: none;
 	height: 365px;
 	margin-right: 0px;
-	width: 298.484376001875px;
+	width: 50%;
     }
 
     #seven {
@@ -2223,7 +2223,7 @@
         clear: none;
         height: 341.828125px;
         margin-right: 0px;
-        width: 49.899433%;
+        width: 50%;
     }
 
     #nine {
@@ -2232,7 +2232,7 @@
 	clear: none;
 	height: 364px;
 	margin-right: 0px;
-	width: 49.899433%;
+	width: 50%;
     }
 
     #wrapper-4 {
@@ -2341,7 +2341,7 @@
 	height: 369px;
 	margin: 0px 0% 0px 0px;
 	clear: none;
-	width: 299.69999301px;
+	width: 50%;
 	padding-bottom: 10px;
     }
 
@@ -2349,7 +2349,7 @@
 	margin: 0px;
 	clear: none;
 	height: 340px;
-	width: 299.69998702312495px;
+	width: 50%;
     }
 
     #six {
@@ -2358,7 +2358,7 @@
 	clear: none;
 	height: 365px;
 	margin-right: 0px;
-	width: 299.69998702312495px;
+	width: 50%;
     }
 
     #eight {
@@ -2367,7 +2367,7 @@
         clear: none;
         height: 341.828125px;
         margin-right: 0px;
-        width: 50.102654%;
+        width: 50%;
     }
 
     #ten {
@@ -2376,7 +2376,7 @@
 	clear: none;
 	height: 364px;
 	margin-right: 0px;
-	width: 50.102654%;
+	width: 50%;
     }
 
     #text27 {
@@ -2451,7 +2451,7 @@
         height: auto;
         margin-top: -0.015625px;
         clear: none;
-        width: 99.913874%;
+        width: 100%;
         margin-bottom: 0px;
     }
 
@@ -2459,28 +2459,28 @@
         height: auto;
         margin-top: 0px;
         clear: none;
-        width: 99.913874%;
+        width: 100%;
     }
 
     #p4 {
         height: auto;
         margin-top: 0px;
         clear: none;
-        width: 99.913874%;
+        width: 100%;
     }
 
     #p5 {
         height: auto;
         margin-top: 0px;
         clear: none;
-        width: 99.913874%;
+        width: 100%;
     }
 
     #p6 {
         height: auto;
         margin-top: 0px;
         clear: none;
-        width: 99.913874%;
+        width: 100%;
     }
 
     #text3 {
