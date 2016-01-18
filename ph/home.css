@@ -2487,6 +2487,14 @@ a, a:hover {
 		background-size:60%;
 	}
 
+	#gift{
+		width:400px;
+		height:240px;
+		margin-right: auto;
+		margin-left:auto;
+		display:block;
+	}
+
 	#purple:hover #coupons{
 		background-size:60%;
 	}

@@ -2094,6 +2094,12 @@ margin-top:50px;
 	clear: both;
 		
 	}
+
+	#gift{
+		height:166px;
+		margin-top:30px;
+
+	}
 	
 		#quick{
 	margin-left:10%;
@@ -2137,7 +2143,7 @@ margin-top:50px;
 	
 	#coupons {
         clear: none;
-        
+        width:300px;
 		background-size: 80%;
 		margin-top:30px;
 		
@@ -2165,8 +2171,8 @@ margin-top:50px;
     }
 
 	#user{
-		width:400px;
-		height:240px;
+		width:100%;
+		height:210px;
 		margin-top:10px;
 	}
 	
@@ -2464,10 +2470,20 @@ margin-top:50px;
     }
 }
 @media only screen and (min-width : 1300px ){
+
+	#user{
+		height: 300px;
+
+	}
+
 	#quick{
 	margin-left:30%;
 	}
-	
+
+	#gift{
+		height:222px;
+	}
+
 	#top-text{
 	margin-top:26%;
 	margin-left:50%;
@@ -2485,7 +2501,7 @@ margin-top:50px;
 		}
 	
 	#history{
-		margin-top:10px;
+		margin-top:30px;
 		margin-left:auto;
 		margin-right:auto;
 		width: 400px;
