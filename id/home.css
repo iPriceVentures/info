@@ -2479,7 +2479,15 @@ margin-top:50px;
 	margin-top:26%;
 	margin-left:50%;
 	}
-	
+
+	#gift{
+		width:400px;
+		height:240px;
+		margin-right:auto;
+		margin-left:auto;
+		display:block;
+	}
+
 	#coupons{
 		margin-top:10px;
 		width: 480px;
