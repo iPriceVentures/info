@@ -793,7 +793,7 @@ ul li{
     border-bottom-style: solid;
     border-left-color: rgb(21, 16, 63);
     border-left-width: 3px;
-    border-left-style: solid;\
+    border-left-style: solid;
 	cursor:pointer;
 }
 
@@ -1771,6 +1771,7 @@ ul li{
     min-width: 0px;
     background-color: rgb(68, 187, 139);
     padding-bottom: 15px;
+
 }
 
 #text43 {
@@ -4276,6 +4277,8 @@ ul li{
         margin: 0px;
         clear: none;
         min-width: 0px;
+        padding-bottom: 21px;
+        padding-top:12px;
     }
 
     #text43 {
