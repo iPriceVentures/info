@@ -7,6 +7,14 @@ html, body {
 	clear: both;
 }
 
+.links{
+    text-decoration: none;
+    color:#fff;
+}
+
+.links:hover{
+    color:#ffff99;
+}
 
 
 .img{
