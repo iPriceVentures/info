@@ -24,6 +24,15 @@ section {
     
 }
 
+.links{
+    text-decoration: none;
+    color:#fff;
+}
+
+.links:hover{
+    color:#ffff99;
+}
+
 #section-section1 {
 	background:#332e64;
     background-image: url("images/valentine.svg");
