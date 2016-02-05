@@ -414,6 +414,11 @@ a:hover {
 	.window, .window-1, .img, .muscle{
 		width:160px;
 		}
+
+    .end{
+        font-size: 26px;
+        line-height: 25px;
+    }
     
     
 }
