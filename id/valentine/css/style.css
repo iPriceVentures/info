@@ -375,15 +375,16 @@ a:hover {
      margin-right:auto;
      margin-left: auto;
      display: block;
+     line-height: 14px;
      float:none;
     }
     .topic{
-        font-size: 18px;
-        line-height:20px;
+        font-size: 16px;
+        line-height:25px;
     }
     .content{
         font-size:13px;
-        line-height:20px;
+        line-height:14px;
         width:49%;
         
     }
@@ -411,7 +412,12 @@ a:hover {
 	
 	.window, .window-1, .img, .muscle{
 		width:160px;
-		}
+    }
+
+    .end{
+        font-size: 26px;
+        line-height: 25px;
+    }
     
     
 }
