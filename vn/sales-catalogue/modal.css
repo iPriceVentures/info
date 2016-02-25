@@ -11,6 +11,7 @@
   position: absolute;
   left: 5px;
   top: 0;
+    cursor: pointer;
 }
 .btn-close:hover {
   color: #919191;
@@ -110,7 +111,7 @@
 	
 	.modal.three {
 		width: 300px;
-		height: 600px;
+		height: 541px;
 		margin-left: -150px;
 		margin-top: -300px;
 	}
@@ -192,13 +193,13 @@
   height:127px;
   
 }
-
 .modal-header-4 {
 	border-bottom: #eeeeee solid 1px;
 	background-color:#f8951d;
 	height:127px;
 
 }
+
 
 .modal-header h2 {
   font-size: 18px;
@@ -237,6 +238,19 @@
   font-family:'Noto Sans';
 }
 
+.modal-header-4 h2 {
+	font-size: 18px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	padding-top:40px;
+	display:block;
+	text-align:center;
+	color:#FFFFFF;
+	line-height:28px;
+	font-family:'Noto Sans';
+}
+
 
 
 .modal-footer {
@@ -261,7 +275,7 @@
 	margin-right:auto;
 	margin-left:auto;
 	display:block;
-	width:93%;
+	width:66%;
 	height:auto;
 }
 
@@ -279,7 +293,7 @@
 	margin-right:auto;
 	margin-left:auto;
 	display:block;
-	width:48%;
+	width:70%;
 	height:auto;
 }
 
@@ -287,7 +301,7 @@
 	margin-right:auto;
 	margin-left:auto;
 	display:block;
-	width:86%;
+	width:66%;
 	height:auto;
 }
 
@@ -295,7 +309,7 @@
 	margin-right:auto;
 	margin-left:auto;
 	display:block;
-	width:48%;
+	width:73%;
 	height:auto;
 }
 
@@ -303,7 +317,7 @@
 	margin-right:auto;
 	margin-left:auto;
 	display:block;
-	width:91%;
+	width:70%;
 	height:auto;
 }
 
@@ -311,7 +325,7 @@
 	margin-right:auto;
 	margin-left:auto;
 	display:block;
-	width:75%;
+	width:62%;
 	height:auto;
 }
 
