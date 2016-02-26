@@ -1148,7 +1148,6 @@ ul li{
     text-align: center;
     font-weight: normal;
     line-height: 1em;
-    margin: 0px auto 0px;
 	padding-top:0px;
     clear: none;
     min-height: 18px;
@@ -1156,6 +1155,8 @@ ul li{
     font-family: 'Noto Sans';
     display: block;
     min-width: 0px;
+    margin-top: 12px;
+    margin-right: auto;margin-left:auto;
 }
 
 #text24 {
@@ -1168,7 +1169,7 @@ ul li{
     line-height: 1em;
     margin-left: auto;
     margin-top: 5px;
-    margin-bottom: 23px;
+    margin-bottom: 7px;
     clear: none;
     min-height: 18px;
     color: rgb(255, 255, 255);
@@ -1232,14 +1233,14 @@ ul li{
     font-weight: 900;
     line-height: 16px;
     margin-left: auto;
-    margin-top: 0px;
+
     clear: none;
     min-height: 19px;
     font-family: 'Noto Sans';
     margin-right: auto;
     min-width: 0px;
     display: block;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 #image10 {
@@ -1684,6 +1685,7 @@ ul li{
     line-height: 1em;
     margin-left: auto;
     margin-top: 5px;
+    margin-bottom: 12px;
     clear: none;
     min-height: 18px;
     color: rgb(255, 255, 255);
@@ -1712,7 +1714,7 @@ ul li{
 
 #ch22 {
     float: left;
-    height: 97px;
+    height: 106px;
     margin-left: 0px;
     margin-top: 0px;
     clear: both;
@@ -2476,12 +2478,12 @@ ul li{
 
     #text23 {
         font-size: 13px;
-		margin-top:0px;
+        margin-top: 12px;
 		padding-top:13px;
         height: auto;
         font-weight: normal;
         line-height: 1em;
-        margin-top: 0px;
+
         clear: none;
         min-height: 18px;
         color: rgb(255, 255, 255);
@@ -2491,7 +2493,7 @@ ul li{
     #text24 {
 
         margin-top: 5px;
-        margin-bottom: 23px;
+        margin-bottom: 7px;
 
     }
 
@@ -2747,7 +2749,7 @@ ul li{
         font-weight: normal;
         line-height: 1em;
         margin-left: auto;
-        margin-top: 12px;
+        margin-top: 10px;
         clear: none;
         min-height: 18px;
         color: rgb(255, 255, 255);
@@ -2765,6 +2767,7 @@ ul li{
         line-height: 1em;
         margin-left: auto;
         margin-top: 5px;
+        margin-bottom: 12px;
         clear: none;
         min-height: 18px;
         color: rgb(255, 255, 255);
@@ -2794,7 +2797,7 @@ ul li{
 
     #ch22 {
         float: left;
-        height: 97px;
+        height: 106px;
         margin-left: 0px;
         margin-top: 0px;
         clear: none;
@@ -3789,13 +3792,14 @@ ul li{
         height: auto;
         min-width: 0px;
         float: none;
+        margin-top: 12px;
     }
 
     #text24 {
         font-size: 112.5%;
         display: block;
         margin-top: 5px;
-        margin-bottom: 23px;
+        margin-bottom: 7px;
         clear: none;
         height: auto;
         width: 97.669888%;
@@ -3849,7 +3853,7 @@ ul li{
         font-weight: 900;
         line-height: 16px;
         margin-left: auto;
-        margin-top: 0px;
+
         clear: none;
         min-height: 19px;
         font-family: 'Noto Sans';
@@ -3857,7 +3861,7 @@ ul li{
         width: 80%;
         display: block;
         min-width: 0px;
-        margin-top: 10px;
+        margin-top: 12px;
     }
 
     #image10 {
@@ -4167,13 +4171,13 @@ ul li{
         margin: 0px;
         clear: none;
         min-width: 0px;
-        padding-top: 24px;
+        padding-top: 0px;
         padding-bottom: 0px;
     }
 
     #text39 {
         font-size: 81.25%;
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     #text40 {
