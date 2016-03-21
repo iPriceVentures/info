@@ -1057,7 +1057,7 @@ color: rgb(255, 102, 51);
 #text22 {
     float: none;
     font-size: 17px;
-    width: 100.001591%;
+    width: 90%;
     height: auto;
     text-align: center;
     font-weight: 500;
@@ -3418,7 +3418,7 @@ color: rgb(255, 102, 51);
         height: auto;
         margin-left: auto;
         margin-right: auto;
-        width: 71%;
+        width: 50%;
     }
 
     #sources {
@@ -3912,7 +3912,7 @@ color: rgb(255, 102, 51);
     }
 
     #i {
-        width: 865.3279922625001px;
+        width: 100%;
     }
 
     #payment {
