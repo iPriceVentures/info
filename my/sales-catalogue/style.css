@@ -1619,7 +1619,7 @@ ul li{
 
 #image15 {
     float: none;
-    width: auto;
+    width: 32px;
     max-width: 100%;
     height: auto;
     margin-left: auto;
@@ -4152,7 +4152,7 @@ ul li{
         line-height: 18px;
         margin-left: auto;
         margin-top: 6.1875px;
-		padding-bottom: 7px;
+        margin-bottom: 0px;
         clear: none;
         min-height: 19px;
         font-family: 'Noto Sans';
@@ -4161,7 +4161,7 @@ ul li{
 
     #image15 {
         float: none;
-        width: auto;
+        width: 32px;
         max-width: 100%;
         height: auto;
         margin-left: auto;
