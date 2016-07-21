@@ -162,8 +162,20 @@ canvas{
 }
 
 #child2{
-    width:98.9%;
+    width:66%;
     /*width:33.9%;*/
+    height:320px;
+    float:left;
+    margin: 0.5% 0% 0.5% 0.5%;
+    list-style: none;
+    z-index: 0;
+    clear:none;
+    display: inline-table;
+}
+
+#child3{
+    /*width:341px;*/
+    width:32.3%;
     height:320px;
     float:left;
     margin: 0.5% 0.5%;
@@ -215,6 +227,13 @@ canvas{
 
 .ch12{
     background-color: #3F8D73;
+}
+.ch13{
+    background-color: #c94c4c;
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+    z-index: 1;
 }
 
 
@@ -422,8 +441,14 @@ canvas{
     }
 
     #child2{
-        width:48.9%;
+        width:100%;
+        margin:0.5%;
     }
+    #child3{
+        width:48.9%;
+
+    }
+
 }
 
 @media (max-width:600px){
@@ -432,6 +457,10 @@ canvas{
         margin:0.5% 0%;
     }
     #child2{
+        width:100%;
+        margin:0.5% 0%;
+    }
+    #child3{
         width:100%;
         margin:0.5% 0%;
     }
