@@ -690,7 +690,7 @@ div, img {
 }
 /*============================Hovers===============================*/
 .title3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight:900;
     margin:30px auto 0px auto;
     display: block;
@@ -698,7 +698,7 @@ div, img {
     text-align: center;
 }
 .sub-title3 {
-    font-size: 14px;
+    font-size: 18px;
     font-weight:500;
     margin:0px auto;
     display: block;
@@ -707,7 +707,7 @@ div, img {
 }
 
 .num3{
-    font-size: 14px;
+    font-size: 18px;
     font-weight:500;
     margin:0px auto;
     display: block;
