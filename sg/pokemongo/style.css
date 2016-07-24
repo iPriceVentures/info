@@ -76,10 +76,46 @@ div, img {
     padding-left:20px;
 }
 
+.top img {
+    width:80px;
+    height:80px;
+    float: left;
+    margin: 0px 294px 5px 0px;
+}
+
 #guide{
     width:300px;
     height:auto;
-    float: right;
+    float: left;
+    margin-top: -27px;
+}
+
+#circle{
+    border-radius: 50%;
+    border:2px solid #ffce00;
+    width:120px;
+    height:120px;
+    margin:0px auto 20px auto;
+    color: #0098dd;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#circle b{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0px;
+}
+
+#circle p {
+    font-weight:500;
+    font-size: 12px;
+    margin: 0px;
+}
+
+#circle span {
+    font-weight:900;
+    font-size: 20px;
 }
 
 #intro{
@@ -90,27 +126,29 @@ div, img {
 
 #intro p {
     color: #0098dd;
-    font-size:25px;
+    font-size:66px;
+    line-height:72px;
     font-weight:900;
     text-align: left;
     margin:0px 0px 10px 0px;
 }
 
-#intro span{
-    color: #333;
-    font-size:14px;
+.top b{
+    color: #0098dd;
+    font-size:18px;
+    font-weight:500;
     text-align: left;
+    width:498px;
+    float: left;
 }
 
 .event{
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     float: left;
     color: #0098dd;
     margin-right:15px;
-
-
 }
 
 .event p {
@@ -136,16 +174,18 @@ div, img {
 
 
 .container {
-    width:auto;
-    height:70px;
-    margin-bottom:10px;
+    width: 190px;
+    height: 30px;
+    margin: -8px auto 13px auto;
 }
 
 .sub{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     color: #0098dd;
     float: left;
+    width: 142px;
+    margin: 0px;
 }
 
 .sub span {
@@ -153,18 +193,18 @@ div, img {
 }
 
 #red{
-    border: 2px solid #c94c4c;
+    background-color:  #c94c4c;
 }
 
 #yellow{
-    border: 2px solid #ffce00;
+    background-color: #ffce00;
 }
 #light{
-    border: 2px solid #f7dd6d;
+    background-color: #f7dd6d;
 }
 
 #orange{
-    border: 2px solid #ff6633;
+    background-color: #ff6633;
 }
 
 
@@ -232,7 +272,7 @@ div, img {
     height:25px;
     width:50px;
     background: #fff;
-    margin:470px 0px 60px 0px;
+    margin:600px 0px 60px 0px;
     padding:3px;
     text-align: center;
 }
@@ -270,7 +310,7 @@ div, img {
 .column{
     font-size: 14px;
     font-weight:900;
-    height:2290px;
+    height:2550px;
     width:1px;
     background: #0098dd;
     float: left;
@@ -290,6 +330,8 @@ div, img {
     width:100%;
     float: left;
     height:auto;
+    position: absolute;
+    top:353px;
 }
 
 .first {
@@ -317,7 +359,7 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 575px;
+    top: 365px;
     left: 480px;
     animation: b 5s infinite;
     animation-direction: alternate;
@@ -337,8 +379,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 700px;
-    left: 380px;
+    top: 652px;
+    left: 410px;
     z-index: 3;
     animation: c 2s infinite;
     animation-direction: alternate;
@@ -358,8 +400,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top:778px;
-    left:78px;
+    top: 908px;
+    left: 318px;
     z-index: 2;
     animation: d 3s infinite;
     animation-direction: alternate;
@@ -379,8 +421,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1040px;
-    left: 400px;
+    top: 1310px;
+    left: 170px;
     z-index: 2;
     animation: e 4s infinite;
     animation-direction: alternate;
@@ -400,8 +442,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1115px;
-    left: 90px;
+    top: 1095px;
+    left: 100px;
     animation: ief 3s infinite;
     animation-direction: alternate;
     z-index: 3;
@@ -421,8 +463,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1173px;
-    left: 220px;
+    top: 853px;
+    left: 120px;
     z-index: 2;
     animation: ge 4s infinite;
     animation-direction: alternate;
@@ -442,8 +484,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1370px;
-    left: 396px;
+    top: 1480px;
+    left: 476px;
     z-index: 1;
     animation: h 4s infinite;
     animation-direction: alternate;
@@ -463,7 +505,7 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1430px;
+    top: 1570px;
     left: 0px;
     z-index: 1;
     animation: shaffle 3s infinite;
@@ -485,8 +527,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1515px;
-    left: 346px;
+    top: 1605px;
+    left: 416px;
     animation: eye 4s infinite;
     animation-direction: alternate;
 
@@ -507,7 +549,7 @@ div, img {
     float: left;
     position: absolute;
     top: 2010px;
-    left: 250px;
+    left: 0px;
     animation: j 4s infinite;
     animation-direction: alternate;
 }
@@ -526,8 +568,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1930px;
-    left: -50px;
+    top: 2160px;
+    left: 390px;
     animation: tw 3s infinite;
     animation-direction: alternate;
 }
@@ -546,7 +588,7 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 2244px;
+    top: 2384px;
     left: -30px;
     animation: thi 4s infinite;
     animation-direction: alternate;
@@ -566,7 +608,7 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 2430px;
+    top: 2590px;
     left: 470px;
     animation: fo 4s infinite;
     animation-direction: alternate;
@@ -586,7 +628,7 @@ div, img {
     border-radius: 50%;
     width:300px;
     height:300px;
-    background: #c94c4c;
+    background: #ffce00;
     float:left;
     margin: 0px;
     webkit-box-sizing: border-box;
@@ -615,7 +657,7 @@ div, img {
         font-weight:500;
         margin:0px auto;
         display: block;
-        color: #dddddd;
+        color: #0098dd;
         text-align: center;
     }
 
@@ -624,14 +666,14 @@ div, img {
         font-weight:500;
         margin:0px auto;
         display: block;
-        color: #ffce00;
+        color: #0098dd;
         text-align: center;
     }
 
 .c2{
     border-radius: 50%;
-    width:110px;
-    height:110px;
+    width:180px;
+    height:180px;
     background: #f7dd6d;
     float:left;
     margin: 0px;
@@ -682,7 +724,7 @@ div, img {
 }
 
 .c2 b {
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 900;
     margin: 25px auto 0px auto;
     display: block;
@@ -690,7 +732,7 @@ div, img {
     text-align: center;
 }
 .c2 p {
-    font-size: 12px;
+    font-size: 16px;
     font-weight:500;
     margin:0px auto;
     display: block;
@@ -699,11 +741,11 @@ div, img {
 }
 
 .c2 span{
-    font-size: 12px;
+    font-size: 16px;
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ff6633;
+    color: #0098dd;
     text-align: center;
 }
 
@@ -711,11 +753,11 @@ div, img {
 
 .c3{
     border-radius: 50%;
-    background: #ffce00;
+    background: #f7dd6d;
     float:left;
     margin: 0px;
-    width: 120px;
-    height:120px;
+    width: 210px;
+    height:210px;
     box-sizing: border-box;
     -webkit-transition: all .35s ease;
     transition: all .35s ease;
@@ -762,15 +804,15 @@ div, img {
 }
 /*============================Hovers===============================*/
 .c3 b {
-    font-size: 15px;
+    font-size: 30px;
     font-weight:900;
-    margin:30px auto 0px auto;
+    margin:60px auto 0px auto;
     display: block;
     color: #fff;
     text-align: center;
 }
 .c3 p {
-    font-size: 12px;
+    font-size: 20px;
     font-weight:500;
     margin:0px auto;
     display: block;
@@ -779,11 +821,11 @@ div, img {
 }
 
 .c3 span{
-    font-size: 18px;
+    font-size: 20px;
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ff6633;
+    color: #0098dd;
     text-align: center;
 }
 
@@ -853,7 +895,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ddd;
+    color: #fff;
     text-align: center;
 }
 
@@ -862,7 +904,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ffce00;
+    color: #fff;
     text-align: center;
 }
 
@@ -933,7 +975,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #dddddd;
+    color: #fff;
     text-align: center;
 }
 
@@ -942,14 +984,14 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ffce00;
+    color: #fff;
     text-align: center;
 }
 
 .c6{
     border-radius: 50%;
-    width:110px;
-    height:110px;
+    width:130px;
+    height:130px;
     background: #f7dd6d;
     float:left;
     margin: 0px;
@@ -1019,7 +1061,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ff6633;
+    color: #0098dd;
     text-align: center;
 }
 
@@ -1028,7 +1070,7 @@ div, img {
     border-radius: 50%;
     width:180px;
     height:180px;
-    background: #ffce00;
+    background: #f7dd6d;
     float:left;
     margin: 0px 0px 0px 40px;
     box-sizing: border-box;
@@ -1077,7 +1119,7 @@ div, img {
 }
 
 .c7 b {
-    font-size: 25px;
+    font-size: 22px;
     font-weight:900;
     margin:60px auto 0px auto;
     display: block;
@@ -1098,15 +1140,15 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ff6633;
+    color: #0098dd;
     text-align: center;
 }
 
 
 .c8{
     border-radius: 50%;
-    width:160px;
-    height:160px;
+    width:150px;
+    height:150px;
     background: #f7dd6d;
     float:left;
     margin: 0px;
@@ -1114,6 +1156,8 @@ div, img {
     -webkit-transition: all .35s ease;
     transition: all .35s ease;
 }
+
+
 
 /*============================Hovers===============================*/
 .eight:hover .c7{
@@ -1176,7 +1220,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ff6633;
+    color: #0098dd;
     text-align: center;
 }
 
@@ -1247,7 +1291,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ddd;
+    color: #fff;
     text-align: center;
 }
 
@@ -1256,7 +1300,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color:#ffce00;
+    color:#fff;
     text-align: center;
 }
 
@@ -1326,7 +1370,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ddd;
+    color: #fff;
     text-align: center;
 }
 
@@ -1335,7 +1379,7 @@ div, img {
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ffce00;
+    color: #fff;
     text-align: center;
 }
 
@@ -1355,7 +1399,7 @@ div, img {
     border-radius: 50%;
     width:250px;
     height:250px;
-    background: #ffce00;
+    background: #f7dd6d;
     float:left;
     margin: -90px 0px 0px 150px;
     transition: all .35s ease;
@@ -1375,9 +1419,9 @@ div, img {
 
 .c14{
     border-radius: 50%;
-    width:180px;
-    height:180px;
-    background: #ffce00;
+    width:200px;
+    height:200px;
+    background: #f7dd6d;
     float:left;
     margin: 0px;
     box-sizing: border-box;
@@ -1407,26 +1451,35 @@ div, img {
         font-weight:500;
         margin:0px auto;
         display: block;
-        color: #ff6633;
+        color: #0098dd;
         text-align: center;
     }
 
 
+#cont2{
+    width:100%;
+    height:auto;
+    display: table;
+    position: absolute;
+    top:260px;
+}
 
 #part-2{
     margin: 60px 0px 30px 60px;
     display: table;
     width: 100%;
-    height: 800px;
+    height: 1010px;
     position: relative;
 }
 
     #part-2 p{
-        font-size: 30px;
+        font-size: 66px;
         font-weight: 900;
         float: left;
-        margin: 0px 0px 20px 0px;
+        margin: 60px 0px 40px 0px;
         color: #0098dd;
+        line-height: 72px;
+        width: 860px;
     }
 
 #c12{
@@ -1474,7 +1527,6 @@ div, img {
             margin:0px auto;
             display: block;
             position: relative;
-            color:#ffce00;
         }
     #c12 strong {
         font-size:25px;
@@ -1484,7 +1536,6 @@ div, img {
         display: block;
         position: relative;
         text-align: center;
-        color: #dddddd;
     }
 
 #c13{
@@ -1542,7 +1593,7 @@ div, img {
             margin:0px auto;
             display: block;
             position: relative;
-            color:#ffce00;
+
         }
     #c13 strong {
         font-size:20px;
@@ -1552,7 +1603,7 @@ div, img {
         display: block;
         position: relative;
         text-align: center;
-        color: #dddddd;
+
     }
 
 #c14{
@@ -1602,7 +1653,7 @@ div, img {
             margin:0px auto;
             display: block;
             position: relative;
-            color:#ffce00;
+
         }
     #c14 strong {
         font-size:18px;
@@ -1612,7 +1663,7 @@ div, img {
         display: block;
         position: relative;
         text-align: center;
-        color: #dddddd;
+
     }
 
 #c15{
@@ -1662,7 +1713,7 @@ div, img {
     margin:0px auto;
     display: block;
     position: relative;
-    color:#ffce00;
+
 }
 #c15 strong {
     font-size:18px;
@@ -1672,7 +1723,7 @@ div, img {
     display: block;
     position: relative;
     text-align: center;
-    color: #dddddd;
+
 }
 
 
@@ -1723,7 +1774,7 @@ div, img {
     margin:0px auto;
     display: block;
     position: relative;
-    color:#ffce00;
+
 }
 #c16 strong {
     font-size:13px;
@@ -1733,7 +1784,7 @@ div, img {
     display: block;
     position: relative;
     text-align: center;
-    color: #dddddd;
+
 }
 
 
@@ -1745,7 +1796,7 @@ div, img {
     float: left;
     transition: all .35s ease;
     position: absolute;
-    top: 580px;
+    top: 610px;
     left: 380px;
     color: #fff;
     animation: b17 3s infinite;
@@ -1785,7 +1836,7 @@ div, img {
     margin:0px auto;
     display: block;
     position: relative;
-    color:#ffce00;
+
 }
 #c17 strong {
     font-size:13px;
@@ -1795,7 +1846,7 @@ div, img {
     display: block;
     position: relative;
     text-align: center;
-    color: #dddddd;
+
 }
 
 #methodology{
@@ -1806,7 +1857,7 @@ div, img {
     display: table;
     position: relative;
     padding:30px 40px;
-    font-size:16px;
+    font-size:13px;
 }
 
     #methodology p {
@@ -2001,7 +2052,7 @@ div, img {
     margin:0px auto;
     display: block;
     text-align: center;
-    color: #dddddd;
+    color: #fff;
 
 }
 
@@ -2011,7 +2062,7 @@ div, img {
     margin:0px auto;
     display: block;
     text-align: center;
-    color: #ffce00;
+    color: #fff;
 }
 
 .c12 b {
@@ -2038,7 +2089,7 @@ div, img {
     margin:0px auto;
     display: block;
     text-align: center;
-    color: #ff6633;
+    color: #0098dd;
 }
 
 .c13 b {
@@ -2055,7 +2106,7 @@ div, img {
     margin:0px auto;
     display: block;
     text-align: center;
-    color: #dddddd;
+    color: #fff;
 
 }
 
@@ -2065,7 +2116,7 @@ div, img {
     margin:0px auto;
     display: block;
     text-align: center;
-    color: #ffce00;
+    color: #fff;
 }
 
 .footer {
