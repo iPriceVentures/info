@@ -400,8 +400,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 908px;
-    left: 318px;
+    top: 808px;
+    left: 98px;
     z-index: 2;
     animation: d 3s infinite;
     animation-direction: alternate;
@@ -421,8 +421,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1310px;
-    left: 170px;
+    top: 1260px;
+    left: 340px;
     z-index: 2;
     animation: e 4s infinite;
     animation-direction: alternate;
@@ -442,8 +442,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1095px;
-    left: 100px;
+    top: 955px;
+    left: 480px;
     animation: ief 3s infinite;
     animation-direction: alternate;
     z-index: 3;
@@ -463,8 +463,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 853px;
-    left: 120px;
+    top: 1143px;
+    left: 90px;
     z-index: 2;
     animation: ge 4s infinite;
     animation-direction: alternate;
@@ -1306,8 +1306,8 @@ div, img {
 
 .c10{
     border-radius: 50%;
-    width:280px;
-    height:280px;
+    width:320px;
+    height:320px;
     background: #ff6633;
     float:left;
     margin:100px 0px 0px 40px;
@@ -1386,8 +1386,8 @@ div, img {
 
 .c11{
     border-radius: 50%;
-    width:310px;
-    height:310px;
+    width:290px;
+    height:290px;
     background: #ff6633;
     float:left;
     margin: -90px 0px 0px 150px;
