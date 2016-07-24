@@ -339,8 +339,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top:374px;
-    left:150px;
+    top: 334px;
+    left: 150px;
     animation: a 3s infinite;
     animation-direction: alternate;
 }
@@ -359,7 +359,7 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 365px;
+    top: 455px;
     left: 480px;
     animation: b 5s infinite;
     animation-direction: alternate;
@@ -400,8 +400,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 808px;
-    left: 98px;
+    top: 1120px;
+    left: 298px;
     z-index: 2;
     animation: d 3s infinite;
     animation-direction: alternate;
@@ -421,8 +421,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1260px;
-    left: 340px;
+    top: 850px;
+    left: 130px;
     z-index: 2;
     animation: e 4s infinite;
     animation-direction: alternate;
@@ -463,7 +463,7 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1143px;
+    top: 1293px;;
     left: 90px;
     z-index: 2;
     animation: ge 4s infinite;
