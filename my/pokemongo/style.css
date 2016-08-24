@@ -221,6 +221,7 @@ div, img {
     margin:160px 0px 60px -25px;
     padding:3px;
     text-align: center;
+    display: none;
 }
 
 .y11{
@@ -246,7 +247,7 @@ div, img {
 .column{
     font-size: 14px;
     font-weight:900;
-    height:1920px;
+    height:1770px;
     width:1px;
     background: #0098dd;
     float: left;
@@ -291,8 +292,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 575px;
-    left: 420px;
+    top: 695px;
+    left: 460px;
     animation: b 5s infinite;
     animation-direction: alternate;
 }
@@ -374,7 +375,7 @@ div, img {
       height:auto;
       float: left;
       position: absolute;
-      top: 1065px;
+      top: 1015px;
       left: 520px;
       animation: ief 3s infinite;
       animation-direction: alternate;
@@ -437,8 +438,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1550px;
-    left: 60px;
+    top: 470px;
+    left: 410px;
     z-index: 1;
     animation: shaffle 3s infinite;
     animation-direction: alternate;
@@ -459,7 +460,7 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1515px;
+    top: 1365px;
     left: 346px;
     animation: eye 4s infinite;
     animation-direction: alternate;
@@ -480,8 +481,8 @@ div, img {
     height:auto;
     float: left;
     position: absolute;
-    top: 1960px;
-    left: 0px;
+    top: 1750px;
+    left: 0;
     animation: j 4s infinite;
     animation-direction: alternate;
 }
@@ -558,9 +559,9 @@ div, img {
 
 .c2{
     border-radius: 50%;
-    width:320px;
-    height:320px;
-    background: #ff6633;
+    width:250px;
+    height:250px;
+    background: #f7dd6d;
     float:left;
     margin: 0px;
     box-sizing: border-box;
@@ -610,7 +611,7 @@ div, img {
 }
 
 .title2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     margin: 55px auto 0px auto;
     display: block;
@@ -618,20 +619,20 @@ div, img {
     text-align: center;
 }
 .sub-title2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #fff;
+    color: #0098dd;
     text-align: center;
 }
 
 .num2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight:500;
     margin:0px auto;
     display: block;
-    color: #ffce00;
+    color: #ff6633;
     text-align: center;
 }
 
@@ -779,7 +780,7 @@ div, img {
 .sub-title4 {
     font-size: 25px;
     font-weight:500;
-    margin:0px auto;
+    margin:0 auto;
     display: block;
     color: #0098dd;
     text-align: center;
@@ -788,7 +789,7 @@ div, img {
 .num4{
     font-size: 25px;
     font-weight:500;
-    margin:0px auto;
+    margin:0 auto;
     display: block;
     color: #ff6633;
     text-align: center;
@@ -849,7 +850,7 @@ div, img {
 }
 
 .title5 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight:900;
     margin:38px auto 0px auto;
     display: block;
@@ -857,7 +858,7 @@ div, img {
     text-align: center;
 }
 .sub-title5 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight:500;
     margin:0px auto;
     display: block;
@@ -866,7 +867,7 @@ div, img {
 }
 
 .num5{
-    font-size: 30px;
+    font-size: 25px;
     font-weight:500;
     margin:0px auto;
     display: block;
@@ -876,8 +877,8 @@ div, img {
 
 .c6{
     border-radius: 50%;
-    width:180px;
-    height:180px;
+    width:170px;
+    height:170px;
     background: #f7dd6d;
     float:left;
     margin: 0px;
@@ -954,8 +955,8 @@ div, img {
 
 .c7{
     border-radius: 50%;
-    width:180px;
-    height:180px;
+    width:170px;
+    height:170px;
     background: #f7dd6d;
     float:left;
     margin: 0px 0px 0px 40px;
@@ -1110,8 +1111,8 @@ div, img {
 
 .c9{
     border-radius: 50%;
-    width:190px;
-    height:190px;
+    width:240px;
+    height:240px;
     background: #f7dd6d;
     float:left;
     margin: -34px 0px 0px 100px;
@@ -1190,8 +1191,8 @@ div, img {
 
 .c10{
     border-radius: 50%;
-    width:280px;
-    height:280px;
+    width:250px;
+    height:250px;
     background: #f7dd6d;
     float:left;
     margin:100px 0px 0px 40px;
@@ -1242,7 +1243,7 @@ div, img {
 }
 
 .title10 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight:900;
     margin:37px auto 0px auto;
     display: block;
@@ -1250,7 +1251,7 @@ div, img {
     text-align: center;
 }
 .sub-title10 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight:500;
     margin:0px auto;
     display: block;
@@ -1259,7 +1260,7 @@ div, img {
 }
 
 .num10{
-    font-size: 30px;
+    font-size: 25px;
     font-weight:500;
     margin:0px auto;
     display: block;
