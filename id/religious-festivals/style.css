@@ -14,7 +14,7 @@ div, img {
 }
 
 .menu{
-    width:47%;
+    width:57%;
     max-width: 880px;
     height:auto;
     float:left;
@@ -72,7 +72,7 @@ div, img {
 /*============================share buttons===============================*/
 
 #share{
-    width:53%;
+    width:43%;
     height:auto;
     float: right;
     display: table;
@@ -306,5 +306,11 @@ div, img {
     .menu {
         font-size: 10px;
         font-weight: 900;
+    }
+    .btn {
+        margin-right:8px;
+    }
+    .box {
+        margin-left:10px;
     }
 }
