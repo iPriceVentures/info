@@ -325,10 +325,10 @@ div, img {
     color: #333;
     font-size:20px;
     font-weight:900;
-    margin:0;
+    margin:0 0 10px 0;
 }
 .content > div > div > span {
-    font-size: 13px;
+    font-size: 15px;
 }
 .content > div > .figures {
     width:100%;
@@ -363,7 +363,7 @@ div, img {
     text-decoration: underline;
 }
 .content > div > .figures > p {
-    font-size: 16px;
+    font-size: 13px;
     font-style: italic;
     font-weight: 900;
     color: #333;
@@ -400,14 +400,21 @@ div, img {
     margin:0 0 10px 0;
 }
 #main > .timing > div > ul {
-    font-size:13px;
     padding:0;
-    margin:0;
 }
-#main > .timing > div > ul > li {
-    font-size:13px;
+#main > .timing > div > ul > strong {
+    font-size:15px;
+    font-weight:400;
+    padding:0;
+    margin:0 ;
+}
+#main > .timing > div > ul > ul {
+    margin: 10px 0 0 15px;
+}
+#main > .timing > div > ul > ul > li {
+    font-size:15px;
     list-style: initial;
-    margin-left: 15px;
+
 }
 #main > .timing > img {
     width:100%;
