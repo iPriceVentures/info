@@ -54,23 +54,6 @@ div, img {
     display: table;
 }
 
-#main{
-     width:100%;
-     max-width: 880px;
-     position: relative;
-     padding: 0;
-     margin:0 auto 40px auto;
-     float: none;
-     display: block;
-     background:#fff;
- }
-
-#main > img {
-    width:100%;
-}
-
-/*============================share buttons===============================*/
-
 #share{
     width:43%;
     height:auto;
@@ -153,10 +136,6 @@ div, img {
     background-color: transparent;
     border-radius: 50%;
     box-shadow: none;
-}
-
-#main {
-
 }
 
 /*Bounce.js animations, activated on hover*/
@@ -302,7 +281,177 @@ div, img {
     100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
-@media (max-width: 500px){
+#mobile {
+    display: none;
+}
+#mobile > img {
+    width:100%;
+}
+#main{
+    display: block;
+    width:100%;
+    max-width: 880px;
+    position: relative;
+    padding: 0;
+    margin:0 auto 40px auto;
+    float: none;
+    background:#fff;
+    box-shadow: rgba(91, 91, 91, 0.470588) 0px 3px 3px 3px;
+}
+.header {
+    width:100%;
+    background: #30cccd;
+    padding: 30px;
+    margin:0;
+}
+.header > p {
+    font-size:35px;
+    font-weight:900;
+    color: #fff;
+    margin:0;
+}
+
+.content {
+    width:100%;
+    padding:10px 30px;
+}
+.content > div {
+    width:100%;
+}
+.content > div > div {
+    margin:10px 0 30px 0;
+}
+.content > div > div > p {
+    color: #333;
+    font-size:20px;
+    font-weight:900;
+    margin:0;
+}
+.content > div > div > span {
+    font-size: 13px;
+}
+.content > div > .figures {
+    width:100%;
+    display: table;
+}
+.content > div > .figures > div {
+    float: left;
+    /*display: table;*/
+}
+.content > div > .figures > div > div {
+    width:165px;
+    float: left;
+    padding:8px;
+}
+#iphone-us {
+    border-right: 2px dotted #333;
+    width:178px;
+}
+.content > div > .figures > div > div > img {
+    width:100%;
+    height: 265px;
+}
+.content > div > .figures > div > div > a {
+    text-decoration: none;
+    color: #333;
+}
+.content > div > .figures > div > div > a > span {
+    font-size: 13px;
+    float: left;
+}
+.content > div > .figures > div > div > a > span:hover {
+    text-decoration: underline;
+}
+.content > div > .figures > p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 900;
+    color: #333;
+    border-bottom: 2px dotted #333;
+    line-height: 25px;
+    padding: 10px 0;
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+
+#main > .title {
+    width:100%;
+    background: #30cccd;
+    padding: 30px;
+    margin:0;
+}
+#main > .title > p {
+    color: #fff;
+    font-size: 35px;
+    font-weight:900;
+    margin:0;
+}
+#main > .timing {
+    width:100%;
+}
+#main > .timing > div {
+    padding: 30px;
+}
+#main > .timing > div > p {
+    font-size: 20px;
+    color: #333;
+    font-weight:900;
+    margin:0 0 10px 0;
+}
+#main > .timing > div > ul {
+    font-size:13px;
+    padding:0;
+    margin:0;
+}
+#main > .timing > div > ul > li {
+    font-size:13px;
+    list-style: initial;
+    margin-left: 15px;
+}
+#main > .timing > img {
+    width:100%;
+    margin-top:-70px;
+}
+
+#main > .footer {
+    width:100%;
+    background: #30cccd;
+    padding: 5%;
+    margin:0;
+    display: table;
+}
+#main > .footer > p {
+    width:50%;
+    color: #fff;
+    float: left;
+    margin:0;
+}
+#main > .footer > p > span {
+    float: left;
+    font-size:16px;
+}
+#main > .footer > p > small {
+    float: left;
+    font-size:13px;
+    clear: left;
+}
+#main > .footer > div {
+    float: right;
+    width:50%;
+    margin-top:82px;
+}
+#main > .footer > div > a {
+    display: block;
+    float: right;
+    width:200px;
+}
+#main > .footer > div > a > img {
+    width:100%;
+}
+
+
+@media (max-width: 755px){
     .menu {
         font-size: 10px;
         font-weight: 900;
@@ -312,5 +461,11 @@ div, img {
     }
     .box {
         margin-left:10px;
+    }
+    #main {
+        display: none;
+    }
+    #mobile {
+        display: block;
     }
 }
