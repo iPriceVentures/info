@@ -162,7 +162,7 @@ canvas{
 }
 
 #child2{
-    width:32.3%;
+    width:99%;
     height:320px;
     float:left;
     margin: 0.5% 0% 0.5% 0.5%;
@@ -333,18 +333,32 @@ canvas{
 
 .img8  {
     width: auto;
-    height: 125px;
+    height: 170px;
     display: block;
     margin-left:auto;
     margin-right: auto;
-    margin-top:-274px;
     z-index: 1;
     -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
     -o-transition: all 0.6s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
     -ms-transition: all 0.6s ease-in-out;
-    opacity: 0;
+    opacity: 1;
+    float: none;
+}
+.img9  {
+    width: auto;
+    height: 170px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    z-index: 1;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    opacity: 1;
     float: none;
 }
 
@@ -387,6 +401,21 @@ canvas{
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 60px;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+}
+.title{
+    width:100%;
+    text-align: center;
+    font-size:25px;
+    color: #fff;
+    opacity: 0.7;
+    font-weight: 900;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 38px;
     -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
     -o-transition: all 0.6s ease-in-out;
@@ -502,40 +531,6 @@ canvas{
 /*===================================Animation laa Bro=======================================*/
 
 
-/*.ch3:hover .img4 {*/
-    /*!*width:180px;*!*/
-    /*!*height:140px;*!*/
-    /*background-size: 100%;*/
-    /*background-image:url("img/time.svg");*/
-    /*background-position: 50% 0%;*/
-    /*background-repeat: no-repeat no-repeat;*/
-    /*-webkit-transform:scale(1.1);*/
-    /*transform:scale(1.1);*/
-    /*display: block;*/
-    /*z-index: 1;*/
-/*}*/
-
-/*.ch3:hover .itime{*/
-    /*-webkit-transform:scale(1.1);*/
-    /*transform:scale(1.1);*/
-/*}*/
-/*.img4 {*/
-    /*-webkit-transition: all 1s ease-in-out;*/
-    /*transition: all 1s ease-in-out;*/
-    /*-o-transition: all 1s ease-in-out;*/
-    /*-moz-transition: all 1s ease-in-out;*/
-/*}*/
-
-
-
-/*.itime {*/
-    /*-webkit-transition: all 0.6s ease-in-out;*/
-    /*transition: all 0.6s ease-in-out;*/
-    /*-o-transition: all 0.6s ease-in-out;*/
-    /*-moz-transition: all 0.6s ease-in-out;*/
-
-/*}*/
-
 
 /*********************************************************************/
 
@@ -571,7 +566,6 @@ canvas{
     position: relative;
     overflow: hidden;
     height:320px;
-
     z-index: 1;
 }
 
@@ -815,12 +809,74 @@ canvas{
     left: 1291px;
     transition: all 0.9s;
 }
+/*********************************************************************/
+
+.highlight .ch11, .highlight {
+
+    position: relative;
+    overflow: hidden;
+    height:320px;
+    z-index: 1;
+}
+
+.highlight .ch11:before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -270px;
+    height: 500px;
+    width: 170px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.highlight .ch11:hover:before {
+    left: 1291px;
+    transition: all 0.9s;
+}
+/*********************************************************************/
+
+.highlight .ch13, .highlight {
+
+    position: relative;
+    overflow: hidden;
+    height:320px;
+    z-index: 1;
+}
+
+.highlight .ch13:before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -270px;
+    height: 500px;
+    width: 170px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.highlight .ch13:hover:before {
+    left: 1291px;
+    transition: all 0.9s;
+}
 
 
 
 
+/*********************************************************************/
+.ch2:hover .img8{
+    z-index:0;
+    -webkit-transform:scale(2);
+    transform:scale(2);
+    opacity:0;
+}
 
-
+.ch2:hover .img9{
+    z-index:0;
+    height:170px;
+    opacity: 1;
+    margin-top:40px;
+}
 
 /*********************************************************************/
 .ch1:hover .img5{
@@ -1000,6 +1056,10 @@ canvas{
 /*********************************************************************/
 
 #child:hover .texts{
+    opacity:1;
+    font-size:26px;
+}
+#child:hover .title {
     opacity:1;
     font-size:26px;
 }
