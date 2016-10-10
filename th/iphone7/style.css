@@ -330,6 +330,9 @@ div, img {
 .content > div > div > span {
     font-size: 15px;
 }
+.content > div > div > span > a {
+    text-decoration: none;
+}
 .content > div > .figures {
     width:100%;
     display: table;
