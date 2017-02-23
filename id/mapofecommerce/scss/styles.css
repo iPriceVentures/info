@@ -1,0 +1,219 @@
+@import url("../css/fonts.css");
+@import url("../css/bootstrap.min.css");
+body, html {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  font-family: 'Roboto';
+}
+
+div, img {
+  box-sizing: border-box;
+}
+
+#header {
+  position: relative;
+  background: #00D3CF;
+}
+#header .wrapper {
+  padding: 50px;
+}
+@media (max-width: 768px) {
+  #header .wrapper {
+    padding: 15px;
+  }
+}
+#header .wrapper h3 {
+  text-align: center;
+  color: #086A87;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+#header .wrapper h3 span {
+  color: #fff;
+  font-size: 30px;
+}
+#header .wrapper .head-top-navi {
+  position: relative;
+}
+#header .wrapper .head-top-navi .block.text {
+  padding-right: 30px;
+}
+@media (max-width: 480px) {
+  #header .wrapper .head-top-navi .block.text {
+    padding-right: 15px;
+  }
+}
+#header .wrapper .head-top-navi .block.text p {
+  color: #fff;
+  font-size: 14px;
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner {
+  padding: 30px 15px;
+  text-align: center;
+  background: #F4F2EF;
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .title {
+  color: #006889;
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts select {
+  border: 1px solid #36CACC;
+  background: #fff;
+  padding: 5px 10px;
+  color: #85807B;
+  min-width: 100px;
+  margin-right: 10px;
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts select option {
+  background: #fff;
+}
+@media (max-width: 768px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts select {
+    margin-top: 15px;
+  }
+}
+
+#sub-header {
+  position: relative;
+  padding-top: 20px;
+  background: #EBEBEB;
+}
+#sub-header .title {
+  padding: 5px 10px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 475px) {
+  #sub-header .title {
+    font-size: 9px;
+    min-height: 34px;
+  }
+}
+#sub-header .sub-h p {
+  font-size: 12px;
+}
+@media (max-width: 480px) {
+  #sub-header .sub-h p {
+    font-size: 10px;
+  }
+}
+#sub-header .company-bg .title {
+  background: #006889;
+}
+#sub-header .company-bg .text p {
+  padding: 5px;
+  margin-top: 10px;
+  color: #00434D;
+  text-align: center;
+  border: 1px solid #00434D;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#sub-header .company-bg .text.funding {
+  padding-left: 0;
+}
+@media (max-width: 640px) {
+  #sub-header .company-bg .text.funding {
+    padding-left: 0;
+  }
+}
+#sub-header .performance {
+  padding-left: 0;
+}
+#sub-header .performance .title {
+  background: #FF5200;
+}
+#sub-header .performance .text {
+  padding-left: 0;
+}
+#sub-header .performance .text p {
+  padding: 5px 0;
+  margin-top: 10px;
+  color: #FF5200;
+  text-align: center;
+  border: 1px solid #FF5200;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#sub-header .performance .text.traffics {
+  padding-left: 15px;
+}
+
+#chart {
+  position: relative;
+  padding-top: 30px;
+  background: #EBEBEB;
+}
+#chart .mar-bottom {
+  margin-bottom: 15px;
+}
+#chart .mar-bottom:last-child {
+  margin-bottom: 0;
+}
+#chart .logo {
+  width: 100%;
+  height: 50px;
+}
+#chart .bg-col {
+  background: #d3d1cf;
+  height: 50px;
+  position: relative;
+}
+#chart .bg-col .percent {
+  background: #086A87;
+  height: 100%;
+  width: 0;
+}
+#chart .bg-col .num {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  color: #EBEBEB;
+}
+#chart .company .employees .percent {
+  background: #086a87;
+}
+#chart .company .fundings {
+  padding-left: 0;
+}
+#chart .company .fundings .percent {
+  background: #0f5860;
+}
+#chart .performance > div {
+  padding-left: 0;
+}
+#chart .performance .traffics {
+  padding-left: 15px;
+}
+#chart .performance .traffics .percent {
+  background: #ff6633;
+}
+#chart .performance .app .percent {
+  background: #ff8a33;
+}
+#chart .performance .twitter .percent {
+  background: #f49f2f;
+}
+#chart .performance .instagram .percent {
+  background: #ef2047;
+}
+#chart .performance .facebook .percent {
+  background: #f24e14;
+}
+#chart .no-pad-left {
+  padding-left: 0;
+}
+
+#bottom-info {
+  position: relative;
+  padding: 30px auto 50px;
+  background: #EBEBEB;
+}
+#bottom-info p {
+  color: #086A87;
+  padding: 15px 15px 15px 0;
+}

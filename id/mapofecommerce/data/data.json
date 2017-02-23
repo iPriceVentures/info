@@ -1,0 +1,28 @@
+[
+  {
+    "key": 0,
+    "name": "Lazada",
+    "logo": "svg/instagram.svg",
+    "logosmall": "svg/instagram-small.svg",
+    "employees": 750,
+    "funding": 40,
+    "traffic": 49.7,
+    "app": 10000000,
+    "twitter": 198,
+    "instargram": 231,
+    "facebook": 16363
+  },
+  {
+    "key": 1,
+    "name": "Tokopedia",
+    "logo": "svg/instagram.svg",
+    "logosmall": "svg/instagram-small.svg",
+    "employees": 733,
+    "funding": 247,
+    "traffic": 39.4,
+    "app": 10000000,
+    "twitter": 117,
+    "instargram": 195,
+    "facebook": 2239
+  }
+]
