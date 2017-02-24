@@ -1,16 +1,25 @@
-@import url("../css/fonts.css");
-@import url("../css/bootstrap.min.css");
 body, html {
+  background: #EBEBEB;
   padding: 0;
   margin: 0;
   position: relative;
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: 'Noto Sans', sans-serif;
 }
 
 div, img {
   box-sizing: border-box;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+.container-fluid .no-padding {
+  padding: 0;
+}
+.container-fluid .no-pad-left {
+  padding-left: 0;
 }
 
 #header {
@@ -48,31 +57,116 @@ div, img {
 }
 #header .wrapper .head-top-navi .block.text p {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
 }
 #header .wrapper .head-top-navi .block.filter .filer-inner {
-  padding: 30px 15px;
+  padding: 10px 5px;
   text-align: center;
   background: #F4F2EF;
 }
 #header .wrapper .head-top-navi .block.filter .filer-inner .title {
   color: #006889;
+  font-size: 10px;
+  padding-right: 0;
 }
-#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts select {
+@media (min-width: 480px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .title {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .title {
+    height: 100px;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts {
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .inner {
+  text-align: right;
+  float: right;
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box {
+  position: relative;
+  margin-right: 5px;
+  width: 100px;
+  height: 22px;
+  float: left;
+}
+@media (max-width: 320px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box {
+    width: 80px;
+  }
+}
+@media (min-width: 768px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box {
+    width: 110px;
+    height: 38px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box {
+    width: 150px;
+    height: 38px;
+  }
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../imgs/dropdown_mobile@2x.png) no-repeat;
+  background-size: 22px 22px;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box span {
+    background: url(../imgs/dropdown_desktop@2x.png) no-repeat;
+    background-size: 36px 36px;
+    width: 38px;
+    height: 38px;
+    top: 1px;
+    right: -1px;
+  }
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select {
   border: 1px solid #36CACC;
   background: #fff;
-  padding: 5px 10px;
-  color: #85807B;
-  min-width: 100px;
-  margin-right: 10px;
+  outline: none;
+  width: 100px;
 }
-#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts select option {
-  background: #fff;
-}
-@media (max-width: 768px) {
-  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts select {
-    margin-top: 15px;
+@media (max-width: 320px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select {
+    width: 80px;
   }
+}
+@media (min-width: 768px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select {
+    width: 110px;
+    height: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select {
+    width: 150px;
+    height: 38px;
+  }
+}
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select option {
+  background: #fff;
+  font-size: 10px;
+  outline: none;
 }
 
 #sub-header {
@@ -96,7 +190,7 @@ div, img {
 }
 @media (max-width: 480px) {
   #sub-header .sub-h p {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 #sub-header .company-bg .title {
@@ -111,6 +205,29 @@ div, img {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  position: relative;
+  font-size: 11px;
+  min-height: 30px;
+}
+#sub-header .company-bg .text p:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  border: 1px solid transparent;
+  width: 8px;
+  height: 8px;
+  border-bottom-color: #00434D;
+  border-right-color: #00434D;
+  transform: rotate(45deg);
+}
+@media (max-width: 640px) {
+  #sub-header .company-bg .text p:after {
+    right: 3px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+  }
 }
 #sub-header .company-bg .text.funding {
   padding-left: 0;
@@ -119,9 +236,6 @@ div, img {
   #sub-header .company-bg .text.funding {
     padding-left: 0;
   }
-}
-#sub-header .performance {
-  padding-left: 0;
 }
 #sub-header .performance .title {
   background: #FF5200;
@@ -138,6 +252,29 @@ div, img {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  position: relative;
+  font-size: 12px;
+  min-height: 30px;
+}
+#sub-header .performance .text p:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  border: 1px solid transparent;
+  width: 8px;
+  height: 8px;
+  border-bottom-color: #FF5200;
+  border-right-color: #FF5200;
+  transform: rotate(45deg);
+}
+@media (max-width: 640px) {
+  #sub-header .performance .text p:after {
+    right: 3px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+  }
 }
 #sub-header .performance .text.traffics {
   padding-left: 15px;
@@ -157,6 +294,9 @@ div, img {
 #chart .logo {
   width: 100%;
   height: 50px;
+}
+#chart .logo img {
+  max-width: 100%;
 }
 #chart .bg-col {
   background: #d3d1cf;
@@ -215,5 +355,5 @@ div, img {
 }
 #bottom-info p {
   color: #086A87;
-  padding: 15px 15px 15px 0;
+  padding: 15px;
 }
