@@ -40,16 +40,16 @@
                     <div class="filer-inner">
 
                         <div class="row ">
-                            <div class="col-xs-3 title">Show result with</div>
+                            <div class="col-xs-12 title">Show result with</div>
 
-                            <div class="col-xs-9 selects-opts">
+                            <div class="col-xs-12 selects-opts">
                                 <div class="inner">
                                     <div class="select-box">
                                         <span></span>
                                         <select id="filter-type">
                                             <option value="-1">All</option>
-                                            <option value="0">Type 1</option>
-                                            <option value="1">Type 2</option>
+                                            <option value="b2c">B2C</option>
+                                            <option value="c2c">C2C</option>
                                         </select>
                                     </div>
 
@@ -57,8 +57,19 @@
                                         <span></span>
                                         <select id="filter-vertical">
                                             <option value="-1">All</option>
-                                            <option value="0">Type 1</option>
-                                            <option value="1">Type 2</option>
+                                            <option value="fashion">Fashion</option>
+                                            <option value="general">General</option>
+                                            <option value="tech">Tech & Gadget</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="select-box">
+                                        <span></span>
+                                        <select id="filter-location">
+                                            <option value="-1">All</option>
+                                            <option value="indonesia">Indonesia</option>
+                                            <option value="regional">Regional</option>
                                         </select>
                                     </div>
 
@@ -75,19 +86,9 @@
 
     <div id="sub-header">
         <div class="row">
-            <div class="col-xs-1 no-padding"></div>
-            <div class="col-xs-4 sub-h company-bg">
-                <div class="title">Company Background</div>
-                <div class="row">
-                    <div class="col-xs-6 text employees">
-                        <p>Number of Employees</p>
-                    </div>
-                    <div class="col-xs-6 text funding">
-                        <p>Fundings Amount</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-7 no-pad-left sub-h performance">
+            <div class="col-xs-2 no-padding"></div>
+
+            <div class="col-xs-7 col-sm-8 no-padding sub-h performance">
                 <div class="title">Performance</div>
                 <div class="row">
                     <div class="col-xs-4 text traffics"><p>Traffics</p></div>
@@ -97,41 +98,32 @@
                     <div class="col-xs-2 text facebook"><p>Facebook</p></div>
                 </div>
             </div>
+
+            <div class="col-xs-3 col-sm-2 sub-h company-bg">
+                <div class="title">Company Background</div>
+                <div class="row">
+                    <div class="col-xs-12 text employees">
+                        <p>Number of Employees</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="chart">
 
         <!--<div class="row mar-bottom">-->
-            <!--<div class="col-xs-1 no-padding">-->
+            <!--<div class="col-xs-2 col-sm-2 logo-wrap">-->
                 <!--<div class="logo">-->
                     <!--<a href="#" target="_blank">-->
-                        <!--<img class="hidden-xs" src="http://placehold.it/50x50" alt="">-->
-                        <!--<img class="visible-xs" src="http://placehold.it/25x25" alt="">-->
+                        <!--<img class="small" src="imgs/logo/mobile/bobobobo.png" alt="">-->
+                        <!--<img class="large" src="imgs/logo/desktop/bobobobo.png" alt="">-->
+                        <!--<span class="vendor-name">Bobobobo</span>-->
                     <!--</a>-->
                 <!--</div>-->
             <!--</div>-->
 
-            <!--<div class="col-xs-4">-->
-                <!--<div class="row company">-->
-                    <!--<div class="col-xs-6 employees">-->
-                        <!--<div class="bg-col">-->
-                            <!--<div class="percent"></div>-->
-                            <!--<span class="num">50</span>-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-                    <!--<div class="col-xs-6 fundings">-->
-                        <!--<div class="bg-col">-->
-                            <!--<div class="percent"></div>-->
-                            <!--<span class="num">$160000</span>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-            <!--</div>-->
-
-            <!--<div class="col-xs-7 no-pad-left">-->
+            <!--<div class="col-xs-7 col-sm-8 no-padding">-->
                 <!--<div class="row performance">-->
                     <!--<div class="col-xs-4 traffics">-->
                         <!--<div class="bg-col">-->
@@ -168,6 +160,18 @@
                         <!--</div>-->
                     <!--</div>-->
                 <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="col-xs-3 col-sm-2">-->
+                <!--<div class="row company">-->
+                    <!--<div class="col-xs-12 employees">-->
+                        <!--<div class="bg-col">-->
+                            <!--<div class="percent"></div>-->
+                            <!--<span class="num">50</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
             <!--</div>-->
         <!--</div>-->
 

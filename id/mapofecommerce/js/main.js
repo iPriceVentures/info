@@ -99,7 +99,8 @@ CHART.main = {
                 var facebook_per = CHART.main.convertPercent('facebook', object[i].facebook) + '%';
                 var desktop_url = 'imgs/' + object[i].logodesktop;
                 var mobile_url = 'imgs/' + object[i].logomobile;
-                var url = object[i].url;
+                var link = object[i].url;
+                var vendor_name = object[i].name;
 
                 var f_type = object[i].type;
                 var f_category = object[i].category;
@@ -107,72 +108,68 @@ CHART.main = {
 
                 var html = '';
 
-                html += '<div class="row mar-bottom" data-type="' + f_type + '" data-category="' + f_category + '" data-location = "' + f_location + '">';
-                html += '<div class="col-xs-1">';
-                html += '<div class="logo">';
-                html += '<a href="' + url + '" target="_blank">';
-                html += '<img class="hidden-xs" src="' + desktop_url + '" alt="">';
-                html += '<img class="visible-xs" src="' + mobile_url + '" alt="">';
-                html += '</a>';
-                html += '</div>';
-                html += '</div>';
+                    html += '<div class="row mar-bottom" data-type="'+ f_type +'" data-category="' + f_category + '" data-location="' + f_location + '">';
+                    html += '<div class="col-xs-2 col-sm-2 logo-wrap">';
+                    html += '<div class="logo">';
+                    html += '<a href="'+ link +'" target="_blank">';
+                    html += '<img class="small" src="' + mobile_url + '" alt="'+ vendor_name +'" title="'+ vendor_name +'">';
+                    html += '<img class="large" src="' + desktop_url + '" alt="'+ vendor_name +'" title="'+ vendor_name +'">';
+                    html += '<span class="vendor-name">' + vendor_name + '</span>';
+                    html += '</a>';
+                    html += '</div>';
+                    html += '</div>';
 
-                html += '<div class="col-xs-4">';
-                html += '<div class="row company">';
-                html += '<div class="col-xs-6 employees">';
-                html += '<div class="bg-col">';
-                html += '<div class="percent" data-per="' + employees_per +'"></div>';
-                html += '<span class="num">' + object[i].employees + '</span>';
-                html += '</div>';
-                html += '</div>';
+                    html += '<div class="col-xs-7 col-sm-8 no-padding">';
+                    html += '<div class="row performance">';
+                    html += '<div class="col-xs-4 traffics">';
+                    html += '<div class="bg-col">';
+                    html += '<div class="percent" data-per="'+ traffic_per +'"></div>';
+                    html += '<span class="num">50</span>';
+                    html += '</div>';
+                    html += '</div>';
 
-                html += '<div class="col-xs-6 fundings">';
-                html += '<div class="bg-col">';
-                html += '<div class="percent" data-per = "50"></div>';
-                html += '<span class="num">$160000</span>';
-                html += '</div>';
-                html += '</div>';
-                html += '</div>';
-                html += '</div>';
+                    html += '<div class="col-xs-2 app">';
+                    html += '<div class="bg-col">';
+                    html += '<div class="percent" data-per="'+ app_per +'"></div>';
+                    html += '<span class="num">50</span>';
+                    html += '</div>';
+                    html += '</div>';
 
-                html += '<div class="col-xs-7 no-pad-left">';
-                html += '<div class="row performance">';
-                html += '<div class="col-xs-4 traffics">';
-                html += '<div class="bg-col">';
-                html += '<div class="percent" data-per="' + traffic_per +'"></div>';
-                html += '<span class="num">' + object[i].traffic + '</span>';
-                html += '</div>';
-                html += '</div>';
+                    html += '<div class="col-xs-2 twitter">';
+                    html += '<div class="bg-col">';
+                    html += '<div class="percent" data-per="'+ twitter_per +'"></div>';
+                    html += '<span class="num">50</span>';
+                    html += '</div>';
+                    html += '</div>';
 
-                html += '<div class="col-xs-2 app">';
-                html += '<div class="bg-col">';
-                html += '<div class="percent" data-per="' + app_per + '"></div>';
-                html += '<span class="num"> ' + object[i].app + '</span>';
-                html += '</div>';
-                html += '</div>';
+                    html += '<div class="col-xs-2 instagram">';
+                    html += '<div class="bg-col">';
+                    html += '<div class="percent" data-per="'+ instargram_per +'"></div>';
+                    html += '<span class="num">50</span>';
+                    html += '</div>';
+                    html += '</div>';
 
-                html += '<div class="col-xs-2 twitter">';
-                html += '<div class="bg-col">';
-                html += '<div class="percent" data-per="' + twitter_per + '"></div>';
-                html += '<span class="num">' + object[i].twitter +'</span>';
-                html += '</div>';
-                html += '</div>';
+                    html += '<div class="col-xs-2 facebook">';
+                    html += '<div class="bg-col">';
+                    html += '<div class="percent" data-per="'+ facebook_per +'"></div>';
+                    html += '<span class="num">50</span>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
 
-                html += '<div class="col-xs-2 instagram">';
-                html += '<div class="bg-col">';
-                html += '<div class="percent" data-per="' + instargram_per + '"></div>';
-                html += '<span class="num">' + object[i].instargram +'</span>';
-                html += '</div>';
-                html += '</div>';
+                    html += '<div class="col-xs-3 col-sm-2">';
+                    html += '<div class="row company">';
+                    html += '<div class="col-xs-12 employees">';
+                    html += '<div class="bg-col">';
+                    html += '<div class="percent" data-per="'+ employees_per +'"></div>';
+                    html += '<span class="num">50</span>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
 
-                html += '<div class="col-xs-2 facebook">';
-                html += '<div class="bg-col">';
-                html += '<div class="percent" data-per="' + facebook_per + '"></div>';
-                html += '<span class="num">' + object[i].facebook +'</span>';
-                html += '</div>';
-                html += '</div>';
-                html += '</div>';
-                html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
 
                 $('#chart').append(html);
                 CHART.main.animation();
