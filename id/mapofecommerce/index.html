@@ -47,7 +47,7 @@
                                     <div class="select-box">
                                         <span></span>
                                         <select id="filter-type">
-                                            <option value="-1">All</option>
+                                            <option value="-1">Type</option>
                                             <option value="b2c">B2C</option>
                                             <option value="c2c">C2C</option>
                                         </select>
@@ -55,8 +55,8 @@
 
                                     <div class="select-box">
                                         <span></span>
-                                        <select id="filter-vertical">
-                                            <option value="-1">All</option>
+                                        <select id="filter-category">
+                                            <option value="-1">Category</option>
                                             <option value="fashion">Fashion</option>
                                             <option value="general">General</option>
                                             <option value="tech">Tech & Gadget</option>
@@ -67,7 +67,7 @@
                                     <div class="select-box">
                                         <span></span>
                                         <select id="filter-location">
-                                            <option value="-1">All</option>
+                                            <option value="-1">Location</option>
                                             <option value="indonesia">Indonesia</option>
                                             <option value="regional">Regional</option>
                                         </select>
@@ -84,25 +84,25 @@
 
     </div>
 
-    <div id="sub-header">
+    <div id="sub-header" class="sortable">
         <div class="row">
             <div class="col-xs-2 no-padding"></div>
 
             <div class="col-xs-7 col-sm-8 no-padding sub-h performance">
                 <div class="title">Performance</div>
                 <div class="row">
-                    <div class="col-xs-4 text traffics"><p>Traffics</p></div>
-                    <div class="col-xs-2 text app"><p>App</p></div>
-                    <div class="col-xs-2 text twitter"><p>Twitter</p></div>
-                    <div class="col-xs-2 text instagrm"><p>Instagrm</p></div>
-                    <div class="col-xs-2 text facebook"><p>Facebook</p></div>
+                    <div class="col-xs-4 text traffics" data-sort="traffics"><p>Traffics</p></div>
+                    <div class="col-xs-2 text app" data-sort="app"><p>App</p></div>
+                    <div class="col-xs-2 text twitter" data-sort="twitter"><p>Twitter</p></div>
+                    <div class="col-xs-2 text instargram" data-sort="instargram"><p>Instagrm</p></div>
+                    <div class="col-xs-2 text facebook" data-sort="facebook"><p>Facebook</p></div>
                 </div>
             </div>
 
             <div class="col-xs-3 col-sm-2 sub-h company-bg">
                 <div class="title">Company Background</div>
                 <div class="row">
-                    <div class="col-xs-12 text employees">
+                    <div class="col-xs-12 text employees" data-sort="employees">
                         <p>Number of Employees</p>
                     </div>
                 </div>
@@ -111,7 +111,6 @@
     </div>
 
     <div id="chart">
-
         <!--<div class="row mar-bottom">-->
             <!--<div class="col-xs-2 col-sm-2 logo-wrap">-->
                 <!--<div class="logo">-->

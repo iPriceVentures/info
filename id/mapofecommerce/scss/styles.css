@@ -37,6 +37,7 @@ div, img { box-sizing: border-box; }
 @media (min-width: 1024px) { #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select { width: 130px; height: 35px; font-size: 12px; } }
 @media (min-width: 1200px) { #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select { margin-right: 15px; width: 100%; } }
 #header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select option { background: #fff; font-size: 12px; outline: none; }
+#header .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select:disabled { background: #cccccc; }
 
 #sub-header { position: relative; padding-top: 20px; background: #EBEBEB; }
 #sub-header .title { padding: 5px; color: #fff; text-align: center; font-family: 'Noto Sans'; font-size: 7px; min-height: 30px; }
@@ -45,7 +46,9 @@ div, img { box-sizing: border-box; }
 #sub-header .sub-h p { font-size: 12px; }
 @media (max-width: 480px) { #sub-header .sub-h p { font-size: 9px; } }
 #sub-header .company-bg .title { background: #006889; }
-#sub-header .company-bg .text p { padding: 5px; margin-top: 10px; color: #00434D; text-align: center; border: 1px solid #00434D; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; font-size: 11px; min-height: 30px; font-family: 'Noto Sans'; }
+#sub-header .company-bg .text { cursor: pointer; }
+#sub-header .company-bg .text.active p { border: 1px solid #006889; }
+#sub-header .company-bg .text p { padding: 5px; margin-top: 10px; color: #00434D; text-align: center; border: 1px solid #cccccc; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; font-size: 11px; min-height: 30px; font-family: 'Noto Sans'; }
 @media (max-width: 640px) { #sub-header .company-bg .text p { font-size: 9px; min-height: 24px; } }
 #sub-header .company-bg .text p:after { content: ""; position: absolute; right: 5px; top: 7px; border: 1px solid transparent; width: 8px; height: 8px; border-bottom-color: #00434D; border-right-color: #00434D; transform: rotate(45deg); }
 @media (max-width: 640px) { #sub-header .company-bg .text p:after { right: 3px; top: 7px; width: 5px; height: 5px; } }
@@ -53,9 +56,10 @@ div, img { box-sizing: border-box; }
 @media (max-width: 640px) { #sub-header .company-bg .text.funding { padding-left: 0; } }
 #sub-header .performance .title { background: #FF5200; }
 @media (max-width: 768px) { #sub-header .performance .title { margin-right: -10px; padding-top: 10px; } }
-#sub-header .performance .text { padding-left: 0; }
+#sub-header .performance .text { cursor: pointer; padding-left: 0; }
+#sub-header .performance .text.active p { border: 1px solid #FF5200; }
 @media (max-width: 640px) { #sub-header .performance .text { padding-right: 5px; } }
-#sub-header .performance .text p { padding: 5px 0; margin-top: 10px; color: #FF5200; text-align: center; border: 1px solid #FF5200; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; font-size: 12px; min-height: 30px; }
+#sub-header .performance .text p { padding: 5px 0; margin-top: 10px; color: #FF5200; text-align: center; border: 1px solid #cccccc; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; font-size: 12px; min-height: 30px; }
 @media (max-width: 640px) { #sub-header .performance .text p { font-size: 9px; min-height: 24px; } }
 #sub-header .performance .text p:after { content: ""; position: absolute; right: 5px; top: 7px; border: 1px solid transparent; width: 8px; height: 8px; border-bottom-color: #FF5200; border-right-color: #FF5200; transform: rotate(45deg); }
 @media (max-width: 640px) { #sub-header .performance .text p:after { right: 3px; top: 7px; width: 5px; height: 5px; } }
@@ -65,19 +69,19 @@ div, img { box-sizing: border-box; }
 #chart .mar-bottom { margin-bottom: 15px; }
 #chart .mar-bottom:last-child { margin-bottom: 0; }
 @media (max-width: 640px) { #chart .logo-wrap { padding-right: 5px; } }
-#chart .logo { width: 100%; background: #d3d1cf; text-align: left; padding: 4px; max-height: 50px; }
+#chart .logo { width: 100%; background: #d3d1cf; text-align: left; padding: 4px; max-height: 50px; overflow: hidden; }
 #chart .logo a { text-decoration: none; outline: none; }
-#chart .logo .vendor-name { vertical-align: middle; color: #086A87; padding-left: 10px; }
+#chart .logo .vendor-name { vertical-align: middle; color: #086A87; padding-left: 10px; font-size: 11px; }
 @media (max-width: 768px) { #chart .logo .vendor-name { display: none; } }
 #chart .logo img.small { display: none; }
-@media (max-width: 640px) { #chart .logo img.small { display: block; height: 25px; margin: 0 auto; } }
-#chart .logo img.large { display: inline-block; height: 40px; }
-@media (max-width: 640px) { #chart .logo img.large { display: none; } }
-#chart .bg-col { background: #d3d1cf; height: 33px; position: relative; }
-@media (min-width: 640px) { #chart .bg-col { height: 50px; } }
+@media (max-width: 768px) { #chart .logo img.small { display: block; height: 27px; margin: 0 auto; } }
+#chart .logo img.large { display: inline-block; height: 42px; width: 40px; }
+@media (max-width: 768px) { #chart .logo img.large { display: none; } }
+#chart .bg-col { background: #d3d1cf; height: 50px; position: relative; }
+@media (max-width: 768px) { #chart .bg-col { height: 35px; } }
 #chart .bg-col .percent { background: #086A87; height: 100%; width: 0; }
-#chart .bg-col .num { position: absolute; left: 5px; top: 8px; color: #EBEBEB; }
-@media (min-width: 640px) { #chart .bg-col .num { top: 15px; } }
+#chart .bg-col .num { position: absolute; left: 5px; top: 18px; color: red; font-size: 11px; }
+@media (max-width: 768px) { #chart .bg-col .num { top: 12px; } }
 #chart .company .employees .percent { background: #086a87; }
 #chart .company .fundings { padding-left: 0; }
 #chart .company .fundings .percent { background: #0f5860; }

@@ -159,6 +159,7 @@ div, img {
                       height:22px;
                       font-size: 8px;
                       font-family: 'Noto Sans';
+
                       @media(min-width: 375px) {
                         width: 95px;
                         font-size: 9px;
@@ -184,6 +185,10 @@ div, img {
                         background: #fff;
                         font-size: 12px;
                         outline: none;
+                      }
+
+                      &:disabled {
+                        background: #cccccc;
                       }
                     }
                   }
@@ -238,13 +243,18 @@ div, img {
       }
       
       .text {
-
+        cursor: pointer;
+        &.active {
+          p {
+            border: 1px solid #006889;
+          }
+        }
           p {
             padding: 5px;
             margin-top: 10px;
             color: #00434D;
             text-align: center;
-            border: 1px solid #00434D;
+            border: 1px solid #cccccc;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -258,9 +268,6 @@ div, img {
               min-height: 24px;
             }
 
-            &.active {
-
-            }
             &:after {
               content: "";
               position: absolute;
@@ -304,8 +311,14 @@ div, img {
 
       }
       .text {
+        cursor: pointer;
         padding-left: 0;
 
+        &.active {
+          p {
+            border: 1px solid #FF5200;
+          }
+        }
         @media(max-width: 640px) {
           padding-right: 5px;
         }
@@ -314,7 +327,7 @@ div, img {
             margin-top: 10px;
             color: #FF5200;
             text-align: center;
-            border: 1px solid #FF5200;
+            border: 1px solid #cccccc;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -379,6 +392,7 @@ div, img {
       text-align: left;
       padding: 4px;
       max-height: 50px;
+      overflow: hidden;
 
       a {
         text-decoration: none;
@@ -388,6 +402,7 @@ div, img {
         vertical-align: middle;
         color: #086A87;
         padding-left: 10px;
+        font-size: 11px;
         @media(max-width: 768px) {
           display: none;
         }
@@ -397,17 +412,17 @@ div, img {
 
         &.small {
           display: none;
-          @media(max-width: 640px) {
+          @media(max-width: 768px) {
             display: block;
-            height:25px;
+            height:27px;
             margin: 0 auto;
           }
         }
-
         &.large {
           display: inline-block;
-          height:40px;
-          @media(max-width: 640px) {
+          height:42px;
+          width: 40px;
+          @media(max-width: 768px) {
             display: none;
           }
         }
@@ -416,11 +431,11 @@ div, img {
 
     .bg-col {
       background: #d3d1cf;
-      height: 33px;
+      height: 50px;
       position: relative;
 
-      @media(min-width: 640px) {
-        height:50px;
+      @media(max-width: 768px) {
+        height:35px;
       }
       .percent {
         background: #086A87;
@@ -431,10 +446,11 @@ div, img {
       .num {
         position: absolute;
         left:5px;
-        top: 8px;
-        color: #EBEBEB;
-        @media(min-width: 640px) {
-          top:15px;
+        top: 18px;
+        color: red;
+        font-size: 11px;
+        @media(max-width: 768px) {
+          top:12px;
         }
       }
     }

@@ -23,39 +23,140 @@ var Ranges = {
     "min_employees" : 0,
     "max_employees" : 5500
 };
+var originList;
+var currentList;
 
-CHART.main = {
+    CHART.main = {
     initChart: function () {
-        var chart = $('#chart');
-        var company = chart.find('.company');
-        var performance = chart.find('.performance');
-
-        //draw company chart
-
-        //TweenMax.staggerTo(".percent", 0.6, {width: '80%'}, 0.1);
+        CHART.main.getData();
+        CHART.main.filter();
+        CHART.main.sortEvent();
     },
-    sortByType: function (type) {
-        if(type != '' || type != null){
+    sortEvent: function () {
+        var order = -1;
+        $(document).off('click').on('click', '.sortable .text', function () {
 
+            $('.sortable .text').removeClass('active');
+            $(this).addClass('active');
+            if(order === -1) {
+                CHART.main.sortBy(currentList, order, $(this).attr('data-sort'));
+                order = 1;
+            } else {
+                CHART.main.sortBy(currentList, order, $(this).attr('data-sort'));
+                order = -1;
+            }
+        });
+    },
+    sortBy: function (arr, order, property) {
+        var arrSort = arr.slice(0);
+        arrSort.sort(function(a,b) {
+            if(order  === 1) {//ascending
+                return a[property] - b[property];
+            } else if (order === -1) { // descending
+                return b[property] - a[property];
+            }
+        });
+
+        CHART.main.renderChart(arrSort);
+    },
+    filter: function () {
+
+        $(document).change('.selects-opts select',function(){
+            var type = $('#filter-type option:selected').val();
+            var category = $('#filter-category option:selected').val();
+            var location = $('#filter-location option:selected').val();
+
+            var arrFilter = [];
+            if(type !== '-1') {
+                arrFilter.push(type);
+            }
+            if(category !== '-1') {
+                arrFilter.push(category);
+            }
+            if(location !== '-1') {
+                arrFilter.push(location);
+            }
+
+            CHART.main.makeFilter(arrFilter);
+        });
+    },
+    makeFilter: function (arr) {
+        CHART.main.renderChart(originList);
+        console.log(arr);
+        var keysArr = [];
+
+        if(arr !== null && arr.length > 0) {
+            //console.log(arr);
+
+            $('#chart .canFilter').css('display', 'none');
+
+            $('#chart .canFilter').each(function () {
+                var _this = $(this);
+
+                if(arr.length === 1) {
+                    if(_this.hasClass(arr[0])) {
+                        _this.css('display','block');
+                        keysArr.push(parseInt( _this.attr('data-key')));
+                    }
+                } else if (arr.length === 2) {
+                    if(_this.hasClass(arr[0]) && _this.hasClass(arr[1])) {
+                        _this.css('display','block');
+                        keysArr.push(parseInt( _this.attr('data-key')));
+                    }
+                } else if (arr.length === 3) {
+                    if(_this.hasClass(arr[0]) && _this.hasClass(arr[1]) && _this.hasClass(arr[2])) {
+                        _this.css('display','block');
+                        keysArr.push(parseInt( _this.attr('data-key')));
+                    }
+                }
+            });
+
+            CHART.main.updateSortList(keysArr);
+
+        } else {
+            CHART.main.updateSortList();
+            $('#chart .canFilter').css('display', 'block');
         }
+    },
+    updateSortList: function (keysArr) {
+        console.log("arrkeys:" + keysArr);
+        if(keysArr != undefined && keysArr != null) {
+
+            var newList = [];
+
+            for(var i =0; i< originList.length; i ++) {
+                if(keysArr.indexOf(originList[i].key) !== -1) {
+                    var obj = originList[i];
+                    newList.push(obj);
+                }
+            }
+
+            //console.log(newList);
+            currentList = newList;
+
+            //console.log(currentList);
+        } else {
+            currentList = originList;
+        }
+
     },
     animation: function () {
 
         var obj = $('#chart .percent');
         obj.each(function () {
-
             var per = $(this).attr('data-per');
-            console.log( per);
             TweenMax.to($(this), 1, { width: per }, 1);
         });
 
     },
     getData: function () {
         var data = $.getJSON( "data/data.json", function() {
-            console.log( "success" );
         })
         .complete(function() {
-            CHART.main.renderChart(data);
+            originList = data.responseJSON;
+            currentList = data.responseJSON;
+            //console.log( currentList );
+            CHART.main.renderChart(data.responseJSON);
         });
     },
     convertPercent: function (type, number) {
@@ -84,31 +185,33 @@ CHART.main = {
         return per;
     },
     renderChart: function (data) {
-        if(data.responseJSON !== null || data.responseJSON!=='') {
+        if(data !== null || data!=='') {
 
-            var object = data.responseJSON;
-            console.log(object);
+            $('#chart').html('');
 
-            for(var i=0; i< object.length; i ++) {
+            for(var i=0; i< data.length; i ++) {
 
-                var employees_per = CHART.main.convertPercent('employee', object[i].employees) + '%';
-                var traffic_per = CHART.main.convertPercent('traffics', object[i].traffic) + '%';
-                var app_per = CHART.main.convertPercent('app', object[i].app) + '%';
-                var twitter_per = CHART.main.convertPercent('twitter', object[i].twitter) + '%';
-                var instargram_per = CHART.main.convertPercent('instargram', object[i].instargram) + '%';
-                var facebook_per = CHART.main.convertPercent('facebook', object[i].facebook) + '%';
-                var desktop_url = 'imgs/' + object[i].logodesktop;
-                var mobile_url = 'imgs/' + object[i].logomobile;
-                var link = object[i].url;
-                var vendor_name = object[i].name;
+                var employees_per = CHART.main.convertPercent('employee', data[i].employees) + '%';
+                var traffic_per = CHART.main.convertPercent('traffics', data[i].traffics) + '%';
+                var app_per = CHART.main.convertPercent('app', data[i].app) + '%';
+                var twitter_per = CHART.main.convertPercent('twitter', data[i].twitter) + '%';
+                var instargram_per = CHART.main.convertPercent('instargram', data[i].instargram) + '%';
+                var facebook_per = CHART.main.convertPercent('facebook', data[i].facebook) + '%';
 
-                var f_type = object[i].type;
-                var f_category = object[i].category;
-                var f_location = object[i].location;
+                var desktop_url = 'imgs/' + data[i].logodesktop;
+                var mobile_url = 'imgs/' + data[i].logomobile;
+
+                var link = data[i].url;
+
+                var vendor_name = data[i].name;
+
+                var f_type = data[i].type;
+                var f_category = data[i].category;
+                var f_location = data[i].location;
 
                 var html = '';
 
-                    html += '<div class="row mar-bottom" data-type="'+ f_type +'" data-category="' + f_category + '" data-location="' + f_location + '">';
+                    html += '<div data-key ="'+ data[i].key +'" class="row mar-bottom canFilter '   + f_type +' '+ f_category +' '+ f_location +'" data-type="'+ f_type +'" data-category="' + f_category + '" data-location="' + f_location + '">';
                     html += '<div class="col-xs-2 col-sm-2 logo-wrap">';
                     html += '<div class="logo">';
                     html += '<a href="'+ link +'" target="_blank">';
@@ -124,35 +227,35 @@ CHART.main = {
                     html += '<div class="col-xs-4 traffics">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ traffic_per +'"></div>';
-                    html += '<span class="num">50</span>';
+                    html += '<span class="num">'+data[i].traffics+'</span>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 app">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ app_per +'"></div>';
-                    html += '<span class="num">50</span>';
+                    html += '<span class="num">'+data[i].app+'</span>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 twitter">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ twitter_per +'"></div>';
-                    html += '<span class="num">50</span>';
+                    html += '<span class="num">'+data[i].twitter+'</span>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 instagram">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ instargram_per +'"></div>';
-                    html += '<span class="num">50</span>';
+                    html += '<span class="num">'+data[i].instargram+'</span>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 facebook">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ facebook_per +'"></div>';
-                    html += '<span class="num">50</span>';
+                    html += '<span class="num">'+data[i].facebook+'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
@@ -163,7 +266,7 @@ CHART.main = {
                     html += '<div class="col-xs-12 employees">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ employees_per +'"></div>';
-                    html += '<span class="num">50</span>';
+                    html += '<span class="num">'+data[i].employees+'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
@@ -180,6 +283,5 @@ CHART.main = {
 }
 
 $(window).load(function () {
-
-     CHART.main.getData();
+    CHART.main.initChart();
 });
