@@ -4,25 +4,7 @@
 'use strict';
 
 var CHART = window.CHART || {};
-var Ranges = {
-    "min_traffics" : 0,
-    "max_traffics" : 49000000,
-
-    "min_app" : 0,
-    "max_app" : 100000000,
-
-    "min_twitter" : 0,
-    "max_twitter" : 415000,
-
-    "min_instargram" : 0,
-    "max_instargram" : 519000,
-
-    "min_facebook" : 0,
-    "max_facebook" : 16500000,
-
-    "min_employees" : 0,
-    "max_employees" : 5500
-};
+var Ranges;
 var originList;
 var currentList;
 
@@ -82,11 +64,9 @@ var currentList;
     },
     makeFilter: function (arr) {
         CHART.main.renderChart(originList);
-        console.log(arr);
         var keysArr = [];
 
         if(arr !== null && arr.length > 0) {
-            //console.log(arr);
 
             $('#chart .canFilter').css('display', 'none');
 
@@ -119,7 +99,7 @@ var currentList;
         }
     },
     updateSortList: function (keysArr) {
-        console.log("arrkeys:" + keysArr);
+
         if(keysArr != undefined && keysArr != null) {
 
             var newList = [];
@@ -131,10 +111,8 @@ var currentList;
                 }
             }
 
-            //console.log(newList);
             currentList = newList;
 
-            //console.log(currentList);
         } else {
             currentList = originList;
         }
@@ -150,13 +128,15 @@ var currentList;
 
     },
     getData: function () {
-        var data = $.getJSON( "data/data.json", function() {
+        var obj = $.getJSON( "data/data.json", function() {
+
         })
         .complete(function() {
-            originList = data.responseJSON;
-            currentList = data.responseJSON;
-            //console.log( currentList );
-            CHART.main.renderChart(data.responseJSON);
+            originList = obj.responseJSON.data;
+            currentList = obj.responseJSON.data;
+            Ranges = obj.responseJSON.ranges;
+
+            CHART.main.renderChart(obj.responseJSON.data);
         });
     },
     convertPercent: function (type, number) {
