@@ -6,6 +6,12 @@ var Ranges;
 var originList;
 var currentList;
 
+Number.prototype.format = function(n, x, s, c) {
+    var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
+        num = this.toFixed(Math.max(0, ~~n));
+
+    return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
+};
     CHART.main = {
     initChart: function () {
         CHART.main.getData();
@@ -220,35 +226,35 @@ var currentList;
                     html += '<div class="col-xs-4 traffics">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ traffic_per +'"></div>';
-                    html += '<span class="num">'+data[i].traffics+'</span>';
+                    html += '<span class="num">'+ data[i].traffics.format()+'</span>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 app">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ app_per +'"></div>';
-                    html += '<span class="num">'+data[i].app+'</span>';
+                    html += '<span class="num">'+data[i].app.format()+'</span>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 twitter">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ twitter_per +'"></div>';
-                    html += '<span class="num">'+data[i].twitter+'</span>';
+                    html += '<span class="num">'+data[i].twitter.format()+'</span>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 instagram">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ instagram_per +'"></div>';
-                    html += '<span class="num">'+data[i].instagram+'</span>';
+                    html += '<span class="num">'+data[i].instagram.format() +'</span>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 facebook">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ facebook_per +'"></div>';
-                    html += '<span class="num">'+data[i].facebook+'</span>';
+                    html += '<span class="num">'+data[i].facebook.format() +'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
@@ -259,7 +265,7 @@ var currentList;
                     html += '<div class="col-xs-12 employees">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ employees_per +'"></div>';
-                    html += '<span class="num">'+data[i].employees+'</span>';
+                    html += '<span class="num">'+data[i].employees.format() +'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
