@@ -8,6 +8,30 @@ body, html {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.lang {
+  &.id {
+    
+  }
+  &.en {
+    display: none;
+  }
+}
+
+#lang-selection {
+  text-align: right;
+  a {
+    color: #086A87;
+    text-decoration: none;
+    outline: none;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    &.active {
+      color: #EBEBEB;
+    }
+  }
+}
+
 div, img {
   box-sizing: border-box;
 }
@@ -27,7 +51,7 @@ div, img {
     padding-right: 0;
   }
 }
-  #header {
+  #header-content {
       position: relative;
       background: #00D3CF;
 
@@ -64,7 +88,7 @@ div, img {
                 font-size: 13px;
                 font-family: 'Noto Sans';
                 @media(min-width: 768px) {
-                  font-size: 11px;
+                  font-size: 15px;
                 }
               }
             }
@@ -201,6 +225,22 @@ div, img {
       }
     }
 
+  #embed-section {
+    padding-top: 30px;
+    width: 100%;
+    textarea {
+      width: 100%;
+      height:24px;
+      font-size:16px;
+      overflow: hidden;
+      background-color: #f5f5f5;
+      word-wrap: break-word;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      resize: vertical;
+      font-style: italic;
+    }
+  }
   #sub-header {
     position: relative;
     padding-top: 20px;
@@ -447,10 +487,11 @@ div, img {
         position: absolute;
         left:5px;
         top: 18px;
-        color: red;
+        color: #086A87;
         font-size: 11px;
         @media(max-width: 768px) {
-          top:12px;
+          top:15px;
+          font-size: 7px;
         }
       }
     }
@@ -458,6 +499,9 @@ div, img {
       .employees {
         .percent {
           background: #086a87;
+        }
+        .num {
+          color: #FF5200;
         }
       }
 
@@ -518,12 +562,12 @@ div, img {
 
 #bottom-info {
   position: relative;
-  padding:30px auto 50px;
+  padding:30px 15px 50px 15px;
   background: #EBEBEB;
 
   p {
     color: #086A87;
-    padding: 15px;
+    padding: 5px 0;
     font-family: 'Noto Sans';
   }
 }

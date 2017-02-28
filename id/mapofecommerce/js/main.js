@@ -1,6 +1,4 @@
-/**
- * Created by mac on 23/02/2017.
- */
+
 'use strict';
 
 var CHART = window.CHART || {};
@@ -13,8 +11,23 @@ var currentList;
         CHART.main.getData();
         CHART.main.filter();
         CHART.main.sortEvent();
+        CHART.main.initLangChange();
+    },
+    initLangChange: function () {
+
+        $('#lang-selection a').on('click', function () {
+           $(this).siblings('a').removeClass('active');
+           $(this).addClass('active');
+
+           var lang = $(this).attr('data-lang');
+
+           $('.lang').hide();
+           $('.'+lang).show();
+
+        });
     },
     sortEvent: function () {
+
         var order = -1;
         $(document).off('click').on('click', '.sortable .text', function () {
 
@@ -47,6 +60,7 @@ var currentList;
             var type = $('#filter-type option:selected').val();
             var category = $('#filter-category option:selected').val();
             var location = $('#filter-location option:selected').val();
+            $('.sortable .text').removeClass('active');
 
             var arrFilter = [];
             if(type !== '-1') {
@@ -129,7 +143,6 @@ var currentList;
     },
     getData: function () {
         var obj = $.getJSON( "data/data.json", function() {
-
         })
         .complete(function() {
             originList = obj.responseJSON.data;
@@ -151,8 +164,8 @@ var currentList;
         } else if (type === 'twitter') {
             var rs =  parseFloat( (number / Ranges.max_twitter) * 100 );
             per = Math.round(rs * 1000) /1000;
-        } else if (type === 'instargram') {
-            var rs =  parseFloat( (number / Ranges.max_instargram) * 100 );
+        } else if (type === 'instagram') {
+            var rs =  parseFloat( (number / Ranges.max_instagram) * 100 );
             per = Math.round(rs * 1000) /1000;
         } else if (type === 'facebook') {
             var rs =  parseFloat( (number / Ranges.max_facebook) * 100 );
@@ -165,7 +178,7 @@ var currentList;
         return per;
     },
     renderChart: function (data) {
-        if(data !== null || data!=='') {
+        if(data !== null && data.length > 0) {
 
             $('#chart').html('');
 
@@ -175,7 +188,7 @@ var currentList;
                 var traffic_per = CHART.main.convertPercent('traffics', data[i].traffics) + '%';
                 var app_per = CHART.main.convertPercent('app', data[i].app) + '%';
                 var twitter_per = CHART.main.convertPercent('twitter', data[i].twitter) + '%';
-                var instargram_per = CHART.main.convertPercent('instargram', data[i].instargram) + '%';
+                var instagram_per = CHART.main.convertPercent('instagram', data[i].instagram) + '%';
                 var facebook_per = CHART.main.convertPercent('facebook', data[i].facebook) + '%';
 
                 var desktop_url = 'imgs/' + data[i].logodesktop;
@@ -227,8 +240,8 @@ var currentList;
 
                     html += '<div class="col-xs-2 instagram">';
                     html += '<div class="bg-col">';
-                    html += '<div class="percent" data-per="'+ instargram_per +'"></div>';
-                    html += '<span class="num">'+data[i].instargram+'</span>';
+                    html += '<div class="percent" data-per="'+ instagram_per +'"></div>';
+                    html += '<span class="num">'+data[i].instagram+'</span>';
                     html += '</div>';
                     html += '</div>';
 
