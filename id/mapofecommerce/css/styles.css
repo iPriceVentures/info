@@ -34,8 +34,8 @@ div, img { box-sizing: border-box; }
 @media (min-width: 768px) { #header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box { width: 100px; height: 30px; } }
 @media (min-width: 1024px) { #header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box { width: 130px; height: 35px; } }
 @media (min-width: 1200px) { #header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box { margin-right: 15px; width: 30%; } }
-#header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box span { position: absolute; top: 0; right: 0; background: url(../imgs/dropdown_mobile@2x.png) no-repeat; background-size: 22px 22px; width: 22px; height: 22px; pointer-events: none; }
-@media (min-width: 768px) { #header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box span { background: url(../imgs/dropdown_desktop@2x.png) no-repeat; background-size: 30px 30px; width: 30px; height: 30px; top: 0; right: -1px; } }
+#header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box span { position: absolute; top: 0; right: 0; background: url(../imgs/dropdown_mobile.png) no-repeat; background-size: 22px 22px; width: 22px; height: 22px; pointer-events: none; }
+@media (min-width: 768px) { #header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box span { background: url(../imgs/dropdown_desktop.png) no-repeat; background-size: 30px 30px; width: 30px; height: 30px; top: 0; right: -1px; } }
 @media (min-width: 1024px) { #header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box span { background: url(../imgs/dropdown_desktop@2x.png) no-repeat; background-size: 35px 35px; width: 35px; height: 35px; top: 0; right: -1px; } }
 #header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select { border: 1px solid #36CACC; background: #fff; outline: none; width: 75px; height: 22px; font-size: 8px; padding: 5px; }
 @media (min-width: 375px) { #header-content .wrapper .head-top-navi .block.filter .filer-inner .selects-opts .select-box select { width: 95px; font-size: 9px; } }
@@ -53,15 +53,15 @@ div, img { box-sizing: border-box; }
 #sub-header .title { padding: 5px; color: #fff; text-align: center; font-size: 7px; min-height: 30px; display: block; margin: 0; line-height: 10px; }
 @media (min-width: 768px) { #sub-header .title { font-size: 10px; padding: 5px; min-height: 38px; line-height: 13px; } }
 @media (min-width: 1024px) { #sub-header .title { min-height: auto; padding: 10px; } }
-#sub-header .sub-h p { font-size: 12px; }
-@media (max-width: 480px) { #sub-header .sub-h p { font-size: 9px; } }
+#sub-header .sub-h p { font-size: 12px; padding: 5px; }
+@media (max-width: 768px) { #sub-header .sub-h p { font-size: 9px; padding: 8px 5px; } }
 #sub-header .company-bg .title { background: #006889; }
 #sub-header .company-bg .text { cursor: pointer; }
 #sub-header .company-bg .text.active p { border: 1px solid #006889; }
-#sub-header .company-bg .text p { padding: 5px; margin-top: 10px; color: #00434D; text-align: center; border: 1px solid #cccccc; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; font-size: 11px; min-height: 30px; }
-@media (max-width: 640px) { #sub-header .company-bg .text p { font-size: 9px; min-height: 24px; } }
+#sub-header .company-bg .text p { margin-top: 10px; color: #00434D; text-align: center; border: 1px solid #cccccc; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; min-height: 30px; }
+@media (max-width: 640px) { #sub-header .company-bg .text p { min-height: 24px; } }
 #sub-header .company-bg .text p:after { content: ""; position: absolute; right: 5px; top: 7px; border: 1px solid transparent; width: 8px; height: 8px; border-bottom-color: #00434D; border-right-color: #00434D; transform: rotate(45deg); }
-@media (max-width: 640px) { #sub-header .company-bg .text p:after { right: 3px; top: 7px; width: 5px; height: 5px; } }
+@media (max-width: 640px) { #sub-header .company-bg .text p:after { right: 3px; top: 9px; width: 5px; height: 5px; } }
 #sub-header .company-bg .text.funding { padding-left: 0; }
 @media (max-width: 640px) { #sub-header .company-bg .text.funding { padding-left: 0; } }
 #sub-header .performance .title { background: #FF5200; }
@@ -69,13 +69,13 @@ div, img { box-sizing: border-box; }
 #sub-header .performance .text { cursor: pointer; padding-left: 0; }
 #sub-header .performance .text.active p { border: 1px solid #FF5200; }
 @media (max-width: 640px) { #sub-header .performance .text { padding-right: 5px; } }
-#sub-header .performance .text p { padding: 5px 0; margin-top: 10px; color: #FF5200; text-align: center; border: 1px solid #cccccc; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; font-size: 12px; min-height: 30px; }
-@media (max-width: 640px) { #sub-header .performance .text p { font-size: 9px; min-height: 24px; } }
+#sub-header .performance .text p { margin-top: 10px; color: #FF5200; text-align: center; border: 1px solid #cccccc; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; min-height: 30px; }
+@media (max-width: 640px) { #sub-header .performance .text p { min-height: 24px; } }
 #sub-header .performance .text p:after { content: ""; position: absolute; right: 5px; top: 7px; border: 1px solid transparent; width: 8px; height: 8px; border-bottom-color: #FF5200; border-right-color: #FF5200; transform: rotate(45deg); }
-@media (max-width: 640px) { #sub-header .performance .text p:after { right: 3px; top: 7px; width: 5px; height: 5px; } }
+@media (max-width: 640px) { #sub-header .performance .text p:after { right: 3px; top: 9px; width: 5px; height: 5px; } }
 #sub-header .performance .text.traffics { padding-left: 15px; }
 
-#chart { position: relative; padding-top: 30px; background: #EBEBEB; }
+#chart { position: relative; padding-top: 30px; background: #EBEBEB; padding-bottom: 100%; }
 #chart .mar-bottom { margin-bottom: 15px; }
 #chart .mar-bottom:last-child { margin-bottom: 0; }
 @media (max-width: 640px) { #chart .logo-wrap { padding-right: 5px; } }

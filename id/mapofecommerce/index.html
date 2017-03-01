@@ -10,7 +10,7 @@
     <meta name="keywords" content="Peta E-Commerce Indonesia - iPrice">
     <meta name="description" content="Daftar 50 Besar E-Commerce di Indonesia Berdasarkan Ukuran">
 
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://iprice.co.id/insights/mapofecommerce" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Peta E-Commerce Indonesia - iPrice" />
     <meta property="og:description" content="Daftar 50 Besar E-Commerce di Indonesia Berdasarkan Ukuran" />
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://d1vfs9f7h1rfk4.cloudfront.net/css/iprice-coupons-stores-min.css"/>
     <link rel="stylesheet" href="css/styles.css">
+
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b4f730644ad6e6"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -118,7 +119,7 @@
                     <div class="col-xs-4 text traffics" data-sort="traffics"><p>Traffics</p></div>
                     <div class="col-xs-2 text app" data-sort="app"><p>App</p></div>
                     <div class="col-xs-2 text twitter" data-sort="twitter"><p>Twitter</p></div>
-                    <div class="col-xs-2 text instagram" data-sort="instagram"><p>Instagrm</p></div>
+                    <div class="col-xs-2 text instagram" data-sort="instagram"><p>Instagram</p></div>
                     <div class="col-xs-2 text facebook" data-sort="facebook"><p>Facebook</p></div>
                 </div>
             </div>
@@ -127,7 +128,7 @@
                 <div class="title">Company Background</div>
                 <div class="row">
                     <div class="col-xs-12 text employees" data-sort="employees">
-                        <p>Number of Employees</p>
+                        <p>No. Employees</p>
                     </div>
                 </div>
             </div>
@@ -248,9 +249,11 @@
     </div>
 </footer>
 <script>
+
     //fixed sticky navigation menu once start scroll
     $(document).ready(function() {
-        $(window).bind('scroll', function() {
+
+        $(window).on('scroll', function() {
             if($(window).scrollTop() > 135){
                 $('#header').addClass('fixed');
                 $('#header .logo').css('width','240px');
@@ -262,6 +265,7 @@
             }
         });
     });
+
 </script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>

@@ -34,17 +34,16 @@ Number.prototype.format = function(n, x, s, c) {
     },
     sortEvent: function () {
 
-        var order = -1;
-        $(document).off('click').on('click', '.sortable .text', function () {
-
+        $('.sortable').off('click').on('click', '.text', function () {
+            var _this = $(this);
             $('.sortable .text').removeClass('active');
-            $(this).addClass('active');
-            if(order === -1) {
-                CHART.main.sortBy(currentList, order, $(this).attr('data-sort'));
-                order = 1;
+            _this.addClass('active');
+            if(!_this.hasClass('desc')) {
+                _this.addClass('desc');
+                CHART.main.sortBy(currentList, -1, _this.attr('data-sort'));
             } else {
-                CHART.main.sortBy(currentList, order, $(this).attr('data-sort'));
-                order = -1;
+                $('.sortable .text').removeClass('desc');
+                CHART.main.sortBy(currentList, 1, _this.attr('data-sort'));
             }
         });
     },
@@ -62,7 +61,7 @@ Number.prototype.format = function(n, x, s, c) {
     },
     filter: function () {
 
-        $(document).change('.selects-opts select',function(){
+        $(document).on('change', '.selects-opts select',function(){
             var type = $('#filter-type option:selected').val();
             var category = $('#filter-category option:selected').val();
             var location = $('#filter-location option:selected').val();
@@ -162,28 +161,23 @@ Number.prototype.format = function(n, x, s, c) {
         var per = 0;
 
         if(type === 'traffics') {
-            var rs =  parseFloat( (number / Ranges.max_traffics) * 100 );
-            per = Math.round(rs * 1000) /1000;
+            per = Math.round(parseFloat( (number / Ranges.max_traffics) * 100 ));
         } else if (type === 'app') {
-            var rs =  parseFloat( (number / Ranges.max_app) * 100 );
-            per = Math.round(rs * 1000) /1000;
+            per = Math.round(parseFloat( (number / Ranges.max_app) * 100 ));
         } else if (type === 'twitter') {
-            var rs =  parseFloat( (number / Ranges.max_twitter) * 100 );
-            per = Math.round(rs * 1000) /1000;
+            per = Math.round(parseFloat( (number / Ranges.max_twitter) * 100 ));
         } else if (type === 'instagram') {
-            var rs =  parseFloat( (number / Ranges.max_instagram) * 100 );
-            per = Math.round(rs * 1000) /1000;
+            per = Math.round(parseFloat( (number / Ranges.max_instagram) * 100 ));
         } else if (type === 'facebook') {
-            var rs =  parseFloat( (number / Ranges.max_facebook) * 100 );
-            per = Math.round(rs * 1000) /1000;
+            per = Math.round(parseFloat( (number / Ranges.max_facebook) * 100 ));
         } else if (type === 'employee') {
-            var rs =  parseFloat( (number / Ranges.max_employees) * 100 );
-            per = Math.round(rs * 1000) /1000;
+            per = Math.round(parseFloat( (number / Ranges.max_employees) * 100 ));
         }
 
         return per;
     },
     renderChart: function (data) {
+
         if(data !== null && data.length > 0) {
 
             $('#chart').html('');
@@ -273,7 +267,7 @@ Number.prototype.format = function(n, x, s, c) {
                     html += '</div>';
                     html += '</div>';
 
-                $('#chart').append(html);
+                $('#chart').css('padding-bottom', '0').append(html);
                 CHART.main.animation();
             }
 
