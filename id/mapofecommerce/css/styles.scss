@@ -8,6 +8,27 @@ body, html {
   font-family: "Noto Sans","Noto Sans Thai",sans-serif;
 }
 
+.preloader {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+
+  img {
+    position: fixed;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto;
+    top: calc(50% - 38px);
+    left: calc(50% - 38px);
+  }
+}
+
 .lang {
   &.id {
   }
@@ -268,6 +289,23 @@ div, img {
     position: relative;
     padding-top: 15px;
     background: #EBEBEB;
+
+    .sort-note {
+      font-size: 10px;
+      padding-top: 37px;
+      font-weight: bold;
+      color: #086A87;
+
+      @media(min-width: 768px) {
+        padding-top: 45px;
+        padding-right:15px;
+      }
+
+      @media(min-width: 1024px) {
+        padding-top: 50px;
+        font-size: 11px;
+      }
+    }
 
     .title {
       padding: 5px;

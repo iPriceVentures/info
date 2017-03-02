@@ -17,6 +17,11 @@ Number.prototype.format = function(n, x, s, c) {
         CHART.main.filter();
         CHART.main.sortEvent();
         CHART.main.initLangChange();
+
+        setTimeout(function () {
+            $('#sub-header .performance .traffics').trigger('click');
+        });
+
     },
     initLangChange: function () {
 
@@ -205,6 +210,8 @@ Number.prototype.format = function(n, x, s, c) {
 
         if(data !== null && data.length > 0) {
 
+            $('.preloader').show();
+
             $('#chart').html('');
 
             for(var i=0; i< data.length; i ++) {
@@ -313,6 +320,7 @@ Number.prototype.format = function(n, x, s, c) {
 
                 $('#chart').css('padding-bottom', '0').append(html);
                 CHART.main.animation();
+                $('.preloader').hide();
             }
 
         }
