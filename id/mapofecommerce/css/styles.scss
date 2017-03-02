@@ -65,10 +65,24 @@ div, img {
           color: #086A87;
           font-size: 30px;
           font-weight: bold;
-          padding-bottom: 15px;
           span{
             color: #fff;
             font-size: 30px;
+            font-weight: bold;
+
+            @media (min-width: 768px) {
+              font-size: 36px;
+              font-weight: bold;
+              line-height: 40px;
+            }
+          }
+
+          @media (min-width: 768px) {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 55px;
+            text-align: left;
+            padding-bottom: 30px;
           }
         }
 
@@ -83,7 +97,7 @@ div, img {
               }
               p {
                 color: #fff;
-                font-size: 13px;
+                font-size: 16px;
                 padding: 10px 0;
                 @media(min-width: 768px) {
                   font-size: 20px;
@@ -182,7 +196,11 @@ div, img {
                       width: 75px;
                       height:22px;
                       font-size: 8px;
-                      padding: 5px;
+                      padding: 3px;
+
+                      @media(max-width: 320px) {
+                       padding: 4px;
+                      }
 
                       @media(min-width: 375px) {
                         width: 95px;
@@ -226,38 +244,39 @@ div, img {
     }
 
   #embed-section {
-    padding: 30px 15px 50px 15px;
+    padding: 30px 0;
     width: 100%;
+    text-align: left;
     h3 {
       color: #086A87;
       font-size: 20px;
+      margin: 5px 0;
+      font-size: 13px;
+      font-weight: bold;
     }
     textarea {
       width: 100%;
-      height:auto;
+      height:22px;
       font-size:13px;
-
+      text-align: left;
       background-color: #f5f5f5;
       word-wrap: break-word;
       border: none;
-      border-radius: 5px 0 0 5px;
-      resize: vertical;
-      font-style: italic;
     }
   }
   #sub-header {
     position: relative;
-    padding-top: 20px;
+    padding-top: 15px;
     background: #EBEBEB;
 
     .title {
       padding: 5px;
+      margin:0;
       color: #fff;
       text-align: center;
-      font-size: 7px;
+      font-size: 10px;
       min-height: 30px;
       display: block;
-      margin:0;
       line-height: 10px;
 
       @media (min-width: 768px) {
@@ -269,16 +288,17 @@ div, img {
       @media (min-width: 1024px) {
         min-height: auto;
         padding: 10px;
+        font-size: 11px;
       }
     }
 
     .sub-h {
       p {
-        font-size: 12px;
+        font-size: 11px;
         padding: 5px;
         @media (max-width: 768px) {
-          font-size: 9px;
-          padding: 8px 5px;
+          font-size: 10px;
+          padding: 8px 5px 8px 0;
         }
       }
     }
@@ -289,16 +309,33 @@ div, img {
       
       .text {
         cursor: pointer;
-        &.active {
+        &.descending {
           p {
-            border: 1px solid #006889;
+            &:after{
+              top:13px;
+              transform: rotate(-135deg);
+              display: block;
+            }
+          }
+        }
+
+        &.ascending {
+          p {
+            &:after{
+              top:10px;
+              transform: rotate(45deg);
+              display: block;
+
+              @media(max-width: 640px) {
+                top:12px;
+              }
+            }
           }
         }
           p {
-            margin-top: 10px;
             color: #00434D;
-            text-align: center;
-            border: 1px solid #cccccc;
+            text-align: left;
+            border-bottom: 2px solid #00434D;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -312,14 +349,15 @@ div, img {
             &:after {
               content: "";
               position: absolute;
-              right: 5px;
-              top: 7px;
+              right: 3px;
+              top: 10px;
               border: 1px solid transparent;
               width: 8px;
               height: 8px;
               border-bottom-color: #00434D;
               border-right-color: #00434D;
               transform: rotate(45deg);
+              display: none;
               @media(max-width: 640px) {
                 right: 3px;
                 top: 9px;
@@ -355,19 +393,33 @@ div, img {
         cursor: pointer;
         padding-left: 0;
 
-        &.active {
+        &.descending {
           p {
-            border: 1px solid #FF5200;
+            &:after{
+              top:13px;
+              transform: rotate(-135deg);
+              display: block;
+            }
           }
         }
+
+        &.ascending {
+          p {
+            &:after{
+              top:10px;
+              transform: rotate(45deg);
+              display: block;
+            }
+          }
+        }
+
         @media(max-width: 640px) {
           padding-right: 5px;
         }
           p {
-            margin-top: 10px;
             color: #FF5200;
-            text-align: center;
-            border: 1px solid #cccccc;
+            text-align: left;
+            border-bottom: 2px solid #FF5200;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -378,18 +430,18 @@ div, img {
               min-height:24px;
             }
 
-
             &:after {
               content: "";
               position: absolute;
-              right: 5px;
-              top: 7px;
+              right: 3px;
+              top: 10px;
               border: 1px solid transparent;
               width: 8px;
               height: 8px;
               border-bottom-color: #FF5200;
               border-right-color: #FF5200;
               transform: rotate(45deg);
+              display: none;
 
               @media(max-width: 640px) {
                 right: 3px;
@@ -409,7 +461,7 @@ div, img {
 
   #chart {
     position: relative;
-    padding-top: 30px;
+    padding-top: 15px;
     background: #EBEBEB;
     padding-bottom: 100%;
 
@@ -432,6 +484,8 @@ div, img {
       padding: 4px;
       max-height: 50px;
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
 
       a {
         text-decoration: none;
@@ -441,7 +495,7 @@ div, img {
         vertical-align: middle;
         color: #086A87;
         padding-left: 10px;
-        font-size: 11px;
+        font-size: 15px;
         @media(max-width: 768px) {
           display: none;
         }
@@ -472,6 +526,7 @@ div, img {
       background: #d3d1cf;
       height: 50px;
       position: relative;
+      overflow: hidden;
 
       @media(max-width: 768px) {
         height:35px;
@@ -483,24 +538,44 @@ div, img {
       }
 
       .num {
-        position: absolute;
-        left:5px;
-        top: 18px;
-        color: #086A87;
-        font-size: 11px;
-        @media(max-width: 768px) {
-          top:15px;
-          font-size: 7px;
+        position: relative;
+        margin-top: -25px;
+        margin-left: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @media(min-width: 768px) {
+          margin-top: -27px;
         }
+
+        @media(min-width: 1024px) {
+          margin-top: -33px;
+        }
+
+        span {
+          font-size: 15px;
+          font-weight: bold;
+          color: #666;
+          @media(max-width: 768px) {
+            top:12px;
+            font-size: 10px;
+          }
+        }
+
       }
     }
     .company {
       .employees {
-        .percent {
-          background: #086a87;
-        }
-        .num {
-          color: #FF5200;
+        .bg-col {
+          background: rgba(8, 106, 135, 0.4);
+          .percent {
+            background: #086a87;
+          }
+          .num {
+            span {
+              color: #fff;
+            }
+          }
         }
       }
 
@@ -523,12 +598,32 @@ div, img {
       .traffics {
         padding-left: 15px;
 
+        .bg-col {
+          background: rgba(#ff6633, 0.4);
+
+          .num {
+            span {
+              color: #fff;
+            }
+          }
+        }
         .percent {
           background: #ff6633;
         }
       }
 
       .app {
+
+        .bg-col {
+          background: rgba(#ff8a33, 0.4);
+
+          .num {
+            span {
+              color: #fff;
+            }
+          }
+        }
+        
         .percent {
           background: #ff8a33;
         }
@@ -538,15 +633,43 @@ div, img {
         .percent {
           background: #f49f2f;
         }
+        
+        .num {
+          span {
+            color: #fff;
+          }
+        }
       }
 
       .instagram {
+
+        .bg-col {
+          background: rgba(#ef2047, 0.4);
+
+          .num {
+            span {
+              color: #fff;
+            }
+          }
+        }
+
         .percent {
           background: #ef2047;
         }
       }
 
       .facebook {
+
+        .bg-col {
+          background: rgba(#f24e14, 0.4);
+
+          .num {
+            span {
+              color: #fff;
+            }
+          }
+        }
+
         .percent {
           background: #f24e14;
         }
@@ -561,11 +684,16 @@ div, img {
 
 #bottom-info {
   position: relative;
-  padding: 15px;
+  padding: 15px 0;
   background: #EBEBEB;
 
   p {
     color: #086A87;
     padding: 5px 0;
+
+    a {
+      text-decoration: underline;
+    }
   }
+
 }

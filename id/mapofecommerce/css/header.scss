@@ -4,8 +4,9 @@
   padding: 30px 10px;
   transition: .5s ease-in-out;
   background: #066886;
+
   &.fixed {
-    position: fixed;
+    position: relative;
     top:0;
     width:100%;
     padding:10px;
@@ -19,14 +20,21 @@
     margin:0 auto;
 
     .logo{
-      width:384px;
+      width: 100%;
       height:auto;
       float:left;
+
+      @media(min-width: 640px) {
+        width: 380px;
+      }
     }
 
     .menu{
       float:right;
-      margin:38px 9px 0 0;
+
+      @media(min-width: 640px) {
+        margin:38px 9px 0 0;
+      }
 
       &.margin {
           margin:20px 0 0 0;
@@ -76,7 +84,7 @@
         }
 
         > span {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: bold;
         }
       }

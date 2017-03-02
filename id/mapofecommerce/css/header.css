@@ -5,7 +5,7 @@
   transition: .5s ease-in-out;
   background: #066886; }
   #header.fixed {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     padding: 10px;
@@ -17,12 +17,17 @@
     display: table;
     margin: 0 auto; }
     #header .inner .logo {
-      width: 384px;
+      width: 100%;
       height: auto;
       float: left; }
+      @media (min-width: 640px) {
+        #header .inner .logo {
+          width: 380px; } }
     #header .inner .menu {
-      float: right;
-      margin: 38px 9px 0 0; }
+      float: right; }
+      @media (min-width: 640px) {
+        #header .inner .menu {
+          margin: 38px 9px 0 0; } }
       #header .inner .menu.margin {
         margin: 20px 0 0 0; }
       #header .inner .menu .btn {
@@ -62,5 +67,5 @@
         #header .inner .menu .btn:hover::before {
           width: 100%; }
         #header .inner .menu .btn > span {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: bold; }

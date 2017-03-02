@@ -9,7 +9,6 @@ var currentList;
 Number.prototype.format = function(n, x, s, c) {
     var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
         num = this.toFixed(Math.max(0, ~~n));
-
     return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
 };
     CHART.main = {
@@ -36,14 +35,40 @@ Number.prototype.format = function(n, x, s, c) {
 
         $('.sortable').off('click').on('click', '.text', function () {
             var _this = $(this);
-            $('.sortable .text').removeClass('active');
-            _this.addClass('active');
-            if(!_this.hasClass('desc')) {
-                _this.addClass('desc');
+
+            if(!_this.hasClass('descending') && !_this.hasClass('ascending')) {
+                _this.addClass('descending');
+                _this.siblings().removeClass('descending').removeClass('ascending');
+
+                if(!_this.hasClass('employees')) {
+                    $('.sortable .employees').removeClass('descending').removeClass('ascending');
+                } else {
+                    $('.sortable .performance .text').removeClass('descending').removeClass('ascending');
+                }
+
                 CHART.main.sortBy(currentList, -1, _this.attr('data-sort'));
-            } else {
-                $('.sortable .text').removeClass('desc');
+
+            } else if (_this.hasClass('descending')) {
+                _this.removeClass('descending');
+                _this.addClass('ascending');
+                _this.siblings().removeClass('descending').removeClass('ascending');
+                if(!_this.hasClass('employees')) {
+                    $('.sortable .employees').removeClass('descending').removeClass('ascending');
+                } else {
+                    $('.sortable .performance .text').removeClass('descending').removeClass('ascending');
+                }
                 CHART.main.sortBy(currentList, 1, _this.attr('data-sort'));
+
+            } else if (_this.hasClass('ascending')) {
+                _this.removeClass('ascending');
+                _this.addClass('descending');
+                _this.siblings().removeClass('descending').removeClass('ascending');
+                if(!_this.hasClass('employees')) {
+                    $('.sortable .employees').removeClass('descending').removeClass('ascending');
+                } else {
+                    $('.sortable .performance .text').removeClass('descending').removeClass('ascending');
+                }
+                CHART.main.sortBy(currentList, -1, _this.attr('data-sort'));
             }
         });
     },
@@ -65,7 +90,7 @@ Number.prototype.format = function(n, x, s, c) {
             var type = $('#filter-type option:selected').val();
             var category = $('#filter-category option:selected').val();
             var location = $('#filter-location option:selected').val();
-            $('.sortable .text').removeClass('active');
+            $('.sortable .text').removeClass('descending').removeClass('ascending');
 
             var arrFilter = [];
             if(type !== '-1') {
@@ -202,6 +227,13 @@ Number.prototype.format = function(n, x, s, c) {
                 var f_category = data[i].category;
                 var f_location = data[i].location;
 
+                var employees = data[i].employees;
+                if(employees === 0) {
+                    employees = '-' + '';
+                } else {
+                    employees = employees.format();
+                }
+
                 var html = '';
 
                     html += '<div data-key ="'+ data[i].key +'" class="row mar-bottom canFilter '   + f_type +' '+ f_category +' '+ f_location +'" data-type="'+ f_type +'" data-category="' + f_category + '" data-location="' + f_location + '">';
@@ -220,35 +252,45 @@ Number.prototype.format = function(n, x, s, c) {
                     html += '<div class="col-xs-4 traffics">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ traffic_per +'"></div>';
-                    html += '<span class="num">'+ data[i].traffics.format()+'</span>';
+                    html += '<div class="num">';
+                    html += '<span>'+ data[i].traffics.format()+'</span>';
+                    html += '</div>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 app">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ app_per +'"></div>';
-                    html += '<span class="num">'+data[i].app.format()+'</span>';
+                    html += '<div class="num">';
+                    html += '<span>'+data[i].app.format()+'</span>';
+                    html += '</div>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 twitter">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ twitter_per +'"></div>';
-                    html += '<span class="num">'+data[i].twitter.format()+'</span>';
+                    html += '<div class="num">';
+                    html += '<span>'+data[i].twitter.format()+'</span>';
+                    html += '</div>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 instagram">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ instagram_per +'"></div>';
-                    html += '<span class="num">'+data[i].instagram.format() +'</span>';
+                    html += '<div class="num">';
+                    html += '<span>'+data[i].instagram.format() +'</span>';
+                    html += '</div>';
                     html += '</div>';
                     html += '</div>';
 
                     html += '<div class="col-xs-2 facebook">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ facebook_per +'"></div>';
-                    html += '<span class="num">'+data[i].facebook.format() +'</span>';
+                    html += '<div class="num">';
+                    html += '<span>'+data[i].facebook.format() +'</span>';
+                    html += '</div>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
@@ -259,7 +301,9 @@ Number.prototype.format = function(n, x, s, c) {
                     html += '<div class="col-xs-12 employees">';
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ employees_per +'"></div>';
-                    html += '<span class="num">'+data[i].employees.format() +'</span>';
+                    html += '<div class="num">';
+                    html += '<span>'+ employees +'</span>';
+                    html += '</div>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
