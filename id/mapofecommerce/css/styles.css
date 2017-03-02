@@ -54,30 +54,34 @@ div, img { box-sizing: border-box; }
 
 #sub-header { position: relative; padding-top: 15px; background: #EBEBEB; }
 #sub-header .title { padding: 5px; margin: 0; color: #fff; text-align: center; font-size: 10px; min-height: 30px; display: block; line-height: 10px; }
-@media (min-width: 768px) { #sub-header .title { font-size: 10px; padding: 5px; min-height: 38px; line-height: 13px; } }
-@media (min-width: 1024px) { #sub-header .title { min-height: auto; padding: 10px; font-size: 11px; } }
+@media (max-width: 375px) { #sub-header .title { font-size: 9px; padding: 5px 1px; } }
+@media (min-width: 768px) { #sub-header .title { font-size: 12px; padding: 5px; min-height: 38px; line-height: 13px; } }
+@media (min-width: 1024px) { #sub-header .title { min-height: 46px; padding: 10px; font-size: 13px; } }
 #sub-header .sub-h p { font-size: 11px; padding: 5px; }
 @media (max-width: 768px) { #sub-header .sub-h p { font-size: 10px; padding: 8px 5px 8px 0; } }
 #sub-header .company-bg .title { background: #006889; }
+@media (min-width: 1200px) { #sub-header .company-bg .title { padding: 15px; } }
 #sub-header .company-bg .text { cursor: pointer; }
-#sub-header .company-bg .text.descending p:after { top: 13px; transform: rotate(-135deg); display: block; }
-#sub-header .company-bg .text.ascending p:after { top: 10px; transform: rotate(45deg); display: block; }
+#sub-header .company-bg .text.descending p:after { top: 13px; transform: rotate(-135deg); display: block; border-bottom-color: #00434D; border-right-color: #00434D; }
+#sub-header .company-bg .text.ascending p:after { top: 10px; transform: rotate(45deg); display: block; border-bottom-color: #00434D; border-right-color: #00434D; }
 @media (max-width: 640px) { #sub-header .company-bg .text.ascending p:after { top: 12px; } }
 #sub-header .company-bg .text p { color: #00434D; text-align: left; border-bottom: 2px solid #00434D; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; min-height: 30px; }
 @media (max-width: 640px) { #sub-header .company-bg .text p { min-height: 24px; } }
-#sub-header .company-bg .text p:after { content: ""; position: absolute; right: 3px; top: 10px; border: 1px solid transparent; width: 8px; height: 8px; border-bottom-color: #00434D; border-right-color: #00434D; transform: rotate(45deg); display: none; }
+#sub-header .company-bg .text p:after { content: ""; position: absolute; right: 3px; top: 10px; border: 1px solid transparent; width: 8px; height: 8px; border-bottom-color: #ccc; border-right-color: #ccc; transform: rotate(45deg); }
 @media (max-width: 640px) { #sub-header .company-bg .text p:after { right: 3px; top: 9px; width: 5px; height: 5px; } }
 #sub-header .company-bg .text.funding { padding-left: 0; }
 @media (max-width: 640px) { #sub-header .company-bg .text.funding { padding-left: 0; } }
 #sub-header .performance .title { background: #FF5200; }
 @media (max-width: 768px) { #sub-header .performance .title { margin-right: -10px; padding-top: 10px; } }
+@media (min-width: 1024px) { #sub-header .performance .title { padding-top: 15px; } }
+@media (min-width: 1200px) { #sub-header .performance .title { padding: 15px; } }
 #sub-header .performance .text { cursor: pointer; padding-left: 0; }
-#sub-header .performance .text.descending p:after { top: 13px; transform: rotate(-135deg); display: block; }
-#sub-header .performance .text.ascending p:after { top: 10px; transform: rotate(45deg); display: block; }
+#sub-header .performance .text.descending p:after { top: 13px; transform: rotate(-135deg); display: block; border-bottom-color: #ff6633; border-right-color: #ff6633; }
+#sub-header .performance .text.ascending p:after { top: 10px; transform: rotate(45deg); display: block; border-bottom-color: #ff6633; border-right-color: #ff6633; }
 @media (max-width: 640px) { #sub-header .performance .text { padding-right: 5px; } }
 #sub-header .performance .text p { color: #FF5200; text-align: left; border-bottom: 2px solid #FF5200; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; min-height: 30px; }
 @media (max-width: 640px) { #sub-header .performance .text p { min-height: 24px; } }
-#sub-header .performance .text p:after { content: ""; position: absolute; right: 3px; top: 10px; border: 1px solid transparent; width: 8px; height: 8px; border-bottom-color: #FF5200; border-right-color: #FF5200; transform: rotate(45deg); display: none; }
+#sub-header .performance .text p:after { content: ""; position: absolute; right: 3px; top: 10px; border: 1px solid transparent; width: 8px; height: 8px; border-bottom-color: #ccc; border-right-color: #ccc; transform: rotate(45deg); }
 @media (max-width: 640px) { #sub-header .performance .text p:after { right: 3px; top: 9px; width: 5px; height: 5px; } }
 #sub-header .performance .text.traffics { padding-left: 15px; }
 
@@ -87,7 +91,7 @@ div, img { box-sizing: border-box; }
 @media (max-width: 640px) { #chart .logo-wrap { padding-right: 5px; } }
 #chart .logo { width: 100%; background: #d3d1cf; text-align: left; padding: 4px; max-height: 50px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 #chart .logo a { text-decoration: none; outline: none; }
-#chart .logo .vendor-name { vertical-align: middle; color: #086A87; padding-left: 10px; font-size: 15px; }
+#chart .logo .vendor-name { vertical-align: middle; color: #086A87; padding-left: 10px; font-size: 15px; text-transform: capitalize; }
 @media (max-width: 768px) { #chart .logo .vendor-name { display: none; } }
 #chart .logo img.small { display: none; }
 @media (max-width: 768px) { #chart .logo img.small { display: block; height: 27px; margin: 0 auto; } }
@@ -96,7 +100,7 @@ div, img { box-sizing: border-box; }
 #chart .bg-col { background: #d3d1cf; height: 50px; position: relative; overflow: hidden; }
 @media (max-width: 768px) { #chart .bg-col { height: 35px; } }
 #chart .bg-col .percent { background: #086A87; height: 100%; width: 0; }
-#chart .bg-col .num { position: relative; margin-top: -25px; margin-left: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#chart .bg-col .num { position: relative; margin-top: -25px; margin-left: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #fff; }
 @media (min-width: 768px) { #chart .bg-col .num { margin-top: -27px; } }
 @media (min-width: 1024px) { #chart .bg-col .num { margin-top: -33px; } }
 #chart .bg-col .num span { font-size: 15px; font-weight: bold; color: #666; }

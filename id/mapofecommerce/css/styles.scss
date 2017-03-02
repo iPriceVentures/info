@@ -279,16 +279,21 @@ div, img {
       display: block;
       line-height: 10px;
 
+      @media (max-width: 375px) {
+        font-size: 9px;
+        padding: 5px 1px;
+      }
+
       @media (min-width: 768px) {
-        font-size: 10px;
+        font-size: 12px;
         padding: 5px;
         min-height: 38px;
         line-height: 13px;
       }
       @media (min-width: 1024px) {
-        min-height: auto;
+        min-height: 46px;
         padding: 10px;
-        font-size: 11px;
+        font-size: 13px;
       }
     }
 
@@ -305,6 +310,9 @@ div, img {
     .company-bg {
       .title {
         background: #006889;
+        @media (min-width: 1200px) {
+          padding: 15px;
+        }
       }
       
       .text {
@@ -315,6 +323,8 @@ div, img {
               top:13px;
               transform: rotate(-135deg);
               display: block;
+              border-bottom-color: #00434D;
+              border-right-color: #00434D;
             }
           }
         }
@@ -325,6 +335,8 @@ div, img {
               top:10px;
               transform: rotate(45deg);
               display: block;
+              border-bottom-color: #00434D;
+              border-right-color: #00434D;
 
               @media(max-width: 640px) {
                 top:12px;
@@ -354,10 +366,10 @@ div, img {
               border: 1px solid transparent;
               width: 8px;
               height: 8px;
-              border-bottom-color: #00434D;
-              border-right-color: #00434D;
+              border-bottom-color: #ccc;
+              border-right-color: #ccc;
               transform: rotate(45deg);
-              display: none;
+
               @media(max-width: 640px) {
                 right: 3px;
                 top: 9px;
@@ -388,6 +400,14 @@ div, img {
           padding-top: 10px;
         }
 
+        @media (min-width: 1024px) {
+          padding-top: 15px;
+        }
+
+        @media (min-width: 1200px) {
+          padding: 15px;
+        }
+
       }
       .text {
         cursor: pointer;
@@ -399,6 +419,8 @@ div, img {
               top:13px;
               transform: rotate(-135deg);
               display: block;
+              border-bottom-color: #ff6633;
+              border-right-color: #ff6633;
             }
           }
         }
@@ -409,6 +431,8 @@ div, img {
               top:10px;
               transform: rotate(45deg);
               display: block;
+              border-bottom-color: #ff6633;
+              border-right-color: #ff6633;
             }
           }
         }
@@ -438,10 +462,9 @@ div, img {
               border: 1px solid transparent;
               width: 8px;
               height: 8px;
-              border-bottom-color: #FF5200;
-              border-right-color: #FF5200;
+              border-bottom-color: #ccc;
+              border-right-color: #ccc;
               transform: rotate(45deg);
-              display: none;
 
               @media(max-width: 640px) {
                 right: 3px;
@@ -496,6 +519,7 @@ div, img {
         color: #086A87;
         padding-left: 10px;
         font-size: 15px;
+        text-transform: capitalize;
         @media(max-width: 768px) {
           display: none;
         }
@@ -544,6 +568,7 @@ div, img {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        color: #fff;
         @media(min-width: 768px) {
           margin-top: -27px;
         }

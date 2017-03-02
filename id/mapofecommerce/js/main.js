@@ -37,7 +37,7 @@ Number.prototype.format = function(n, x, s, c) {
             var _this = $(this);
 
             if(!_this.hasClass('descending') && !_this.hasClass('ascending')) {
-                _this.addClass('descending');
+                _this.addClass('ascending');
                 _this.siblings().removeClass('descending').removeClass('ascending');
 
                 if(!_this.hasClass('employees')) {
@@ -48,9 +48,9 @@ Number.prototype.format = function(n, x, s, c) {
 
                 CHART.main.sortBy(currentList, -1, _this.attr('data-sort'));
 
-            } else if (_this.hasClass('descending')) {
-                _this.removeClass('descending');
-                _this.addClass('ascending');
+            } else if (_this.hasClass('ascending')) {
+                _this.removeClass('ascending');
+                _this.addClass('descending');
                 _this.siblings().removeClass('descending').removeClass('ascending');
                 if(!_this.hasClass('employees')) {
                     $('.sortable .employees').removeClass('descending').removeClass('ascending');
@@ -59,9 +59,9 @@ Number.prototype.format = function(n, x, s, c) {
                 }
                 CHART.main.sortBy(currentList, 1, _this.attr('data-sort'));
 
-            } else if (_this.hasClass('ascending')) {
-                _this.removeClass('ascending');
-                _this.addClass('descending');
+            } else if (_this.hasClass('descending')) {
+                _this.removeClass('descending');
+                _this.addClass('ascending');
                 _this.siblings().removeClass('descending').removeClass('ascending');
                 if(!_this.hasClass('employees')) {
                     $('.sortable .employees').removeClass('descending').removeClass('ascending');
