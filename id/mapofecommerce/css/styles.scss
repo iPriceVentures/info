@@ -299,11 +299,13 @@ div, img {
       @media(min-width: 768px) {
         padding-top: 45px;
         padding-right:15px;
+        text-align: right;
+        font-size: 11px;
       }
 
       @media(min-width: 1024px) {
-        padding-top: 50px;
-        font-size: 11px;
+        padding-top: 47px;
+        font-size: 15px;
       }
     }
 

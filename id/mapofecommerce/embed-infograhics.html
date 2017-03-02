@@ -6,7 +6,7 @@
     <title>Peta E-Commerce Indonesia - iPrice</title>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0, user-scalable=no">
     <meta name="keywords" content="Peta E-Commerce Indonesia - iPrice">
     <meta name="description" content="Daftar 50 Besar E-Commerce di Indonesia Berdasarkan Ukuran">
 
@@ -25,6 +25,9 @@
 </head>
 
 <body>
+<div class="preloader">
+    <img src="imgs/loader.gif" />
+</div>
 
 <div class="container-fluid">
     <div id="header-content">
@@ -93,12 +96,14 @@
 
     <div id="sub-header" class="sortable">
         <div class="row">
-            <div class="col-xs-2 no-padding"></div>
+            <div class="col-xs-2 no-pad-right">
+                <p class="sort-note">Sort by</p>
+            </div>
 
             <div class="col-xs-7 col-sm-8 no-padding sub-h performance">
                 <div class="title">Performance</div>
                 <div class="row">
-                    <div class="col-xs-4 text traffics" data-sort="traffics"><p>Traffic</p></div>
+                    <div class="col-xs-4 text traffics descending" data-sort="traffics"><p>Traffic</p></div>
                     <div class="col-xs-2 text app" data-sort="app"><p>App</p></div>
                     <div class="col-xs-2 text twitter" data-sort="twitter"><p>Twitter</p></div>
                     <div class="col-xs-2 text instagram" data-sort="instagram"><p>Instagram</p></div>
@@ -125,7 +130,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="lang id">
-                    <p><strong>Metodelogi:</strong></p>
+                    <p><strong>Metodologi:</strong></p>
                     <p>
                         <strong>Visitor Perbulan </strong> <br />
                         Rata-rata pengunjung website pada periode November 2016 – Januari 2017<br />
@@ -145,7 +150,7 @@
                         Sumber: LinkedIn. Jika di data tertera (-), berarti tidak ada informasi mengenai perusahaan di LinkedIn.
                     </p>
                     <p>
-                        <strong>Lihat sumber data untuk lebih detail </strong><a target="_blank" href="http://bit.ly/rankingecommerceid">Data</a>
+                        Lihat sumber data untuk lebih detail <a target="_blank" href="http://bit.ly/rankingecommerceid">Data</a>
                     </p>
                 </div>
                 <div class="lang en">
@@ -169,13 +174,14 @@
                         Source: LinkedIn. If shown as (-),no information about the company available on LinkedIn.
                     </p>
                     <p>
-                        <strong>See the data source for even more detail </strong><a target="_blank" href="http://bit.ly/rankingecommerceid">Data</a>
+                        <strong>See the data source for even more detail <a target="_blank" href="http://bit.ly/rankingecommerceid">Data</a>
                     </p>
                 </div>
             </div>
 
         </div>
     </div>
+
 </div>
 <script type="text/javascript" src="js/main.js"></script>
 </body>

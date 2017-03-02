@@ -57,8 +57,8 @@ div, img { box-sizing: border-box; }
 
 #sub-header { position: relative; padding-top: 15px; background: #EBEBEB; }
 #sub-header .sort-note { font-size: 10px; padding-top: 37px; font-weight: bold; color: #086A87; }
-@media (min-width: 768px) { #sub-header .sort-note { padding-top: 45px; padding-right: 15px; } }
-@media (min-width: 1024px) { #sub-header .sort-note { padding-top: 50px; font-size: 11px; } }
+@media (min-width: 768px) { #sub-header .sort-note { padding-top: 45px; padding-right: 15px; text-align: right; font-size: 11px; } }
+@media (min-width: 1024px) { #sub-header .sort-note { padding-top: 47px; font-size: 15px; } }
 #sub-header .title { padding: 5px; margin: 0; color: #fff; text-align: center; font-size: 10px; min-height: 30px; display: block; line-height: 10px; }
 @media (max-width: 375px) { #sub-header .title { font-size: 9px; padding: 5px 1px; } }
 @media (min-width: 768px) { #sub-header .title { font-size: 12px; padding: 5px; min-height: 38px; line-height: 13px; } }
