@@ -20,7 +20,7 @@ Number.prototype.format = function(n, x, s, c) {
 
         setTimeout(function () {
             $('#sub-header .performance .traffics').trigger('click');
-        });
+        },300);
 
     },
     initLangChange: function () {
