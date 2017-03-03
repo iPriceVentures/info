@@ -26,7 +26,7 @@ function checkZero(num) {
 
         setTimeout(function () {
             $('#sub-header .performance .traffics').trigger('click');
-        },300);
+        },100);
 
     },
     initLangChange: function () {
@@ -178,7 +178,7 @@ function checkZero(num) {
         var obj = $('#chart .percent');
         obj.each(function () {
             var per = $(this).attr('data-per');
-            TweenMax.to($(this), 1, { width: per }, 1);
+            TweenMax.to($(this), 0.8, { width: per }, 1);
         });
 
     },
@@ -215,7 +215,7 @@ function checkZero(num) {
     renderChart: function (data) {
 
         if(data !== null && data.length > 0) {
-            console.log('render');
+
             $('.preloader').show();
 
             $('#chart').html('');

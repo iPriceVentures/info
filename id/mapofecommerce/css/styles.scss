@@ -35,6 +35,11 @@ body, html {
   &.en {
     display: none;
   }
+
+  p {
+    font-size: 11px;
+    font-style: italic;
+  }
 }
 
 #lang-selection {
@@ -425,8 +430,8 @@ div, img {
               border: 1px solid transparent;
               width: 8px;
               height: 8px;
-              border-bottom-color: #ccc;
-              border-right-color: #ccc;
+              border-bottom-color: #aaa;
+              border-right-color: #aaa;
               transform: rotate(45deg);
 
               @media(max-width: 640px) {
@@ -520,8 +525,8 @@ div, img {
               border: 1px solid transparent;
               width: 8px;
               height: 8px;
-              border-bottom-color: #ccc;
-              border-right-color: #ccc;
+              border-bottom-color: #aaa;
+              border-right-color: #aaa;
               transform: rotate(45deg);
 
               @media(max-width: 640px) {
@@ -574,7 +579,7 @@ div, img {
       }
       .vendor-name {
         vertical-align: middle;
-        color: #086A87;
+        color: #333;
         padding-left: 10px;
         font-size: 15px;
         text-transform: capitalize;
@@ -638,7 +643,7 @@ div, img {
         span {
           font-size: 15px;
           font-weight: bold;
-          color: #666;
+          color: #333;
           @media(max-width: 768px) {
             top:12px;
             font-size: 10px;
@@ -651,11 +656,6 @@ div, img {
         .bg-col {
           .percent {
             background: #086a87;
-          }
-          .num {
-            span {
-              color: #fff;
-            }
           }
         }
       }
@@ -679,13 +679,6 @@ div, img {
       .traffics {
         padding-left: 15px;
 
-        .bg-col {
-          .num {
-            span {
-              color: #fff;
-            }
-          }
-        }
         .percent {
           background: #ff6633;
         }
@@ -693,14 +686,6 @@ div, img {
 
       .app {
 
-        .bg-col {
-          .num {
-            span {
-              color: #fff;
-            }
-          }
-        }
-        
         .percent {
           background: #ff8a33;
         }
@@ -710,39 +695,16 @@ div, img {
         .percent {
           background: #f49f2f;
         }
-        
-        .num {
-          span {
-            color: #fff;
-          }
-        }
+
       }
 
       .instagram {
-
-        .bg-col {
-          .num {
-            span {
-              color: #fff;
-            }
-          }
-        }
-
         .percent {
           background: #ef2047;
         }
       }
 
       .facebook {
-
-        .bg-col {
-          .num {
-            span {
-              color: #fff;
-            }
-          }
-        }
-
         .percent {
           background: #f24e14;
         }
