@@ -306,24 +306,24 @@ div, img {
   }
   #sub-header {
     position: relative;
-    padding-top: 15px;
+    padding-top: 8px;
     background: #EBEBEB;
 
     .sort-note {
       font-size: 10px;
-      padding-top: 37px;
+      padding-top: 8px;
       font-weight: bold;
       color: #086A87;
 
       @media(min-width: 768px) {
-        padding-top: 45px;
+        padding-top: 6px;
         padding-right:15px;
         text-align: right;
         font-size: 11px;
       }
 
       @media(min-width: 1024px) {
-        padding-top: 47px;
+        padding-top: 3px;
         font-size: 15px;
       }
     }
@@ -649,7 +649,6 @@ div, img {
     .company {
       .employees {
         .bg-col {
-          background: rgba(8, 106, 135, 0.4);
           .percent {
             background: #086a87;
           }
@@ -681,8 +680,6 @@ div, img {
         padding-left: 15px;
 
         .bg-col {
-          background: rgba(#ff6633, 0.4);
-
           .num {
             span {
               color: #fff;
@@ -697,8 +694,6 @@ div, img {
       .app {
 
         .bg-col {
-          background: rgba(#ff8a33, 0.4);
-
           .num {
             span {
               color: #fff;
@@ -726,8 +721,6 @@ div, img {
       .instagram {
 
         .bg-col {
-          background: rgba(#ef2047, 0.4);
-
           .num {
             span {
               color: #fff;
@@ -743,8 +736,6 @@ div, img {
       .facebook {
 
         .bg-col {
-          background: rgba(#f24e14, 0.4);
-
           .num {
             span {
               color: #fff;

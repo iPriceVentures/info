@@ -11,6 +11,12 @@ Number.prototype.format = function(n, x, s, c) {
         num = this.toFixed(Math.max(0, ~~n));
     return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
 };
+
+function checkZero(num) {
+    if(num === 0)
+        return '-';
+    return num.format();
+}
     CHART.main = {
     initChart: function () {
         CHART.main.getData();
@@ -209,7 +215,7 @@ Number.prototype.format = function(n, x, s, c) {
     renderChart: function (data) {
 
         if(data !== null && data.length > 0) {
-
+            console.log('render');
             $('.preloader').show();
 
             $('#chart').html('');
@@ -233,13 +239,6 @@ Number.prototype.format = function(n, x, s, c) {
                 var f_type = data[i].type;
                 var f_category = data[i].category;
                 var f_location = data[i].location;
-
-                var employees = data[i].employees;
-                if(employees === 0) {
-                    employees = '-' + '';
-                } else {
-                    employees = employees.format();
-                }
 
                 var html = '';
 
@@ -269,7 +268,7 @@ Number.prototype.format = function(n, x, s, c) {
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ app_per +'"></div>';
                     html += '<div class="num">';
-                    html += '<span>'+data[i].app.format()+'</span>';
+                    html += '<span>'+ checkZero(data[i].app) +'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
@@ -278,7 +277,7 @@ Number.prototype.format = function(n, x, s, c) {
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ twitter_per +'"></div>';
                     html += '<div class="num">';
-                    html += '<span>'+data[i].twitter.format()+'</span>';
+                    html += '<span>'+ checkZero(data[i].twitter)+'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
@@ -287,7 +286,7 @@ Number.prototype.format = function(n, x, s, c) {
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ instagram_per +'"></div>';
                     html += '<div class="num">';
-                    html += '<span>'+data[i].instagram.format() +'</span>';
+                    html += '<span>'+ checkZero(data[i].instagram) +'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
@@ -296,7 +295,7 @@ Number.prototype.format = function(n, x, s, c) {
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ facebook_per +'"></div>';
                     html += '<div class="num">';
-                    html += '<span>'+data[i].facebook.format() +'</span>';
+                    html += '<span>'+ checkZero(data[i].facebook) +'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
@@ -309,7 +308,7 @@ Number.prototype.format = function(n, x, s, c) {
                     html += '<div class="bg-col">';
                     html += '<div class="percent" data-per="'+ employees_per +'"></div>';
                     html += '<div class="num">';
-                    html += '<span>'+ employees +'</span>';
+                    html += '<span>'+ checkZero(data[i].employees) +'</span>';
                     html += '</div>';
                     html += '</div>';
                     html += '</div>';
