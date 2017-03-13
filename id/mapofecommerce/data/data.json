@@ -282,7 +282,7 @@
       "instagram": 23762,
       "facebook": 243651,
       "employees": 34,
-      "type": "c2c",
+      "type": "b2c",
       "category": "fashion",
       "location": "indonesia"
     },
@@ -324,7 +324,7 @@
       "url": "http://www.blanja.com/",
       "logodesktop": "logo/desktop/blanja.png",
       "logomobile": "logo/mobile/blanja.png",
-      "traffics": 48000000,
+      "traffics": 4800000,
       "app": 100000,
       "twitter": 28365,
       "instagram": 46551,
@@ -383,7 +383,7 @@
       "location": "indonesia"
     },
     {
-      "key": 24,
+      "key": 23,
       "name": "Brandoutlet",
       "url": "https://brandoutlet.co.id/",
       "logodesktop": "logo/desktop/brandoutlet.png",
@@ -399,7 +399,7 @@
       "location": "indonesia"
     },
     {
-      "key": 25,
+      "key": 24,
       "name": "Orami",
       "url": "https://www.orami.co.id/",
       "logodesktop": "logo/desktop/orami.png",
@@ -415,7 +415,7 @@
       "location": "regional"
     },
     {
-      "key": 26,
+      "key": 25,
       "name": "Benlieschoice",
       "url": "http://www.benlieschoice.com/",
       "logodesktop": "logo/desktop/benlieschoice.png",
@@ -431,7 +431,7 @@
       "location": "indonesia"
     },
     {
-      "key": 27,
+      "key": 26,
       "name": "BroDo",
       "url": "http://bro.do/id/",
       "logodesktop": "logo/desktop/brodo.png",
@@ -779,7 +779,7 @@
       "facebook": 574617,
       "employees": 51,
       "type": "b2c",
-      "category": "fashion",
+      "category": "general",
       "location": "regional"
     },
     {
