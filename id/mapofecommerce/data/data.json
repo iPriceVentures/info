@@ -11,7 +11,7 @@
       "min_facebook" : 0,
       "max_facebook" : 16500000,
       "min_employees" : 0,
-      "max_employees" : 5500
+      "max_employees" : 2300
   },
   "data": [
     {
@@ -697,7 +697,7 @@
       "twitter": 199395,
       "instagram": 239222,
       "facebook": 16467413,
-      "employees": 5487,
+      "employees": 1083,
       "type": "b2c",
       "category": "general",
       "location": "regional"
@@ -713,7 +713,7 @@
       "twitter": 30094,
       "instagram": 212228,
       "facebook": 4703,
-      "employees": 2232,
+      "employees": 8,
       "type": "b2c",
       "category": "general",
       "location": "regional"
@@ -813,6 +813,102 @@
       "type": "b2c",
       "category": "general",
       "location": "regional"
+    },
+    {
+      "key": 50,
+      "name": "Muslimarket",
+      "url": "https://www.muslimarket.com/",
+      "logodesktop": "logo/desktop/muslimarket.png",
+      "logomobile": "logo/mobile/muslimarket.png",
+      "traffics": 32667,
+      "app": 0,
+      "twitter": 735,
+      "instagram": 26587,
+      "facebook": 230559,
+      "employees": 15,
+      "type": "c2c",
+      "category": "fashion",
+      "location": "indonesia"
+    },
+    {
+      "key": 51,
+      "name": "Sociolla",
+      "url": "http://www.sociolla.com/",
+      "logodesktop": "logo/desktop/sociolla.png",
+      "logomobile": "logo/mobile/sociolla.png",
+      "traffics": 584333,
+      "app": 0,
+      "twitter": 1144,
+      "instagram": 95966,
+      "facebook": 258497,
+      "employees": 57,
+      "type": "b2c",
+      "category": "fashion",
+      "location": "indonesia"
+    },
+    {
+      "key": 52,
+      "name": "Tees",
+      "url": "https://tees.co.id/",
+      "logodesktop": "logo/desktop/tees.png",
+      "logomobile": "logo/mobile/tees.png",
+      "traffics": 110000,
+      "app": 500,
+      "twitter": 9311,
+      "instagram": 3623,
+      "facebook": 58913,
+      "employees": 12,
+      "type": "c2c",
+      "category": "fashion",
+      "location": "indonesia"
+    },
+    {
+      "key": 53,
+      "name": "Hijabenka",
+      "url": "http://hijabenka.com/",
+      "logodesktop": "logo/desktop/hijabenka.png",
+      "logomobile": "logo/mobile/hijabenka.png",
+      "traffics": 136667,
+      "app": 50000,
+      "twitter": 2669,
+      "instagram": 148671,
+      "facebook": 677323,
+      "employees": 244,
+      "type": "b2c",
+      "category": "fashion",
+      "location": "indonesia"
+    },
+    {
+      "key": 54,
+      "name": "Otten Coffee",
+      "url": "https://ottencoffee.co.id/",
+      "logodesktop": "logo/desktop/ottencoffee.png",
+      "logomobile": "logo/mobile/ottencoffee.png",
+      "traffics": 446667,
+      "app": 5000,
+      "twitter": 7490,
+      "instagram": 120035,
+      "facebook": 84906,
+      "employees": 22,
+      "type": "b2c",
+      "category": "general",
+      "location": "indonesia"
+    },
+        {
+      "key": 55,
+      "name": "ES.ID",
+      "url": "http://www.es.id/",
+      "logodesktop": "logo/desktop/electronicsolution.png",
+      "logomobile": "logo/mobile/electronicsolution.png",
+      "traffics": 62333,
+      "app": 10000,
+      "twitter": 20740,
+      "instagram": 3102,
+      "facebook": 183680,
+      "employees": 158,
+      "type": "b2c",
+      "category": "tech",
+      "location": "indonesia"
     }
   ]
 }
