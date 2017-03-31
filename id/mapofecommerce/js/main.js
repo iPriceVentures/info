@@ -23,7 +23,6 @@ function checkZero(num) {
         CHART.main.getData();
         CHART.main.filter();
         CHART.main.sortEvent();
-        //CHART.main.initLangChange();
 
         setTimeout(function () {
             $('#sub-header .performance .traffics').trigger('click');
@@ -37,19 +36,6 @@ function checkZero(num) {
             $('footer').hide();
             $('.addthis-smartlayers').hide();
         }
-    },
-    initLangChange: function () {
-
-        $('#lang-selection a').on('click', function () {
-           $(this).siblings('a').removeClass('active');
-           $(this).addClass('active');
-
-           var lang = $(this).attr('data-lang');
-
-           $('.lang').hide();
-           $('.'+lang).show();
-
-        });
     },
     sortEvent: function () {
 
