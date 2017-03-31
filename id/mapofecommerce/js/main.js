@@ -19,15 +19,24 @@ function checkZero(num) {
 }
     CHART.main = {
     initChart: function () {
+        CHART.main.checkEmbedPage();
         CHART.main.getData();
         CHART.main.filter();
         CHART.main.sortEvent();
-        CHART.main.initLangChange();
+        //CHART.main.initLangChange();
 
         setTimeout(function () {
             $('#sub-header .performance .traffics').trigger('click');
         },100);
 
+    },
+    checkEmbedPage: function () {
+        var link = window.location.href;
+        if(link.indexOf('?embedUrl') > 0) {
+            $('#header, #embed-section').hide();
+            $('footer').hide();
+            $('.addthis-smartlayers').hide();
+        }
     },
     initLangChange: function () {
 
@@ -183,7 +192,15 @@ function checkZero(num) {
 
     },
     getData: function () {
-        var obj = $.getJSON( "data/data.json", function() {
+        var link = window.location.href;
+        
+        var dataPath = 'data/data.json';
+
+        if(link.indexOf('/en') > 0) {
+            dataPath = '../data/data.json';
+        }
+
+        var obj = $.getJSON( dataPath, function() {
         })
         .complete(function() {
             originList = obj.responseJSON.data;
@@ -220,6 +237,13 @@ function checkZero(num) {
 
             $('#chart').html('');
 
+            var link = window.location.href;
+            var urlImgs = 'imgs/';
+
+            if(link.indexOf('/en') > 0) {
+                urlImgs = '../imgs/';
+            }
+
             for(var i=0; i< data.length; i ++) {
 
                 var employees_per = CHART.main.convertPercent('employee', data[i].employees) + '%';
@@ -229,8 +253,8 @@ function checkZero(num) {
                 var instagram_per = CHART.main.convertPercent('instagram', data[i].instagram) + '%';
                 var facebook_per = CHART.main.convertPercent('facebook', data[i].facebook) + '%';
 
-                var desktop_url = 'imgs/' + data[i].logodesktop;
-                var mobile_url = 'imgs/' + data[i].logomobile;
+                var desktop_url = urlImgs + data[i].logodesktop;
+                var mobile_url = urlImgs + data[i].logomobile;
 
                 var link = data[i].url;
 
