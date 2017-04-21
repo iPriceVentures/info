@@ -333,11 +333,19 @@ generateVList: function (data) {
       bigAssList.push(el);
   }
 
+  var _width = $(window).width();
+  var itemH = 35, _h = 50; 
+
+  if(_width > 768) {
+    itemH = 50;
+    _h = 65;
+  }
+
   var list = new VirtualList({
       w: $('#chart').width(),
-      h: 65 * data.length,
+      h: _h * data.length,
       items: bigAssList,
-      itemHeight: 50,
+      itemHeight: itemH,
       cache: true
   });
   $('#chart').html('');
