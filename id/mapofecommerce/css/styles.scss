@@ -308,6 +308,61 @@ div, img {
   padding-top: 8px;
   background: #EBEBEB;
 
+  .note-text {
+    padding: 0 10px;
+    div {
+      color: #575757;
+      font-size: 9px;
+      padding: 0 5px;
+      display: inline-block;
+      position: relative;
+      @media(min-width: 640px) {
+        font-size: 12px;
+      }
+      &.verified {
+        &:before {
+          content: '';
+          background-image: url(../imgs/verified.png);
+          background-size: 100%;
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          left: -10px;
+          top: 0;
+          @media(min-width: 640px) {
+            top: 4px;
+          }
+        }
+
+      }
+      &.iema {
+        padding-left: 15px;
+        &:before {
+          content: '';
+          background-image: url(../imgs/iema.png);
+          background-size: 100%;
+          width: 7px;
+          height: 10px;
+          position: absolute;
+          left: 3px;
+          top: 1px;
+          @media(min-width: 640px) {
+            top: 4px;
+          }
+        }
+      }
+    }
+
+    
+    span {
+      height: 11px;
+      width: 1px;
+      background-color: #575757;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
   .sort-note {
     font-size: 10px;
     padding-top: 8px;
@@ -578,6 +633,53 @@ div, img {
       text-transform: capitalize;
       @media(max-width: 768px) {
         display: none;
+      }
+    }
+
+    
+
+    .icon-verified {
+      background: url(../imgs/verified.png);
+      background-size: 100%;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 18px;
+      top: 2px;
+
+      @media(max-width: 768px) {
+        background: #086A87;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+      }
+
+      @media(max-width: 640px) {
+        right: 6px;
+      }
+    }
+
+    .icon-iema {
+      background: url(../imgs/iema.png);
+      background-size: 100%;
+      width: 11px;
+      height: 17px;
+      position: absolute;
+      right: 20px;
+      top: 4px;
+
+      @media(max-width: 768px) {
+        width: 6px;
+        height: 9px;
+        left: 17px;
+        top: 2px;
+      }
+    }
+
+    &.icon {
+      .icon-iema {
+        right: 40px;
+        top: 1px;
       }
     }
 

@@ -194,6 +194,7 @@ getData: function () {
         currentList = obj.responseJSON.data;
         Ranges = obj.responseJSON.ranges;
 
+        console.log(obj.responseJSON.data);
         CHART.main.generateVList(obj.responseJSON.data);
     });
 },
@@ -257,12 +258,27 @@ generateVList: function (data) {
 
       html += '<div data-key ="'+ data[i].key +'" class="row mar-bottom canFilter '   + f_type +' '+ f_category +' '+ f_location +'" data-type="'+ f_type +'" data-category="' + f_category + '" data-location="' + f_location + '">';
       html += '<div class="col-xs-2 col-sm-2 logo-wrap">';
-      html += '<div class="logo">';
+
+      if(data[i].iema_winner && data[i].verified) {
+        html += '<div class="logo icon">';
+      } else {
+        html += '<div class="logo">';
+      }
+
       html += '<a href="'+ link +'" target="_blank">';
       html += '<img class="small" src="' + mobile_url + '" alt="'+ vendor_name +'" title="'+ vendor_name +'">';
       html += '<img class="large" src="' + desktop_url + '" alt="'+ vendor_name +'" title="'+ vendor_name +'">';
       html += '<span class="vendor-name">' + vendor_name + '</span>';
       html += '</a>';
+
+      if(data[i].verified && data[i].verified === true) {
+        html += '<span class="icon-verified"></span>';
+      }
+
+      if(data[i].iema_winner && data[i].iema_winner === true) {
+        html += '<span class="icon-iema"></span>';
+      }
+
       html += '</div>';
       html += '</div>';
 
@@ -329,6 +345,10 @@ generateVList: function (data) {
 
       html += '</div>';
       html += '</div>';
+
+
+
+
       el.innerHTML = html;
       bigAssList.push(el);
   }
