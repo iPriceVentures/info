@@ -23,11 +23,74 @@ CHART.main = {
     CHART.main.getData();
     CHART.main.filter();
     CHART.main.sortEvent();
+    CHART.main.stickySubHeader();
+    CHART.main.stickyHeader();
 
     setTimeout(function () {
         $('#sub-header .performance .traffics').trigger('click');
     },100);
 
+},
+stickyHeader: function () {
+  $(document).on('scroll', function (){
+    //header sticky
+    var fromTop = $(window).scrollTop();
+
+    if ($(window).width() > 768) {
+      if(fromTop > $('#header-sticky').offset().top) {
+        $('#header').css({
+          position: 'fixed',
+          top: 0,
+          width: '100%',
+          zIndex: 999
+        });
+      } else {
+        $('#header').css({
+          position: 'static',
+          top: 0
+        });
+      }
+    }
+
+  });
+},
+stickySubHeader: function () {
+    $(document).on('scroll', function (){
+
+      //sub header sticky
+      var subheader_offset = $('#sticky-point').offset().top;
+      var fromTop = $(window).scrollTop();
+      if(fromTop > subheader_offset && !$('#sub-header').hasClass('sticky')) {
+
+        var m_lefft = 0;
+        var _top = 0;
+        if ($(window).width() > 768) {
+          _top = 46;
+        }
+        if ($(window).width() > 1200) {
+          m_lefft = ($(window).width() - 1200) / 2;
+        } 
+
+        $('#sub-header').css({
+          position: 'fixed',
+          top: _top,
+          left: '0',
+          width: '100%',
+          maxWidth: '1200px',
+          margin: '0 auto',
+          zIndex: 999,
+          padding: '15px',
+          marginLeft: m_lefft
+        });
+      } else {
+        $('#sub-header').css({
+          position: 'static',
+          padding: '8px 0',
+          margin: '0 auto'
+          
+        });
+      }
+    });
 },
 checkEmbedPage: function () {
     var link = window.location.href;
@@ -258,13 +321,7 @@ generateVList: function (data) {
 
       html += '<div data-key ="'+ data[i].key +'" class="row mar-bottom canFilter '   + f_type +' '+ f_category +' '+ f_location +'" data-type="'+ f_type +'" data-category="' + f_category + '" data-location="' + f_location + '">';
       html += '<div class="col-xs-2 col-sm-2 logo-wrap">';
-
-      if(data[i].iema_winner && data[i].verified) {
-        html += '<div class="logo icon">';
-      } else {
-        html += '<div class="logo">';
-      }
-
+      html += '<div class="logo">';
       html += '<a href="'+ link +'" target="_blank">';
       html += '<img class="small" src="' + mobile_url + '" alt="'+ vendor_name +'" title="'+ vendor_name +'">';
       html += '<img class="large" src="' + desktop_url + '" alt="'+ vendor_name +'" title="'+ vendor_name +'">';

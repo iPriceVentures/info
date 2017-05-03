@@ -8,8 +8,8 @@
     position: relative;
     top: 0;
     width: 100%;
-    padding: 10px;
-    background: rgba(6, 104, 134, 0.8);
+    padding: 0 10px;
+    background: #086A87;
     z-index: 2; }
   #header .inner {
     max-width: 1053px;
@@ -17,17 +17,14 @@
     display: table;
     margin: 0 auto; }
     #header .inner .logo {
-      width: 100%;
       height: auto;
-      float: left; }
-      @media (min-width: 640px) {
-        #header .inner .logo {
-          width: 380px; } }
+      float: left;
+      width: 250px; }
     #header .inner .menu {
       float: right; }
       @media (min-width: 640px) {
         #header .inner .menu {
-          margin: 38px 9px 0 0; } }
+          margin: 6px 9px 0 0; } }
       #header .inner .menu.margin {
         margin: 20px 0 0 0; }
       #header .inner .menu .btn {
