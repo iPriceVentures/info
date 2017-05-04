@@ -10,21 +10,35 @@
     width: 100%;
     padding: 0 10px;
     background: #086A87;
-    z-index: 2; }
+    z-index: 2;
+    height: 46px; }
+    @media (max-width: 640px) {
+      #header.fixed {
+        height: auto;
+        overflow-x: scroll; } }
   #header .inner {
     max-width: 1053px;
     width: 100%;
     display: table;
     margin: 0 auto; }
+    @media (max-width: 640px) {
+      #header .inner {
+        width: 450px; } }
     #header .inner .logo {
       height: auto;
       float: left;
-      width: 250px; }
+      width: 200px; }
+      @media (max-width: 640px) {
+        #header .inner .logo {
+          width: 150px;
+          display: inline-block; } }
     #header .inner .menu {
-      float: right; }
+      float: left; }
       @media (min-width: 640px) {
         #header .inner .menu {
-          margin: 6px 9px 0 0; } }
+          margin: 6px 9px 0 0;
+          float: right;
+          display: inline-block; } }
       #header .inner .menu.margin {
         margin: 20px 0 0 0; }
       #header .inner .menu .btn {
