@@ -133,7 +133,7 @@ stickySubHeader: function () {
       } else {
         $('.sortable .performance .text').removeClass('descending ascending');
       }
-      
+
     });
   },
   sortBy: function (arr, order, property) {
@@ -429,8 +429,8 @@ $(window).load(function () {
 
 $(window).resize(function(){
   CHART.main.generateVList(currentList);
-  $('.sortable .employees').removeClass('descending').removeClass('ascending');
-  $('.sortable .performance .text').removeClass('descending').removeClass('ascending');
+  $('.sortable .employees').removeClass('descending ascending');
+  $('.sortable .performance .text').removeClass('descending ascending');
   setTimeout(function () {
     $('#sub-header .performance .traffics').trigger('click');
   },100);
