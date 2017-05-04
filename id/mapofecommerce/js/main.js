@@ -85,13 +85,13 @@ stickySubHeader: function () {
           padding: '15px',
           opacity: 1,
           marginLeft: m_lefft,
-          transition: 'all 0.2s ease-in-out'
+          // transition: 'all 0.2s ease-in-out'
         });
 
         if (fromTop > subheader_offset && fromTop > endChart_offset) {
           $('#sub-header').css({
             opacity: 0,
-            transition: 'all 0.2s ease-in-out'
+            // transition: 'all 0.2s ease-in-out'
           });
         }
       } 
@@ -101,7 +101,7 @@ stickySubHeader: function () {
           padding: '8px 0',
           margin: '0 auto',
           opacity: 1,
-          transition: 'all 0.2s ease-in-out'
+          // transition: 'all 0.2s ease-in-out'
         });
       }
     });
@@ -428,10 +428,10 @@ $(window).load(function () {
 });
 
 $(window).resize(function(){
-  CHART.main.generateVList(currentList);
-  $('.sortable .employees').removeClass('descending ascending');
-  $('.sortable .performance .text').removeClass('descending ascending');
-  setTimeout(function () {
-    $('#sub-header .performance .traffics').trigger('click');
-  },100);
+  $('.sortable .text').each(function(){
+    if($(this).hasClass('descending') || $(this).hasClass('ascending')) {
+      CHART.main.sortBy(currentList, $(this).hasClass('descending') ? 1 : -1, $(this).attr('data-sort'));
+      return;
+    }
+  });
 });

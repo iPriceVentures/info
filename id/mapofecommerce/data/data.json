@@ -45,7 +45,8 @@
       "employees": 623,
       "type": "c2c",
       "category": "general",
-      "location": "indonesia"
+      "location": "indonesia",
+      "iema_winner": true
     },
     {
       "key": 2,
@@ -705,8 +706,7 @@
       "employees": 1101,
       "type": "b2c",
       "category": "general",
-      "location": "regional",
-      "iema_winner": true
+      "location": "regional"
     },
     {
       "key": 43,
