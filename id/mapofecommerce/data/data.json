@@ -28,7 +28,8 @@
       "employees": 60,
       "type": "b2c",
       "category": "fashion",
-      "location": "indonesia"
+      "location": "indonesia",
+      "verified": true
     },
     {
       "key": 1,
@@ -348,7 +349,8 @@
       "employees": 342,
       "type": "b2c",
       "category": "general",
-      "location": "indonesia"
+      "location": "indonesia",
+      "verified": true
     },
     {
       "key": 21,
@@ -364,7 +366,8 @@
       "employees": 762,
       "type": "b2c",
       "category": "tech",
-      "location": "indonesia"
+      "location": "indonesia",
+      "verified": true
     },
     {
       "key": 22,
@@ -412,7 +415,8 @@
       "employees": 220,
       "type": "b2c",
       "category": "general",
-      "location": "regional"
+      "location": "regional",
+      "verified": true
     },
     {
       "key": 25,
@@ -556,7 +560,8 @@
       "employees": 30,
       "type": "c2c",
       "category": "general",
-      "location": "indonesia"
+      "location": "indonesia",
+      "verified": true
     },
     {
       "key": 34,
@@ -700,7 +705,8 @@
       "employees": 1101,
       "type": "b2c",
       "category": "general",
-      "location": "regional"
+      "location": "regional",
+      "iema_winner": true
     },
     {
       "key": 43,
