@@ -84,14 +84,12 @@ stickySubHeader: function () {
           zIndex: 999,
           padding: '15px',
           opacity: 1,
-          marginLeft: m_lefft,
-          // transition: 'all 0.2s ease-in-out'
+          marginLeft: m_lefft
         });
 
         if (fromTop > subheader_offset && fromTop > endChart_offset) {
           $('#sub-header').css({
-            opacity: 0,
-            // transition: 'all 0.2s ease-in-out'
+            opacity: 0
           });
         }
       } 
@@ -100,8 +98,7 @@ stickySubHeader: function () {
           position: 'static',
           padding: '8px 0',
           margin: '0 auto',
-          opacity: 1,
-          // transition: 'all 0.2s ease-in-out'
+          opacity: 1
         });
       }
     });
