@@ -33,7 +33,6 @@ CHART.main = {
     setTimeout(function () {
       $('#sub-header .performance .traffics').trigger('click');
     },100);
-
   },
   stickyHeader: function () {
   //header sticky
@@ -122,49 +121,30 @@ stickySubHeader: function () {
 
       if(!_this.hasClass('descending') && !_this.hasClass('ascending')) {
         _this.addClass('ascending');
-        _this.siblings().removeClass('descending').removeClass('ascending');
-
-        if(!_this.hasClass('employees')) {
-          $('.sortable .employees').removeClass('descending').removeClass('ascending');
-        } else {
-          $('.sortable .performance .text').removeClass('descending').removeClass('ascending');
-        }
-
-        CHART.main.sortBy(currentList, -1, _this.attr('data-sort'));
-
-      } else if (_this.hasClass('ascending')) {
-        _this.removeClass('ascending');
-        _this.addClass('descending');
-        _this.siblings().removeClass('descending').removeClass('ascending');
-        if(!_this.hasClass('employees')) {
-          $('.sortable .employees').removeClass('descending').removeClass('ascending');
-        } else {
-          $('.sortable .performance .text').removeClass('descending').removeClass('ascending');
-        }
-        CHART.main.sortBy(currentList, 1, _this.attr('data-sort'));
-
-      } else if (_this.hasClass('descending')) {
-        _this.removeClass('descending');
-        _this.addClass('ascending');
-        _this.siblings().removeClass('descending').removeClass('ascending');
-        if(!_this.hasClass('employees')) {
-          $('.sortable .employees').removeClass('descending').removeClass('ascending');
-        } else {
-          $('.sortable .performance .text').removeClass('descending').removeClass('ascending');
-        }
-        CHART.main.sortBy(currentList, -1, _this.attr('data-sort'));
+      } else {
+        _this.toggleClass('ascending descending')
       }
+
+      CHART.main.sortBy(currentList, _this.hasClass('ascending') ? -1 : 1, _this.attr('data-sort'));
+      _this.siblings().removeClass('descending ascending');
+
+      if(!_this.hasClass('employees')) {
+        $('.sortable .employees').removeClass('descending ascending');
+      } else {
+        $('.sortable .performance .text').removeClass('descending ascending');
+      }
+      
     });
   },
   sortBy: function (arr, order, property) {
     var arrSort = arr.slice(0);
     arrSort.sort(function(a,b) {
-            if(order  === 1) {//ascending
-              return a[property] - b[property];
-            } else if (order === -1) { // descending
-              return b[property] - a[property];
-            }
-          });
+      if(order  === 1) {//ascending
+        return a[property] - b[property];
+      } else if (order === -1) { // descending
+        return b[property] - a[property];
+      }
+    });
 
     CHART.main.generateVList(arrSort);
   },
@@ -408,7 +388,7 @@ stickySubHeader: function () {
       html += '<div class="bg-col">';
       html += '<div class="percent" data-per="'+ employees_per +'"></div>';
       html += '<div class="num">';
-      html += '<span>'+ data[i].employees +'</span>';
+      html += '<span>'+ data[i].employees.format() +'</span>';
       html += '</div>';
       html += '</div>';
       html += '</div>';
@@ -439,7 +419,7 @@ stickySubHeader: function () {
     $('#chart').html('');
     $('#chart').append(list.container);
     $('.preloader').hide();
-    CHART.main.animation();  
+    CHART.main.animation();
   }
 }
 
@@ -448,5 +428,10 @@ $(window).load(function () {
 });
 
 $(window).resize(function(){
-  CHART.main.generateVList(currentList);       
+  CHART.main.generateVList(currentList);
+  $('.sortable .employees').removeClass('descending').removeClass('ascending');
+  $('.sortable .performance .text').removeClass('descending').removeClass('ascending');
+  setTimeout(function () {
+    $('#sub-header .performance .traffics').trigger('click');
+  },100);
 });
