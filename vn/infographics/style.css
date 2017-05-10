@@ -510,6 +510,9 @@ footer {
     #main-container > .highlight-section .right-part .browser_item img{
         width: 42px;
     }
+    #main-container > .highlight-section .right-part .browser_item .browser_info span{
+        font-size: 8px;
+    }
     #links .wrapper #footer-logo {
         width: 100%;
         text-align: center;
