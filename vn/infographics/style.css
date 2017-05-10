@@ -27,7 +27,7 @@ a {
 #header {
     margin: 0 auto;
     display: block;
-    transition: .5s ease-in-out;
+    transition: .2s ease-in-out;
     background: #066886;
 }
 #header.fixed {
@@ -49,11 +49,6 @@ a {
     width: 100%;
     display: table;
     margin: 0 auto;
-}
-@media (max-width: 640px) {
-    #header .inner {
-        width: 450px;
-    }
 }
 #header .inner .logo {
     height: auto;
