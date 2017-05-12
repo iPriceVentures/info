@@ -716,7 +716,7 @@ div, img {
       height: 16px;
       position: absolute;
       right: 20px;
-      bottom: 5px;
+      top: 3px;
 
       @media(max-width: 768px) {
         width: 10px;
@@ -735,21 +735,21 @@ div, img {
       width: 11px;
       height: 17px;
       position: absolute;
-      left: 20px;
-      top: 4px;
+      right: 20px;
+      top: 5px;
 
       @media(max-width: 768px) {
         width: 6px;
         height: 9px;
-        left: 17px;
+        right: 7px;
         top: 2px;
       }
     }
 
     &.icon {
       .icon-iema {
-        right: 40px;
-        top: 1px;
+        right: 17px;
+        top: 2px;
       }
     }
 
