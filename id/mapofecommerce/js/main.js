@@ -312,7 +312,13 @@ stickySubHeader: function () {
 
       html += '<div data-key ="'+ data[i].key +'" class="row mar-bottom canFilter '   + f_type +' '+ f_category +' '+ f_location +'" data-type="'+ f_type +'" data-category="' + f_category + '" data-location="' + f_location + '">';
       html += '<div class="col-xs-2 col-sm-2 logo-wrap">';
-      html += '<div class="logo">';
+
+      if(data[i].verified === true && data[i].iema_winner === true) {
+        html += '<div class="logo icon">';
+      } else {
+        html += '<div class="logo">';
+      }
+
       html += '<a href="'+ link +'" target="_blank">';
       html += '<img class="small" src="' + mobile_url + '" alt="'+ vendor_name +'" title="'+ vendor_name +'">';
       html += '<img class="large" src="' + desktop_url + '" alt="'+ vendor_name +'" title="'+ vendor_name +'">';
