@@ -151,8 +151,6 @@ stickySubHeader: function () {
     });
   },
   sortBy: function (arr, order, property) {
-    // console.log(arr);
-
     var arrSort = arr.slice(0);
     arrSort.sort(function(a,b) {
       if(order  === 1) {//ascending
@@ -264,13 +262,10 @@ stickySubHeader: function () {
     var obj = $.getJSON( dataPath, function() {
     })
     .complete(function() {
-      // console.log(obj.responseJSON);
       originList = obj.responseJSON;
       currentList = obj.responseJSON;
-      // Ranges = obj.responseJSON.ranges;
       
       CHART.main.getBiggestValues(obj.responseJSON);
-      // CHART.main.generateVList(obj.responseJSON);
     });
   },
   getTranslation: function () {
@@ -287,6 +282,10 @@ stickySubHeader: function () {
     var obj = $.getJSON( dataPath, function() {
     })
     .complete(function() {
+      if(obj.responseJSON.length == 1) {
+        $('#lang-selection').hide();
+      }
+
       if(lang) {
         Translation = obj.responseJSON[0];//local language
       } else {
@@ -315,14 +314,14 @@ stickySubHeader: function () {
       //5.verifiedText
       subHeader.find('.verified').html(Translation.verifiedText);
       //6.awardText
-      subHeader.find('.iema').html(Translation.awardText);
+      subHeader.find('.iema').find('a').html(Translation.awardText);
       //7.numbersIn1000Text
       subHeader.find('.currency').html(Translation.numbersIn1000Text);
       //8.methodology
       bottomInfo.find('.methodology > strong').html(Translation.methodology);
       //9.monthlyVisits
       subHeader.find('.traffics > p').html(Translation.monthlyVisits);
-      bottomInfo.find('.monthlyVisits > strong').html(Translation.monthlyVisits);
+      bottomInfo.find('.monthlyVisits > strong').html(Translation.monthlyVisits.replace('*', ''));
       //10.monthlyVisitsContent 
       bottomInfo.find('.monthlyVisits > p').html(Translation.monthlyVisitsContent);
       //11.filterResultsBy
@@ -339,14 +338,13 @@ stickySubHeader: function () {
       //17.techAndGadgetFilter
       headerContent.find('#filter-category').find('option').eq(3).html(Translation.techAndGadgetFilter);
       //14.originFilter
-      headerContent.find('#filter-location').find('option').eq(0).html(Translation.originFilter);
-      headerContent.find('#filter-location').find('option').eq(1).html(Translation.originFilter);
+      headerContent.find('#filter-location').find('option').eq(1).html(Translation.countryName);
       //18.internationalFilter
       headerContent.find('#filter-location').find('option').eq(2).html(Translation.internationalFilter);
 
       //19.appInstalls
       subHeader.find('.app > p').html(Translation.appInstalls);
-      bottomInfo.find('.appInstalls > strong').html(Translation.appInstalls);
+      bottomInfo.find('.appInstalls > strong').html(Translation.appInstalls.replace('*', ''));
       //20.appInstallSources
       bottomInfo.find('.appInstalls > p').html(Translation.appInstallSources);
       //21.socialFollowers
@@ -355,6 +353,8 @@ stickySubHeader: function () {
       bottomInfo.find('.socialFollowers > p').html(Translation.socialSource);
       //23.numberOfEmployees
       bottomInfo.find('.noEmployees > strong').html(Translation.numberOfEmployees);
+      //employees title
+      subHeader.find('.employees > p').html(Translation.numberOfEmployees);
       //24.contentEmployees
       bottomInfo.find('.noEmployees > p').html(Translation.contentEmployees);
       //25.merchantList
@@ -370,10 +370,9 @@ stickySubHeader: function () {
       //30.updateDataLink
       bottomInfo.find('.seeUpdateData').find('a').attr('href', Translation.updateDataLink);
       //31.IEMAAwards
-      bottomInfo.find('.iema-info > p').html(Translation.IEMAAwards);
+      bottomInfo.find('.iema-info > span').html(Translation.IEMAAwards);
       //32.embedPageTitle
       $('#embed-section > h3').html(Translation.embedPageTitle);
-      //NEED TRANSLATION FOR MOBILE
     }
   },
   getBiggestValues: function (data) {
@@ -545,7 +544,7 @@ stickySubHeader: function () {
       html += '<div class="bg-col">';
       html += '<div class="percent" data-per="'+ employees_per +'"></div>';
       html += '<div class="num">';
-      html += '<span>'+ data[i].employees +'</span>';
+      html += '<span>'+ data[i].employees.format() +'</span>';
       html += '</div>';
       html += '</div>';
       html += '</div>';
