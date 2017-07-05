@@ -28,15 +28,6 @@ body, html {
   }
 }
 
-.lang {
-  color: #086A87;
-  span {
-    font-size: 11px;
-    font-style: italic;
-    color: #6F6F6F;
-  }
-}
-
 #lang-selection {
   text-align: right;
   margin-bottom: 10px;
@@ -120,10 +111,17 @@ div, img {
             padding-right: 15px;
           }
           p {
+            color: #086A87;
             font-size: 16px;
             padding: 10px 0;
             @media(min-width: 768px) {
               font-size: 20px;
+            }
+            &:nth-child(2) {
+              font-size: 11px;
+              font-style: italic;
+              color: #6F6F6F;
+              padding-top: 0;
             }
           }
         }
@@ -886,15 +884,25 @@ div, img {
   padding: 15px 0;
   background: #EBEBEB;
 
-  p {
+  .lang > div {
     color: #575757;
-    padding: 5px 0;
+    padding: 5px;
 
     a {
-      text-decoration: underline;
-      color: #F26100;
+        text-decoration: underline;
+        color: #F26100;
+        font-weight: bold;
+    }
+
+    > span {
+      color: #575757;
+      font-style: normal;
+      font-size: 13px;
+      font-weight: bold;
     }
   }
+
+  
   .iema-info {
     padding: 10px;
     margin-top: 10px;

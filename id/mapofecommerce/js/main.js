@@ -5,6 +5,22 @@ var CHART = window.CHART || {};
 var Ranges;
 var originList;
 var currentList;
+var Translation;
+
+var Ranges = {
+  "min_traffics" : 0,
+  "max_traffics" : 0,
+  "min_app" : 0,
+  "max_app" : 0,
+  "min_twitter" : 0,
+  "max_twitter" : 0,
+  "min_instagram" : 0,
+  "max_instagram" : 0,
+  "min_facebook" : 0,
+  "max_facebook" : 0,
+  "min_employees" : 0,
+  "max_employees" : 0
+  };
 
 Number.prototype.format = function(n, x, s, c) {
   var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
@@ -24,6 +40,7 @@ function checkK(num) {
 CHART.main = {
   initChart: function () {
     CHART.main.checkEmbedPage();
+    CHART.main.getTranslation();
     CHART.main.getData();
     CHART.main.filter();
     CHART.main.sortEvent();
@@ -236,21 +253,158 @@ stickySubHeader: function () {
   getData: function () {
     var link = window.location.href;
 
-    var dataPath = 'data/data.json';
+    var dataPath = 'data/data_id.json';
 
     if(link.indexOf('/en') > 0) {
-      dataPath = '../data/data.json';
+      dataPath = '../data/data_id.json';
     }
 
     var obj = $.getJSON( dataPath, function() {
     })
     .complete(function() {
-      originList = obj.responseJSON.data;
-      currentList = obj.responseJSON.data;
-      Ranges = obj.responseJSON.ranges;
-
-      CHART.main.generateVList(obj.responseJSON.data);
+      originList = obj.responseJSON;
+      currentList = obj.responseJSON;
+      
+      CHART.main.getBiggestValues(obj.responseJSON);
     });
+  },
+  getTranslation: function () {
+    var link = window.location.href;
+    var lang = true;
+
+    var dataPath = 'data/translation.json';
+
+    if(link.indexOf('/en') > 0) {
+      lang = false;
+      dataPath = '../data/translation.json';
+    }
+
+    var obj = $.getJSON( dataPath, function() {
+    })
+    .complete(function() {
+      if(obj.responseJSON.length == 1) {
+        $('#lang-selection').hide();
+      }
+
+      if(lang) {
+        Translation = obj.responseJSON[0];//local language
+      } else {
+        Translation = obj.responseJSON[1];//english
+      }
+      CHART.main.parseTranslation();
+    });
+  },
+  parseTranslation: function () {
+    if(Translation != null) {
+      //header-content
+      var headerContent = $('#header-content');      
+      var subHeader = $('#sub-header');//sub-header
+      var bottomInfo = $('#bottom-info');//bottom texts
+
+      //1.titie
+      headerContent.find('.e-text').html(Translation.title);
+      //2.sub title
+      headerContent.find('.lang').html(Translation.subStitle);
+      //4.validity
+      headerContent.find('.validity').html(Translation.validity);
+      //filterResultsBy
+      headerContent.find('.title').html(Translation.filterResultsBy);
+      //3.viewIn
+      $('#lang-selection > a').html(Translation.viewIn);
+      //5.verifiedText
+      subHeader.find('.verified').html(Translation.verifiedText);
+      //6.awardText
+      subHeader.find('.iema').find('a').html(Translation.awardText);
+      //7.numbersIn1000Text
+      subHeader.find('.currency').html(Translation.numbersIn1000Text);
+      //8.methodology
+      bottomInfo.find('.methodology > strong').html(Translation.methodology);
+      //9.monthlyVisits
+      subHeader.find('.traffics > p').html(Translation.monthlyVisits);
+      bottomInfo.find('.monthlyVisits > strong').html(Translation.monthlyVisits.replace('*', ''));
+      //10.monthlyVisitsContent 
+      bottomInfo.find('.monthlyVisits > p').html(Translation.monthlyVisitsContent);
+      //11.filterResultsBy
+      headerContent.find('.filter').find('.title').html(Translation.filterResultsBy);
+
+      //12.typeFilter
+      headerContent.find('#filter-type').find('option').eq(0).html(Translation.typeFilter);
+      //13.categoryFilter
+      headerContent.find('#filter-category').find('option').eq(0).html(Translation.categoryFilter);
+      //15.fashionFilter
+      headerContent.find('#filter-category').find('option').eq(1).html(Translation.fashionFilter);
+      //16.generalFilter
+      headerContent.find('#filter-category').find('option').eq(2).html(Translation.generalFilter);
+      //17.techAndGadgetFilter
+      headerContent.find('#filter-category').find('option').eq(3).html(Translation.techAndGadgetFilter);
+      //14.originFilter
+      headerContent.find('#filter-location').find('option').eq(0).html(Translation.originFilter);
+      headerContent.find('#filter-location').find('option').eq(1).html(Translation.countryName);
+      //18.internationalFilter
+      headerContent.find('#filter-location').find('option').eq(2).html(Translation.internationalFilter);
+
+      //19.appInstalls
+      subHeader.find('.app > p').html(Translation.appInstalls);
+      bottomInfo.find('.appInstalls > strong').html(Translation.appInstalls.replace('*', ''));
+      //20.appInstallSources
+      bottomInfo.find('.appInstalls > p').html(Translation.appInstallSources);
+      //21.socialFollowers
+      bottomInfo.find('.socialFollowers > strong').html(Translation.socialFollowers);
+      //22.source
+      bottomInfo.find('.socialFollowers > p').html(Translation.socialSource);
+      //23.numberOfEmployees
+      bottomInfo.find('.noEmployees > strong').html(Translation.numberOfEmployees);
+      //employees title
+      subHeader.find('.employees > p').html(Translation.numberOfEmployees);
+      //24.contentEmployees
+      bottomInfo.find('.noEmployees > p').html(Translation.contentEmployees);
+      //25.merchantList
+      bottomInfo.find('.merchantList > strong').html(Translation.merchantList);
+      //26.contentMerchants
+      bottomInfo.find('.merchantList > p').html(Translation.contentMerchants);
+      //27.moreDetailData
+      bottomInfo.find('.moreDetailData > strong > span').html(Translation.moreDetailData);
+      //28.moreDataLink
+      bottomInfo.find('.moreDetailData').find('a').attr('href', Translation.moreDataLink);
+      //29.seeUpdateData
+      bottomInfo.find('.seeUpdateData > span').html(Translation.seeUpdateData);
+      //30.updateDataLink
+      bottomInfo.find('.seeUpdateData').find('a').attr('href', Translation.updateDataLink);
+      //31.IEMAAwards
+      bottomInfo.find('.iema-info > span').html(Translation.IEMAAwards);
+      //32.embedPageTitle
+      $('#embed-section > h3').html(Translation.embedPageTitle);
+    }
+  },
+  getBiggestValues: function (data) {
+    var max_traffics = 0, max_app = 0, max_twitter = 0, max_instagram = 0, max_facebook = 0, max_employees = 0;
+    for (var i =0; i < data.length; i ++) {
+      if( parseFloat(data[i].traffics) > max_traffics) {
+        max_traffics = parseFloat(data[i].traffics);
+      }
+      if( parseFloat(data[i].app) > max_app) {
+        max_app = parseFloat(data[i].app);
+      }
+      if( parseFloat(data[i].twitter) > max_twitter) {
+        max_twitter = parseFloat(data[i].twitter);
+      }
+      if( parseFloat(data[i].instagram) > max_instagram) {
+        max_instagram = parseFloat(data[i].instagram);
+      }
+      if( parseFloat(data[i].facebook) > max_facebook) {
+        max_facebook = parseFloat(data[i].facebook);
+      }
+      if( parseFloat(data[i].employees) > max_employees) {
+        max_employees = parseFloat(data[i].employees);
+      }
+    }
+
+    Ranges.max_traffics = max_traffics;
+    Ranges.max_app = max_app;
+    Ranges.max_twitter = max_twitter;
+    Ranges.max_instagram = max_instagram;
+    Ranges.max_facebook = max_facebook;
+    Ranges.max_employees = max_employees;
   },
   convertPercent: function (type, number) {
     var per = 0;
