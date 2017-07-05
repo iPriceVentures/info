@@ -338,6 +338,7 @@ stickySubHeader: function () {
       //17.techAndGadgetFilter
       headerContent.find('#filter-category').find('option').eq(3).html(Translation.techAndGadgetFilter);
       //14.originFilter
+      headerContent.find('#filter-location').find('option').eq(0).html(Translation.originFilter);
       headerContent.find('#filter-location').find('option').eq(1).html(Translation.countryName);
       //18.internationalFilter
       headerContent.find('#filter-location').find('option').eq(2).html(Translation.internationalFilter);
