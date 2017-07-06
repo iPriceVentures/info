@@ -253,10 +253,10 @@ stickySubHeader: function () {
   getData: function () {
     var link = window.location.href;
 
-    var dataPath = 'data/data_id.json';
+    var dataPath = 'data/data.json';
 
     if(link.indexOf('/en') > 0) {
-      dataPath = '../data/data_id.json';
+      dataPath = '../data/data.json';
     }
 
     var obj = $.getJSON( dataPath, function() {
