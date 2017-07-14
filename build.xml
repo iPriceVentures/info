@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project name="info" default="build">
+    <target name="copy_resources_fashionTrends"
+            description="Copy resources files to be shared with info">
+        <mkdir dir="hk/fashion-trends-back-now/res/"/>
+        <mkdir dir="ph/fashion-trends-back-now/res/"/>
+        <mkdir dir="sg/fashion-trends-back-now/res/"/>
+        <mkdir dir="my/fashion-trends-back-now/res/"/>
+        <mkdir dir="id/fashion-trends-back-now/res/"/>
+        <mkdir dir="vn/fashion-trends-back-now/res/"/>
+        <copy todir="hk/fashion-trends-back-now/res" failonerror="true" overwrite="true">
+            <fileset dir="zz/fashion-trends-back-now/res/"/>
+        </copy>
+        <copy todir="ph/fashion-trends-back-now/res" failonerror="true" overwrite="true">
+            <fileset dir="zz/fashion-trends-back-now/res/"/>
+        </copy>
+        <copy todir="sg/fashion-trends-back-now/res" failonerror="true" overwrite="true">
+            <fileset dir="zz/fashion-trends-back-now/res/"/>
+        </copy>
+        <copy todir="my/fashion-trends-back-now/res" failonerror="true" overwrite="true">
+            <fileset dir="zz/fashion-trends-back-now/res/"/>
+        </copy>
+        <copy todir="id/fashion-trends-back-now/res" failonerror="true" overwrite="true">
+            <fileset dir="zz/fashion-trends-back-now/res/"/>
+        </copy>
+        <copy todir="vn/fashion-trends-back-now/res" failonerror="true" overwrite="true">
+            <fileset dir="zz/fashion-trends-back-now/res/"/>
+        </copy>
+    </target>
+    <target name="build"
+            description="Run all tasks"
+            depends="copy_resources_fashionTrends"/>
+</project>
