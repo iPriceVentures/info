@@ -46,10 +46,18 @@ CHART.main = {
     CHART.main.sortEvent();
     CHART.main.stickySubHeader();
     CHART.main.stickyHeader();
+    CHART.main.applyFooterLinks();
 
     setTimeout(function () {
       $('#sub-header .performance .traffics').trigger('click');
     },100);
+  },
+  applyFooterLinks: function () {
+    var objs = $('#international');
+    objs.find('li > a').each(function () {
+      var url = $(this).attr('href') + 'insights/mapofecommerce/';
+      $(this).attr('href', url);
+    });
   },
   stickyHeader: function () {
   //header sticky
@@ -575,8 +583,9 @@ stickySubHeader: function () {
     });
     $('#chart').html('');
     $('#chart').append(list.container);
-    $('.preloader').hide();
     CHART.main.animation();
+  
+    $('.preloader').hide();
   }
 }
 
