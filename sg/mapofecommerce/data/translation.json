@@ -21,7 +21,7 @@
     "appInstalls": "App Installs",
     "appInstallSources": "Minimum number of App installs as per Google Play<br/>Source: Google Play Store<br />Total worldwide downloads",
     "socialFollowers": "Social Media Followers",
-    "socialSource": "Source: Facebook, Twitter, and Instagram",
+    "socialSource": "Source: Facebook, Twitter, and Instagram. Some numbers may include regional followers.",
     "numberOfEmployees": "Number of Employees",
     "contentEmployees": "Source: LinkedIn. Data will be displayed as (n/a) if the number of employees is not displayed. Some numbers may include logistics and retail employees.",
     "merchantList": "Merchant List",
