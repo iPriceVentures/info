@@ -17,9 +17,9 @@ var Ranges = {
   "min_instagram" : 0,
   "max_instagram" : 0,
   "min_facebook" : 0,
-  "max_facebook" : 0,
-  "min_employees" : 0,
-  "max_employees" : 0
+  "max_facebook" : 0
+  // "min_employees" : 0,
+  // "max_employees" : 0
   };
 
 Number.prototype.format = function(n, x, s, c) {
@@ -150,11 +150,11 @@ stickySubHeader: function () {
       CHART.main.sortBy(currentList, _this.hasClass('ascending') ? -1 : 1, _this.attr('data-sort'));
       _this.siblings().removeClass('descending ascending');
 
-      if(!_this.hasClass('employees')) {
-        $('.sortable .employees').removeClass('descending ascending');
-      } else {
-        $('.sortable .performance .text').removeClass('descending ascending');
-      }
+      // if(!_this.hasClass('employees')) {
+      //   $('.sortable .employees').removeClass('descending ascending');
+      // } else {
+      //   $('.sortable .performance .text').removeClass('descending ascending');
+      // }
 
     });
   },
@@ -361,12 +361,12 @@ stickySubHeader: function () {
       //22.source
       bottomInfo.find('.socialFollowers > p').html(Translation.socialSource);
       //23.numberOfEmployees
-      bottomInfo.find('.noEmployees > strong').html(Translation.numberOfEmployees);
-      //employees title
-      subHeader.find('.employees > p').html(Translation.numberOfEmployees);
-      //24.contentEmployees
-      bottomInfo.find('.noEmployees > p').html(Translation.contentEmployees);
-      //25.merchantList
+      // bottomInfo.find('.noEmployees > strong').html(Translation.numberOfEmployees);
+      // //employees title
+      // subHeader.find('.employees > p').html(Translation.numberOfEmployees);
+      // //24.contentEmployees
+      // bottomInfo.find('.noEmployees > p').html(Translation.contentEmployees);
+      // //25.merchantList
       bottomInfo.find('.merchantList > strong').html(Translation.merchantList);
       //26.contentMerchants
       bottomInfo.find('.merchantList > p').html(Translation.contentMerchants);
@@ -402,9 +402,9 @@ stickySubHeader: function () {
       if( parseFloat(data[i].facebook) > max_facebook) {
         max_facebook = parseFloat(data[i].facebook);
       }
-      if( parseFloat(data[i].employees) > max_employees) {
-        max_employees = parseFloat(data[i].employees);
-      }
+      // if( parseFloat(data[i].employees) > max_employees) {
+      //   max_employees = parseFloat(data[i].employees);
+      // }
     }
 
     Ranges.max_traffics = max_traffics;
@@ -412,7 +412,7 @@ stickySubHeader: function () {
     Ranges.max_twitter = max_twitter;
     Ranges.max_instagram = max_instagram;
     Ranges.max_facebook = max_facebook;
-    Ranges.max_employees = max_employees;
+    // Ranges.max_employees = max_employees;
   },
   convertPercent: function (type, number) {
     var per = 0;
@@ -427,9 +427,10 @@ stickySubHeader: function () {
       per = Math.round(parseFloat( (number / Ranges.max_instagram) * 100 ));
     } else if (type === 'facebook') {
       per = Math.round(parseFloat( (number / Ranges.max_facebook) * 100 ));
-    } else if (type === 'employee') {
-      per = Math.round(parseFloat( (number / Ranges.max_employees) * 100 ));
-    }
+    } 
+    // else if (type === 'employee') {
+    //   per = Math.round(parseFloat( (number / Ranges.max_employees) * 100 ));
+    // }
 
     return per;
   },
@@ -473,7 +474,7 @@ stickySubHeader: function () {
       var html = '';
 
       html += '<div data-key ="'+ data[i].key +'" class="row mar-bottom canFilter '   + f_type +' '+ f_category +' '+ f_location +'" data-type="'+ f_type +'" data-category="' + f_category + '" data-location="' + f_location + '">';
-      html += '<div class="col-xs-2 col-sm-2 logo-wrap">';
+      html += '<div class="col-xs-3 col-sm-3 logo-wrap">';
 
       if(data[i].verified === true && data[i].iema_winner === true) {
         html += '<div class="logo icon">';
@@ -498,7 +499,7 @@ stickySubHeader: function () {
       html += '</div>';
       html += '</div>';
 
-      html += '<div class="col-xs-7 col-sm-8 no-padding">';
+      html += '<div class="col-xs-8 col-sm-9 no-padding">';
       html += '<div class="row performance">';
       html += '<div class="col-xs-4 traffics">';
       html += '<div class="bg-col">';
@@ -547,17 +548,17 @@ stickySubHeader: function () {
       html += '</div>';
       html += '</div>';
 
-      html += '<div class="col-xs-3 col-sm-2">';
-      html += '<div class="row company">';
-      html += '<div class="col-xs-12 employees">';
-      html += '<div class="bg-col">';
-      html += '<div class="percent" data-per="'+ employees_per +'"></div>';
-      html += '<div class="num">';
-      html += '<span>'+ data[i].employees.format() +'</span>';
-      html += '</div>';
-      html += '</div>';
-      html += '</div>';
-      html += '</div>';
+      // html += '<div class="col-xs-3 col-sm-2">';
+      // html += '<div class="row company">';
+      // html += '<div class="col-xs-12 employees">';
+      // html += '<div class="bg-col">';
+      // html += '<div class="percent" data-per="'+ employees_per +'"></div>';
+      // html += '<div class="num">';
+      // html += '<span>'+ data[i].employees.format() +'</span>';
+      // html += '</div>';
+      // html += '</div>';
+      // html += '</div>';
+      // html += '</div>';
 
       html += '</div>';
       html += '</div>';
