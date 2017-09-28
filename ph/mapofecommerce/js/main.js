@@ -448,7 +448,7 @@ stickySubHeader: function () {
 
     for (var i = 0; i < data.length; i++) {
 
-      var employees_per = CHART.main.convertPercent('employee', data[i].employees) + '%';
+      // var employees_per = CHART.main.convertPercent('employee', data[i].employees) + '%';
       var traffic_per = CHART.main.convertPercent('traffics', data[i].traffics) + '%';
       var app_per = CHART.main.convertPercent('app', data[i].app) + '%';
       var twitter_per = CHART.main.convertPercent('twitter', data[i].twitter) + '%';
