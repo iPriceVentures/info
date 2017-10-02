@@ -80,3 +80,13 @@
         #header .inner .menu .btn > span {
           font-size: 14px;
           font-weight: bold; }
+
+h1, h2, h3, #courtesies-banner, header, footer, #mega-menu .wrapper, amp-list, .go-top,  #breadcrumb, #hp-content, #about   {
+    filter: none !important; 
+    -webkit-filter: grayscale(0%) !important;
+    -moz-filter: grayscale(0%) !important;
+    -ms-filter: grayscale(0%) !important;
+    -o-filter: grayscale(0%) !important;
+    filter: grayscale(0%) !important;
+    -webkit-filter: grayscale(0) !important;
+}
