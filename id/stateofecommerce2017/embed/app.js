@@ -2,26 +2,18 @@
 var data = '';
 var a = angular.module("myApp", ['ngSanitize', 'ngRoute']);
 
-a.controller('mainController', function($scope, $http, $window, $routeParams){
+a.controller('mainController', function($scope, $http, $window, $location){
 	
 	var pos = false;
       var embed = false;
       var lang = 'en';
-      var query = window.location.search.substring(1);
-	var vars = query.split("&");
-		for (var i=0;i<vars.length;i++) {
-			var pair = vars[i].split("=");
-			if(pair[0] == 'id'){
-				pos =  pair[1];
-			} 
-                  if(pair[0] == 'embed'){
-                        embed = pair[1];
-                  }
-                  if(pair[0] == 'lang'){
-                        lang = pair[1];
-                  }
-		}
+      var query = $location.path();
+	
+      var path = query.split('.');
 
+      pos = path[1];
+      embed = (path[3] == '1') ? true : false;
+      lang = (path[2] == 'undefined') ? 'en' : path[2];
       switch( lang ){
             case 'id':  var data_url = 'graph.data.id.json';
                         var avg  = 'Rata-rata';
@@ -103,7 +95,6 @@ a.controller('mainController', function($scope, $http, $window, $routeParams){
 
                   _title.innerHTML = data[pos].title;
                   main.insertBefore( _title, main.childNodes[0]);
-                  header.appendChild(_s);
             }
 
       });

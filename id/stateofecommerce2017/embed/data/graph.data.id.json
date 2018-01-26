@@ -9,6 +9,7 @@
 			["x", "VN","ID","SG","MY","TH","PH"],
 			[ "Conversion Rate",1.3,1.1,1.1,0.9,0.8,0.8]
         ],
+        "title" : "Conversion Rate di Tiap Negara",
         "type" : "horizontal-bar",
         "legend" : true,
         "format" : "x",
@@ -23,6 +24,7 @@
 			["x", "SG", "PH", "MY", "TH", "ID", "VN"],
 			[ "Basket Size", 91, 56, 54, 42, 36,23]
         ],
+        "title" : "Nilai rata-rata transaksi di setiap negara",
         "type" : "horizontal-bar",
         "legend" : true,
         "format" : "$",
@@ -37,6 +39,7 @@
 			["x", "SG", "MY", "TH", "ID", "PH", "VN"],
 			[ "GDP Per Capita ('000)", 90, 28, 17, 12, 8, 6]
         ],
+        "title" : "PDB per kapita",
         "type" : "horizontal-bar",
         "legend" : true,
         "format" : "$",
@@ -90,6 +93,7 @@
 			[ "Mobile", 1.4,1.3,0.9,0.8,0.8,0.7],
 			[ "Desktop", 3.6,3.3,3,2.1,1.9,2]
         ],
+        "title" : "Conversion Rate Mobile vs Desktop",
         "type" : "horizontal-bar",
         "format" : "x",
         "max" : 3.3
@@ -104,6 +108,7 @@
 			[ "Mobile", 82, 55, 52, 39, 35, 23],
 			[ "Desktop", 96, 59, 54, 47, 42, 26]
         ],
+        "title" : "Nilai rata-rata transaksi Mobile VS Desktop",
         "type" : "horizontal-bar",
         "format" : "$",
         "max" : 100
@@ -121,6 +126,7 @@
 			["TH",28,41,57,95,132,153,139,154,164,169,164,141,114,106,111,134,146,135,53,60,38,30,28,21],
 			["VN",23,32,63,102,147,184,176,161,168,161,168,155,110,90,102,116,131,125,48,54,32,22,20,16]
 		],
+		"title" : "Jumlah Transaksi dalam Rentang Harian",
 		"tick" : ["x", "06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","00","01","02","03","04","05"],
 		"type" : "spline",
 		"format" : "%"
@@ -151,6 +157,7 @@
 			["VN","100","107","109","110","105","87","76"],
 			["PH","100","102","107","107","103","84","80"]
 		],
+		"title" : "Nilai Conversion Rate Harian dalam Satu Minggu",
 		"tick" : ["x", "MON","TUE","WED","THU","FRI","SAT","SUN"],
 		"type" : "spline",
 		"format" : "%"
@@ -167,6 +174,7 @@
 			["VN","64","65","64","65","65","72","77"],
 			["PH","72","70","70","71","72","79","82"]
 		],
+		"title": "Persentase Kunjungan Mobile Harian dalam Satu Minggu",
 		"tick" : ["x", "MON","TUE","WED","THU","FRI","SAT","SUN"],
 		"type" : "spline",
 		"format" : "%"
@@ -183,6 +191,7 @@
 			["VN","57","62","70","72"],
 			["PH","66","69","74","76"]
 		],
+		"title" : "Kunjungan Mobile",
 		"tick" : ["x", "2016-Q3","2016-Q4","2017-Q1","2017-Q2"],
 		"type" : "spline",
 		"format" : "%"
