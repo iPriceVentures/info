@@ -1,0 +1,96 @@
+<!doctype html>
+<html ng-app="myApp" ng-controller="mainController">
+	<head >
+		<meta charset="utf-8">
+		<title ng-bind="title"></title>
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/js/vendor/c3/c3.css">
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		<style>
+			.embedded-graph{
+				max-width:720px;
+				width: 100%;
+			}
+			
+			#canvas svg{
+				width: 100%;
+				min-height: 350px;
+			    padding-bottom: 10px;
+			    margin-left:-10px;
+			}
+
+			.embedded-graph svg{
+				max-width: 680px;
+				display: block;
+			}
+			
+			g.c3-legend-item{
+			    -webkit-transform: translateY(15px);
+			}
+
+			.c3-tooltip{
+			    font-family: 'Helvetica',sans-serif;
+			}
+
+			.graph-14 .c3-axis-y .tick:nth-child(13){
+			    opacity: 0 !important;
+			}
+
+			.graph-9 g.c3-xgrid-line {
+			    stroke-dasharray: 3 3;
+			}
+
+			.avg-hg line,
+			.avg-line line {
+			    stroke: #222;
+			    stroke-dasharray: 3 3;
+			}
+
+			.avg-hg text,
+			.avg-line text{
+			    fill: #222;
+			}
+			@media screen and (max-width: 960px){
+				.tick text {
+				    font-size:8px;
+				}
+
+				.graph-14 .c3-axis-x-label {
+				    -webkit-transform: translateY(12px) !important;
+				}
+
+				.graph-9 .c3-axis-x .tick{
+				    opacity: 0 !important;
+				}
+				.graph-9 .c3-axis-x .tick:nth-child(6n+5){
+				    opacity: 1 !important;
+				}
+
+				.graph-9 .g.c3-xgrid-line {
+				    stroke-dasharray: 3 3;
+				}
+
+			}
+
+
+		</style>
+		<script src="assets/js/angular.js"></script>
+		<script src="assets/js/sanitize.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.js"></script>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="assets/js/vendor/c3/c3.js"></script>
+		<script src="assets/js/vendor/graph-library.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body >
+		<div id="main-container">
+			<div id='canvas'></div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+	</body>
+</html>
