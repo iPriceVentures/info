@@ -1,0 +1,328 @@
+[
+	{
+		"labels" : ["Conversion Rate"],
+		"x_label" : "Conversion Rate",
+		"title" : "Conversion Rates per Country",
+		"y_label" : "Countries",
+		"label"  : false,
+		"data" 	 : [
+			["x", "VN","ID","SG","MY","TH","PH"],
+			[ "Conversion Rate",1.3,1.1,1.1,0.9,0.8,0.8]
+        ],
+        "type" : "horizontal-bar",
+        "legend" : true,
+        "format" : "x",
+        "max" : 1.4
+	},
+	{
+		"labels" : ["Average Order Value"],
+		"x_label" : "Average Order Value (USD)",
+		"y_label" : "Countries",
+		"label"  : false,
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "Average Order Value", 36, 42, 91, 54, 23, 56]
+        ],
+        "type" : "horizontal-bar",
+        "legend" : true,
+        "format" : "$",
+        "max" : 100
+	},
+	{
+		"labels" : ["GDP Per Capita"],
+		"x_label" : "GDP Per Capita (USD '000)",
+		"y_label" : "Countries",
+		"label"  : false,
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "GDP Per Capita ('000)", 12, 17, 90, 28, 6, 8]
+        ],
+        "type" : "horizontal-bar",
+        "legend" : true,
+        "format" : "$",
+        "max" : 100
+	},
+	{
+		"labels" : ["Cancellation Rate"],
+		"label"  : false,
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "Conversion Rate", 10.89, 15.62, 10.07, 5.07, 5.61, 6.24]
+        ],
+        "format" : "%"
+	},
+	{
+		"labels" : ["Debit Card Usage (% of All Adults)"],
+		"label"  : false,
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "Conversion Rate", 8,8,78,19,3,20]
+        ],
+        "format" : "%"
+	},
+	{
+		"labels" : ["Local vs Overall Conversion Rate"],
+		"label"  : true,
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "Local", 2.53, 1.78, 2.61, 2.06, 2.94, 1.73],
+			[ "Overall", 1.61, 1.30, 1.85, 1.56, 2.00, 1.10]
+        ],
+        "format" : "%"
+	},
+	{
+		"labels" : ["Local vs Overall Average Order Value"],
+		"label"  : true,
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "Local", 36.28, 41.99, 90.64, 53.73, 22.85, 56.38],
+			[ "Overall", 39.51, 42.60, 103.12, 80.23, 24.42, 68.82]
+        ],
+        "format" : "%"
+	},
+	{
+		"labels" : ["Desktop vs Mobile Conversion Rate"],
+		"label"  : true,
+		"x_label" : "Conversion Rate",
+		"y_label" : "Countries",
+		"data" 	 : [
+			["x", "VN","ID","SG","TH","MY","PH"],
+			[ "Mobile", 1.4,1.3,0.9,0.8,0.8,0.7],
+			[ "Desktop", 3.6,3.3,3,2.1,1.9,2]
+        ],
+        "type" : "horizontal-bar",
+        "format" : "x",
+        "max" : 3.3
+	},
+	{
+		"labels" : ["Desktop vs Mobile Average Order Value"],
+		"label"  : true,
+		"x_label" : "Average Order Value (USD)",
+		"y_label" : "Countries",
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "Mobile", 35, 39, 82, 52, 23, 55],
+			[ "Desktop", 42, 47, 96, 54, 26, 59]
+        ],
+        "type" : "horizontal-bar",
+        "format" : "$",
+        "max" : 100
+	},
+	{
+		"labels" : ["Hourly # of Orders"],
+		"label"  : true,
+		"y_label" : "Orders",
+		"x_label" : "Time of the day",
+		"data"	 : [
+			["MY",26,41,61,94,131,154,170,148,159,165,172,152,122,100,104,123,139,126,56,63,44,28,22,23],
+			["ID",44,65,81,118,147,169,156,151,162,157,153,138,112,107,106,115,110,111,39,50,37,30,24,28],
+			["PH",42,61,76,109,124,145,142,142,155,166,148,145,120,104,105,126,123,111,48,63,46,38,34,37],
+			["SG",30,48,61,92,115,125,128,131,146,152,160,149,132,110,121,133,161,153,71,74,51,31,22,19],
+			["TH",28,41,57,95,132,153,139,154,164,169,164,141,114,106,111,134,146,135,53,60,38,30,28,21],
+			["VN",23,32,63,102,147,184,176,161,168,161,168,155,110,90,102,116,131,125,48,54,32,22,20,16]
+		],
+		"tick" : ["x", "06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","00","01","02","03","04","05"],
+		"type" : "spline",
+		"format" : "%"
+	},
+	{
+		"labels" : ["Part of Day # of Orders"],
+		"data"	 : [
+			["x", "Morning(6-9)","Noon(10-13)","Afternoon(14-17)","Evening(18-21)","Night(22-1)","Late Night(2-5)"],
+			["ID","76","158","155","110","74","28"],
+			["TH","56","145","160","115","96","28"],
+			["SG","51","129","157","124","114","25"],
+			["MY","54","151","160","112","95","28"],
+			["VN","54","169","164","101","90","21"],
+			["PH","73","138","154","114","84","38"]
+		],
+		"type" : "spline",
+		"format" : "%"
+	},
+	{
+		"labels" : ["Day of Week Local Conversion Rate"],
+		"x_label" : "Days of The Week",
+		"y_label" : "Conversion Rate",
+		"data"	 : [
+			["ID","100","107","112","110","99","77","70"],
+			["TH","100","107","108","99","95","78","81"],
+			["SG","100","103","104","96","90","77","89"],
+			["MY","100","104","115","103","97","77","80"],
+			["VN","100","107","109","110","105","87","76"],
+			["PH","100","102","107","107","103","84","80"]
+		],
+		"tick" : ["x", "MON","TUE","WED","THU","FRI","SAT","SUN"],
+		"type" : "spline",
+		"format" : "%"
+	},
+	{
+		"labels" : ["Day of Week Local Conversion Rate"],
+		"x_label" : "Days of The Week",
+		"y_label" : "Mobile Traffic Contribution (%)",
+		"data"	 : [
+			["ID","81","80","80","81","82","88","90"],
+			["TH","73","72","72","73","74","81","84"],
+			["SG","69","67","68","68","70","79","79"],
+			["MY","68","66","66","66","68","79","80"],
+			["VN","64","65","64","65","65","72","77"],
+			["PH","72","70","70","71","72","79","82"]
+		],
+		"tick" : ["x", "MON","TUE","WED","THU","FRI","SAT","SUN"],
+		"type" : "spline",
+		"format" : "%"
+	},
+	{
+		"labels" : ["Quarterly % Of Mobile Contribution"],
+		"x_label" : "Quarters of the Year",
+		"y_label" : "Mobile Traffic (%)",
+		"data"	 : [
+			["ID","74","78","85","87"],
+			["TH","67","71","78","79"],
+			["SG","64","68","72","74"],
+			["MY","62","66","73","74"],
+			["VN","57","62","70","72"],
+			["PH","66","69","74","76"]
+		],
+		"tick" : ["x", "2016-Q3","2016-Q4","2017-Q1","2017-Q2"],
+		"type" : "spline",
+		"format" : "%"
+	},
+	{
+		"labels" : ["Payment Options"],
+		"label"  : true,
+		"x_label" : "Types of Payment Solution",
+		"y_label" : "Percentage of merchants offering such payment solutions ",
+		"data"	 : [
+
+			["ID", 84, 94, 43, 8, 41],
+			["TH", 90, 81, 52, 46, 25],
+			["SG", 100, 38, 19, 4, 15],
+			["MY", 100, 50, 17, 10, 13],
+			["VN", 60, 88, 82, 47, 49],
+			["PH", 95, 65, 80, 20, 15]
+		],
+		"categories" : ["Credit Card", "Bank Transfer", "Cash On Delivery", "Offline POS", "Installment"],
+		"tick" : ["Credit Card", "Bank Transfer", "Cash On Delivery", "Offline POS", "Installment"],
+		"type" : "bar",
+		"format" : "%"
+	},
+	{
+		"labels" : ["Delivery Policy"],
+		"data"	 : [
+				["Free delivery", 14, 10, 18, 26, 20, 18],
+				["Free Above Certain $",14, 58, 50, 34, 54, 32],
+				["Paid", 72, 32, 32, 40, 26, 50]
+			],
+		"type": "stacked",
+		"categories" : ["ID", "TH", "SG", "MY", "VN", "PH"],
+		"format" : "%",
+		"groups" : [
+			["Free delivery", "Free Above Certain $", "Paid"]
+		]
+	},
+	{
+		"labels" : ["Express Delivery"],
+		"data"	 : [
+				["ID", 24],
+				["TH", 50],
+				["SG", 73],
+				["MY", 30],
+				["VN", 45],
+				["PH", 40]
+			],
+		"categories" : [ "Merchants"],
+		"type" : "donut",
+		"format" : "%"
+	},
+	{
+		"labels" : ["Unwanted Item Not Allowed"],
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "Local", 53, 21, 27, 43, 22, 55]
+        ],
+        "type" : "horizontal-bar",
+        "format" : "%"
+	},
+	{
+		"labels" : ["Average Return Period for Unwanted Item​"],
+		"data" 	 : [
+			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
+			[ "Average Days", 13.67, 14.89, 43.73, 17.69, 22.23, 10.67]
+        ],
+        "type" : "horizontal-bar",
+        "format" : ""
+	},
+	{
+		"labels" : ["Return Period for Unwanted Item"],
+		"data"	 : [
+				["> 15", 22, 11, 27, 24, 55, 11],
+				["7-14", 9, 34, 47, 50, 24, 34],
+				["< 6", 22, 3, 5, 2, 13, 22],
+				["Unspecified", 47, 52, 21, 24, 8, 33]
+			],
+		"type": "stacked",
+		"categories" : ["ID", "TH", "SG", "MY", "VN", "PH"],
+		"format" : "%",
+		"groups" : [
+			["> 15", "7-14", "< 6", "Unspecified"]
+		]
+	},
+	{
+		"labels" : ["Return Cost for Unwanted Item"],
+		"data"	 : [
+				["Free", 30, 13, 52, 18, 24, 22],
+				["Paid", 22, 16, 32, 58, 71, 34],
+				["Unspecified", 48, 71, 16, 24, 5, 44]
+			],
+		"type": "stacked",
+		"categories" : ["ID", "TH", "SG", "MY", "VN", "PH"],
+		"format" : "%",
+		"groups" : [
+			["Free", "Paid", "Unspecified"]
+		]
+	},
+	{
+		"labels" : ["On-site Offerings"],
+		"data"	 : [
+			["ID", 41, 76, 59, 47, 63],
+			["TH", 67, 75, 54, 48, 54],
+			["SG", 65, 54, 50, 62, 58],
+			["MY", 57, 63, 50, 37, 73],
+			["VN", 51, 80, 82, 76, 84],
+			["PH", 25, 70, 85, 70, 90]
+		],
+		"categories" : ["Loyalty Program", "Product Recommendation Engine", "User Review", "Guest Checkout", "Wishlist"],
+		"type" : "bar",
+		"format" : "%"
+	},
+	{
+		"labels" : ["Type of Customer Service Channels"],
+		"data"	 : [
+			["ID", 66, 82],
+			["TH", 23, 100],
+			["SG", 39, 75],
+			["MY", 27, 83],
+			["VN", 45, 100],
+			["PH", 45, 85]
+		],
+		"categories" : ["Livechat", "Hotline"],
+		"type" : "bar",
+		"format" : "%"
+	},
+	{
+		"labels" : ["eCommerce Player Distribution"],
+		"data"	 : [
+				["Fashion", 27, 4, 27, 20, 16, 15],
+				["Electronics", 14, 35, 14, 7, 61, 20],
+				["General", 30, 29, 38, 42, 10, 54],
+				["Other", 16, 23, 12, 10, 12, 0],
+				["Cosmetic", 12, 8, 8, 20, 0, 10]
+			],
+		"type": "stacked",
+		"categories" : ["ID", "TH", "SG", "MY", "VN", "PH"],
+		"format" : "%",
+		"groups" : [
+			["Fashion", "Electronics", "General", "Other", "Cosmetic"]
+		]
+	}
+]
