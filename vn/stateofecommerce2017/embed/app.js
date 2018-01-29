@@ -20,7 +20,8 @@ a.controller('mainController', function($scope, $http, $window, $location){
                   break;
             case 'th': var data_url = 'graph.data.th.json'
                   break;
-            case 'vn': var data_url = 'graph.data.vn.json'
+            case 'vn': var data_url = 'graph.data.vn.json';
+                        var avg = 'Trung bình'
                   break;
             default: var data_url = 'graph.data.json';
                         var avg  = 'Average';
@@ -89,7 +90,7 @@ a.controller('mainController', function($scope, $http, $window, $location){
 
                   main.setAttribute( 'class', 'embedded-graph');
                   _el.setAttribute( 'class', 'copyright');
-                  _el.innerHTML = '<p><strong>State of eCommerce in Asia Tenggara 2017</strong><a href="https://iprice.co.id" target="_blank">Powered by iPrice</a></p>';
+                  _el.innerHTML = '<p><strong>Bức tranh thương mại điện tử Đông Nam Á 2017</strong><a href="https://iprice.vn" target="_blank">Powered by iPrice</a></p>';
 
                   main.appendChild(_el);
 
