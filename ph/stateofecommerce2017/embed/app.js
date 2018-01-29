@@ -89,7 +89,7 @@ a.controller('mainController', function($scope, $http, $window, $location){
 
                   main.setAttribute( 'class', 'embedded-graph');
                   _el.setAttribute( 'class', 'copyright');
-                  _el.innerHTML = '<p><strong>State of eCommerce in Asia Tenggara 2017</strong><a href="https://iprice.co.id" target="_blank">Powered by iPrice</a></p>';
+                  _el.innerHTML = '<p><strong>State of eCommerce in Asia Tenggara 2017</strong><a href="https://iprice.ph" target="_blank">Powered by iPrice</a></p>';
 
                   main.appendChild(_el);
 
