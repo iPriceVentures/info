@@ -2,8 +2,8 @@
 	{
 		"labels" : ["Conversion Rate"],
 		"x_label" : "Conversion Rate",
-		"title" : "Conversion Rates ในแต่ละประเทศ",
-		"y_label" : "ประเทศ",
+		"title" : "Conversion Rates per Country",
+		"y_label" : "Countries",
 		"label"  : false,
 		"data" 	 : [
 			["x", "VN","ID","SG","MY","TH","PH"],
@@ -16,14 +16,14 @@
 	},
 	{
 		"labels" : ["Basket Size"],
-		"x_label" : "ราคาเฉลี่ยต่อการซื้อ (USD)",
-		"y_label" : "ประเทศ",
+		"x_label" : "Basket Size (USD)",
+		"y_label" : "Countries",
 		"label"  : false,
 		"data" 	 : [
-			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
-			[ "Basket Size", 36, 42, 91, 54, 23, 56]
+			["x", "SG", "PH", "MY", "TH", "ID", "VN"],
+			[ "Basket Size", 91, 56, 54, 42, 36,23]
         ],
-        "title" : "Basket Size ในแต่ละประเทศ",
+        "title" : "Basket Size per Country",
         "type" : "horizontal-bar",
         "legend" : true,
         "format" : "$",
@@ -32,13 +32,13 @@
 	{
 		"labels" : ["GDP Per Capita"],
 		"x_label" : "GDP Per Capita (USD '000)",
-		"y_label" : "ประเทศ",
+		"y_label" : "Countries",
 		"label"  : false,
 		"data" 	 : [
-			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
-			[ "GDP Per Capita ('000)", 12, 17, 90, 28, 6, 8]
+			["x", "SG", "MY", "TH", "ID", "PH", "VN"],
+			[ "GDP Per Capita ('000)", 90, 28, 17, 12, 8, 6]
         ],
-        "title" : "GDP Per Capita (USD '000)",
+        "title" : "GDP per Capita",
         "type" : "horizontal-bar",
         "legend" : true,
         "format" : "$",
@@ -73,7 +73,7 @@
         "format" : "%"
 	},
 	{
-		"labels" : ["Local vs Overall Average Order Value"],
+		"labels" : ["Local vs Overall Basket Size"],
 		"label"  : true,
 		"data" 	 : [
 			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
@@ -86,13 +86,13 @@
 		"labels" : ["Desktop vs Mobile Conversion Rate"],
 		"label"  : true,
 		"x_label" : "Conversion Rate",
-		"y_label" : "ประเทศ",
+		"y_label" : "Countries",
 		"data" 	 : [
 			["x", "VN","ID","SG","TH","MY","PH"],
-			[ "โทรศัพท์มือถือ", 1.4,1.3,0.9,0.8,0.8,0.7],
-			[ "คอมพิวเตอร์", 3.6,3.3,3,2.1,1.9,2]
+			[ "Mobile", 1.4,1.3,0.9,0.8,0.8,0.7],
+			[ "Desktop", 3.6,3.3,3,2.1,1.9,2]
         ],
-		"title" : "Conversion Rates ระหว่างโทรศัพท์มือถือและคอมพิวเตอร์",
+        "title": "Mobile vs. Desktop Conversion Rates",
         "type" : "horizontal-bar",
         "format" : "x",
         "max" : 3.3
@@ -100,14 +100,14 @@
 	{
 		"labels" : ["Desktop vs Mobile Basket Size"],
 		"label"  : true,
-		"x_label" : "ราคาเฉลี่ยต่อการซื้อ (USD)",
-		"y_label" : "ประเทศ",
+		"x_label" : "Basket Size (USD)",
+		"y_label" : "Countries",
 		"data" 	 : [
-			["x", "ID", "TH", "SG", "MY", "VN", "PH"],
-			[ "โทรศัพท์มือถือ", 35, 39, 82, 52, 23, 55],
-			[ "คอมพิวเตอร์", 42, 47, 96, 54, 26, 59]
+			["x", "SG", "PH", "MY", "TH", "ID", "VN"],
+			[ "Mobile", 82, 55, 52, 39, 35, 23],
+			[ "Desktop", 96, 59, 54, 47, 42, 26]
         ],
-        "title" : "Basket Size ระหว่างโทรศัพท์มือถือและคอมพิวเตอร์",
+        "title" : "Mobile vs Desktop Basket Size",
         "type" : "horizontal-bar",
         "format" : "$",
         "max" : 100
@@ -115,8 +115,8 @@
 	{
 		"labels" : ["Hourly # of Orders"],
 		"label"  : true,
-		"y_label" : "จำนวนการสั่งซื้อ",
-		"x_label" : "เวลา",
+		"y_label" : "Orders",
+		"x_label" : "Time of the day",
 		"data"	 : [
 			["MY",26,41,61,94,131,154,170,148,159,165,172,152,122,100,104,123,139,126,56,63,44,28,22,23],
 			["ID",44,65,81,118,147,169,156,151,162,157,153,138,112,107,106,115,110,111,39,50,37,30,24,28],
@@ -125,7 +125,7 @@
 			["TH",28,41,57,95,132,153,139,154,164,169,164,141,114,106,111,134,146,135,53,60,38,30,28,21],
 			["VN",23,32,63,102,147,184,176,161,168,161,168,155,110,90,102,116,131,125,48,54,32,22,20,16]
 		],
-		"title" : "จำนวนการสั่งสินค้าในแต่ละช่วงเวลา",
+		"title": "Orders per time of the day",
 		"tick" : ["x", "06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","00","01","02","03","04","05"],
 		"type" : "spline",
 		"format" : "%"
@@ -146,7 +146,7 @@
 	},
 	{
 		"labels" : ["Day of Week Local Conversion Rate"],
-		"x_label" : "วันในแต่ละสัปดาห์",
+		"x_label" : "Days of The Week",
 		"y_label" : "Conversion Rate",
 		"data"	 : [
 			["ID","100","107","112","110","99","77","70"],
@@ -156,15 +156,15 @@
 			["VN","100","107","109","110","105","87","76"],
 			["PH","100","102","107","107","103","84","80"]
 		],
-		"title" : "Conversion Rate ในแต่ละวัน",
+		"title" : "Conversion Rate by Days of the Week",
 		"tick" : ["x", "MON","TUE","WED","THU","FRI","SAT","SUN"],
 		"type" : "spline",
 		"format" : "%"
 	},
 	{
 		"labels" : ["Day of Week Local Conversion Rate"],
-		"x_label" : "วันในแต่ละสัปดาห์",
-		"y_label" : "traffic จากโทรศัพท์มือถือ (%)",
+		"x_label" : "Days of The Week",
+		"y_label" : "Mobile Traffic Contribution (%)",
 		"data"	 : [
 			["ID","81","80","80","81","82","88","90"],
 			["TH","73","72","72","73","74","81","84"],
@@ -173,15 +173,15 @@
 			["VN","64","65","64","65","65","72","77"],
 			["PH","72","70","70","71","72","79","82"]
 		],
-		"title" : "เปอร์เซ็นต์ traffic จากโทรศัพท์มือถือในแต่ละวัน",
+		"title": "Percentage of Mobile Traffic Contribution by Days of the Week",
 		"tick" : ["x", "MON","TUE","WED","THU","FRI","SAT","SUN"],
 		"type" : "spline",
 		"format" : "%"
 	},
 	{
 		"labels" : ["Quarterly % Of Mobile Contribution"],
-		"x_label" : "ไตรมาส",
-		"y_label" : "Traffic จากโทรศัพท์มือถือ (%)",
+		"x_label" : "Quarters of the Year",
+		"y_label" : "Mobile Traffic (%)",
 		"data"	 : [
 			["ID","74","78","85","87"],
 			["TH","67","71","78","79"],
@@ -190,16 +190,16 @@
 			["VN","57","62","70","72"],
 			["PH","66","69","74","76"]
 		],
-		"title" : "การเพิ่มอัตราการใช้งานโทรศัพท์มือถือ",
-		"tick" : ["x", "ไตรมาส 3 - 2016","ไตรมาส 4 - 2016","ไตรมาส 1 - 2017","ไตรมาส 2 - 2017"],
+		"title": "Mobile Traffic",
+		"tick" : ["x", "2016-Q3","2016-Q4","2017-Q1","2017-Q2"],
 		"type" : "spline",
 		"format" : "%"
 	},
 	{
 		"labels" : ["Payment Options"],
 		"label"  : true,
-		"x_label" : "ช่องทางการชำระค่าสินค้า",
-		"y_label" : "เปอร์เซ็นต์ของร้านค้าที่ให้บริการในช่องทางต่างๆ",
+		"x_label" : "Types of Payment Solution",
+		"y_label" : "Percentage of merchants offering such payment solutions ",
 		"data"	 : [
 
 			["ID", 84, 94, 43, 8, 41],
@@ -209,9 +209,9 @@
 			["VN", 60, 88, 82, 47, 49],
 			["PH", 95, 65, 80, 20, 15]
 		],
-		"title": "รูปแบบการชำระค่าสินค้า",
-		"categories" : ["บัตรเครดิต", "โอนผ่านธนาคาร", "เก็บเงินปลายทาง", "เคาน์เตอร์เซอร์วิส", "ผ่อนส่ง"],
-		"tick" : ["บัตรเครดิต", "โอนผ่านธนาคาร", "เก็บเงินปลายทาง", "เคาน์เตอร์เซอร์วิส", "ผ่อนส่ง"],
+		"title": "Payment solutions offered by merchants",
+		"categories" : ["Credit Card", "Bank Transfer", "Cash On Delivery", "Offline POS", "Installment"],
+		"tick" : ["Credit Card", "Bank Transfer", "Cash On Delivery", "Offline POS", "Installment"],
 		"type" : "bar",
 		"format" : "%"
 	},
