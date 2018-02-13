@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var data_list 	= new Array();
-	var filename	= 'q3-2017.json';
+	var filename	= 'q4-2017.json';
 	var data 		= document.getElementById('data');
 	var up 			= true;
 	var config 		= '';
@@ -34,9 +34,16 @@ $(document).ready(function(){
 		config = result.config;
 
 		if( ( loc != 'vn') && (loc != 'ph')){
-
+			if( loc == 'th'){
+				$('.socialTitle').attr('data-attr', 'line');
+				$('.socialTitle').html('Line');	
+			}
 		}else{
 			$('.employeeTitle').remove();
+			if( loc == 'vn'){
+				$('.socialTitle').attr('data-attr', 'youtube');
+				$('.socialTitle').html('Youtube');	
+			}
 		}
         $.each(result.data, function(i, field){
         	
@@ -66,7 +73,7 @@ $(document).ready(function(){
 
 			main.setAttribute( 'class', 'embedded-graph');
 			_el.setAttribute( 'class', 'copyright');
-			_el.innerHTML = '<p><strong class="embed-title">Peta E-commerce Indonesia</strong><a href="https://iprice.my" target="_blank">Powered by iPrice</a></p>';
+			_el.innerHTML = '<p><strong class="embed-title">Peta E-commerce Indonesia</strong><a href="https://iprice.co.id" target="_blank">Powered by iPrice</a></p>';
 
 			_el0.insertBefore(_el, _el0.childNodes[0]);
 
@@ -75,7 +82,7 @@ $(document).ready(function(){
 	
 
 	var content = document.getElementById('infographic-content');
-	content.setAttribute('class', lang+'-content');
+	content.setAttribute('class', loc + '-content ' + lang + '-container');
 
 	if( $(window).width() < 768){
 		var container = document.getElementById('container');	
@@ -110,19 +117,23 @@ $(document).ready(function(){
 			});
 
 			if( x > 0 ){
-				$('.category-item:first-child label').each(function(){
+				$('.category-item:first-child a label').each(function(){
 					this.style.width = '0px';
 				});
 				TweenMax.to($('.sort-by:first-child'), 0.5, { width: '100px' }, 1);
 				$('.category-item:first-child').each(function(){
 					TweenMax.to($(this), 0.5, { width: '100px' }, 1);
 				});
-
-				TweenMax.to($('.infographic-data-wrapper'), 0.5, { width: '720px' }, 1);
-				TweenMax.to($('.row-wrapper'), 0.5, { width: '720px' }, 1);
+				if( ( loc != 'vn') && (loc != 'ph')){
+					TweenMax.to($('.infographic-data-wrapper'), 0.5, { width: '750px' }, 1);
+					TweenMax.to($('.row-wrapper'), 0.5, { width: '750px' }, 1);
+				}else{
+					TweenMax.to($('.infographic-data-wrapper'), 0.5, { width: '660px' }, 1);
+					TweenMax.to($('.row-wrapper'), 0.5, { width: '660px' }, 1);
+				}
 
 			}else{
-				$('.category-item:first-child label').each(function(){
+				$('.category-item:first-child a label').each(function(){
 					this.style.width = 'calc(100% - 60px)';
 				});
 				TweenMax.to($('.sort-by:first-child'), 0.5, { width: '210px' }, 1);
@@ -130,8 +141,8 @@ $(document).ready(function(){
 				$('.category-item:first-child').each(function(){
 					TweenMax.to($(this), 0.5, { width: '210px' }, 1);
 				});
-				TweenMax.to($('.infographic-data-wrapper'), 0.5, { width: '840px' }, 1);
-				TweenMax.to($('.row-wrapper'), 0.5, { width: '840px' }, 1);
+				TweenMax.to($('.infographic-data-wrapper'), 0.5, { width: '900px' }, 1);
+				TweenMax.to($('.row-wrapper'), 0.5, { width: '900px' }, 1);
 			}
 
 			$('.category-item:first-child').each(function(){
@@ -320,7 +331,7 @@ $(document).ready(function(){
     function sortBy( arr, order, property){
     	var arrSort = arr.slice(0);
     	arrSort.sort(function(a,b) {
-    		if( property != 'app'){
+    		if(( property != 'ios')&&(property != 'android')){
 				if( ! order) {//ascending
 					return a[property] - b[property];
 				} else { // descending
@@ -384,21 +395,32 @@ $(document).ready(function(){
 			}
 
 
-	    	html += '<div class="category-item col bg__grey ' + iema +' ' + verified + '" style="'+ _style +'">';
+	    	html += '<div class="category-item col bg__grey" style="'+ _style +'">';
 	    	html += '<span><a href="' + data[i].url + '" class="color__black" target="_blank" rel="nofollow">';
-	    	html += '<img src="assets/img/'+ data[i].logodesktop + '"/>';
+	    	html += '<img src="assets/img/'+ data[i].logodesktop.toLowerCase() + '"/>';
 
-	    	html += '<label '+ _w +'>'+data[i].name+'</label></a></span>';
-	    	html += '</div>'
+	    	html += '<label '+ _w +'>'+data[i].name+'</label></a>';
+	    	if(iema != ''){
+	    		html += '<label class="'+ iema+'"></label>';
+	    	}
+
+	    	if(verified != ''){
+	    		html += '<label class="'+ verified+'"></label>';
+	    	}
+	    	html += '</span></div>';
 
 	    	html += '<div class="category-item col bg__grey ">';
 	    	html += '<span><p class="percent animate-width" data-width="'+_wTraffics+'">'+ (data[i].traffics == 0 ? 'n/a' : data[i].traffics.toLocaleString()) +'</p></span>';
 	    	html += '</div>';
 
 	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span>'+(data[i].app >= 99 ? 'n/a' : '#'+data[i].app.toLocaleString())+'</span>';
-	    	// html += '<span><p class="percent animate-width" data-width="'+_wApp+'">'+  (data[i].app == 99 ? 'n/a' : data[i].app.toLocaleString()) +'</p></span>';
+	    	html += '<span>'+(data[i].ios >= 99 ? 'n/a' : '#'+data[i].ios.toLocaleString())+'</span>';
 	    	html += '</div>';
+	    	html += '<div class="category-item col bg__grey ">';
+	    	html += '<span>'+(data[i].android >= 99 ? 'n/a' : '#'+data[i].android.toLocaleString())+'</span>';
+	    	html += '</div>';
+	    	// html += '<span><p class="percent animate-width" data-width="'+_wApp+'">'+  (data[i].app == 99 ? 'n/a' : data[i].app.toLocaleString()) +'</p></span>';
+	    	
 	    	if( loc == 'th'){
 				html += '<div class="category-item col bg__grey ">';
 		    	html += '<span><p class="percent animate-width" data-width="'+_wLine+'">'+ (data[i].line == 0 ? 'n/a' : data[i].line.toLocaleString()) +'</p></span>';
@@ -453,6 +475,10 @@ $(document).ready(function(){
 	    
 	}
 
+	$('.awardText').click(function(e){
+		e.preventDefault();
+	});
+
 	function getLang(){
 
 		$.getJSON('data/translation.json', function(result){
@@ -461,6 +487,8 @@ $(document).ready(function(){
 				case 'id' :  trans = result.id;
 					break;
 				case 'th' :  trans = result.th;
+					break;
+				case 'ph' :  trans = result.ph;
 					break;
 				case 'vn' :  trans = result.vn;
 					break;
@@ -506,7 +534,8 @@ $(document).ready(function(){
 		$('.awardText').html(trans.awardText);
 		$('.merchantTitle').html(trans.merchantTitle);
 		$('.monthlyTitle').html(trans.monthlyTitle);
-		$('.appTitle').html(trans.appRank);
+		$('.iosTitle').html(trans.iosTitle);
+		$('.androidTitle').html(trans.androidTitle);
 		$('.employeeTitle').html( trans.employeeTitle );
 		$('.filterResultsBy').html( trans.filterResultsBy );
 		$('.filter').find('select').each(function(){
@@ -541,7 +570,7 @@ $(document).ready(function(){
 		var quarter = (lang == 'en') ? trans.options.quarter[loc] : trans.options.quarter;
 		
 		$.each(quarter, function(key, value){
-			if( key == 'q3-2017'){
+			if( key == 'q4-2017'){
 				$('.quartal_select').append('<option value="'+key+'" selected>'+value+'</option>');
 			}else{
 				$('.quartal_select').append('<option value="'+key+'">'+value+'</option>');	
