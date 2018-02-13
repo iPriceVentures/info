@@ -1,0 +1,252 @@
+{
+	"en" : {
+		"verifiedText": "Verified by Merchant",
+		"awardText": "iEMA Award Winners",
+		"filterResultsBy": "Filter by",
+		"filterYear" : "Select Data Per Quarter",
+		"filterQuartal" : "Quarter",
+		"merchantTitle" : "Merchant",
+		"monthlyTitle" : "Monthly Visits",
+		"iosTitle" : "AppStore Rank",
+		"androidTitle" : "PlayStore Rank",
+		"employeeTitle" : "Number of Employees",
+		"businessTitle" : "Business Model",
+		"storeTitle" : "Store Type",
+		"originTitle" : "Store Origin",
+		"quarterSelect" : "Select Quarter",
+		"options" : {
+			"business_model" : {
+				"b2c" : "Business to Consumer",
+				"c2c" : "Consumer to Consumer"
+			},
+			"quarter" : {
+				"id" :{
+					"q1-2017" : "Q1-2017",
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017"
+				},
+				"vn" :{
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017"
+				},
+				"my" :{
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017"
+				},
+				"th" :{
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017"
+				},
+				"ph" :{
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017"
+				},
+				"sg" : {
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017"
+				},
+				"sg" : {
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017"
+				}
+			},
+			"store_type" : {
+				"fashion" : "Fashion",
+				"general" : "General",
+				"tech" : "Electronics"
+			},
+			"store_origin" : {
+				"indonesia" : "Indonesia",
+				"international" : "International"
+			}
+		}
+	},
+	"id" : {
+	    "verifiedText": "Diverifikasi oleh Toko Online",
+	    "awardText": "Pemenang Penghargaan iEMA",
+	    "numbersIn1000Text": "*Angka dalam 1000s",
+	    "filterYear" : "Pilih Data per Kuartal",
+		"filterQuartal" : "Kuartal",
+	    "filterResultsBy": "Filter berdasarkan",
+	    "merchantTitle" : "Toko Online",
+		"monthlyTitle" : "Visitor Per Bulan",
+		"iosTitle" : "Ranking AppStore",
+		"androidTitle" : "Ranking PlayStore",
+		"employeeTitle" : "Jumlah Karyawan",
+		"businessTitle" : "Bisnis Model",
+		"storeTitle" : "Tipe Toko",
+		"originTitle" : "Asal Toko",
+		"quarterSelect" : "Pilih Kuartal",
+		"options" : {
+			"business_model" : {
+				"b2c" : "Business to Consumer ",
+				"c2c" : "Consumer to Consumer"
+			},
+			"quarter" : {
+				"q1-2017" : "Q1-2017",
+				"q2-2017" : "Q2-2017",
+				"q3-2017" : "Q3-2017",
+				"q4-2017" : "Q4-2017"
+			},
+			"store_type" : {
+				"fashion" : "Toko Fesyen",
+				"general" : "Toko Umum",
+				"tech" : "Toko Elektronik"
+			},
+			"store_origin" : {
+				"indonesia" : "Indonesia",
+				"international" : "Internasional"
+			}
+		}
+	},
+	"my" : {
+	    "verifiedText": "Disahkan oleh e-dagang",
+	    "awardText": "Pemenang Anugerah iEMA",
+	    "numbersIn1000Text": "*Angka dalam 1000s",
+	    "filterYear" : "Pilih Data Suku Tahun",
+		"filterQuartal" : "Kuartal",
+	    "filterResultsBy": "Tukar filter",
+	    "merchantTitle" : "Senarai E-Dagang",
+		"monthlyTitle" : "Pengunjung Bulanan",
+		"iosTitle" : "Kedudukan App Store",
+		"androidTitle" : "Kedudukan Play Store",
+		"employeeTitle" : "Bilangan Pekerja",
+		"businessTitle" : "Model Perniagaan",
+		"storeTitle" : "Jenis E-Dagang",
+		"originTitle" : "Asal E-Dagang",
+		"socialTitle" : "Twitter",
+		"quarterSelect" : "Pilih Kuartal",
+		"options" : {
+			"business_model" : {
+				"b2c" : "Peniaga ke pengguna",
+				"c2c" : "Pengguna ke pengguna"
+			},
+			"quarter" : {
+				"q2-2017" : "Q2-2017",
+				"q3-2017" : "Q3-2017",
+				"q4-2017" : "Q4-2017"
+			},
+			"store_type" : {
+				"fashion" : "Fesyen",
+				"general" : "Pelbagai",
+				"tech" : "Elektronik"
+			},
+			"store_origin" : {
+				"indonesia" : "Malaysia",
+				"international" : "Antarabangsa"
+			}
+		}
+	},
+	"th" : {
+		"verifiedText": "ตรวจสอบข้อมูลโดยร้านค้า",
+		"awardText": "ผู้ชนะการประกวด iEMA",
+		"filterResultsBy": "ฟิลเตอร์",
+		"filterYear" : "เลือกไตรมาส",
+		"merchantTitle" : "ร้านค้า",
+		"monthlyTitle" : "จำนวนผู้เข้าชม<br/>ต่อเดือน",
+		"appRank" : "จัดอันดับแอพฯ",
+		"employeeTitle" : "จำนวนพนักงาน",
+		"businessTitle" : "รูปแบบธุรกิจ",
+		"storeTitle" : "ประเภทสินค้า",
+		"originTitle" : "ที่มา",
+		"socialTitle" : "Line",
+		"quarterSelect" : "ไตรมาส",
+		"options" : {
+			"business_model" : {
+				"b2c" : "Business to Consumer",
+				"c2c" : "Consumer to Consumer"
+			},
+			"quarter" : {
+				"q2-2017" : "ไตรมาส 2-2017",
+				"q3-2017" : "ไตรมาส 3-2017",
+				"q4-2017" : "ไตรมาส 4-2017"
+			},
+			"store_type" : {
+				"fashion" : "แฟชั่น",
+				"general" : "ทั่วไป",
+				"tech" : "อิเล็กทรอนิกส์"
+			},
+			"store_origin" : {
+				"thailand" : "ประเทศไทย",
+				"international" : "ต่างชาติ"
+			}
+		}
+	},
+	"vn" : {
+		"verifiedText": "Chứng thực bởi DN",
+		"awardText": "DN Thắng giải",
+		"filterResultsBy": "Lọc kết quả theo",
+		"filterYear" : "Chọn dữ liệu trên mỗi quý",
+		"merchantTitle" : "Doanh nghiệp",
+		"monthlyTitle" : "Lượng truy cập",
+		"iosTitle" : "xếp hạng iOS",
+		"androidTitle" : "xếp hạng Android",
+		"employeeTitle" : "Number of Employees",
+		"businessTitle" : "Loại hình",
+		"socialTitle" : "Youtube",
+		"storeTitle" : "Ngành hàng",
+		"originTitle" : "Xuất xứ",
+		"quarterSelect" : "Chọn Khu phố",
+		"options" : {
+			"business_model" : {
+				"b2c" : "B2C",
+				"c2c" : "C2C"
+			},
+			"quarter" : {
+				"q2-2017" : "Q2-2017",
+				"q3-2017" : "Q3-2017",
+				"q4-2017" : "Q4-2017"
+			},
+			"store_type" : {
+				"fashion" : "Thời trang",
+				"general" : "Tổng hợp",
+				"tech" : "Công nghệ"
+			},
+			"store_origin" : {
+				"vietnam" : "Việt Nam",
+				"international" : "Quốc tế"
+			}
+		}
+	},
+	"ph" : {
+		"verifiedText": "Verified ng Merchant",
+		"awardText": "Mga Nanalo sa Merchant Awards",
+		"filterResultsBy": "Filter by",
+		"filterYear" : "Select Data Per Quarter",
+		"filterQuartal" : "Quarter",
+		"merchantTitle" : "Merchants",
+		"monthlyTitle" : "Buwanang Traffic",
+		"appRank" : "Rank ayon sa",
+		"employeeTitle" : "Dami ng Empleyado",
+		"businessTitle" : "Modelo ng Negosyo ",
+		"socialTitle" : "Twitter",
+		"storeTitle" : "Uri ng Negosyo",
+		"originTitle" : "Store Origin",
+		"quarterSelect" : "Select Quarter",
+		"options" : {
+			"business_model" : {
+				"b2c" : "Business to Consumer",
+				"c2c" : "Consumer to Consumer"
+			},
+			"quarter" : {
+				"q3-2017" : "Q3-2017",
+				"q4-2017" : "Q4-2017"
+			},
+			"store_type" : {
+				"fashion" : "Fashion",
+				"general" : "General",
+				"tech" : "Tech &amp; Gadget"
+			},
+			"store_origin" : {
+				"philippines" : "Philippines",
+				"international" : "International"
+			}
+		}
+	}
+}
