@@ -12,7 +12,7 @@ $(document).ready(function(){
 	var curr = new Array();
 	var list = '';
 	var trans = ''
-
+	var embed = true;
 	
 	//Aplication will do this first
 	
@@ -26,7 +26,7 @@ $(document).ready(function(){
 		vars  = vars.split('.');
 		lang  = vars[0];
 		loc  = vars[1];
-	var embed = true;
+	
 		
 
 	$.getJSON('data/' + filename, function(result){
