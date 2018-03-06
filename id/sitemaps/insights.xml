@@ -69,4 +69,16 @@
     <lastmod>2017-05-02T12:25:56+00:00</lastmod>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://iprice.co.id/insights/mapofecommerce/</loc>
+    <lastmod>2018-02-01T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://iprice.co.id/insights/stateofecommerce2017/</loc>
+    <lastmod>2018-01-26T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.80</priority>
+  </url>
 </urlset>
