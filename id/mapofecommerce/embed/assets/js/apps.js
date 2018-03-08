@@ -65,18 +65,18 @@ $(document).ready(function(){
 	    }
 	}
 	function checkEmbed(){
-		if( embed ){
-			var main    = document.getElementById('iprice-content');
-			var _el0    = document.getElementById('infographic-content');
-			var _el     = document.createElement('div');
+		// if( embed ){
+		// 	var main    = document.getElementById('iprice-content');
+		// 	var _el0    = document.getElementById('infographic-content');
+		// 	var _el     = document.createElement('div');
 
-			main.setAttribute( 'class', 'embedded-graph');
-			_el.setAttribute( 'class', 'copyright');
-			_el.innerHTML = '<p><strong class="embed-title">Peta E-commerce Indonesia</strong><a href="https://iprice.co.id" target="_blank">Powered by iPrice</a></p>';
+		// 	main.setAttribute( 'class', 'embedded-graph');
+		// 	_el.setAttribute( 'class', 'copyright');
+		// 	_el.innerHTML = '<p><strong class="embed-title">Peta E-commerce Indonesia</strong><a href="https://iprice.co.id" target="_blank">Powered by iPrice</a></p>';
 
-			_el0.insertBefore(_el, _el0.childNodes[0]);
+		// 	_el0.insertBefore(_el, _el0.childNodes[0]);
 
-		}
+		// }
 	}
 	
 

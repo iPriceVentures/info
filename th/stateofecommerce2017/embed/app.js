@@ -80,22 +80,22 @@ a.controller('mainController', function($scope, $http, $window, $location){
             }
         
 
-            if( embed ){
-                  var header  = document.getElementsByTagName('head')[0];
-                  var main    = document.getElementById('main-container');
-                  var _el     = document.createElement('div');
-                  var _title  = document.createElement('strong');
+            // if( embed ){
+            //       var header  = document.getElementsByTagName('head')[0];
+            //       var main    = document.getElementById('main-container');
+            //       var _el     = document.createElement('div');
+            //       var _title  = document.createElement('strong');
                   
 
-                  main.setAttribute( 'class', 'embedded-graph');
-                  _el.setAttribute( 'class', 'copyright');
-                  _el.innerHTML = '<p><strong>State of eCommerce in Asia Tenggara 2017</strong><a href="https://iprice.my" target="_blank">Powered by iPrice</a></p>';
+            //       main.setAttribute( 'class', 'embedded-graph');
+            //       _el.setAttribute( 'class', 'copyright');
+            //       _el.innerHTML = '<p><strong>State of eCommerce in Asia Tenggara 2017</strong><a href="https://iprice.my" target="_blank">Powered by iPrice</a></p>';
 
-                  main.appendChild(_el);
+            //       main.appendChild(_el);
 
-                  _title.innerHTML = data[pos].title;
-                  main.insertBefore( _title, main.childNodes[0]);
-            }
+            //       _title.innerHTML = data[pos].title;
+            //       main.insertBefore( _title, main.childNodes[0]);
+            // }
 
       });
 
