@@ -1,0 +1,1728 @@
+{
+  "timeline": [
+    {
+      "year": "2008",
+      "items": [
+        {
+          "img": "logo/ebay-1.png",
+          "appRank": 0,
+          "webRank": 1,
+          "est": "Dec, 2004",
+          "isEst": true,
+          "nextRank": 1,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Jan, 2008",
+          "merchantName": "eBay",
+          "screenshot": "ebay_2008.png",
+          "merchantImg": "logo/ebay_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Launches app on iOS - Aug, 2008",
+              "pub_date": "Aug, 2008",
+              "link": "https://www.ebayinc.com/stories/news/ebay-mobile/?utm_source=301Redirect&utm_medium=301Redirect&utm_campaign=301Redirect"
+            }
+          ]
+        },
+        {
+          "img": "logo/lelong-1.png",
+          "appRank": 0,
+          "webRank": 2,
+          "nextRank": 2,
+          "est": "1999",
+          "isEst": true,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": "1999",
+          "lastCaptured": "Dec, 2008",
+          "screenshot": "lelong_2008.png",
+          "merchantName": "Lelong",
+          "merchantImg": "logo/lelong_logo_v1.png",
+          "highlights": []
+        }
+      ]
+    },
+    {
+      "year": "2009",
+      "items": [
+        {
+          "img": "logo/ebay-1.png",
+          "appRank": 0,
+          "webRank": 1,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 1,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2009",
+          "merchantName": "eBay",
+          "screenshot": "ebay_2009.png",
+          "merchantImg": "logo/ebay_logo_v1.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/lelong-1.png",
+          "appRank": 0,
+          "webRank": 2,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 2,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": "1999",
+          "lastCaptured": "Nov, 2009",
+          "screenshot": "lelong_2009.png",
+          "merchantName": "Lelong",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": []
+        }
+      ]
+    },
+    {
+      "year": "2010",
+      "items": [
+        {
+          "img": "logo/ebay-1.png",
+          "appRank": 0,
+          "webRank": 1,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 1,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2010",
+          "merchantName": "eBay",
+          "screenshot": "ebay_2010.png",
+          "merchantImg": "logo/ebay_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Fraud rampant on Ebay, PayPal uncaring",
+              "pub_date": "Aug 5, 2010",
+              "link": "https://www.malaysiakini.com/letters/139252"
+            }
+          ]
+        },
+        {
+          "img": "logo/lelong.png",
+          "appRank": 0,
+          "webRank": 2,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 2,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": 1999,
+          "lastCaptured": "Sep, 2010",
+          "screenshot": "lelong_2010.png",
+          "merchantName": "Lelong",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Lelong launches new website",
+              "pub_date": "Feb 13, 2010",
+              "link": "https://amanz.my/20104446/"
+            }
+          ]
+        },
+        {
+          "img": "logo/fashionvalet-1.png",
+          "appRank": 0,
+          "webRank": 3,
+          "est": "Nov, 2010",
+          "isEst": true,
+          "nextRank": 3,
+          "appLaunched": false,
+          "webLaunched": "Nov, 2010",
+          "lastCaptured": "2010",
+          "screenshot": "fashionvalet_2010.png",
+          "merchantName": "FashionValet",
+          "merchantImg": "logo/fashionvalet_logo_v1.png",
+          "highlights": []
+        }
+      ]
+    },
+    {
+      "year": "2011",
+      "items": [
+        {
+          "img": "logo/ebay-1.png",
+          "appRank": 0,
+          "webRank": 1,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 2,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2010",
+          "merchantName": "eBay",
+          "screenshot": "ebay_2011.png",
+          "merchantImg": "logo/ebay_logo_v1.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/lelong.png",
+          "appRank": 0,
+          "webRank": 2,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 1,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": "1999",
+          "lastCaptured": "Aug,2011",
+          "screenshot": "lelong_2011.png",
+          "merchantName": "Lelong",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/fashionvalet-1.png",
+          "appRank": 0,
+          "webRank": 3,
+          "est": "Nov, 2010",
+          "isEst": false,
+          "nextRank": 6,
+          "appLaunched": false,
+          "webLaunched": "Nov, 2010",
+          "lastCaptured": "2011",
+          "screenshot": "fashionvalet_2011.png",
+          "merchantName": "FashionValet",
+          "merchantImg": "logo/fashionvalet_logo_v1.png",
+          "highlights": []
+        }
+      ]
+    },
+    {
+      "year": "2012",
+      "items": [
+        {
+          "img": "logo/lelong.png",
+          "appRank": 0,
+          "webRank": 1,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 1,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": 1999,
+          "lastCaptured": "Jun, 2012",
+          "merchantName": "Lelong",
+          "screenshot": "lelong_2012.png",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Launches app on iOS and on Google Play a few days later",
+              "pub_date": "Mar 14, 2012",
+              "link": "https://www.appannie.com/apps/ios/app/lelongmy-malaysia-shopping-app/details/"
+            },
+            {
+              "title": "Lelong CEO sanguine on Rocket Internet entrance",
+              "pub_date": "Jun 6, 2012",
+              "link": "https://www.digitalnewsasia.com/node/255?page=2"
+            }
+          ]
+        },
+        {
+          "img": "logo/ebay-1.png",
+          "appRank": 0,
+          "webRank": 2,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 2,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2012",
+          "screenshot": "ebay_2012.png",
+          "merchantName": "eBay",
+          "merchantImg": "logo/ebay_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Launches app on Google Play",
+              "pub_date": "Feb 06, 2012",
+              "link": "https://www.appannie.com/apps/google-play/app/20600000002083/details/"
+            }
+          ]
+        },
+        {
+          "img": "logo/zalora.png",
+          "appRank": 0,
+          "webRank": 3,
+          "est": "Mar, 2012",
+          "isEst": true,
+          "nextRank": 3,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Mar, 2012",
+          "screenshot": "zalora_2012.png",
+          "merchantName": "Zalora",
+          "merchantImg": "logo/zalora_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Zalora launched as a fashion focused eCommerce in SEA",
+              "pub_date": "Jan, 2012",
+              "link": "https://www.zalora.com.my/about/"
+            },
+            {
+              "title": "JP Morgan invests in Zalora at an undisclosed amount",
+              "pub_date": "Sep 25, 2012",
+              "link": "https://www.techinasia.com/jp-morgan-invests-zalora"
+            }
+          ]
+        },
+        {
+          "img": "logo/lazada.png",
+          "appRank": 0,
+          "webRank": 4,
+          "est": "Mar, 2012",
+          "isEst": true,
+          "nextRank": 4,
+          "screenshot": "lazada_2012.png",
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Jun, 2012",
+          "merchantName": "Lazada",
+          "merchantImg": "logo/lazada_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Rocket Internet launches Lazada and obtains $46 million USD in funding before end 2012",
+              "pub_date": "Dec, 2012",
+              "link": "https://www.crunchbase.com/organization/lazada-group#section-overview"
+            }
+          ]
+        },
+        {
+          "img": "logo/rakuten.png",
+          "appRank": 0,
+          "webRank": 5,
+          "est": "Sep, 2012",
+          "isEst": true,
+          "nextRank": 5,
+          "screenshot": "rakuten_2012.png",
+          "appLaunched": "",
+          "webLaunched": "Sep, 2012",
+          "lastCaptured": "Nov, 2012",
+          "merchantName": "Rakuten",
+          "merchantImg": "logo/rakuten_logo_v1.jpg",
+          "highlights": [
+            {
+              "title": "Japan’s top e-commerce company to launch online shopping service in Malaysia",
+              "pub_date": "Jul 6, 2012",
+              "link": "https://www.thestar.com.my/news/community/2012/07/06/japans-top-ecommerce-company-to-launch-online-shopping-service-in-malaysia/"
+            },
+            {
+              "title": "Rakuten enters Malaysian e-commerce market in a unique way",
+              "pub_date": "Sep 6, 2012",
+              "link": "https://www.digitalnewsasia.com/sizzle-fizzle-slow-burn/rakuten-enters-malaysian-e-commerce-market-in-a-unique-way"
+            }
+          ]
+        },
+        {
+          "img": "logo/fashionvalet-1.png",
+          "appRank": 0,
+          "webRank": 6,
+          "est": "Nov, 2010",
+          "isEst": false,
+          "appLaunched": false,
+          "webLaunched": "Nov, 2010",
+          "lastCaptured": "Nov, 2012",
+          "nextRank": 6,
+          "screenshot": "fashionvalet_2012.png",
+          "merchantName": "FashionValet",
+          "merchantImg": "logo/fashionvalet_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Malaysian TV’s ‘Make The Pitch’ Finalists FashionValet Pocket Some Serious Seed Funding",
+              "pub_date": "Oct 12, 2012",
+              "link": "https://www.techinasia.com/malaysia-myeg-make-the-pitch-tv-show-fashionvalet-seed-funding"
+            }
+          ]
+        },
+        {
+          "img": "logo/hermo.png",
+          "appRank": 0,
+          "webRank": 7,
+          "est": "Jun, 2012",
+          "isEst": true,
+          "nextRank": 7,
+          "screenshot": "hermo_2012.png",
+          "appLaunched": "Oct, 2016",
+          "webLaunched": "Jun, 2012",
+          "lastCaptured": "Dec, 2012",
+          "merchantName": "Hermo",
+          "merchantImg": "logo/hermo_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Hermo was launched on February 2012 as an open-source shopping cart system",
+              "pub_date": "Jun, 2012",
+              "link": "https://www.hermo.my/about"
+            }
+          ]
+        },
+        {
+          "img": "logo/65daigou.png",
+          "appRank": 0,
+          "webRank": 8,
+          "est": "2010",
+          "isEst": true,
+          "nextRank": 8,
+          "screenshot": "ezbuy_2012.png",
+          "appLaunched": "Apr, 2012",
+          "webLaunched": "2010",
+          "lastCaptured": "Jan, 2012",
+          "merchantName": "65daigou",
+          "merchantImg": "logo/ezbuy_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Launches app on iOS",
+              "pub_date": "May 04, 2012 ",
+              "link": "https://www.appannie.com/apps/ios/app/65daigou-taobao-shopping-and-shipping-agent-in-singapore/details/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2013",
+      "items": [
+        {
+          "img": "logo/lelong.png",
+          "appRank": 0,
+          "webRank": 1,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 2,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": "1999",
+          "lastCaptured": "Aug, 2013",
+          "merchantName": "Lelong",
+          "screenshot": "lelong_2013.png",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/ebay.png",
+          "appRank": 0,
+          "webRank": 2,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 3,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2013",
+          "screenshot": "ebay_2013.png",
+          "merchantName": "eBay",
+          "merchantImg": "logo/ebay_logo_v2.png",
+          "highlights": [
+            {
+              "title": "eBay revamps its website",
+              "pub_date": "May 30, 2013",
+              "link": "https://amanz.my/201347144/"
+            }
+          ]
+        },
+        {
+          "img": "logo/zalora.png",
+          "appRank": 0,
+          "webRank": 3,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 4,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": 2013,
+          "screenshot": "zalora_2013.png",
+          "merchantName": "Zalora",
+          "merchantImg": "logo/zalora_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Zalora gets USD26M funding and double-digit millions in revenue, builds app dev center in S’pore",
+              "pub_date": "Mar 12, 2013",
+              "link": "https://www.techinasia.com/zalora-gets-usd-26m-investment-builds-regional-software-development-center-in-singapore"
+            },
+            {
+              "title": "Launches app on iOS and on Google Play a few months later",
+              "pub_date": "Apr 04, 2013",
+              "link": "https://www.appannie.com/apps/ios/app/zalora-fashion-shopping/details/"
+            },
+            {
+              "title": "Zalora lost 70 million Euros in 2012, projects profitability in 2015",
+              "pub_date": "Apr 28, 2013",
+              "link": "https://www.techinasia.com/zalora-lost-70-million-euros-2012-profitability-2015"
+            },
+            {
+              "title": "Raised a total of $212 million US in funding by year end",
+              "pub_date": "Dec 3, 2013",
+              "link": "https://www.crunchbase.com/organization/zalora#section-locked-marketplace"
+            }
+          ]
+        },
+        {
+          "img": "logo/lazada.png",
+          "appRank": 0,
+          "webRank": 4,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 1,
+          "screenshot": "lazada_2013.png",
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Nov, 2013",
+          "merchantName": "Lazada",
+          "merchantImg": "logo/lazada_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Launches app on Google Play",
+              "pub_date": "Jun 11, 2013",
+              "link": "https://www.appannie.com/apps/google-play/app/20600001236759/details/"
+            },
+            {
+              "title": "Lazada launches e-commerce marketplace, takes on Rakuten",
+              "pub_date": "Aug 13, 2013",
+              "link": "https://www.digitalnewsasia.com/sizzle-fizzle/lazada-launches-ecommerce-marketplace-takes-on-rakuten"
+            },
+            {
+              "title": "Finalises Series C, D & E funding within a year with a total of $320 million USD",
+              "pub_date": "Dec 9, 2013",
+              "link": "https://www.crunchbase.com/organization/lazada-group#section-locked-marketplace"
+            },
+            {
+              "title": "Recorded a substantial increase in sales, almost five times more than 2012",
+              "pub_date": "Dec 11, 2013",
+              "link": "https://www.thestar.com.my/lifestyle/features/2013/12/11/lazada-ends-online-revolution-blitz-with-record-sales/"
+            }
+          ]
+        },
+        {
+          "img": "logo/rakuten.png",
+          "appRank": 0,
+          "webRank": 5,
+          "est": "Sep, 2012",
+          "isEst": false,
+          "nextRank": 5,
+          "screenshot": "rakuten_2013.png",
+          "appLaunched": "",
+          "webLaunched": "Sep, 2012",
+          "lastCaptured": "Nov, 2013",
+          "merchantName": "Rakuten",
+          "merchantImg": "logo/rakuten_logo_v1.jpg",
+          "highlights": [
+            {
+              "title": "Rakuten sees huge growth in Malaysia",
+              "pub_date": "Jun 21, 2013",
+              "link": "https://www.techinasia.com/rakuten-malaysia-growth"
+            },
+            {
+              "title": "Rakuten predicts Malaysia's eCommerce will generate RM1.72 billion by 2017",
+              "pub_date": "Nov 12, 2013",
+              "link": "http://www.thesundaily.my/news/879104"
+            },
+            {
+              "title": "A survey conducted by Rakuten on online shopping shows Malaysians spend an average of RM1,074 in a year",
+              "pub_date": "Mar 27, 2013",
+              "link": "http://ww1.utusan.com.my/utusan/Ekonomi/20130327/ek_03/Penduduk-Malaysia-belanja-RM1074-beli-dalam-talian"
+            }
+          ]
+        },
+        {
+          "img": "logo/fashionvalet.png",
+          "appRank": 0,
+          "webRank": 6,
+          "est": "Nov, 2010",
+          "isEst": false,
+          "nextRank": 6,
+          "appLaunched": false,
+          "webLaunched": "Nov, 2010",
+          "lastCaptured": "May, 2013",
+          "screenshot": "fashionvalet_2013.png",
+          "merchantName": "FashionValet",
+          "merchantImg": "logo/fashionvalet_logo_v2.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/hermo.png",
+          "appRank": 0,
+          "webRank": 7,
+          "est": "Jun, 2012",
+          "isEst": false,
+          "nextRank": 7,
+          "screenshot": "hermo_2013.png",
+          "appLaunched": "Oct, 2016",
+          "webLaunched": "Jun, 2012",
+          "lastCaptured": "Jun, 2013",
+          "merchantName": "Hermo",
+          "merchantImg": "logo/hermo_logo_v1.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/65daigou.png",
+          "appRank": 0,
+          "webRank": 8,
+          "est": "2010",
+          "isEst": false,
+          "nextRank": 8,
+          "screenshot": "ezbuy_2013.png",
+          "appLaunched": "Apr, 2012",
+          "webLaunched": "2010",
+          "lastCaptured": "May, 2013",
+          "merchantName": "65daigou",
+          "merchantImg": "logo/ezbuy_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Launches app on Google Play",
+              "pub_date": "Jul 20, 2013",
+              "link": "https://www.appannie.com/apps/google-play/app/20600001323596/details/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2014",
+      "items": [
+        {
+          "img": "logo/lazada.png",
+          "appRank": 0,
+          "webRank": 1,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 1,
+          "screenshot": "lazada_2014.png",
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Nov, 2014",
+          "merchantName": "Lazada",
+          "merchantImg": "logo/lazada_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Launches app on iOS",
+              "pub_date": "Jan 02, 2014",
+              "link": "https://www.appannie.com/apps/ios/app/lazada-shopping-deals-for/details/"
+            },
+            {
+              "title": "Launches new site with TV ads, digital campaigns and various marketing initiatives",
+              "pub_date": "Jun 17, 2014",
+              "link": "http://www.marketing-interactive.com/lazada-launches-new-tv-digital-advertising-campaign/"
+            },
+            {
+              "title": "Lazada generated 1.8 million orders from its 1.4 million active users generating a total of US$91.4 million GMV",
+              "pub_date": "Nov 17, 2014",
+              "link": "https://www.techinasia.com/rocket-internet-h1-2014-earnings-data-zalora-lazada-jabong-foodpanda"
+            },
+            {
+              "title": "Lazada raises $250 million USD led by Temasek",
+              "pub_date": "Nov 29, 2014",
+              "link": "https://beta.techcrunch.com/2014/11/29/lazada-rocket-internets-amazon-clone-in-southeast-asia-raises-250m-led-by-temasek/"
+            }
+          ]
+        },
+        {
+          "img": "logo/lelong.png",
+          "appRank": 4,
+          "webRank": 2,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 2,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": "1999",
+          "lastCaptured": "Jan, 2014",
+          "merchantName": "Lelong",
+          "screenshot": "lelong_2014.png",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Lelong is No1 in the top 10 marketplaces to sell online in Malaysia",
+              "pub_date": "Nov 14, 2014",
+              "link": "https://e27.co/top-10-marketplaces-to-sell-online-in-malaysia-20141112/"
+            },
+            {
+              "title": "Richard Tan, the cofounder of lelong.com.my, believes in starting small and building a niche before expanding",
+              "pub_date": "Nov 24, 2014",
+              "link": "http://www.themalaymailonline.com/tech-gadgets/article/digerati50-lelongs-richard-tan-stays-relevant#fU22rYos37g67bSj.97"
+            }
+          ]
+        },
+        {
+          "img": "logo/ebay.png",
+          "appRank": 0,
+          "webRank": 3,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 4,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2014",
+          "screenshot": "ebay_2014.png",
+          "merchantName": "eBay",
+          "merchantImg": "logo/ebay_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Added feature where sellers can donate a percentage of their profit to charity",
+              "pub_date": "Sep 02, 2014",
+              "link": "https://www.appannie.com/apps/ios/app/ebay/details/"
+            }
+          ]
+        },
+        {
+          "img": "logo/zalora.png",
+          "appRank": 0,
+          "webRank": 4,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 3,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Feb, 2014",
+          "screenshot": "zalora_2014.png",
+          "merchantName": "Zalora",
+          "merchantImg": "logo/zalora_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Zalora To Launch Marketplace In Asia",
+              "pub_date": "Jan 14, 2014",
+              "link": "https://techcrunch.com/2014/01/14/rocket-internet-backed-fashion-site-zalora-to-launch-marketplace-in-asia/"
+            },
+            {
+              "title": "Zalora to absorb GST implemented by the Malaysian Government",
+              "pub_date": "Aug 16, 2014",
+              "link": "http://www.themalaymailonline.com/money/article/online-fashion-retailer-zalora-to-absorb-gst#D3fEot2A3tIlKy5W.97"
+            },
+            {
+              "title": "Added QR scanning feature for purchasing items via digital shelf",
+              "pub_date": "Nov 25, 2014",
+              "link": "https://www.appannie.com/apps/ios/app/zalora-fashion-shopping/details/"
+            }
+          ]
+        },
+        {
+          "img": "logo/rakuten.png",
+          "appRank": 0,
+          "webRank": 5,
+          "est": "Sep, 2012",
+          "isEst": false,
+          "nextRank": 7,
+          "screenshot": "rakuten_2014.png",
+          "appLaunched": "",
+          "webLaunched": "Sep, 2012",
+          "lastCaptured": "Apr, 2014",
+          "merchantName": "Rakuten",
+          "merchantImg": "logo/rakuten_logo_v1.jpg",
+          "highlights": [
+            {
+              "title": "Rakuten’s e-commerce strategy",
+              "pub_date": "Jan 23, 2014",
+              "link": "http://www.marketing-interactive.com/discovery-new-art-online-shopping/"
+            },
+            {
+              "title": "Rakuten predicts online shopping is going more traction in Malaysia",
+              "pub_date": "Mar 29, 2014",
+              "link": "https://www.thestar.com.my/business/sme/2014/03/29/retail-revolution-in-the-making-online-shopping-starts-to-gain-more-traction-in-malaysia/"
+            },
+            {
+              "title": "Rakuten participates in the inaugural #MYCyberSALE",
+              "pub_date": "Sep 17, 2014",
+              "link": "http://www.mstar.com.my/lain-lain/suara/2014/09/17/mycybersale/"
+            }
+          ]
+        },
+        {
+          "img": "logo/fashionvalet.png",
+          "appRank": 0,
+          "webRank": 6,
+          "est": "Nov, 2010",
+          "isEst": false,
+          "nextRank": 9,
+          "appLaunched": false,
+          "webLaunched": "Nov, 2010",
+          "lastCaptured": "May, 2014",
+          "screenshot": "fashionvalet_2014.png",
+          "merchantName": "FashionValet",
+          "merchantImg": "logo/fashionvalet_logo_v2.png",
+          "highlights": [
+            {
+              "title": "CoFounder of FashionValet Vivy Yusof was nominated in the Women of Excellence Awards 2014",
+              "pub_date": "Apr 25, 2014",
+              "link": "https://www.thestar.com.my/lifestyle/features/2014/04/25/women-of-excellence-best-reward-is-mentoring-other-women-to-succeed/"
+            },
+            {
+              "title": "FashionValet rakes in close to RM10 million in revenue for 2014",
+              "pub_date": "Oct 28, 2014",
+              "link": "http://www.theedgemarkets.com/article/edgy-vivy-yusof-touch"
+            },
+            {
+              "title": "Fadzaruddin Shah Anuar, CoFounder of FashionValet says the government agency MaGiC has positively impacted his business",
+              "pub_date": "Nov 20, 2014",
+              "link": "http://www.utusan.com.my/bisnes/usahawan/magic-main-peranan-penting-1.27353"
+            }
+          ]
+        },
+        {
+          "img": "logo/hermo.png",
+          "appRank": 0,
+          "webRank": 7,
+          "est": "Jun, 2012",
+          "isEst": false,
+          "nextRank": 8,
+          "screenshot": "hermo_2014.png",
+          "appLaunched": "Oct, 2016",
+          "webLaunched": "Jun, 2012",
+          "lastCaptured": "Jun, 2014",
+          "merchantName": "Hermo",
+          "merchantImg": "logo/hermo_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Hermo is the top 500 websites in Malaysia according to Alexa & is the leading beauty eCommerce site in Malaysia",
+              "pub_date": "Dec 11, 2014",
+              "link": "http://www.ecinsider.my/2014/12/interview-hermo-co-founder-ian-chua.html"
+            },
+            {
+              "title": "For prompt delivery, there is no faster way than stocking in: Hermo’s Ian Chua",
+              "pub_date": "Dec 12, 2014",
+              "link": "https://e27.co/for-prompt-delivery-there-is-no-faster-way-than-stocking-in-hermos-ian-chua-20141212/"
+            }
+          ]
+        },
+        {
+          "img": "logo/65daigou.png",
+          "appRank": 0,
+          "webRank": 8,
+          "est": "2010",
+          "isEst": false,
+          "nextRank": 11,
+          "screenshot": "ezbuy_2014.png",
+          "appLaunched": "Apr, 2012",
+          "webLaunched": 2010,
+          "lastCaptured": "May, 2014",
+          "merchantName": "65daigou",
+          "merchantImg": "logo/ezbuy_logo_v1.png",
+          "highlights": []
+        }
+      ]
+    },
+    {
+      "year": "2015",
+      "items": [
+        {
+          "img": "logo/lazada.png",
+          "appRank": 1,
+          "webRank": 1,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 1,
+          "screenshot": "lazada_2015.png",
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Nov, 2015",
+          "merchantName": "Lazada",
+          "merchantImg": "logo/lazada_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Lazada lost $154.3 million US but is moving towards profitability",
+              "pub_date": "May 12, 2015",
+              "link": "https://www.forbes.com/sites/susancunningham/2015/05/12/rockets-lazada-and-zalora-lost-235-3-million-in-2014-but-are-moving-toward-profitability/#3c73e7c379eb"
+            },
+            {
+              "title": "Lazada on course for $1B US in sales",
+              "pub_date": "Sep 30, 2015",
+              "link": "https://www.techinasia.com/rocket-internet-h1-earnings-as-lazada-shifts-to-mobile"
+            },
+            {
+              "title": "Adds search by image feature on mobile app",
+              "pub_date": "Nov 02, 2015",
+              "link": "https://www.appannie.com/apps/ios/app/lazada-shopping-deals-for/details/"
+            },
+            {
+              "title": "Lazada to double SE Asia warehouses amid e-commerce boom - ",
+              "pub_date": "Dec 8, 2015",
+              "link": "https://www.reuters.com/article/singapore-rocket-internet-lazada/rocket-internets-lazada-to-double-se-asia-warehouses-amid-e-commerce-boom-idUSL3N13X2FT20151208"
+            }
+          ]
+        },
+        {
+          "img": "logo/lelong.png",
+          "appRank": 4,
+          "webRank": 2,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 2,
+          "merchantName": "Lelong",
+          "appLaunched": "Mar, 2012",
+          "webLaunched": "1999",
+          "lastCaptured": "Feb, 2015",
+          "screenshot": "lelong_2015.png",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/zalora.png",
+          "appRank": 2,
+          "webRank": 3,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 3,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Jul, 2015",
+          "screenshot": "zalora_2015.png",
+          "merchantName": "Zalora",
+          "merchantImg": "logo/zalora_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Launches the first 'click and mortar' pop-up store in Penang, Malaysia",
+              "pub_date": "Jan 5, 2015",
+              "link": "https://my.vulcanpost.com/129531/zalora-opens-click-mortar-pop-store-penang/"
+            },
+            {
+              "title": "Rocket valued Zalora at $7.15 billion US and claims the fashion eCommerce is a \"Proven Winner\" in the world of eCommerce",
+              "pub_date": "May 12, 2015",
+              "link": "https://www.forbes.com/sites/susancunningham/2015/05/12/rockets-lazada-and-zalora-lost-235-3-million-in-2014-but-are-moving-toward-profitability/#23b2331c79eb"
+            }
+          ]
+        },
+        {
+          "img": "logo/ebay.png",
+          "appRank": 6,
+          "webRank": 4,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 5,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2015",
+          "screenshot": "ebay_2015.png",
+          "merchantName": "eBay",
+          "merchantImg": "logo/ebay_logo_v2.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/11street.png",
+          "appRank": 3,
+          "webRank": 5,
+          "est": "Apr, 2015",
+          "isEst": true,
+          "nextRank": 4,
+          "screenshot": "11street_2015.png",
+          "appLaunched": "Apr, 2015",
+          "webLaunched": "Apr, 2015",
+          "lastCaptured": "Nov, 2015",
+          "merchantName": "11Street",
+          "merchantImg": "logo/11street_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Korean online marketplace partners Celcom Axiata Bhd to launch 11street",
+              "pub_date": "Feb 5, 2015",
+              "link": "https://www.techinasia.com/korean-11street-invest-10m-malaysia"
+            },
+            {
+              "title": "11street e-mall unaffected by GST",
+              "pub_date": "Apr 24, 2015",
+              "link": "http://english.astroawani.com/business-news/11street-e-mall-unaffected-gst-says-ceo-58600"
+            },
+            {
+              "title": "Launches app on iOS and on Google Play a few months later",
+              "pub_date": "May 11, 2015",
+              "link": "https://www.appannie.com/apps/ios/app/11street-malaysias-latest/details/"
+            }
+          ]
+        },
+        {
+          "img": "logo/goshop.png",
+          "appRank": 7,
+          "webRank": 6,
+          "est": "Jan, 2015",
+          "isEst": true,
+          "nextRank": 8,
+          "screenshot": "goshop_2015.png",
+          "appLaunched": "Sep, 2015",
+          "webLaunched": "Jan, 2015",
+          "lastCaptured": "Jan, 2015",
+          "merchantName": "GoShop",
+          "merchantImg": "logo/goshop_logo_v1.png",
+          "highlights": [
+            {
+              "title": "GoShop expected to generate RM500m by 2019",
+              "pub_date": "Jan 30, 2015",
+              "link": "http://english.astroawani.com/business-news/astro-go-shop-generate-rm500m-2019-23542"
+            },
+            {
+              "title": "Astro ventures into e-commerce by launching GoShop",
+              "pub_date": "Feb 4, 2015",
+              "link": "http://www.marketing-interactive.com/astro-ventures-e-commerce/"
+            },
+            {
+              "title": "Launches app on Google Play and on iOS a few days later",
+              "pub_date": "Sep 9, 2015",
+              "link": "https://www.appannie.com/apps/google-play/app/my.com.goshop.app/details/"
+            }
+          ]
+        },
+        {
+          "img": "logo/rakuten.png",
+          "appRank": 0,
+          "webRank": 7,
+          "est": "Sep, 2012",
+          "isEst": false,
+          "nextRank": 0,
+          "screenshot": "rakuten_2015.png",
+          "appLaunched": "",
+          "webLaunched": "Sep, 2012",
+          "lastCaptured": "May, 2015",
+          "merchantName": "Rakuten",
+          "merchantImg": "logo/rakuten_logo_v1.jpg",
+          "highlights": [
+            {
+              "title": "Survey by Rakuten reveals 70% of Malaysian shoppers are planning to buy more during festive periods",
+              "pub_date": "Dec 9, 2015",
+              "link": "https://www.thestar.com.my/tech/tech-opinion/2015/12/09/festive-gift-shopping-survival-guide/#zcL7UUlKHqcilAXF.99"
+            },
+            {
+              "title": "UNICEF Malaysia partners Rakuten to assist children in need",
+              "pub_date": "Dec 9, 2015",
+              "link": "http://www.hardwarezone.com.my/tech-news-unicef-inspired-gifts-available-rakutencommy"
+            },
+            {
+              "title": "Rakuten to close Singapore, Malaysia, Indonesia marketplaces, lay off about 150 staff",
+              "pub_date": "Feb 12, 2016",
+              "link": "https://www.techinasia.com/rakuten-exit-singapore-malaysia-indonesia-thailand"
+            },
+            {
+              "title": "4 thoughts on Rakuten's exit from Southeast Asia",
+              "pub_date": "Feb 17, 2016",
+              "link": "http://www.ecinsider.my/2016/02/4-thoughts-on-rakuten-sea-exit.html"
+            }
+          ]
+        },
+        {
+          "img": "logo/hermo.png",
+          "appRank": 0,
+          "webRank": 8,
+          "est": "Jun, 2012",
+          "isEst": false,
+          "nextRank": 6,
+          "screenshot": "hermo_2015.png",
+          "appLaunched": "Oct, 2016",
+          "webLaunched": "Jun, 2012",
+          "lastCaptured": "Jun, 2015",
+          "merchantName": "Hermo",
+          "merchantImg": "logo/hermo_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Hermo, one of Southeast Asia’s top beauty sites, lands $2M Series A",
+              "pub_date": "Oct 15, 2015",
+              "link": "https://techcrunch.com/2015/10/14/hermo/"
+            }
+          ]
+        },
+        {
+          "img": "logo/fashionvalet.png",
+          "appRank": 0,
+          "webRank": 9,
+          "est": "Nov, 2010",
+          "isEst": false,
+          "nextRank": 10,
+          "screenshot": "fashionvalet_2015.png",
+          "lastCaptured": "Jun, 2015",
+          "merchantName": "FashionValet",
+          "merchantImg": "logo/fashionvalet_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Fashion Valet's 2014 revenue tripled to over US$1mil in 2014",
+              "pub_date": "Mar 5, 2015",
+              "link": "https://www.digitalnewsasia.com/startups/fashionvalet-the-wiser-second-time-around"
+            },
+            {
+              "title": "FashionValet secures 'multimillion-dollar' investment from Elixir Capital",
+              "pub_date": "Mar 3, 2015",
+              "link": "https://www.digitalnewsasia.com/startups/fashionvalet-secures-multimillion-dollar-investment-from-elixir-capital"
+            },
+            {
+              "title": "FashionValet opens flagship store in Bangsar Village II",
+              "pub_date": "Dec 8, 2015",
+              "link": "http://www.elle.my/fashion/News/FashionValet-opens-flagship-store-in-Bangsar-Village-II"
+            },
+            {
+              "title": "Founder of Fashion Valet claimed that the performance of the physical store has exceeded their expectations, and the support from customers has been \"overwhelming\"",
+              "pub_date": "Dec 24, 2015",
+              "link": "https://www.digitalnewsasia.com/physical-game-pays-fashionvalet"
+            }
+          ]
+        },
+        {
+          "img": "logo/shopee.png",
+          "appRank": 5,
+          "webRank": 10,
+          "est": "Nov, 2015",
+          "isEst": true,
+          "nextRank": 7,
+          "screenshot": "shopee_2015.png",
+          "appLaunched": "Jun, 2015",
+          "webLaunched": "Nov, 2015",
+          "lastCaptured": "Nov, 2015",
+          "merchantName": "Shopee",
+          "merchantImg": "logo/shopee_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Launches app on iOS & Google Play",
+              "pub_date": "Jun 03, 2015",
+              "link": "https://www.appannie.com/apps/ios/app/shopee-malaysia-buy-sell-on/details/"
+            },
+            {
+              "title": "Garena launches new mobile marketplace Shopee",
+              "pub_date": "Sep 9, 2015",
+              "link": "http://www.straitstimes.com/tech/games-apps/safe-easy-shopping-with-shopee"
+            },
+            {
+              "title": "Shopee launches shopping platform for Malaysians",
+              "pub_date": "Dec 4, 2015",
+              "link": "http://www.marketing-interactive.com/mobile-c2c-shopee-launches-malaysia/"
+            }
+          ]
+        },
+        {
+          "img": "logo/65daigou.png",
+          "appRank": 0,
+          "webRank": 11,
+          "est": "2010",
+          "isEst": false,
+          "nextRank": 9,
+          "screenshot": "ezbuy_2015.png",
+          "appLaunched": "Apr, 2012",
+          "webLaunched": 2010,
+          "lastCaptured": "May, 2015",
+          "merchantName": "65daigou",
+          "merchantImg": "logo/ezbuy_logo_v2.png",
+          "highlights": []
+        }
+      ]
+    },
+    {
+      "year": "2016",
+      "items": [
+        {
+          "img": "logo/lazada.png",
+          "appRank": 1,
+          "webRank": 1,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 1,
+          "screenshot": "lazada_2016.png",
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Nov, 2016",
+          "merchantName": "Lazada",
+          "merchantImg": "logo/lazada_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Lazada makes about 100 same-day deliveries in the Klang Valley for orders placed before noon",
+              "pub_date": "Mar 11, 2016",
+              "link": "https://www.digitalnewsasia.com/lazada-malaysia-plays-logistics-game-and-more-0"
+            },
+            {
+              "title": "Alibaba pours a total of $1B into Southeast Asia e-commerce platform Lazada",
+              "pub_date": "Apr 12, 2016",
+              "link": "https://techcrunch.com/2016/04/12/rocketinternet-lazada/"
+            },
+            {
+              "title": "Lazada to concentrate on strengthening its online shopping business, rather than building physical stores to complement its online services",
+              "pub_date": "Oct 17, 2016",
+              "link": "http://www.theedgemarkets.com/article/lazada-stays-online"
+            },
+            {
+              "title": "Lazada Group announces record GMV of US$40.5 million for online revolution on 12.12",
+              "pub_date": "Dec 14, 2016",
+              "link": "http://en.prnasia.com/releases/apac/Lazada_Group_Announces_Record_GMV_of_US_40_5_Million_for_Online_Revolution_on_12_12-166282.shtml"
+            }
+          ]
+        },
+        {
+          "img": "logo/lelong.png",
+          "appRank": 5,
+          "webRank": 2,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 4,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": "1999",
+          "lastCaptured": "Jan, 2016",
+          "merchantName": "Lelong",
+          "screenshot": "lelong_2016.png",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": []
+        },
+        {
+          "img": "logo/zalora.png",
+          "appRank": 4,
+          "webRank": 3,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 3,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Apr, 2016",
+          "screenshot": "zalora_2016.png",
+          "merchantName": "Zalora",
+          "merchantImg": "logo/zalora_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Zalora, Rocket Internet’s unprofitable Asian fashion portal, is selling off business units",
+              "pub_date": "Apr 14, 2016",
+              "link": " https://beta.techcrunch.com/2016/04/14/zalora-rocket-internets-unprofitable-asian-fashion-portal-is-selling-off-business-units/"
+            },
+            {
+              "title": "Zalora has appointed Parker Gundersen as chief executive officer",
+              "pub_date": "Aug 3, 2016",
+              "link": "http://www.marketing-interactive.com/zalora-names-new-ceo/"
+            }
+          ]
+        },
+        {
+          "img": "logo/11street.png",
+          "appRank": 2,
+          "webRank": 4,
+          "est": "Apr, 2015",
+          "isEst": false,
+          "nextRank": 5,
+          "screenshot": "11street_2016.png",
+          "appLaunched": "Apr, 2015",
+          "webLaunched": "Apr, 2015",
+          "lastCaptured": "Nov, 2016",
+          "merchantName": "11Street",
+          "merchantImg": "logo/11street_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Despite economic doldrums, 11street bullish on Malaysia",
+              "pub_date": "Feb 1, 2016",
+              "link": "https://www.digitalnewsasia.com/despite-economic-doldrums-11street-bullish-malaysia"
+            },
+            {
+              "title": "11street launches Halal category for Muslim shoppers",
+              "pub_date": "May 30, 2016",
+              "link": "http://www.utusan.com.my/bisnes/korporat/11street-perkenal-kategori-halal-1.336380"
+            }
+          ]
+        },
+        {
+          "img": "logo/ebay.png",
+          "appRank": 8,
+          "webRank": 5,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 6,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2016",
+          "screenshot": "ebay_2016.png",
+          "merchantName": "eBay",
+          "merchantImg": "logo/ebay_logo_v2.png",
+          "highlights": [
+            {
+              "title": "eBay focused on helping its existing sellers build and grow their business",
+              "pub_date": "Jul 27, 2016",
+              "link": " http://www.ecinsider.my/2016/07/wong-mei-inn-whats-hot-on-ebay-malaysia.html"
+            }
+          ]
+        },
+        {
+          "img": "logo/hermo.png",
+          "appRank": 10,
+          "webRank": 6,
+          "est": "Jun, 2012",
+          "isEst": false,
+          "nextRank": 7,
+          "screenshot": "hermo_2016.png",
+          "appLaunched": "Oct, 2016",
+          "webLaunched": "Jun, 2012",
+          "lastCaptured": "Jun, 2016",
+          "merchantName": "Hermo",
+          "merchantImg": "logo/hermo_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Ian Chua, CoFounder & CEO of Hermo was featured in Forbes 30 under 30 Asia 2016",
+              "pub_date": "Feb 26, 2016",
+              "link": "https://www.forbes.com/30-under-30-asia-2016/retail-ecommerce/#2a24187772d4"
+            },
+            {
+              "title": "Launches app on Google Play",
+              "pub_date": "Oct 19, 2016",
+              "link": "https://www.appannie.com/apps/google-play/app/my.hermo.hermo/details/"
+            }
+          ]
+        },
+        {
+          "img": "logo/shopee.png",
+          "appRank": 3,
+          "webRank": 7,
+          "est": "Nov, 2015",
+          "isEst": false,
+          "nextRank": 2,
+          "screenshot": "shopee_2016.png",
+          "appLaunched": "Jun, 2015",
+          "webLaunched": "Nov, 2015",
+          "lastCaptured": "Aug, 2016",
+          "merchantName": "Shopee",
+          "merchantImg": "logo/shopee_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Added video feature for sellers to showcase their products",
+              "pub_date": "Mar 21, 2016",
+              "link": "https://www.appannie.com/apps/ios/app/shopee-malaysia-buy-sell-on/details/"
+            },
+            {
+              "title": "At $3.75b, Garena is the most valuable startup in Southeast Asia",
+              "pub_date": "Apr 1, 2016",
+              "link": "https://www.techinasia.com/garena-most-valuable-startup-in-southeast-asia"
+            },
+            {
+              "title": "Shopee partners with Pos Malaysia to provide free shipping in Malaysia",
+              "pub_date": "Jun 2, 2016",
+              "link": "http://www.marketing-interactive.com/shopee-partners-pos-malaysia/"
+            },
+            {
+              "title": "Shopee Malaysia hit US$1.8 billion GMV in first year",
+              "pub_date": "Nov 23, 2016",
+              "link": "http://www.marketing-interactive.com/shopee-malaysia-hit-us1-8-billion-gmv-first-operational-year/"
+            }
+          ]
+        },
+        {
+          "img": "logo/goshop.png",
+          "appRank": 6,
+          "webRank": 8,
+          "est": "Jan, 2015",
+          "isEst": false,
+          "nextRank": 10,
+          "screenshot": "goshop_2016.png",
+          "appLaunched": "Sep, 2015",
+          "webLaunched": "Jan, 2015",
+          "lastCaptured": "Feb, 2016",
+          "merchantName": "GoShop",
+          "merchantImg": "logo/goshop_logo_v1.png",
+          "highlights": [
+            {
+              "title": "GoShop expected to break even by the end of FY17 and achieve profitability in the following year",
+              "pub_date": "Dec 8, 2016",
+              "link": "  https://www.thestar.com.my/business/business-news/2016/12/08/aminvestment-research-retains-hold-on-astro/"
+            }
+          ]
+        },
+        {
+          "img": "logo/ezbuy.png",
+          "appRank": 7,
+          "webRank": 9,
+          "est": "2010",
+          "isEst": false,
+          "nextRank": 8,
+          "screenshot": "ezbuy_2016.png",
+          "appLaunched": "Apr, 2012",
+          "webLaunched": 2010,
+          "lastCaptured": "Sep, 2016",
+          "merchantName": "65daigou",
+          "merchantImg": "logo/ezbuy_logo_v3.png",
+          "highlights": [
+            {
+              "title": "Concludes Series A funding round with an indisclosed amount",
+              "pub_date": "Apr 1 , 2015",
+              "link": "https://www.crunchbase.com/organization/ezbuy#section-locked-marketplace"
+            },
+            {
+              "title": "65daigou's Facebook post prior Chinese New Year garners huge engagement from Malaysians & Singaporean",
+              "pub_date": "Feb 5, 2016",
+              "link": "http://english.astroawani.com/malaysia-news/cny16-really-just-how-much-ang-pow-too-little-92845"
+            },
+            {
+              "title": "65daigou rebrands as ezbuy, secures US$20M Series B",
+              "pub_date": "Mar 15, 2016",
+              "link": "https://e27.co/e-commerce-platform-65daigou-rebrands-as-ezbuy-secures-us20m-series-b-20160323/"
+            }
+          ]
+        },
+        {
+          "img": "logo/fashionvalet.png",
+          "appRank": 0,
+          "webRank": 10,
+          "est": "Nov, 2010",
+          "isEst": false,
+          "nextRank": 9,
+          "appLaunched": false,
+          "webLaunched": "Nov, 2010",
+          "lastCaptured": "Jul, 2016",
+          "screenshot": "fashionvalet_2016.png",
+          "merchantName": "FashionValet",
+          "merchantImg": "logo/fashionvalet_logo_v2.png",
+          "highlights": [
+            {
+              "title": "FashionValet raises 'smart money' from Japan’s Start Today",
+              "pub_date": "Mar 30, 2016",
+              "link": "https://www.digitalnewsasia.com/fashionvalet-raises-%E2%80%98smart-money%E2%80%99-japan%E2%80%99s-start-today"
+            },
+            {
+              "title": "dUCk scarves by Fashion Valey take Malaysia by storm",
+              "pub_date": "Oct 12, 2016",
+              "link": " https://www.nst.com.my/news/2016/10/179831/duck-scarves-take-malaysia-storm"
+            },
+            {
+              "title": "Vivy Yusof on building a fashion empire",
+              "pub_date": "Dec 16, 2016",
+              "link": "http://english.astroawani.com/lifestyle/vivy-yusof-building-fashion-empire-125647"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "items": [
+        {
+          "img": "logo/lazada.png",
+          "appRank": 1,
+          "webRank": 1,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 0,
+          "screenshot": "lazada_2017.png",
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Aug, 2017",
+          "merchantName": "Lazada",
+          "merchantImg": "logo/lazada_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Alibaba ups its stake in Southeast Asia’s Lazada with $1 billion US investment",
+              "pub_date": "Jun 28, 2017",
+              "link": "https://techcrunch.com/2017/06/28/alibaba-ups-its-stake-in-southeast-asias-lazada-with-1-billion-investment/"
+            },
+            {
+              "title": "Lazada expands Alibaba's Taobao marketplace in Malaysia",
+              "pub_date": "Sep 25, 2017",
+              "link": "https://www.nst.com.my/business/2017/09/283733/lazada-expands-alibabas-taobao-marketplace-southeast-asia"
+            },
+            {
+              "title": "Lazada slams Sea’s claim that Shopee is the top regional ecommerce player",
+              "pub_date": "Sep 27, 2017",
+              "link": "https://www.techinasia.com/lazada-vs-sea-whos-top-ecommerce-player-in-southeast-asia"
+            },
+            {
+              "title": "Lazada's 12.12 sales rakes in US$250m",
+              "pub_date": "Dec 19, 2017",
+              "link": "https://www.nst.com.my/business/2017/12/316142/lazadas-1212-sales-rakes-us250m"
+            },
+            {
+              "title": "Lazada remains the most popular eCommerce website in Malaysia",
+              "pub_date": "Dec 20, 2017",
+              "link": "https://iprice.my/trends/insights/e-commerce-rewind-2017-a-year-end-review/"
+            }
+          ]
+        },
+        {
+          "img": "logo/shopee.png",
+          "appRank": 2,
+          "webRank": 2,
+          "est": "Nov, 2015",
+          "isEst": false,
+          "nextRank": 0,
+          "screenshot": "shopee_2017.png",
+          "appLaunched": "Jun, 2015",
+          "webLaunched": "Nov, 2015",
+          "lastCaptured": "May, 2015",
+          "merchantName": "Shopee",
+          "merchantImg": "logo/shopee_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Garena, owner of Shopee rebrands as Sea after raising $550 million US in new funding",
+              "pub_date": "May 8, 2017",
+              "link": "https://www.bloomberg.com/news/articles/2017-05-08/garena-rebrands-as-sea-after-raising-550-million-in-new-funding"
+            },
+            {
+              "title": "Shopee's parent company Sea files for $1 billion US IPO",
+              "pub_date": "Sep 24, 2017",
+              "link": "https://beta.techcrunch.com/2017/09/23/sea-files-for-a-1-billion-u-s-ipo/"
+            },
+            {
+              "title": "Introduces 9.9 Mobile Shopping Day & 11.11 Shopee Super Sale on mobile app",
+              "pub_date": "Nov 01, 2017",
+              "link": "https://www.appannie.com/apps/ios/app/shopee-malaysia-buy-sell-on/details/"
+            },
+            {
+              "title": "Shopee hits $5 billion US GMV in second year",
+              "pub_date": "Dec 4, 2017",
+              "link": "https://insideretail.sg/2017/12/04/shopee-hits-us5billion-gmv-in-second-year/"
+            },
+            {
+              "title": "Shopee tops Lazada as the highest ranked mobile app by Q4 2017",
+              "pub_date": "Dec 20, 2017",
+              "link": "https://iprice.my/trends/insights/e-commerce-rewind-2017-a-year-end-review/"
+            }
+          ]
+        },
+        {
+          "img": "logo/zalora.png",
+          "appRank": 4,
+          "webRank": 3,
+          "est": "Mar, 2012",
+          "isEst": false,
+          "nextRank": 0,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Mar, 2012",
+          "lastCaptured": "Nov, 2017",
+          "screenshot": "zalora_2017.png",
+          "merchantName": "Zalora",
+          "merchantImg": "logo/zalora_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Zalora sold 49 percent of its Philippines-based operations to local real estate firm Ayala",
+              "pub_date": "Feb 24, 2017",
+              "link": "https://beta.techcrunch.com/2017/02/23/zalora-continues-asia-retreat/"
+            },
+            {
+              "title": "Zalora invests US$4.2mil on regional e-fulfilment hub in Malaysia",
+              "pub_date": "Mar 10, 2017",
+              "link": "https://www.digitalnewsasia.com/business/zalora-invests-US4.2mil-on-regional-e-fulfilment-hub-malaysia"
+            },
+            {
+              "title": "Adds search by image feature on mobile app",
+              "pub_date": "Nov 08, 2017",
+              "link": "https://www.appannie.com/apps/ios/app/zalora-fashion-shopping/details/"
+            }
+          ]
+        },
+        {
+          "img": "logo/lelong.png",
+          "appRank": 5,
+          "webRank": 4,
+          "est": "1999",
+          "isEst": false,
+          "nextRank": 0,
+          "appLaunched": "Mar, 2012",
+          "webLaunched": 1999,
+          "lastCaptured": "Jan, 2017",
+          "merchantName": "Lelong",
+          "screenshot": "lelong_2017.png",
+          "merchantImg": "logo/lelong_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Lelong.my embarks on brand lifting exercise to boost its appeal to the younger generation",
+              "pub_date": "Sep 15, 2017",
+              "link": "http://www.thesundaily.my/news/2017/09/15/lelongmy-embarks-brand-lifting-exercise"
+            },
+            {
+              "title": "Lelong is Malaysia's 4th most searched eCommerce in 2017",
+              "pub_date": "Dec 29, 2017",
+              "link": "https://www.digitalnewsasia.com/digital-economy/2017-e-commerce-review-malaysia"
+            }
+          ]
+        },
+        {
+          "img": "logo/11street.png",
+          "appRank": 3,
+          "webRank": 5,
+          "est": "Apr, 2015",
+          "isEst": false,
+          "nextRank": 0,
+          "screenshot": "11street_2017.png",
+          "appLaunched": "Apr, 2015",
+          "webLaunched": "Apr, 2015",
+          "lastCaptured": "Feb, 2017",
+          "merchantName": "11Street",
+          "merchantImg": "logo/11street_logo_v2.png",
+          "highlights": [
+            {
+              "title": "SK Planet rumoured to sell 11street Malaysia after selling off it Indonesian eCommerce platform",
+              "pub_date": "Aug 24, 2017",
+              "link": "https://e27.co/sk-planet-reported-exit-elevenia-20170824/"
+            },
+            {
+              "title": "SK Planet denies exiting Malaysia as 11street plans its next fundraising effort",
+              "pub_date": "Aug 28, 2017",
+              "link": "https://e27.co/sk-planet-denies-exiting-malaysia-11st-plans-next-fundraising-effort-20170828/"
+            },
+            {
+              "title": "11street Malaysia grocery sales up till August surge 158%",
+              "pub_date": "Sep 28, 2017",
+              "link": "http://www.themalaymailonline.com/money/article/11street-malaysia-grocery-sales-up-till-august-surges-158pc#WEF5mUjUpQ1H8D8s.97"
+            },
+            {
+              "title": "11street plans to grow total seller base by 10% in 2018",
+              "pub_date": "Dec 13, 2017",
+              "link": "http://www.marketing-interactive.com/11street-plans-to-grow-total-seller-base-by-10-in-2018/"
+            },
+            {
+              "title": "11street is the 2nd most popular eCommerce by Q4 2017",
+              "pub_date": "Dec 31, 2017",
+              "link": "https://iprice.my/insights/mapofecommerce/en/"
+            }
+          ]
+        },
+        {
+          "img": "logo/ebay.png",
+          "appRank": 8,
+          "webRank": 6,
+          "est": "Dec, 2004",
+          "isEst": false,
+          "nextRank": 0,
+          "appLaunched": "Jun, 2013",
+          "webLaunched": "Dec, 2004",
+          "lastCaptured": "Mar, 2017",
+          "screenshot": "ebay_2017.png",
+          "merchantName": "eBay",
+          "merchantImg": "logo/ebay_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Weaker ringgit helping Malaysian companies export on eBay",
+              "pub_date": "Apr 3, 2017",
+              "link": "https://themalaysianreserve.com/2017/04/03/weaker-ringgit-helping-malaysian-companies-export-on-ebay/"
+            },
+            {
+              "title": "Adds search by image feature on mobile app",
+              "pub_date": "Oct 30, 2017",
+              "link": "https://www.appannie.com/apps/google-play/app/20600000002083/details/"
+            },
+            {
+              "title": "eBay keen to work with Malaysian SMEs",
+              "pub_date": "Nov 2, 2017",
+              "link": "https://www.nst.com.my/business/2017/11/298223/ebay-keen-work-malaysian-smes"
+            }
+          ]
+        },
+        {
+          "img": "logo/hermo.png",
+          "appRank": 9,
+          "webRank": 7,
+          "est": "Jun, 2012",
+          "isEst": false,
+          "nextRank": 0,
+          "screenshot": "hermo_2017.png",
+          "appLaunched": "Oct, 2016",
+          "webLaunched": "Jun, 2012",
+          "lastCaptured": "Jun, 2017",
+          "merchantName": "Hermo",
+          "merchantImg": "logo/hermo_logo_v1.png",
+          "highlights": [
+            {
+              "title": "Hermo plans to grow its business  by 100%-300% in terms of revenue",
+              "pub_date": "Feb 1, 2017",
+              "link": "https://www.digitalnewsasia.com/startups/hermo-remains-committed-growth"
+            },
+            {
+              "title": "Hermo; the next big thing",
+              "pub_date": "Mar 22, 2017",
+              "link": "https://www.nst.com.my/news/2017/03/223332/hermo-next-big-thing"
+            },
+            {
+              "title": "Launches app on iOS",
+              "pub_date": "Mar 21, 2017",
+              "link": "https://www.appannie.com/apps/ios/app/hermo-malaysia/details/"
+            },
+            {
+              "title": "Gobi Partners exit Malaysian beauty e-commerce site Hermo with 91% IRR",
+              "pub_date": "May 31, 2017",
+              "link": "https://www.digitalnewsasia.com/startups/gobi-partners-exit-malaysian-beauty-e-commerce-site-hermo-91-irr"
+            }
+          ]
+        },
+        {
+          "img": "logo/ezbuy.png",
+          "appRank": 7,
+          "webRank": 8,
+          "est": "2010",
+          "isEst": false,
+          "nextRank": 0,
+          "screenshot": "ezbuy_2017.png",
+          "appLaunched": "Apr, 2012",
+          "webLaunched": 2010,
+          "lastCaptured": "Nov, 2017",
+          "merchantName": "65daigou",
+          "merchantImg": "logo/ezbuy_logo_v3.png",
+          "highlights": [
+            {
+              "title": "Customers upset over delayed orders, shipments from ezbuy",
+              "pub_date": "Nov 29, 2017",
+              "link": "http://www.themalaymailonline.com/money/article/customers-upset-over-delayed-orders-shipments-from-ezbuy#SX7F2zWbCwF7tf5z.97"
+            },
+            {
+              "title": "ezbuy ends services with Taobao",
+              "pub_date": "Dec 19, 2017",
+              "link": "http://www.straitstimes.com/singapore/ezbuy-ends-services-with-taobao"
+            }
+          ]
+        },
+        {
+          "img": "logo/fashionvalet.png",
+          "appRank": 0,
+          "webRank": 9,
+          "est": "Nov, 2010",
+          "isEst": false,
+          "nextRank": 0,
+          "appLaunched": false,
+          "webLaunched": "Nov, 2010",
+          "lastCaptured": "Mar, 2017",
+          "screenshot": "fashionvalet_2017.png",
+          "merchantName": "FashionValet",
+          "merchantImg": "logo/fashionvalet_logo_v2.png",
+          "highlights": [
+            {
+              "title": "Vivy Yusof, CoFounder of Fashion Valet was featured in Forbes 30 under 30 Asia 2017",
+              "pub_date": "Apr 14, 2017",
+              "link": "https://www.forbes.com/profile/vivy-yusof/?list=30under30-asia-retail-ecommerce"
+            },
+            {
+              "title": "Fashion Valet’s ambitions will never be just about e-commerce",
+              "pub_date": "Apr 21, 2017",
+              "link": "http://www.theedgemarkets.com/article/venture-fashion-valet%E2%80%99s-ambitions-will-never-be-just-about-e-commerce"
+            },
+            {
+              "title": "FashionValet launches #IAmHomeGrown to instill pride among Malaysians",
+              "pub_date": "Aug 17, 2017",
+              "link": "https://www.nst.com.my/lifestyle/flair/2017/08/268931/iamhomegrown-campaign-launched-instill-pride-among-malaysians"
+            }
+          ]
+        },
+        {
+          "img": "logo/goshop.png",
+          "appRank": 6,
+          "webRank": 10,
+          "est": "Jan, 2015",
+          "isEst": false,
+          "nextRank": 0,
+          "screenshot": "goshop_2017.png",
+          "appLaunched": "Sep, 2015",
+          "webLaunched": "Jan, 2015",
+          "lastCaptured": "Feb, 2017",
+          "merchantName": "GoShop",
+          "merchantImg": "logo/goshop_logo_v1.png",
+          "highlights": [
+            {
+              "title": "GoShop remains an important part of Astro's digital-first initiative in Malaysia",
+              "pub_date": "Apr 10, 2017",
+              "link": "http://www.theedgemarkets.com/article/cover-story-future-proofing-astro"
+            },
+            {
+              "title": "GoShop records one million customers and generated RM261 million in revenue",
+              "pub_date": "Aug 2, 2017",
+              "link": "http://www.theedgemarkets.com/article/astro-sees-good-digital-transformation-progress"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "title": "Malaysia’s early years in eCommerce were dominated by C2C players",
+      "years": [ 2008, 2009, 2010, 2011]
+    },
+    {
+      "title": "eCommerce begins to\nbloom with five additional\nplayers",
+      "years": [ 2012]
+    },
+    {
+      "title": "Lazada becomes the most\npopular eCommerce\nwithin a year",
+      "years": [ 2013, 2014]
+    },
+    {
+      "title": "11street, Shopee and\nGoShop enters the market",
+      "years": [ 2015 ]
+    },
+    {
+      "title": "Rakuten closes as Shopee\nand 11street rise in\npopularity",
+      "years": [ 2016 ]
+    },
+    {
+      "title": " Shopee becomes\nLazada’s closest\ncompetitor at 2nd place",
+      "years": [ 2017 ]
+    }
+  ]
+}
