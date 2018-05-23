@@ -409,6 +409,17 @@ $(document).ready(function(){
 				}else{
 					$('.zoom-in').removeAttr('disabled');
 				}
+
+				console.log(currZoom);
+
+				switch( parseInt(currZoom) ){
+					case 1 : $('.left-rank').find('li').css('margin-top', '48px');
+						break;
+					case 2 : $('.left-rank').find('li').css('margin-top', '84px');
+						break;
+					default  : $('.left-rank').find('li').css('margin-top', '0px');
+						break;
+				}
 			}
 		}else{
 			if( currZoom > -2){
@@ -428,6 +439,15 @@ $(document).ready(function(){
 					$('.zoom-out').removeAttr('disabled');
 					$('.go-left').show();
 					$('.go-right').show();
+				}
+
+				switch( parseInt(currZoom) ){
+					case 1 : $('.left-rank').find('li').css('margin-top', '48px');
+						break;
+					case 2 : $('.left-rank').find('li').css('margin-top', '84px');
+						break;
+					default  : $('.left-rank').find('li').css('margin-top', '0px');
+						break;
 				}
 			}
 		}
