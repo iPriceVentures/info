@@ -302,6 +302,23 @@ $(document).ready(function(){
 		});
 		
 		var move = 0;
+		var open_feedback = false;
+		$('.feedback-button').click(function(){
+			if( !open_feedback ){
+				$('.feedback').animate({
+					left: "+=360"
+				},1000);
+
+				open_feedback = true;
+			}else{
+				$('.feedback').animate({
+					left: "-=360"
+				},1000);
+
+				open_feedback = false;
+			}
+			
+		});
 		$('.go-right').on('click', function(){
 			
 			if(scrollPos < maxscroll){
