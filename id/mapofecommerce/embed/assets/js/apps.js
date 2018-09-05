@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var data_list 	= new Array();
-	var filename	= 'q4-2017.json';
+	var filename	= 'q2-2018.json';
 	var data 		= document.getElementById('data');
 	var up 			= true;
 	var config 		= '';
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 		vars  = vars.split('.');
 		lang  = vars[0];
-		loc  = vars[1];
+		loc   = vars[1];
 		
 
 	$.getJSON('data/' + filename, function(result){
@@ -569,7 +569,7 @@ $(document).ready(function(){
 		var quarter = (lang == 'en') ? trans.options.quarter[loc] : trans.options.quarter;
 		
 		$.each(quarter, function(key, value){
-			if( key == 'q4-2017'){
+			if( key == 'q2-2018'){
 				$('.quartal_select').append('<option value="'+key+'" selected>'+value+'</option>');
 			}else{
 				$('.quartal_select').append('<option value="'+key+'">'+value+'</option>');	
