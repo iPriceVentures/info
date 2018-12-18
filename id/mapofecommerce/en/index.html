@@ -86,7 +86,19 @@
 			    "trackPageview": {
 			      "on": "visible",
 			      "request": "pageview"
-			    }
+			    },
+			    "scrollPings": {
+				  "on": "scroll",
+				  "request": "event",
+				  "scrollSpec": {
+				    "verticalBoundaries": [0, 25, 50, 75, 100]
+				  },
+				  "vars": {
+				    "eventCategory": "scrollDepth",
+				    "eventAction": "Scrolled",
+				    "eventLabel": "${verticalScrollBoundary}%"
+				  },
+				}
 			  }
 			}
 		</script>
