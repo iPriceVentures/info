@@ -7,31 +7,37 @@
   <url>
     <loc>https://iprice.sg/insights/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://iprice.sg/insights/iphone7/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.sg/insights/pokemongo/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.sg/insights/gifts-guide/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.sg/insights/secure-payment/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.sg/insights/valentine/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
@@ -42,11 +48,13 @@
   <url>
     <loc>https://iprice.sg/insights/gifts-culture/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.sg/insights/snapshot-of-couponing/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
@@ -57,6 +65,7 @@
   <url>
     <loc>https://iprice.sg/insights/mobile-shopping-survey-2015/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
@@ -67,11 +76,13 @@
   <url>
     <loc>https://iprice.sg/insights/mapofecommerce/</loc>
     <lastmod>2018-02-01T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.sg/insights/stateofecommerce2017/</loc>
     <lastmod>2018-01-26T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
 </urlset>
