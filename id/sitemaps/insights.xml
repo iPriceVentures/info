@@ -7,11 +7,13 @@
   <url>
     <loc>https://iprice.co.id/insights/</loc>
     <lastmod>2017-05-02T12:25:56+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://iprice.co.id/insights/iphone7/</loc>
     <lastmod>2017-05-02T12:25:56+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
@@ -22,26 +24,31 @@
   <url>
     <loc>https://iprice.co.id/insights/pokemongo/</loc>
     <lastmod>2017-05-02T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.co.id/insights/gifts-guide/</loc>
     <lastmod>2017-05-02T12:25:56+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.co.id/insights/secure-payment/</loc>
     <lastmod>2017-05-02T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.co.id/insights/valentine/</loc>
     <lastmod>2017-05-02T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.co.id/insights/user-guide/</loc>
     <lastmod>2017-05-02T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
@@ -52,6 +59,7 @@
   <url>
     <loc>https://iprice.co.id/insights/snapshot-of-couponing/</loc>
     <lastmod>2017-05-02T12:25:57+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
@@ -67,6 +75,7 @@
   <url>
     <loc>https://iprice.co.id/insights/fashion-trends-back-now/</loc>
     <lastmod>2017-05-02T12:25:56+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>

@@ -7,21 +7,25 @@
   <url>
     <loc>https://iprice.ph/insights/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://iprice.ph/insights/iphone7/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.ph/insights/gifts-guide/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.ph/insights/secure-payment/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
@@ -32,31 +36,37 @@
   <url>
     <loc>https://iprice.ph/insights/user-guide/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.ph/insights/gifts-culture/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.ph/insights/snapshot-of-couponing/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.ph/insights/history-of-coupons/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.ph/insights/mobile-shopping-survey-2015/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://iprice.ph/insights/fashion-trends-back-now/</loc>
     <lastmod>2017-05-04T11:04:35+00:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
   </url>
 </urlset>
