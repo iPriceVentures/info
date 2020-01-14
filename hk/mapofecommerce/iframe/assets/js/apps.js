@@ -432,7 +432,6 @@ $(document).ready(function(){
 	    	var verified 	= data[i].verified ? 'verified' : '';
 
 			var _wTraffics 	= parseFloat(data[i].traffics) / parseFloat(config.max_traffics) * 100; 
-			var _wApp = 1 / data[i].app * 100 ; 
 			if( loc == 'th'){
 				var _wLine 		= parseFloat(data[i].line) / parseFloat(config.max_twitter) * 100; 	
 			}else if (loc == 'vn'){
@@ -467,39 +466,39 @@ $(document).ready(function(){
 	    	html += '</div>';
 
 	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span>'+(data[i].ios >= 99 ? 'n/a' : '#'+data[i].ios.toLocaleString())+'</span>';
+	    	html += '<span>'+(parseFloat(data[i].ios) >= 99 ? 'n/a' : '#'+data[i].ios.toLocaleString())+'</span>';
 	    	html += '</div>';
 	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span>'+(data[i].android >= 99 ? 'n/a' : '#'+data[i].android.toLocaleString())+'</span>';
+	    	html += '<span>'+(parseFloat(data[i].android) >= 99 ? 'n/a' : '#'+data[i].android.toLocaleString())+'</span>';
 	    	html += '</div>';
 	    	// html += '<span><p class="percent animate-width" data-width="'+_wApp+'">'+  (data[i].app == 99 ? 'n/a' : data[i].app.toLocaleString()) +'</p></span>';
 	    	
 	    	if( loc == 'th'){
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wLine+'">'+ (data[i].line == 0 ? 'n/a' : data[i].line.toLocaleString()) +'</p></span>';
+		    	html += '<span><p class="percent animate-width" data-width="'+_wLine+'">'+ (parseFloat(data[i].line) == 0 ? 'n/a' : data[i].line.toLocaleString()) +'</p></span>';
 		    	html += '</div>';
 			}else if (loc == 'vn'){
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wYoutube+'">'+ (data[i].youtube == 0 ? 'n/a' : data[i].youtube.toLocaleString()) +'</p></span>';
+		    	html += '<span><p class="percent animate-width" data-width="'+_wYoutube+'">'+ (parseFloat(data[i].youtube) == 0 ? 'n/a' : data[i].youtube.toLocaleString()) +'</p></span>';
 		    	html += '</div>';
 			}else{
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wTwitter+'">'+ (data[i].twitter == 0 ? 'n/a' : data[i].twitter.toLocaleString()) +'</p></span>';
+		    	html += '<span><p class="percent animate-width" data-width="'+_wTwitter+'">'+ (parseFloat(data[i].twitter) == 0 ? 'n/a' : data[i].twitter.toLocaleString()) +'</p></span>';
 		    	html += '</div>';
 			}
 	    	
 
 	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span><p class="percent animate-width" data-width="'+_wInstagram+'">'+ (data[i].instagram == 0 ? 'n/a' : data[i].instagram.toLocaleString()) +'</p></span>';
+	    	html += '<span><p class="percent animate-width" data-width="'+_wInstagram+'">'+ (parseFloat(data[i].instagram) == 0 ? 'n/a' : data[i].instagram.toLocaleString()) +'</p></span>';
 	    	html += '</div>';
 
 	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span><p class="percent animate-width" data-width="'+_wFacebook+'">'+ (data[i].facebook == 0 ? 'n/a' : data[i].facebook.toLocaleString()) +'</p></span>';
+	    	html += '<span><p class="percent animate-width" data-width="'+_wFacebook+'">'+ (parseFloat(data[i].facebook) == 0 ? 'n/a' : data[i].facebook.toLocaleString()) +'</p></span>';
 	    	html += '</div>';
 
 	    	if (( loc != 'vn') && (loc != 'ph') && (loc != 'th')){
 		    	html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wEmployees+'">'+ (data[i].employees == 0 ? 'n/a' : data[i].employees.toLocaleString()) +'</p></span>';
+		    	html += '<span><p class="percent animate-width" data-width="'+_wEmployees+'">'+ (parseFloat(data[i].employees) == 0 ? 'n/a' : data[i].employees.toLocaleString()) +'</p></span>';
 		    	html += '</div>';
 		    }
 
