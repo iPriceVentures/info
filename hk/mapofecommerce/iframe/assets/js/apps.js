@@ -432,7 +432,7 @@ $(document).ready(function(){
 	    	var verified 	= data[i].verified ? 'verified' : '';
 
 			var _wTraffics 	= parseFloat(data[i].traffics) / parseFloat(config.max_traffics) * 100; 
-			var _wApp = 1 / data[i].app * 100 ; 
+			var _wApp = 1 / parseFloat(data[i].app) * 100 ; 
 			if( loc == 'th'){
 				var _wLine 		= parseFloat(data[i].line) / parseFloat(config.max_twitter) * 100; 	
 			}else if (loc == 'vn'){
