@@ -242,10 +242,10 @@ $(document).ready(function(){
 
 	function setBusinessModel(selectClass, config, trans){
 		var select = document.querySelector(`.${selectClass}`);
-		if( ['id','ph','vn'].indexOf(lang)){
+		if( ['id','ph','vn'].indexOf(loc)){
 			var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model[lang] ;
 		}else{
-			var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model ;
+			var business_models = trans.business_model.options;
 		}
 		
 
@@ -465,66 +465,66 @@ $(document).ready(function(){
 	    	html += '<span><p class="percent animate-width" data-width="'+_wTraffics+'">'+ (data[i].traffics == 0 ? 'n/a' : data[i].traffics.toLocaleString()) +'</p></span>';
 	    	html += '</div>';
 
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span>'+(parseFloat(data[i].ios) >= 99 ? 'n/a' : '#'+data[i].ios.toLocaleString())+'</span>';
-	    	html += '</div>';
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span>'+(parseFloat(data[i].android) >= 99 ? 'n/a' : '#'+data[i].android.toLocaleString())+'</span>';
-	    	html += '</div>';
-	    	// html += '<span><p class="percent animate-width" data-width="'+_wApp+'">'+  (data[i].app == 99 ? 'n/a' : data[i].app.toLocaleString()) +'</p></span>';
-	    	
-	    	if( loc == 'th'){
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span>'+(parseFloat(data[i].ios) >= 99 ? 'n/a' : '#'+data[i].ios.toLocaleString())+'</span>';
+			html += '</div>';
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span>'+(parseFloat(data[i].android) >= 99 ? 'n/a' : '#'+data[i].android.toLocaleString())+'</span>';
+			html += '</div>';
+			// html += '<span><p class="percent animate-width" data-width="'+_wApp+'">'+  (data[i].app == 99 ? 'n/a' : data[i].app.toLocaleString()) +'</p></span>';
+
+			if( loc == 'th'){
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wLine+'">'+ (parseFloat(data[i].line) == 0 ? 'n/a' : data[i].line.toLocaleString()) +'</p></span>';
-		    	html += '</div>';
+				html += '<span><p class="percent animate-width" data-width="'+_wLine+'">'+ (parseFloat(data[i].line) == 0 ? 'n/a' : parseFloat(data[i].line).toLocaleString()) +'</p></span>';
+				html += '</div>';
 			}else if (loc == 'vn'){
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wYoutube+'">'+ (parseFloat(data[i].youtube) == 0 ? 'n/a' : data[i].youtube.toLocaleString()) +'</p></span>';
-		    	html += '</div>';
+				html += '<span><p class="percent animate-width" data-width="'+_wYoutube+'">'+ (parseFloat(data[i].youtube) == 0 ? 'n/a' : parseFloat(data[i].youtube).toLocaleString()) +'</p></span>';
+				html += '</div>';
 			}else{
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wTwitter+'">'+ (parseFloat(data[i].twitter) == 0 ? 'n/a' : data[i].twitter.toLocaleString()) +'</p></span>';
-		    	html += '</div>';
+				html += '<span><p class="percent animate-width" data-width="'+_wTwitter+'">'+ (parseFloat(data[i].twitter) == 0 ? 'n/a' : parseFloat(data[i].twitter).toLocaleString()) +'</p></span>';
+				html += '</div>';
 			}
-	    	
 
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span><p class="percent animate-width" data-width="'+_wInstagram+'">'+ (parseFloat(data[i].instagram) == 0 ? 'n/a' : data[i].instagram.toLocaleString()) +'</p></span>';
-	    	html += '</div>';
 
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span><p class="percent animate-width" data-width="'+_wFacebook+'">'+ (parseFloat(data[i].facebook) == 0 ? 'n/a' : data[i].facebook.toLocaleString()) +'</p></span>';
-	    	html += '</div>';
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span><p class="percent animate-width" data-width="'+_wInstagram+'">'+ (parseFloat(data[i].instagram) == 0 ? 'n/a' : parseFloat(data[i].instagram).toLocaleString()) +'</p></span>';
+			html += '</div>';
 
-	    	if (( loc != 'vn') && (loc != 'ph') && (loc != 'th')){
-		    	html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wEmployees+'">'+ (parseFloat(data[i].employees) == 0 ? 'n/a' : data[i].employees.toLocaleString()) +'</p></span>';
-		    	html += '</div>';
-		    }
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span><p class="percent animate-width" data-width="'+_wFacebook+'">'+ (parseFloat(data[i].facebook) == 0 ? 'n/a' : parseFloat(data[i].facebook).toLocaleString()) +'</p></span>';
+			html += '</div>';
 
-	    	var _el = document.createElement('div');
+			if (( loc != 'vn') && (loc != 'ph') && (loc != 'th')){
+				html += '<div class="category-item col bg__grey ">';
+				html += '<span><p class="percent animate-width" data-width="'+_wEmployees+'">'+ (parseFloat(data[i].employees) == 0 ? 'n/a' : parseFloat(data[i].employees).toLocaleString()) +'</p></span>';
+				html += '</div>';
+			}
+
+			var _el = document.createElement('div');
 			_el.setAttribute('class', 'row  '+ data[i].category + ' ' + data[i].location + ' ' + data[i].type);
 			_el.setAttribute('data-order', i+1);
 			_el.setAttribute('data-key', data[i].key);
 
 
-	    	_el.innerHTML = html;
+			_el.innerHTML = html;
 			dataList.push(_el);
-	    }
+		}
 
-	    var _width = $(window).width();
-	    var itemH = 35, _h = 52; 
+		var _width = $(window).width();
+		var itemH = 35, _h = 52;
 
-	    list = new VirtualList({
-	      w: $('#data').width(),
-	      h: _h * data.length,
-	      items: dataList,
-	      itemHeight: itemH,
-	      cache: true
-	    });
-	    $('#data').html('');
-	    $('#data').append(list.container);
-	    
+		list = new VirtualList({
+			w: $('#data').width(),
+			h: _h * data.length,
+			items: dataList,
+			itemHeight: itemH,
+			cache: true
+		});
+		$('#data').html('');
+		$('#data').append(list.container);
+
 	}
 
 	$('.awardText').click(function(e){
@@ -534,7 +534,7 @@ $(document).ready(function(){
 	function getLang(){
 
 		$.getJSON('data/translation.json', function(result){
-			
+
 			switch( lang ){
 				case 'id' :  trans = result.id;
 					break;
@@ -548,7 +548,7 @@ $(document).ready(function(){
 					break;
 				default   :  trans = result.en;
 					break;
-			}  
+			}
 
 			translateLang(trans);
 
@@ -577,7 +577,7 @@ $(document).ready(function(){
 				break;
 			case 'hk' : return 'HongKong';
 				break;
-		} 
+		}
 	}
 
 	function translateLang(trans){
@@ -606,14 +606,14 @@ $(document).ready(function(){
 						$('.store_origin').append('<option value="'+key+'">'+value+'</option>')
 					});
 				}else{
-					
+
 					var countryName = getCountry(loc);
 					$('.store_origin').append('<option value="'+countryName.toLowerCase()+'">'+countryName+'</option>');
 					$('.store_origin').append('<option value="international">International</option>');
 				}
 			}
 		});
-		
+
 		$('.quartal_select').empty();
 
 		var quarter = trans.quarter.options;
@@ -622,11 +622,11 @@ $(document).ready(function(){
 			if( key == currentQ){
 				$('.quartal_select').append('<option value="'+key+'" selected>'+value+'</option>');
 			}else{
-				$('.quartal_select').append('<option value="'+key+'">'+value+'</option>');	
+				$('.quartal_select').append('<option value="'+key+'">'+value+'</option>');
 			}
 		});
-		
+
 	}
-	
-    
+
+
 });
