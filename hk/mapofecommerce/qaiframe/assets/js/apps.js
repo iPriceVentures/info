@@ -250,7 +250,7 @@ $(document).ready(function () {
         if (['id', 'ph', 'vn'].includes(loc)) {
             var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model[lang];
         } else {
-            var business_models = trans.business_model.options;
+            var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model;
         }
 
 
@@ -471,7 +471,7 @@ $(document).ready(function () {
             html += '</span></div>';
 
             html += '<div class="category-item col bg__grey ">';
-            html += '<span><p class="percent animate-width" data-width="' + _wTraffics + '">' + (data[i].traffics == 0 ? 'n/a' : data[i].traffics.toLocaleString()) + '</p></span>';
+            html += '<span><p class="percent animate-width" data-width="' + _wTraffics + '">' + (parseFloat(data[i].traffics) == 0 ? 'n/a' : parseFloat(data[i].traffics)) + '</p></span>';
             html += '</div>';
 
             html += '<div class="category-item col bg__grey ">';
