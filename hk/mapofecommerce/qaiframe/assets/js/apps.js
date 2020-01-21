@@ -471,7 +471,7 @@ $(document).ready(function () {
             html += '</span></div>';
 
             html += '<div class="category-item col bg__grey ">';
-            html += '<span><p class="percent animate-width" data-width="' + _wTraffics + '">' + (parseFloat(data[i].traffics) == 0 ? 'n/a' : parseFloat(data[i].traffics)) + '</p></span>';
+            html += '<span><p class="percent animate-width" data-width="' + _wTraffics + '">' + (parseFloat(data[i].traffics) == 0 ? 'n/a' : parseFloat(data[i].traffics).toLocaleString()) + '</p></span>';
             html += '</div>';
 
             html += '<div class="category-item col bg__grey ">';
