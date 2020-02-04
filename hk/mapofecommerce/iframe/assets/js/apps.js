@@ -9,14 +9,14 @@ $(document).ready(function(){
 	var filter 		= new Array();
 	var filterList	= new Array();
 	var x	= 0;
-	var y	= 0;	
+	var y	= 0;
 	var curr = new Array();
 	var list = '';
 	var trans = ''
 
-	
+
 	//Aplication will do this first
-	
+
 	checkEmbed();
 
 	// get Language
@@ -46,26 +46,26 @@ $(document).ready(function(){
 			$('.employeeTitle').remove();
 			if( loc == 'vn'){
 				$('.socialTitle').attr('data-attr', 'youtube');
-				$('.socialTitle').html('Youtube');	
+				$('.socialTitle').html('Youtube');
 			}
 			if( loc == 'th'){
 				$('.socialTitle').attr('data-attr', 'line');
-				$('.socialTitle').html('Line');	
+				$('.socialTitle').html('Line');
 			}
 		}
-		
-        $.each(result.data, function(i, field){
-        	
-        	data_list.push(field);
-    		
-        });
 
-        curr = sortBy( data_list, true, 'traffics');
+		$.each(result.data, function(i, field){
 
-        generateVList(curr);
-        animate();
-        
-    });
+			data_list.push(field);
+
+		});
+
+		curr = sortBy( data_list, true, 'traffics');
+
+		generateVList(curr);
+		animate();
+
+	});
 
 	function returnUrl(loc, lang){
 		var url = '';
@@ -89,11 +89,11 @@ $(document).ready(function(){
 	}
 
 	function search(nameKey){
-	    for (var i=0; i < data_list.length; i++) {
-	        if (data_list[i].key == nameKey) {
-	            return data_list[i];
-	        }
-	    }
+		for (var i=0; i < data_list.length; i++) {
+			if (data_list[i].key == nameKey) {
+				return data_list[i];
+			}
+		}
 	}
 	function checkEmbed(){
 		if( embed ){
@@ -109,16 +109,16 @@ $(document).ready(function(){
 
 		}
 	}
-	
+
 
 	var content = document.getElementById('infographic-content');
 	content.setAttribute('class', loc + '-content ' + lang + '-container');
 
 	if( $(window).width() < 768){
-		var container = document.getElementById('container');	
-		container.style.width = $(window).width() + 'px';	
+		var container = document.getElementById('container');
+		container.style.width = $(window).width() + 'px';
 		var topLeft = document.createElement('div');
-		
+
 		container.appendChild(topLeft);
 		topLeft.classList.add('top-left');
 		topLeft.style.width = $('.sort-by:first-child').width() +'px';
@@ -133,8 +133,8 @@ $(document).ready(function(){
 				$('.swipe-left').animate({
 					opacity : 0
 				}, 1000, function(){
-					$('.swipe-left').remove(); 	
-				}); 
+					$('.swipe-left').remove();
+				});
 			}
 
 			$('.sort-by').each(function(i){
@@ -142,7 +142,7 @@ $(document).ready(function(){
 					this.style.transform = translate(x, y);
 				}
 				else{
-					this.style.transform = translate(0, y);	
+					this.style.transform = translate(0, y);
 				}
 			});
 
@@ -181,7 +181,7 @@ $(document).ready(function(){
 		});
 
 	}
-	
+
 
 
 	function translate( x, y) {
@@ -198,56 +198,56 @@ $(document).ready(function(){
 		data_list = new Array();
 		$.getJSON('data/' + loc + '/' + filename, function(result){
 			config = result.config;
-	        $.each(result.data, function(i, field){
-	        	
-	        	data_list.push(field);
-	    		
-	        });
+			$.each(result.data, function(i, field){
 
-	        curr = sortBy( data_list, true, 'traffics');
+				data_list.push(field);
 
-	        generateVList(curr);
-	        animate();
-	        
-	    });
+			});
+
+			curr = sortBy( data_list, true, 'traffics');
+
+			generateVList(curr);
+			animate();
+
+		});
 	});
 
 	$('.quartal_select').change(function(e){
 
 		var q = $(e.currentTarget).val();
 		var filename = (q != '') ? (q + '.json') : currentQ + '.json';
-		
+
 		data_list = new Array();
 		$.getJSON('data/' + loc +'/' + filename, function(result){
 			config = result.config;
 			setBusinessModel('business_model', config, trans);
-	        $.each(result.data, function(i, field){
-	        	
-	        	data_list.push(field);
-	    		
-	        });
+			$.each(result.data, function(i, field){
 
-	        Filter(filter);
-	        
-	    });
+				data_list.push(field);
+
+			});
+
+			Filter(filter);
+
+		});
 	});
 
 	function reSortByActive( arrayInput ){
 		var sort = $('.active').attr('data-attr');
 
-		arrayInput = sortBy( arrayInput, true, sort);		
+		arrayInput = sortBy( arrayInput, true, sort);
 
 		return arrayInput;
 	}
 
 	function setBusinessModel(selectClass, config, trans){
 		var select = document.querySelector(`.${selectClass}`);
-		if (['id', 'ph', 'vn'].includes(loc)) {
-			var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model[lang];
-		} else {
-			var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model;
+		if( ['id','ph','vn'].indexOf(lang)){
+			var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model[lang] ;
+		}else{
+			var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model ;
 		}
-		
+
 
 		select.innerHTML = '';
 		select.innerHTML += `<option value="">${trans.business_model.title}</option>`;
@@ -261,44 +261,44 @@ $(document).ready(function(){
 		$('.monthlyTitle').addClass('up');
 		$('.monthlyTitle').addClass('active');
 
-		arrayInput = sortBy( arrayInput, true, 'traffics');		
+		arrayInput = sortBy( arrayInput, true, 'traffics');
 
 		return arrayInput;
 	}
 
 	function Filter( filter ){
-		
+
 		generateVList(data_list);
-		$('.row').css('display', 'none');		
-		
+		$('.row').css('display', 'none');
+
 		filterList = [];
 		$('.row').each(function(){
 
 			var key = $(this).attr('data-key');
 			switch( filter.length ){
 				case 1 : if( $(this).hasClass(filter[0])){
-							var _el = search(key)
-							filterList.push(_el);
-						}
+					var _el = search(key)
+					filterList.push(_el);
+				}
 					break;
-				case 2 : if( $(this).hasClass(filter[0]) && 
-							 $(this).hasClass(filter[1]) 
-							){
-							var _el = search(key)
-							filterList.push(_el);
-						}
+				case 2 : if( $(this).hasClass(filter[0]) &&
+					$(this).hasClass(filter[1])
+				){
+					var _el = search(key)
+					filterList.push(_el);
+				}
 					break;
-				case 3 : if( $(this).hasClass(filter[0]) && 
-							 $(this).hasClass(filter[1]) && 
-							 $(this).hasClass(filter[2])
-						   ){
-							var _el = search(key)
-							filterList.push(_el);
-						}
+				case 3 : if( $(this).hasClass(filter[0]) &&
+					$(this).hasClass(filter[1]) &&
+					$(this).hasClass(filter[2])
+				){
+					var _el = search(key)
+					filterList.push(_el);
+				}
 					break;
 				default : 	var _el = search(key)
-							filterList.push(_el);
-							
+					filterList.push(_el);
+
 					break;
 			}
 		});
@@ -317,15 +317,15 @@ $(document).ready(function(){
 		filter 		= new Array();
 		$('.sort_by').each(function(){
 			if( $(this).val() != ''){
-				filter.push($(this).val());	
+				filter.push($(this).val());
 			}
 		});
 
 		Filter(filter);
 	});
 
-    $('.sort-by').on('click', function(e){
-		
+	$('.sort-by').on('click', function(e){
+
 		var sort = 'up';
 		var _el = $(e.target).attr('data-attr');
 
@@ -344,18 +344,18 @@ $(document).ready(function(){
 			}
 
 			$('.active').removeClass('active');
-			
+
 			$(this).addClass('active');
 
 			$('.active').removeClass('up');
 			$('.active').removeClass('down');
-			
+
 			$(this).addClass(sort);
-			
+
 			var arrSort = sortBy(curr, up, _el);
 
 			generateVList(arrSort);
-			animate();			
+			animate();
 		}
 
 		// execute only for mobile
@@ -381,10 +381,10 @@ $(document).ready(function(){
 		}
 	});
 
-    function sortBy( arr, order, property){
-    	var arrSort = arr.slice(0);
-    	arrSort.sort(function(a,b) {
-    		if(( property != 'ios')&&(property != 'android')){
+	function sortBy( arr, order, property){
+		var arrSort = arr.slice(0);
+		arrSort.sort(function(a,b) {
+			if(( property != 'ios')&&(property != 'android')){
 				if( ! order) {//ascending
 					return a[property] - b[property];
 				} else { // descending
@@ -399,132 +399,132 @@ $(document).ready(function(){
 			}
 		});
 
-    	return arrSort;
-    }
-    
+		return arrSort;
+	}
+
 
 	function animate(){
 
 		var obj = $('.percent');
-	    obj.each(function () {
-	      var w = $(this).attr('data-width');
-	      TweenMax.to($(this), 0.5, { width: w+'%' }, 1);
-	    });
-		
+		obj.each(function () {
+			var w = $(this).attr('data-width');
+			TweenMax.to($(this), 0.5, { width: w+'%' }, 1);
+		});
+
 	}
 
-    function generateVList(data) {
+	function generateVList(data) {
 
-	    var dataList = [];
+		var dataList = [];
 
-	    if( x > 0){
-	    	var _style  = 'width:100px;';
-	    		_style += ' transform: '+ translate( x, y); 
-	    	var _w = 'style="width:0px"';
-	    } else{
-	    	var _style = '';
-	    	var _w = '';
-	    }
-	    for (var i = 0; i < data.length; i++) {
-	    	var html = '';
+		if( x > 0){
+			var _style  = 'width:100px;';
+			_style += ' transform: '+ translate( x, y);
+			var _w = 'style="width:0px"';
+		} else{
+			var _style = '';
+			var _w = '';
+		}
+		for (var i = 0; i < data.length; i++) {
+			var html = '';
 
-	    	// var iema 		= data[i].iema_winner ? 'iema' : '';
-	    	var verified 	= data[i].verified ? 'verified' : '';
+			// var iema 		= data[i].iema_winner ? 'iema' : '';
+			var verified 	= data[i].verified ? 'verified' : '';
 
-			var _wTraffics 	= parseFloat(data[i].traffics) / parseFloat(config.max_traffics) * 100; 
+			var _wTraffics 	= parseFloat(data[i].traffics) / parseFloat(config.max_traffics) * 100;
 			if( loc == 'th'){
-				var _wLine 		= parseFloat(data[i].line) / parseFloat(config.max_twitter) * 100; 	
+				var _wLine 		= parseFloat(data[i].line) / parseFloat(config.max_twitter) * 100;
 			}else if (loc == 'vn'){
-				var _wYoutube 	= parseFloat(data[i].youtube) / parseFloat(config.max_twitter) * 100; 
+				var _wYoutube 	= parseFloat(data[i].youtube) / parseFloat(config.max_twitter) * 100;
 			}else{
-				var _wTwitter 	= parseFloat(data[i].twitter) / parseFloat(config.max_twitter) * 100; 
+				var _wTwitter 	= parseFloat(data[i].twitter) / parseFloat(config.max_twitter) * 100;
 			}
 
-			var _wInstagram = parseFloat(data[i].instagram) / parseFloat(config.max_instagram) * 100; 
-			var _wFacebook 	= parseFloat(data[i].facebook) / parseFloat(config.max_facebook) * 100; 
+			var _wInstagram = parseFloat(data[i].instagram) / parseFloat(config.max_instagram) * 100;
+			var _wFacebook 	= parseFloat(data[i].facebook) / parseFloat(config.max_facebook) * 100;
 			if (( loc != 'vn') && (loc != 'ph') && (loc != 'th')){
-				var _wEmployees = parseFloat(data[i].employees) / parseFloat(config.max_employees) * 100; 
+				var _wEmployees = parseFloat(data[i].employees) / parseFloat(config.max_employees) * 100;
 			}
 
 
-	    	html += '<div class="category-item col bg__grey" style="'+ _style +'">';
-	    	html += '<span><a href="' + data[i].url + '" class="color__black" target="_blank" rel="nofollow">';
-	    	html += '<img src="assets/img/'+ data[i].logodesktop.toLowerCase() + '"/>';
+			html += '<div class="category-item col bg__grey" style="'+ _style +'">';
+			html += '<span><a href="' + data[i].url + '" class="color__black" target="_blank" rel="nofollow">';
+			html += '<img src="assets/img/'+ data[i].logodesktop.toLowerCase() + '"/>';
 
-	    	html += '<label '+ _w +'>'+data[i].name+'</label></a>';
-	    	// if(iema != ''){
-	    	// 	html += '<label class="'+ iema+'"></label>';
-	    	// }
+			html += '<label '+ _w +'>'+data[i].name+'</label></a>';
+			// if(iema != ''){
+			// 	html += '<label class="'+ iema+'"></label>';
+			// }
 
-	    	if(verified != ''){
-	    		html += '<label class="'+ verified+'"></label>';
-	    	}
-	    	html += '</span></div>';
+			if(verified != ''){
+				html += '<label class="'+ verified+'"></label>';
+			}
+			html += '</span></div>';
 
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span><p class="percent animate-width" data-width="'+_wTraffics+'">'+ (parseFloat(data[i].traffics) == 0 ? 'n/a' : parseFloat(data[i].traffics).toLocaleString()) +'</p></span>';
-	    	html += '</div>';
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span><p class="percent animate-width" data-width="'+_wTraffics+'">'+ (data[i].traffics == 0 ? 'n/a' : data[i].traffics.toLocaleString()) +'</p></span>';
+			html += '</div>';
 
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span>'+(parseFloat(data[i].ios) >= 99 ? 'n/a' : '#'+data[i].ios.toLocaleString())+'</span>';
-	    	html += '</div>';
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span>'+(parseFloat(data[i].android) >= 99 ? 'n/a' : '#'+data[i].android.toLocaleString())+'</span>';
-	    	html += '</div>';
-	    	// html += '<span><p class="percent animate-width" data-width="'+_wApp+'">'+  (data[i].app == 99 ? 'n/a' : data[i].app.toLocaleString()) +'</p></span>';
-	    	
-	    	if( loc == 'th'){
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span>'+(parseFloat(data[i].ios) >= 99 ? 'n/a' : '#'+data[i].ios.toLocaleString())+'</span>';
+			html += '</div>';
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span>'+(parseFloat(data[i].android) >= 99 ? 'n/a' : '#'+data[i].android.toLocaleString())+'</span>';
+			html += '</div>';
+			// html += '<span><p class="percent animate-width" data-width="'+_wApp+'">'+  (data[i].app == 99 ? 'n/a' : data[i].app.toLocaleString()) +'</p></span>';
+
+			if( loc == 'th'){
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wLine+'">'+ (parseFloat(data[i].line) == 0 ? 'n/a' : data[i].line.toLocaleString()) +'</p></span>';
-		    	html += '</div>';
+				html += '<span><p class="percent animate-width" data-width="'+_wLine+'">'+ (parseFloat(data[i].line) == 0 ? 'n/a' : data[i].line.toLocaleString()) +'</p></span>';
+				html += '</div>';
 			}else if (loc == 'vn'){
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wYoutube+'">'+ (parseFloat(data[i].youtube) == 0 ? 'n/a' : data[i].youtube.toLocaleString()) +'</p></span>';
-		    	html += '</div>';
+				html += '<span><p class="percent animate-width" data-width="'+_wYoutube+'">'+ (parseFloat(data[i].youtube) == 0 ? 'n/a' : data[i].youtube.toLocaleString()) +'</p></span>';
+				html += '</div>';
 			}else{
 				html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wTwitter+'">'+ (parseFloat(data[i].twitter) == 0 ? 'n/a' : data[i].twitter.toLocaleString()) +'</p></span>';
-		    	html += '</div>';
+				html += '<span><p class="percent animate-width" data-width="'+_wTwitter+'">'+ (parseFloat(data[i].twitter) == 0 ? 'n/a' : data[i].twitter.toLocaleString()) +'</p></span>';
+				html += '</div>';
 			}
-	    	
 
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span><p class="percent animate-width" data-width="'+_wInstagram+'">'+ (parseFloat(data[i].instagram) == 0 ? 'n/a' : data[i].instagram.toLocaleString()) +'</p></span>';
-	    	html += '</div>';
 
-	    	html += '<div class="category-item col bg__grey ">';
-	    	html += '<span><p class="percent animate-width" data-width="'+_wFacebook+'">'+ (parseFloat(data[i].facebook) == 0 ? 'n/a' : data[i].facebook.toLocaleString()) +'</p></span>';
-	    	html += '</div>';
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span><p class="percent animate-width" data-width="'+_wInstagram+'">'+ (parseFloat(data[i].instagram) == 0 ? 'n/a' : data[i].instagram.toLocaleString()) +'</p></span>';
+			html += '</div>';
 
-	    	if (( loc != 'vn') && (loc != 'ph') && (loc != 'th')){
-		    	html += '<div class="category-item col bg__grey ">';
-		    	html += '<span><p class="percent animate-width" data-width="'+_wEmployees+'">'+ (parseFloat(data[i].employees) == 0 ? 'n/a' : data[i].employees.toLocaleString()) +'</p></span>';
-		    	html += '</div>';
-		    }
+			html += '<div class="category-item col bg__grey ">';
+			html += '<span><p class="percent animate-width" data-width="'+_wFacebook+'">'+ (parseFloat(data[i].facebook) == 0 ? 'n/a' : data[i].facebook.toLocaleString()) +'</p></span>';
+			html += '</div>';
 
-	    	var _el = document.createElement('div');
+			if (( loc != 'vn') && (loc != 'ph') && (loc != 'th')){
+				html += '<div class="category-item col bg__grey ">';
+				html += '<span><p class="percent animate-width" data-width="'+_wEmployees+'">'+ (parseFloat(data[i].employees) == 0 ? 'n/a' : data[i].employees.toLocaleString()) +'</p></span>';
+				html += '</div>';
+			}
+
+			var _el = document.createElement('div');
 			_el.setAttribute('class', 'row  '+ data[i].category + ' ' + data[i].location + ' ' + data[i].type);
 			_el.setAttribute('data-order', i+1);
 			_el.setAttribute('data-key', data[i].key);
 
 
-	    	_el.innerHTML = html;
+			_el.innerHTML = html;
 			dataList.push(_el);
-	    }
+		}
 
-	    var _width = $(window).width();
-	    var itemH = 35, _h = 52; 
+		var _width = $(window).width();
+		var itemH = 35, _h = 52;
 
-	    list = new VirtualList({
-	      w: $('#data').width(),
-	      h: _h * data.length,
-	      items: dataList,
-	      itemHeight: itemH,
-	      cache: true
-	    });
-	    $('#data').html('');
-	    $('#data').append(list.container);
-	    
+		list = new VirtualList({
+			w: $('#data').width(),
+			h: _h * data.length,
+			items: dataList,
+			itemHeight: itemH,
+			cache: true
+		});
+		$('#data').html('');
+		$('#data').append(list.container);
+
 	}
 
 	$('.awardText').click(function(e){
@@ -534,7 +534,7 @@ $(document).ready(function(){
 	function getLang(){
 
 		$.getJSON('data/translation.json', function(result){
-			
+
 			switch( lang ){
 				case 'id' :  trans = result.id;
 					break;
@@ -548,13 +548,13 @@ $(document).ready(function(){
 					break;
 				default   :  trans = result.en;
 					break;
-			}  
+			}
 
 			translateLang(trans);
 
 
 		});
-		
+
 	}
 
 	//getLang
@@ -577,7 +577,7 @@ $(document).ready(function(){
 				break;
 			case 'hk' : return 'HongKong';
 				break;
-		} 
+		}
 	}
 
 	function translateLang(trans){
@@ -606,14 +606,14 @@ $(document).ready(function(){
 						$('.store_origin').append('<option value="'+key+'">'+value+'</option>')
 					});
 				}else{
-					
+
 					var countryName = getCountry(loc);
 					$('.store_origin').append('<option value="'+countryName.toLowerCase()+'">'+countryName+'</option>');
 					$('.store_origin').append('<option value="international">International</option>');
 				}
 			}
 		});
-		
+
 		$('.quartal_select').empty();
 
 		var quarter = trans.quarter.options;
@@ -622,11 +622,11 @@ $(document).ready(function(){
 			if( key == currentQ){
 				$('.quartal_select').append('<option value="'+key+'" selected>'+value+'</option>');
 			}else{
-				$('.quartal_select').append('<option value="'+key+'">'+value+'</option>');	
+				$('.quartal_select').append('<option value="'+key+'">'+value+'</option>');
 			}
 		});
-		
+
 	}
-	
-    
+
+
 });
