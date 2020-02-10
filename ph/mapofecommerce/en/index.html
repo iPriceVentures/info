@@ -118,6 +118,12 @@
 			}
 		}
 		.pointer {cursor: pointer}
+		.scroller {
+			min-height: 500px;
+			max-height: 400px;
+			overflow-x: hidden;
+			overflow-y: scroll;
+		}
 	</style>
 </head>
 
@@ -169,7 +175,7 @@
 			<div id="popup1" class="overlay1 layer">
 				<div class="popup">
 					<button on="tap:popup1.hide" class="btn-close btn btn-rounded">X</button>
-					<div class="d__block m__auto">
+					<div class="d__block m__auto scroller">
 						<amp-iframe class="d__block m__auto overflow-scroll" src="https://form.jotform.me/91108946411455" layout="fixed-height" resizable height="575" width="auto" sandbox="allow-scripts allow-forms allow-same-origin">
 							<div overflow></div>
 							<div placeholder></div>
@@ -180,7 +186,7 @@
 			<div id="popup2" class="overlay2 layer" hidden>
 				<div class="popup">
 					<button on="tap:popup2.hide" class="btn-close btn btn-rounded">X</button>
-					<div class="d__block m__auto">
+					<div class="d__block m__auto scroller">
 						<amp-iframe class="overflow-scroll d__block m__auto" src="https://form.jotform.me/91108946411455" layout="fixed-height" resizable height="575" width="auto" sandbox="allow-scripts allow-forms allow-same-origin">
 							<div overflow></div>
 							<div placeholder></div>
