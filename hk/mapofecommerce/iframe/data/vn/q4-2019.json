@@ -291,22 +291,6 @@
       "location": "vietnam"
     },
     {
-      "key": "19",
-      "name": "Leflair",
-      "url": "https://www.leflair.vn/",
-      "logodesktop": "logo/vn/desktop/leflair.png",
-      "traffics": "1575300",
-      "ios": "99",
-      "android": "99",
-      "youtube": "2520",
-      "instagram": "33530",
-      "facebook": "410880",
-      "type": "inventory",
-      "category": "general",
-      "location": "vietnam",
-      "multiple_country": "yes"
-    },
-    {
       "key": "20",
       "name": "Di Động Thông Minh",
       "url": "http://didongthongminh.vn/",
