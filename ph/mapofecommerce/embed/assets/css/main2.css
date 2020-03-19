@@ -255,6 +255,7 @@ ul li a{
 
 .infographic-data-wrapper .row .col, .header .col{
 	display: table-cell;
+	overflow: hidden;
 }
 
 .quarter-label.y-active,
