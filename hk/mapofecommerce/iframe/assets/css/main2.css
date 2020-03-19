@@ -255,6 +255,7 @@ ul li a{
 
 .infographic-data-wrapper .row .col, .header .col{
 	display: table-cell;
+	overflow: hidden;
 }
 
 .quarter-label.y-active,
@@ -513,6 +514,7 @@ div#data {
 		float:left;
 		margin-right: 5px;
 		margin-bottom: 5px;
+		overflow: hidden;
 	}
 
 	.infographic-data-wrapper .header .col:nth-child(3), #data .col:nth-child(3),
