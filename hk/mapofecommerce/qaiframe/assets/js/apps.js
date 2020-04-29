@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
     var data_list = new Array();
-    var filename = 'q4-2019.json';
-    var currentQ = 'q4-2019';
+    var filename = 'q1-2020.json';
+    var currentQ = 'q1-2020';
     var data = document.getElementById('data');
     var up = true;
     var config = '';
