@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	var data_list 	= new Array();
-	var filename	= 'q4-2019.json';
-	var currentQ    = 'q4-2019';
+	var filename	= 'q1-2020.json';
+	var currentQ    = 'q1-2020';
 	var data 		= document.getElementById('data');
 	var up 			= true;
 	var config 		= '';
@@ -433,9 +433,9 @@ $(document).ready(function(){
 
 			var _wTraffics 	= parseFloat(data[i].traffics) / parseFloat(config.max_traffics) * 100;
 			if( loc == 'th'){
-				var _wLine 		= parseFloat(data[i].line) / parseFloat(config.max_twitter) * 100;
+				var _wLine 		= parseFloat(data[i].line) / parseFloat(config.max_line) * 100;
 			}else if (loc == 'vn'){
-				var _wYoutube 	= parseFloat(data[i].youtube) / parseFloat(config.max_twitter) * 100;
+				var _wYoutube 	= parseFloat(data[i].youtube) / parseFloat(config.max_youtube) * 100;
 			}else{
 				var _wTwitter 	= parseFloat(data[i].twitter) / parseFloat(config.max_twitter) * 100;
 			}
