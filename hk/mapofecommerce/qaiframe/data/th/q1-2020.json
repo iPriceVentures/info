@@ -2,7 +2,7 @@
     "config": {
         "max_traffics": "87926500",
         "max_app": "1",
-        "line": "106314200",
+        "max_line": "106314200",
         "max_instagram": "3016900",
         "max_facebook": "89251600",
         "max_employees": "900",
