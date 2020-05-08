@@ -1,10 +1,10 @@
 ﻿{
     "config": {
-        "max_traffics": "205236333",
+        "max_traffics": "43156700",
         "max_app": "1",
-        "max_youtube": "6192200",
-        "max_instagram": "862800",
-        "max_facebook": "78579500",
+        "max_youtube": "2600000",
+        "max_instagram": "160990",
+        "max_facebook": "29470700",
         "business_model": {
             "vn": {
                 "inventory": "Cửa Hàng Trực Tuyến",
