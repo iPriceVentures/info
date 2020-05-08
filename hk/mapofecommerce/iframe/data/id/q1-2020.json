@@ -1,11 +1,11 @@
 ﻿{
   "config": {
-    "max_traffics": "65953400",
+    "max_traffics": "71533300",
     "max_app": "111484100",
-    "max_twitter": "492420",
-    "max_instagram": "2970980",
-    "max_facebook": "28689230",
-    "max_employees": "3431",
+    "max_twitter": "501200",
+    "max_instagram": "4215000",
+    "max_facebook": "29470700",
+    "max_employees": "4000+",
     "business_model": {
       "id": {
         "inventory": "Inventori",

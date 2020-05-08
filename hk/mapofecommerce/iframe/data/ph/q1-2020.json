@@ -1,10 +1,10 @@
 ﻿{
     "config": {
-        "max_traffics": "10064400",
+        "max_traffics": "2676000",
         "max_app": "1",
-        "max_twitter": "172960",
-        "max_instagram": "3508100",
-        "max_facebook": "76956400",
+        "max_twitter": "75520",
+        "max_instagram": "672000",
+        "max_facebook": "29470700",
         "business_model": {
             "ph": {
                 "inventory": "Imbentaryo",
