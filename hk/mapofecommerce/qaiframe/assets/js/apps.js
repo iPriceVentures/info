@@ -1,5 +1,74 @@
 $(document).ready(function(){
 
+	function papaparseCsv() {
+		Papa.parse("https://ipg-moe.s3-ap-southeast-1.amazonaws.com", {
+			dataType: 'jsonp',
+			headers: {'Access-Control-Allow-Origin': '*'},
+			download: true,
+			type: "GET",
+			contentType: 'html',
+			complete: function(data) {
+				var fileUrl = getLatestFile(data);
+				getDataFromCsv(fileUrl);
+			}
+		});
+		//get the file name from current country
+		//get the latest file
+		//use papaparse to get the data from the latest file
+		// map the json file from s3 to current json format
+	}
+	papaparseCsv();
+
+	function getLatestFile(data) {
+		return "https://ipg-moe.s3-ap-southeast-1.amazonaws.com/id/q1-2020-merchant.csv";
+	}
+
+	function getDataFromCsv(fileUrl) {
+		Papa.parse(fileUrl, {
+			dataType: 'jsonp',
+			headers: {'Access-Control-Allow-Origin': '*'},
+			download: true,
+			type: "GET",
+			contentType: 'html',
+			complete: function(data) {
+				var jsonData = mappingCsvToJson(data);
+				console.log(jsonData);
+			}
+		});
+	}
+
+	function mappingCsvToJson() {
+		Papa.parse("https://ipg-moe.s3-ap-southeast-1.amazonaws.com/id/q1-2020-merchant.csv", {
+			dataType: 'jsonp',
+			headers: {'Access-Control-Allow-Origin': '*'},
+			download: true,
+			type: "GET",
+			contentType: 'html',
+			complete: function(data) {
+				var mainData = data.data;
+				var dataKeys = [];
+				var count = 0;
+				mainData.forEach((row, key)=>{
+					if (row[key] != undefined && row[key] != "") {
+						row.forEach((subRow) => {
+							dataKeys[count] = subRow;
+							count++
+						})
+					}
+				});
+				var dataHeader = dataKeys.filter((data,idx) => idx < 15);
+				var dataMerchant = dataKeys.filter((data,idx) => idx > 15);
+				var finalData = [];
+				for (var i=0; i < dataHeader.length; i++) {
+					for(var j=0; j < dataMerchant.length; j++){
+						finalData[dataHeader[j]] = dataMerchant[j];
+					}
+				}
+				console.log(finalData);
+			}
+		});
+	}
+
 	var data_list 	= new Array();
 	var filename	= 'q1-2020.json';
 	var currentQ    = 'q1-2020';
