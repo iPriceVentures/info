@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     function getDataFromS3Folder() {
         Papa.parse(s3, {
-        // Papa.parse("data/dummy/merchant-data.xml", {
+            // Papa.parse("data/dummy/merchant-data.xml", {
             dataType: 'jsonp',
             headers: {'Access-Control-Allow-Origin': '*'},
             download: true,
@@ -45,8 +45,9 @@ $(document).ready(function () {
             contentType: 'html',
             complete: function (data) {
                 quarters = getListQuarters(data);
-                currentQ = quarters[quarters.length-1];
+                currentQ = quarters[quarters.length - 1];
                 getDataFromCsv(currentQ[0]);
+                translateLang(trans);
             }
         });
         //get the file name from current country
@@ -59,17 +60,24 @@ $(document).ready(function () {
 
     function getListQuarters(data) {
         let result = [];
-        data.data.forEach(item => {
-            const row = item[0];
-            if (row.includes("<Key>") && row.includes(loc) && row.includes(".csv")) {
-                let csvUrl = row.replace("<Key>", "").replace("</Key>", "").trim();
+        console.log(data.data[1].length);
+        for (let i = 0; i < data.data[1].length; i++) {
+            const item = data.data[1][i];
+            let split = item.split("<Key>");
+            if (!split[1]) {
+                continue;
+            }
+            const row = split[1].split("</Key>")[0];
+            if (row.includes(loc + "/") && row.includes(".csv")) {
+                let csvUrl = row.trim();
                 let arr = csvUrl.split('/')[1].split("-"); //[2019,q1]
                 let fileName = `${arr[1].toUpperCase()} ${arr[0]}`;
-                csvUrl = `${s3}/${csvUrl}`;
+                csvUrl = [`${s3}/${csvUrl}`, fileName];
                 // csvUrl = ["data/dummy/" + csvUrl,fileName];
                 result.push(csvUrl);
             }
-        });
+        }
+        console.log(result)
         return result;
     }
 
@@ -662,7 +670,6 @@ $(document).ready(function () {
                     break;
             }
 
-            translateLang(trans);
 
 
         });
