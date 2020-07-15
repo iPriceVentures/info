@@ -1,16 +1,30 @@
 $(document).ready(function () {
+    var data_list = new Array();
+    var currentQ;
+    var data = document.getElementById('data');
+    var up = true;
+    var config = '';
+    var filter = new Array();
+    var filterList = new Array();
+    var x = 0;
+    var y = 0;
+    var curr = new Array();
+    var list = '';
+    var trans = '';
+    let quarters = [];
 
-    function papaparseCsv() {
+    function getDataFromS3Folder() {
         // Papa.parse("https://ipg-moe.s3-ap-southeast-1.amazonaws.com", {
-        Papa.parse("data/merchant-data.xml", {
+        Papa.parse("data/dummy/merchant-data.xml", {
             dataType: 'jsonp',
             headers: {'Access-Control-Allow-Origin': '*'},
             download: true,
             type: "GET",
             contentType: 'html',
             complete: function (data) {
-                var fileUrl = getLatestFile(data);
-                getDataFromCsv(fileUrl);
+                currentQ = getLatestFile(data);
+                quarters = getListQuarters(data);
+                getDataFromCsv(currentQ[0]);
             }
         });
         //get the file name from current country
@@ -19,10 +33,18 @@ $(document).ready(function () {
         // map the json file from s3 to current json format
     }
 
-    papaparseCsv();
+    getDataFromS3Folder();
+
+    function getListQuarters(data) {
+        return [
+            ["data/dummy/id/2019-q3-merchant.csv","q3 2019"],
+            ["data/dummy/id/2019-q4-merchant.csv","q4 2019"],
+            ["data/dummy/id/2020-q1-merchant.csv","q1 2020"],
+        ]
+    }
 
     function getLatestFile(data) {
-        return "data/q1-2020-merchant.csv";
+        return ["data/dummy/id/2020-q1-merchant.csv","q1 2020"];
         // return "https://ipg-moe.s3-ap-southeast-1.amazonaws.com/id/q1-2020-merchant.csv";
     }
 
@@ -36,7 +58,6 @@ $(document).ready(function () {
             complete: function (data) {
                 mappingCsvToJson(fileUrl).then(jsonData => {
                     showTable(jsonData);
-                    console.log(jsonData);
                 });
 
             }
@@ -98,7 +119,7 @@ $(document).ready(function () {
                         let item = mainData[i];
                         let objItem = {};
                         for (let j = 0; j < header.length; j++) {
-                            objItem[header[j].trim()] = isNaN(item[j]) ? item[j]: parseInt(item[j]) ;
+                            objItem[header[j].trim()] = isNaN(item[j]) ? item[j] : parseInt(item[j]);
                         }
                         max_traffics = objItem.traffics > max_traffics ? objItem.traffics : max_traffics;
                         max_app = objItem.android > max_app ? objItem.android : max_app;
@@ -121,27 +142,12 @@ $(document).ready(function () {
                             }
                         }
                     };
-                    console.log(result);
                     resolve(result);
                 }
             });
         });
 
     }
-
-    var data_list = new Array();
-    var filename = 'q1-2020.json';
-    var currentQ = 'q1-2020';
-    var data = document.getElementById('data');
-    var up = true;
-    var config = '';
-    var filter = new Array();
-    var filterList = new Array();
-    var x = 0;
-    var y = 0;
-    var curr = new Array();
-    var list = '';
-    var trans = ''
 
 
     //Aplication will do this first
@@ -296,7 +302,6 @@ $(document).ready(function () {
 
     $('.q-button').click(function (e) {
         $('.q-button').removeClass('q-active');
-
         var q = $(e.currentTarget).attr('data-attr');
         var filename = q + '-' + year + '.json';
 
@@ -320,21 +325,9 @@ $(document).ready(function () {
 
     $('.quartal_select').change(function (e) {
         var q = $(e.currentTarget).val();
-        var filename = (q != '') ? (q + '.json') : currentQ + '.json';
-
+        var filename = q ? q : currentQ[0];
         data_list = new Array();
-        $.getJSON('data/' + loc + '/' + filename, function (result) {
-            config = result.config;
-            setBusinessModel('business_model', config, trans);
-            $.each(result.data, function (i, field) {
-
-                data_list.push(field);
-
-            });
-
-            Filter(filter);
-
-        });
+        getDataFromCsv(filename);
     });
 
     function reSortByActive(arrayInput) {
@@ -739,16 +732,14 @@ $(document).ready(function () {
 
         $('.quartal_select').empty();
 
-        var quarter = trans.quarter.options;
-
-        $.each(quarter, function (key, value) {
-            if (key == currentQ) {
-                $('.quartal_select').append('<option value="' + key + '" selected>' + value + '</option>');
+        quarters.forEach(quarter=>{
+            if (quarter[1] == currentQ[1]) {
+                $('.quartal_select').append('<option value="' + quarter[0] + '" selected>' + quarter[1] + '</option>');
             } else {
-                $('.quartal_select').append('<option value="' + key + '">' + value + '</option>');
+                $('.quartal_select').append('<option value="' + quarter[0] + '">' + quarter[1] + '</option>');
             }
-        });
 
+        });
     }
 
 
