@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    const s3 = "https://ipg-moe.s3-ap-southeast-1.amazonaws.com";
     var data_list = new Array();
     var currentQ;
     var data = document.getElementById('data');
@@ -12,18 +13,39 @@ $(document).ready(function () {
     var list = '';
     var trans = '';
     let quarters = [];
+    var loc, lang, embed;
+    //Aplication will do this first
+
+    checkEmbed();
+
+    // get Language
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == 'lang') {
+            lang = (pair[1] != 'undefined') ? pair[1] : 'en';
+        }
+        if (pair[0] == 'embed') {
+            embed = (pair[1] != 'undefined') ? pair[1] : false;
+        }
+        if (pair[0] == 'loc') {
+            loc = (pair[1] != 'undefined') ? pair[1] : '';
+        }
+    }
 
     function getDataFromS3Folder() {
-        // Papa.parse("https://ipg-moe.s3-ap-southeast-1.amazonaws.com", {
-        Papa.parse("data/dummy/merchant-data.xml", {
+        Papa.parse(s3, {
+        // Papa.parse("data/dummy/merchant-data.xml", {
             dataType: 'jsonp',
             headers: {'Access-Control-Allow-Origin': '*'},
             download: true,
             type: "GET",
             contentType: 'html',
             complete: function (data) {
-                currentQ = getLatestFile(data);
                 quarters = getListQuarters(data);
+                currentQ = quarters[quarters.length-1];
                 getDataFromCsv(currentQ[0]);
             }
         });
@@ -36,16 +58,19 @@ $(document).ready(function () {
     getDataFromS3Folder();
 
     function getListQuarters(data) {
-        return [
-            ["data/dummy/id/2019-q3-merchant.csv","q3 2019"],
-            ["data/dummy/id/2019-q4-merchant.csv","q4 2019"],
-            ["data/dummy/id/2020-q1-merchant.csv","q1 2020"],
-        ]
-    }
-
-    function getLatestFile(data) {
-        return ["data/dummy/id/2020-q1-merchant.csv","q1 2020"];
-        // return "https://ipg-moe.s3-ap-southeast-1.amazonaws.com/id/q1-2020-merchant.csv";
+        let result = [];
+        data.data.forEach(item => {
+            const row = item[0];
+            if (row.includes("<Key>") && row.includes(loc) && row.includes(".csv")) {
+                let csvUrl = row.replace("<Key>", "").replace("</Key>", "").trim();
+                let arr = csvUrl.split('/')[1].split("-"); //[2019,q1]
+                let fileName = `${arr[1].toUpperCase()} ${arr[0]}`;
+                csvUrl = `${s3}/${csvUrl}`;
+                // csvUrl = ["data/dummy/" + csvUrl,fileName];
+                result.push(csvUrl);
+            }
+        });
+        return result;
     }
 
     function getDataFromCsv(fileUrl) {
@@ -149,27 +174,6 @@ $(document).ready(function () {
 
     }
 
-
-    //Aplication will do this first
-
-    checkEmbed();
-
-    // get Language
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-
-    for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split("=");
-        if (pair[0] == 'lang') {
-            var lang = (pair[1] != 'undefined') ? pair[1] : 'en';
-        }
-        if (pair[0] == 'embed') {
-            var embed = (pair[1] != 'undefined') ? pair[1] : false;
-        }
-        if (pair[0] == 'loc') {
-            var loc = (pair[1] != 'undefined') ? pair[1] : '';
-        }
-    }
 
     $('.iema-awards').attr('href', returnUrl(loc, lang));
 
@@ -732,7 +736,7 @@ $(document).ready(function () {
 
         $('.quartal_select').empty();
 
-        quarters.forEach(quarter=>{
+        quarters.forEach(quarter => {
             if (quarter[1] == currentQ[1]) {
                 $('.quartal_select').append('<option value="' + quarter[0] + '" selected>' + quarter[1] + '</option>');
             } else {
