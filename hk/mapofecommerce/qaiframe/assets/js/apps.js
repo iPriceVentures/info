@@ -98,7 +98,7 @@ $(document).ready(function () {
                         let item = mainData[i];
                         let objItem = {};
                         for (let j = 0; j < header.length; j++) {
-                            objItem[header[j].trim()] = item[j];
+                            objItem[header[j].trim()] = isNaN(item[j]) ? item[j]: parseInt(item[j]) ;
                         }
                         max_traffics = objItem.traffics > max_traffics ? objItem.traffics : max_traffics;
                         max_app = objItem.android > max_app ? objItem.android : max_app;
