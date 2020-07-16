@@ -47,7 +47,6 @@ $(document).ready(function () {
                 quarters = getListQuarters(data);
                 currentQ = quarters[quarters.length - 1];
                 getDataFromCsv(currentQ[0]);
-                translateLang(trans);
             }
         });
         //get the file name from current country
@@ -60,7 +59,6 @@ $(document).ready(function () {
 
     function getListQuarters(data) {
         let result = [];
-        console.log(data.data[1].length);
         for (let i = 0; i < data.data[1].length; i++) {
             const item = data.data[1][i];
             let split = item.split("<Key>");
@@ -77,7 +75,6 @@ $(document).ready(function () {
                 result.push(csvUrl);
             }
         }
-        console.log(result)
         return result;
     }
 
@@ -100,6 +97,7 @@ $(document).ready(function () {
     function showTable(result) {
 
         config = result.config;
+        translateLang(trans);
 
         if ((loc == 'vn') || (loc == 'ph') || (loc == 'th')) {
             $('.employeeTitle').remove();
@@ -148,11 +146,18 @@ $(document).ready(function () {
                     // 	"max_employees" : "656"
                     let max_traffics, max_app, max_twitter, max_instagram, max_facebook, max_employees;
                     max_traffics = max_app = max_twitter = max_instagram = max_facebook = max_employees = 0;
+                    let types = [];
                     for (var i = 1; i < mainData.length - 1; i++) {
                         let item = mainData[i];
                         let objItem = {};
                         for (let j = 0; j < header.length; j++) {
                             objItem[header[j].trim()] = isNaN(item[j]) ? item[j] : parseInt(item[j]);
+                        }
+                        if(objItem.traffic){
+                            objItem.traffics= objItem.traffic;
+                        }
+                        if (!types.includes(objItem.type)) {
+                            types.push(objItem.type);
                         }
                         max_traffics = objItem.traffics > max_traffics ? objItem.traffics : max_traffics;
                         max_app = objItem.android > max_app ? objItem.android : max_app;
@@ -160,20 +165,14 @@ $(document).ready(function () {
                         max_instagram = objItem.instagram > max_instagram ? objItem.instagram : max_instagram;
                         max_facebook = objItem.facebook > max_facebook ? objItem.facebook : max_facebook;
                         max_employees = objItem.employees > max_employees ? objItem.employees : max_employees;
-                        result.data.push(objItem);
+                        if(typeof objItem.name === "string"){
+                            result.data.push(objItem);
+                        }
                     }
+                    const businessModel = buildBusinessModel(types);
                     result.config = {
                         max_traffics, max_app, max_twitter, max_instagram, max_facebook, max_employees,
-                        business_model: {
-                            "my": {
-                                "inventory": "Cửa Hàng Trực Tuyến",
-                                "marketplace": "Sàn Thương Mại Điện Tử"
-                            },
-                            "en": {
-                                "inventory": "Inventory",
-                                "marketplace": "Marketplace"
-                            }
-                        }
+                        business_model: businessModel
                     };
                     resolve(result);
                 }
@@ -182,6 +181,14 @@ $(document).ready(function () {
 
     }
 
+    function buildBusinessModel(types) {
+
+        let result = {};
+        types.forEach(type => {
+            result[type] = trans.type_of_business[type];
+        });
+        return result;
+    }
 
     $('.iema-awards').attr('href', returnUrl(loc, lang));
 
@@ -671,7 +678,6 @@ $(document).ready(function () {
             }
 
 
-
         });
 
     }
@@ -717,7 +723,6 @@ $(document).ready(function () {
         $('.employeeTitle').html(trans.employeeTitle);
         $('.filterResultsBy').html(trans.filterResultsBy);
         $('.filter').find('select').each(function () {
-            return;
             $(this).empty();
             if ($(this).hasClass('business_model')) {
                 setBusinessModel('business_model', config, trans);

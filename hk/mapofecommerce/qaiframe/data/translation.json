@@ -10,6 +10,10 @@
 		"iosTitle" : "AppStore Rank",
 		"androidTitle" : "PlayStore Rank",
 		"employeeTitle" : "Number of Employees",
+		"type_of_business": {
+			"inventory" : "Inventory",
+			"marketplace" : "Marketplace"
+		},
 		"business_model" : {
 			"title": "Business Model",
 			"options": 
@@ -66,6 +70,10 @@
 		"iosTitle" : "Ranking AppStore",
 		"androidTitle" : "Ranking PlayStore",
 		"employeeTitle" : "Jumlah Karyawan",
+		"type_of_business": {
+			"inventory1" : "Inventory",
+			"marketplace" : "Marketplace"
+		},
 		"business_model" : {
 			"title": "Model Bisnis",
 			"options": 
@@ -124,6 +132,10 @@
 		"androidTitle" : "Kedudukan Play Store",
 		"employeeTitle" : "Bilangan Pekerja",
 		"socialTitle" : "Twitter",
+		"type_of_business": {
+			"inventory" : "Inventory",
+			"marketplace" : "Marketplace"
+		},
 		"business_model" : {
 			"title": "Model Perniagaan",
 			"options": 
@@ -179,6 +191,10 @@
 		"appRank" : "จัดอันดับแอพฯ",
 		"employeeTitle" : "จำนวนพนักงาน",
 		"socialTitle" : "Line",
+		"type_of_business": {
+			"inventory" : "Inventory",
+			"marketplace" : "Marketplace"
+		},
 		"business_model" : {
 			"title": "รูปแบบธุรกิจ",
 			"options": 
@@ -234,6 +250,10 @@
 		"androidTitle" : "xếp hạng Android",
 		"employeeTitle" : "Number of Employees",
 		"socialTitle" : "Youtube",
+		"type_of_business": {
+			"inventory" : "Inventory",
+			"marketplace" : "Marketplace"
+		},
 		"business_model" : {
 			"title": "Loại hình",
 			"options": 
@@ -293,6 +313,10 @@
 		"storeTitle" : "Uri ng Negosyo",
 		"originTitle" : "Store Origin",
 		"quarterSelect" : "Select Quarter",
+		"type_of_business": {
+			"inventory" : "Inventory",
+			"marketplace" : "Marketplace"
+		},
 		"business_model" : {
 			"title": "Modelo ng Negosyo",
 			"options": 
