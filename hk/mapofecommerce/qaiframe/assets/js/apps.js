@@ -156,9 +156,7 @@ $(document).ready(function () {
                         if(objItem.traffic){
                             objItem.traffics= objItem.traffic;
                         }
-                        if (!types.includes(objItem.type)) {
-                            types.push(objItem.type);
-                        }
+
                         max_traffics = objItem.traffics > max_traffics ? objItem.traffics : max_traffics;
                         max_app = objItem.android > max_app ? objItem.android : max_app;
                         max_twitter = objItem.twitter > max_twitter ? objItem.twitter : max_twitter;
@@ -166,6 +164,9 @@ $(document).ready(function () {
                         max_facebook = objItem.facebook > max_facebook ? objItem.facebook : max_facebook;
                         max_employees = objItem.employees > max_employees ? objItem.employees : max_employees;
                         if(typeof objItem.name === "string"){
+                            if (!types.includes(objItem.type)) {
+                                types.push(objItem.type);
+                            }
                             result.data.push(objItem);
                         }
                     }
@@ -182,7 +183,6 @@ $(document).ready(function () {
     }
 
     function buildBusinessModel(types) {
-
         let result = {};
         types.forEach(type => {
             result[type] = trans.type_of_business[type];
