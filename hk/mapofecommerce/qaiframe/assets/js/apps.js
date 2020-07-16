@@ -69,7 +69,7 @@ $(document).ready(function () {
             if (row.includes(loc + "/") && row.includes(".csv")) {
                 let csvUrl = row.trim();
                 let arr = csvUrl.split('/')[1].split("-"); //[2019,q1]
-                let fileName = `${arr[1].toUpperCase()} ${arr[0]}`;
+                let fileName = `${arr[1].replace(".csv","").toUpperCase()} ${arr[0]}`;
                 csvUrl = [`${s3}/${csvUrl}`, fileName];
                 // csvUrl = ["data/dummy/" + csvUrl,fileName];
                 result.push(csvUrl);
@@ -95,9 +95,11 @@ $(document).ready(function () {
     }
 
     function showTable(result) {
-
+        let flag = config === "";
         config = result.config;
-        translateLang(trans);
+        if(flag){
+            translateLang(trans);
+        }
 
         if ((loc == 'vn') || (loc == 'ph') || (loc == 'th')) {
             $('.employeeTitle').remove();
