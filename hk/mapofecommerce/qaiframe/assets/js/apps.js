@@ -153,13 +153,16 @@ $(document).ready(function () {
                         let item = mainData[i];
                         let objItem = {};
                         for (let j = 0; j < header.length; j++) {
-                            objItem[header[j].trim()] = isNaN(item[j]) ? item[j] : parseInt(item[j]);
+                            objItem[header[j].trim().toLowerCase()] = isNaN(item[j]) ? item[j] : parseInt(item[j]);
                         }
                         if (typeof objItem.name !== "string") {
                             continue;
                         }
                         if (objItem.traffic) {
                             objItem.traffics = objItem.traffic;
+                        }
+                        if (objItem.logoth) {
+                            objItem.logodesktop = objItem.logoth;
                         }
 
                         max_traffics = objItem.traffics > max_traffics ? objItem.traffics : max_traffics;
