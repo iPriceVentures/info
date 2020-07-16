@@ -69,7 +69,7 @@ $(document).ready(function () {
             if (row.includes(loc + "/") && row.includes(".csv")) {
                 let csvUrl = row.trim();
                 let arr = csvUrl.split('/')[1].split("-"); //[2019,q1]
-                let fileName = `${arr[1].replace(".csv","").toUpperCase()} ${arr[0]}`;
+                let fileName = `${arr[1].replace(".csv", "").toUpperCase()} ${arr[0]}`;
                 csvUrl = [`${s3}/${csvUrl}`, fileName];
                 // csvUrl = ["data/dummy/" + csvUrl,fileName];
                 result.push(csvUrl);
@@ -97,7 +97,7 @@ $(document).ready(function () {
     function showTable(result) {
         let flag = config === "";
         config = result.config;
-        if(flag){
+        if (flag) {
             translateLang(trans);
         }
 
@@ -155,8 +155,11 @@ $(document).ready(function () {
                         for (let j = 0; j < header.length; j++) {
                             objItem[header[j].trim()] = isNaN(item[j]) ? item[j] : parseInt(item[j]);
                         }
-                        if(objItem.traffic){
-                            objItem.traffics= objItem.traffic;
+                        if (typeof objItem.name !== "string") {
+                            continue;
+                        }
+                        if (objItem.traffic) {
+                            objItem.traffics = objItem.traffic;
                         }
 
                         max_traffics = objItem.traffics > max_traffics ? objItem.traffics : max_traffics;
@@ -165,12 +168,11 @@ $(document).ready(function () {
                         max_instagram = objItem.instagram > max_instagram ? objItem.instagram : max_instagram;
                         max_facebook = objItem.facebook > max_facebook ? objItem.facebook : max_facebook;
                         max_employees = objItem.employees > max_employees ? objItem.employees : max_employees;
-                        if(typeof objItem.name === "string"){
-                            if (!types.includes(objItem.type)) {
-                                types.push(objItem.type);
-                            }
-                            result.data.push(objItem);
+
+                        if (!types.includes(objItem.type)) {
+                            types.push(objItem.type);
                         }
+                        result.data.push(objItem);
                     }
                     const businessModel = buildBusinessModel(types);
                     result.config = {
@@ -186,8 +188,9 @@ $(document).ready(function () {
 
     function buildBusinessModel(types) {
         let result = {};
+        result[lang]={};
         types.forEach(type => {
-            result[type] = trans.type_of_business[type];
+            result[lang][type] = trans.type_of_business[type];
         });
         return result;
     }
@@ -361,11 +364,7 @@ $(document).ready(function () {
 
     function setBusinessModel(selectClass, config, trans) {
         var select = document.querySelector(`.${selectClass}`);
-        if (['id', 'ph', 'vn'].indexOf(lang)) {
-            var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model[lang];
-        } else {
-            var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model;
-        }
+        var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model[lang];
 
 
         select.innerHTML = '';
