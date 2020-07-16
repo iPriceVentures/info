@@ -12,6 +12,8 @@
 		"employeeTitle" : "Number of Employees",
 		"type_of_business": {
 			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
 			"marketplace" : "Marketplace"
 		},
 		"business_model" : {
@@ -71,7 +73,9 @@
 		"androidTitle" : "Ranking PlayStore",
 		"employeeTitle" : "Jumlah Karyawan",
 		"type_of_business": {
-			"inventory1" : "Inventory",
+			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
 			"marketplace" : "Marketplace"
 		},
 		"business_model" : {
@@ -134,6 +138,8 @@
 		"socialTitle" : "Twitter",
 		"type_of_business": {
 			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
 			"marketplace" : "Marketplace"
 		},
 		"business_model" : {
@@ -193,6 +199,8 @@
 		"socialTitle" : "Line",
 		"type_of_business": {
 			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
 			"marketplace" : "Marketplace"
 		},
 		"business_model" : {
@@ -252,6 +260,8 @@
 		"socialTitle" : "Youtube",
 		"type_of_business": {
 			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
 			"marketplace" : "Marketplace"
 		},
 		"business_model" : {
@@ -315,6 +325,8 @@
 		"quarterSelect" : "Select Quarter",
 		"type_of_business": {
 			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
 			"marketplace" : "Marketplace"
 		},
 		"business_model" : {
