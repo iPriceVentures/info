@@ -47,7 +47,6 @@ $(document).ready(function () {
                 quarters = getListQuarters(data);
                 currentQ = quarters[quarters.length - 1];
                 getDataFromCsv(currentQ[0]);
-                translateLang(trans);
             }
         });
         //get the file name from current country
@@ -60,7 +59,6 @@ $(document).ready(function () {
 
     function getListQuarters(data) {
         let result = [];
-        console.log(data.data[1].length);
         for (let i = 0; i < data.data[1].length; i++) {
             const item = data.data[1][i];
             let split = item.split("<Key>");
@@ -71,13 +69,12 @@ $(document).ready(function () {
             if (row.includes(loc + "/") && row.includes(".csv")) {
                 let csvUrl = row.trim();
                 let arr = csvUrl.split('/')[1].split("-"); //[2019,q1]
-                let fileName = `${arr[1].toUpperCase()} ${arr[0]}`;
+                let fileName = `${arr[1].replace(".csv", "").toUpperCase()} ${arr[0]}`;
                 csvUrl = [`${s3}/${csvUrl}`, fileName];
                 // csvUrl = ["data/dummy/" + csvUrl,fileName];
                 result.push(csvUrl);
             }
         }
-        console.log(result)
         return result;
     }
 
@@ -98,8 +95,11 @@ $(document).ready(function () {
     }
 
     function showTable(result) {
-
+        let flag = config === "";
         config = result.config;
+        if (flag) {
+            translateLang(trans);
+        }
 
         if ((loc == 'vn') || (loc == 'ph') || (loc == 'th')) {
             $('.employeeTitle').remove();
@@ -148,32 +148,39 @@ $(document).ready(function () {
                     // 	"max_employees" : "656"
                     let max_traffics, max_app, max_twitter, max_instagram, max_facebook, max_employees;
                     max_traffics = max_app = max_twitter = max_instagram = max_facebook = max_employees = 0;
+                    let types = [];
                     for (var i = 1; i < mainData.length - 1; i++) {
                         let item = mainData[i];
                         let objItem = {};
                         for (let j = 0; j < header.length; j++) {
-                            objItem[header[j].trim()] = isNaN(item[j]) ? item[j] : parseInt(item[j]);
+                            objItem[header[j].trim().toLowerCase()] = isNaN(item[j]) ? item[j] : parseInt(item[j]);
                         }
+                        if (typeof objItem.name !== "string") {
+                            continue;
+                        }
+                        if (objItem.traffic) {
+                            objItem.traffics = objItem.traffic;
+                        }
+                        if (objItem.logoth) {
+                            objItem.logodesktop = objItem.logoth;
+                        }
+
                         max_traffics = objItem.traffics > max_traffics ? objItem.traffics : max_traffics;
                         max_app = objItem.android > max_app ? objItem.android : max_app;
                         max_twitter = objItem.twitter > max_twitter ? objItem.twitter : max_twitter;
                         max_instagram = objItem.instagram > max_instagram ? objItem.instagram : max_instagram;
                         max_facebook = objItem.facebook > max_facebook ? objItem.facebook : max_facebook;
                         max_employees = objItem.employees > max_employees ? objItem.employees : max_employees;
+
+                        if (!types.includes(objItem.type)) {
+                            types.push(objItem.type);
+                        }
                         result.data.push(objItem);
                     }
+                    const businessModel = buildBusinessModel(types);
                     result.config = {
                         max_traffics, max_app, max_twitter, max_instagram, max_facebook, max_employees,
-                        business_model: {
-                            "my": {
-                                "inventory": "Cửa Hàng Trực Tuyến",
-                                "marketplace": "Sàn Thương Mại Điện Tử"
-                            },
-                            "en": {
-                                "inventory": "Inventory",
-                                "marketplace": "Marketplace"
-                            }
-                        }
+                        business_model: businessModel
                     };
                     resolve(result);
                 }
@@ -182,6 +189,14 @@ $(document).ready(function () {
 
     }
 
+    function buildBusinessModel(types) {
+        let result = {};
+        result[lang]={};
+        types.forEach(type => {
+            result[lang][type] = trans.type_of_business[type];
+        });
+        return result;
+    }
 
     $('.iema-awards').attr('href', returnUrl(loc, lang));
 
@@ -352,11 +367,7 @@ $(document).ready(function () {
 
     function setBusinessModel(selectClass, config, trans) {
         var select = document.querySelector(`.${selectClass}`);
-        if (['id', 'ph', 'vn'].indexOf(lang)) {
-            var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model[lang];
-        } else {
-            var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model;
-        }
+        var business_models = typeof config.business_model == 'undefined' ? trans.business_model.options : config.business_model[lang];
 
 
         select.innerHTML = '';
@@ -671,7 +682,6 @@ $(document).ready(function () {
             }
 
 
-
         });
 
     }
@@ -717,7 +727,6 @@ $(document).ready(function () {
         $('.employeeTitle').html(trans.employeeTitle);
         $('.filterResultsBy').html(trans.filterResultsBy);
         $('.filter').find('select').each(function () {
-            return;
             $(this).empty();
             if ($(this).hasClass('business_model')) {
                 setBusinessModel('business_model', config, trans);
