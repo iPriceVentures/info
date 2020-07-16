@@ -137,7 +137,7 @@
 		"employeeTitle" : "Bilangan Pekerja",
 		"socialTitle" : "Twitter",
 		"type_of_business": {
-			"inventory" : "Inventory",
+			"inventory" : "Inventori",
 			"b2c": "Business to Consumer",
 			"c2c": "Consumer to Consumer",
 			"marketplace" : "Marketplace"
@@ -259,10 +259,10 @@
 		"employeeTitle" : "Number of Employees",
 		"socialTitle" : "Youtube",
 		"type_of_business": {
-			"inventory" : "Inventory",
+			"inventory" : "Cửa Hàng Trực Tuyến",
 			"b2c": "Business to Consumer",
 			"c2c": "Consumer to Consumer",
-			"marketplace" : "Marketplace"
+			"marketplace" : "Sàn Thương Mại Điện Tử"
 		},
 		"business_model" : {
 			"title": "Loại hình",
@@ -324,10 +324,10 @@
 		"originTitle" : "Store Origin",
 		"quarterSelect" : "Select Quarter",
 		"type_of_business": {
-			"inventory" : "Inventory",
+			"inventory" : "imbentaryo",
 			"b2c": "Business to Consumer",
 			"c2c": "Consumer to Consumer",
-			"marketplace" : "Marketplace"
+			"marketplace" : "pamilihan"
 		},
 		"business_model" : {
 			"title": "Modelo ng Negosyo",
