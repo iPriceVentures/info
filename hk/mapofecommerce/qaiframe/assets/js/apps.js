@@ -146,8 +146,15 @@ $(document).ready(function () {
                     // 	"max_instagram" : "230600",
                     // 	"max_facebook" : "22647300",
                     // 	"max_employees" : "656"
-                    let max_traffics, max_app, max_twitter, max_instagram, max_facebook, max_employees;
-                    max_traffics = max_app = max_twitter = max_instagram = max_facebook = max_employees = 0;
+                    let max_traffics,
+                        max_app,
+                        max_twitter,
+                        max_instagram,
+                        max_facebook,
+                        max_employees,
+                        max_line,
+                        max_youtube;
+                    max_traffics = max_app = max_twitter = max_instagram = max_facebook = max_employees = max_line = max_youtube = 0;
                     let types = [];
                     for (var i = 1; i < mainData.length - 1; i++) {
                         let item = mainData[i];
@@ -171,6 +178,8 @@ $(document).ready(function () {
                         max_instagram = objItem.instagram > max_instagram ? objItem.instagram : max_instagram;
                         max_facebook = objItem.facebook > max_facebook ? objItem.facebook : max_facebook;
                         max_employees = objItem.employees > max_employees ? objItem.employees : max_employees;
+                        max_line = objItem.line > max_line ? objItem.line : max_line;
+                        max_youtube = objItem.youtube > max_youtube ? objItem.youtube : max_youtube;
 
                         if (!types.includes(objItem.type)) {
                             types.push(objItem.type);
@@ -179,7 +188,7 @@ $(document).ready(function () {
                     }
                     const businessModel = buildBusinessModel(types);
                     result.config = {
-                        max_traffics, max_app, max_twitter, max_instagram, max_facebook, max_employees,
+                        max_traffics, max_app, max_twitter, max_instagram, max_facebook, max_employees, max_line, max_youtube,
                         business_model: businessModel
                     };
                     resolve(result);
