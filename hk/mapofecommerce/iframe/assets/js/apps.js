@@ -56,7 +56,6 @@ $(document).ready(function () {
     function getListQuarters(data) {
         let result = [];
         for (let i = 0; i < data.data[1].length; i++) {
-            console.log(data.data[1]);
             const item = data.data[1][i];
             let split = item.split("<Key>");
             if (!split[1]) {
