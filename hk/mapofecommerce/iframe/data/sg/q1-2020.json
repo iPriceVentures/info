@@ -1,11 +1,11 @@
 ﻿{
     "config": {
-        "max_traffics": "7786700",
+        "max_traffics": "30653500",
         "max_app": "100000000",
-        "max_twitter": "7470",
-        "max_instagram": "259000",
-        "max_facebook": "29470700",
-        "max_employees": "1000+",
+        "max_twitter": "34490",
+        "max_instagram": "1315200",
+        "max_facebook": "60740300",
+        "max_employees": "2785",
         "business_model": {
             "inventory": "Inventory",
             "marketplace": "Marketplace"
