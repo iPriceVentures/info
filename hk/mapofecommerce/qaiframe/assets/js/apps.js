@@ -614,7 +614,7 @@ $(document).ready(function () {
                 html += '<div class="category-item col bg__grey ">';
                 html += '<span><p class="percent animate-width" data-width="' + _wYoutube + '">' + (parseFloat(data[i].youtube) == 0 ? 'n/a' : data[i].youtube.toLocaleString()) + '</p></span>';
                 html += '</div>';
-            } else {
+            } else if (loc != 'hk'){
                 html += '<div class="category-item col bg__grey ">';
                 html += '<span><p class="percent animate-width" data-width="' + _wTwitter + '">' + (parseFloat(data[i].twitter) == 0 ? 'n/a' : data[i].twitter.toLocaleString()) + '</p></span>';
                 html += '</div>';
