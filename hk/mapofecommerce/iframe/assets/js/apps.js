@@ -97,9 +97,9 @@ $(document).ready(function () {
             translateLang(trans);
         }
 
-        if ((loc == 'vn') || (loc == 'ph') || (loc == 'th')) {
+        if ((loc == 'vn') || (loc == 'ph') || (loc == 'th') || (loc == 'hk')) {
             $('.employeeTitle').remove();
-            if (loc == 'vn') {
+            if ((loc == 'vn') || (loc == 'hk')) {
                 $('.socialTitle').attr('data-attr', 'youtube');
                 $('.socialTitle').html('Youtube');
             }
@@ -227,6 +227,9 @@ $(document).ready(function () {
             case 'sg' :
                 url = 'https://iprice.sg/insights/';
                 break;
+            case 'hk' :
+                url = 'https://iprice.hk/insights/';
+                break;
         }
         url += 'mapofecommerce/#iema-awards';
 
@@ -299,7 +302,7 @@ $(document).ready(function () {
                 $('.category-item:first-child').each(function () {
                     TweenMax.to($(this), 0.5, {width: '100px'}, 1);
                 });
-                if ((loc != 'vn') && (loc != 'ph')) {
+                if ((loc != 'vn') && (loc != 'ph') && (loc != 'hk')) {
                     TweenMax.to($('.infographic-data-wrapper'), 0.5, {width: '750px'}, 1);
                     TweenMax.to($('.row-wrapper'), 0.5, {width: '750px'}, 1);
                 } else {
@@ -564,15 +567,15 @@ $(document).ready(function () {
             var _wTraffics = parseFloat(data[i].traffics) / parseFloat(config.max_traffics) * 100;
             if (loc == 'th') {
                 var _wLine = parseFloat(data[i].line) / parseFloat(config.max_line) * 100;
-            } else if (loc == 'vn') {
+            } else if ((loc == 'vn') || (loc == 'hk')) {
                 var _wYoutube = parseFloat(data[i].youtube) / parseFloat(config.max_youtube) * 100;
-            } else {
+            } else if (loc != 'hk') {
                 var _wTwitter = parseFloat(data[i].twitter) / parseFloat(config.max_twitter) * 100;
             }
 
             var _wInstagram = parseFloat(data[i].instagram) / parseFloat(config.max_instagram) * 100;
             var _wFacebook = parseFloat(data[i].facebook) / parseFloat(config.max_facebook) * 100;
-            if ((loc != 'vn') && (loc != 'ph') && (loc != 'th')) {
+            if ((loc != 'vn') && (loc != 'ph') && (loc != 'th') && (loc != 'hk')) {
                 var _wEmployees = parseFloat(data[i].employees) / parseFloat(config.max_employees) * 100;
             }
 
@@ -607,11 +610,11 @@ $(document).ready(function () {
                 html += '<div class="category-item col bg__grey ">';
                 html += '<span><p class="percent animate-width" data-width="' + _wLine + '">' + (parseFloat(data[i].line) == 0 ? 'n/a' : data[i].line.toLocaleString()) + '</p></span>';
                 html += '</div>';
-            } else if (loc == 'vn') {
+            } else if ((loc == 'vn') || (loc == 'hk')) {
                 html += '<div class="category-item col bg__grey ">';
                 html += '<span><p class="percent animate-width" data-width="' + _wYoutube + '">' + (parseFloat(data[i].youtube) == 0 ? 'n/a' : data[i].youtube.toLocaleString()) + '</p></span>';
                 html += '</div>';
-            } else {
+            } else if (loc != 'hk'){
                 html += '<div class="category-item col bg__grey ">';
                 html += '<span><p class="percent animate-width" data-width="' + _wTwitter + '">' + (parseFloat(data[i].twitter) == 0 ? 'n/a' : data[i].twitter.toLocaleString()) + '</p></span>';
                 html += '</div>';
@@ -626,7 +629,7 @@ $(document).ready(function () {
             html += '<span><p class="percent animate-width" data-width="' + _wFacebook + '">' + (parseFloat(data[i].facebook) == 0 ? 'n/a' : data[i].facebook.toLocaleString()) + '</p></span>';
             html += '</div>';
 
-            if ((loc != 'vn') && (loc != 'ph') && (loc != 'th')) {
+            if ((loc != 'vn') && (loc != 'ph') && (loc != 'th') && (loc != 'hk')) {
                 html += '<div class="category-item col bg__grey ">';
                 html += '<span><p class="percent animate-width" data-width="' + _wEmployees + '">' + (parseFloat(data[i].employees) == 0 ? 'n/a' : data[i].employees.toLocaleString()) + '</p></span>';
                 html += '</div>';
@@ -716,7 +719,7 @@ $(document).ready(function () {
                 return 'Malaysia';
                 break;
             case 'hk' :
-                return 'HongKong';
+                return 'Hongkong';
                 break;
         }
     }
