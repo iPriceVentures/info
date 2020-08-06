@@ -526,14 +526,17 @@ div#data {
 	#infographic-content.th-content .col,
 	#infographic-content.th-content .header .col,
 	#infographic-content.ph-content  .col,
-	#infographic-content.ph-content .header .col{
+	#infographic-content.ph-content .header .col,
+	#infographic-content.hk-content .col,
+	#infographic-content.hk-content .header .col{
 		width: calc(14.75% - 5px);
 	}
 
 	.infographic-data-wrapper .header .col:first-child, #data .col:first-child,
 	#infographic-content.th-content .header .col:first-child,
 	#infographic-content.vn-content .header .col:first-child,
-	#infographic-content.ph-content .header .col:first-child{
+	#infographic-content.ph-content .header .col:first-child,
+	#infographic-content.hk-content .header .col:first-child{
 		width: calc(23% - 5px);
 	}
 	.infographic-data-wrapper .header .col:last-child, #data .col:last-child{
@@ -546,7 +549,8 @@ div#data {
 
 	.th-content.th-container .sort-by:last-child,
 	.vn-content .sort-by:last-child,
-	.ph-content .sort-by:last-child{
+	.ph-content .sort-by:last-child,
+	.hk-content .sort-by:last-child{
 	    line-height:42px;
 	    padding-top:0px;
 	}
@@ -695,7 +699,9 @@ div#data {
 	#infographic-content.vn-content .col,
 	#infographic-content.vn-content .header .col,
 	#infographic-content.ph-content  .col,
-	#infographic-content.ph-content .header .col{
+	#infographic-content.ph-content .header .col,
+	#infographic-content.hk-content .col,
+	#infographic-content.hk-content .header .col{
 		width: calc(14% - 5px);
 	}
 
@@ -707,20 +713,25 @@ div#data {
 	#infographic-content.vn-content .col:first-child,
 	#infographic-content.vn-content .header .col:first-child,
 	#infographic-content.ph-content  .col:first-child,
-	#infographic-content.ph-content .header .col:first-child{
+	#infographic-content.ph-content .header .col:first-child,
+	#infographic-content.hk-content  .col:first-child,
+	#infographic-content.hk-content .header .col:first-child{
 		width: calc(25% - 5px);
 	}
 
 	#infographic-content.vn-content .header .col:nth-child(2),
 	#infographic-content.vn-content .header .col:nth-child(3),
 	#infographic-content.ph-content .header .col:nth-child(2),
-	#infographic-content.ph-content .header .col:nth-child(3){
+	#infographic-content.ph-content .header .col:nth-child(3),
+	#infographic-content.hk-content .header .col:nth-child(2),
+	#infographic-content.hk-content .header .col:nth-child(3){
 		padding-top: 6px;
 		line-height: 16px;
 	}
 
 	#infographic-content.vn-content .header .col:last-child,
-	#infographic-content.ph-content .header .col:last-child{
+	#infographic-content.ph-content .header .col:last-child,
+	#infographic-content.hk-content .header .col:last-child{
 		padding-top:0px;
 		line-height: 36px;
 	}
