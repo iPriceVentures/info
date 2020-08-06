@@ -567,9 +567,9 @@ $(document).ready(function () {
             var _wTraffics = parseFloat(data[i].traffics) / parseFloat(config.max_traffics) * 100;
             if (loc == 'th') {
                 var _wLine = parseFloat(data[i].line) / parseFloat(config.max_line) * 100;
-            } else if ((loc == 'vn')  || (loc == 'hk')) {
+            } else if ((loc == 'vn') || (loc == 'hk')) {
                 var _wYoutube = parseFloat(data[i].youtube) / parseFloat(config.max_youtube) * 100;
-            } else {
+            } else if (loc != 'hk') {
                 var _wTwitter = parseFloat(data[i].twitter) / parseFloat(config.max_twitter) * 100;
             }
 
@@ -719,7 +719,7 @@ $(document).ready(function () {
                 return 'Malaysia';
                 break;
             case 'hk' :
-                return 'HongKong';
+                return 'Hongkong';
                 break;
         }
     }
