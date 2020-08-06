@@ -526,14 +526,17 @@ div#data {
 	#infographic-content.th-content .col,
 	#infographic-content.th-content .header .col,
 	#infographic-content.ph-content  .col,
-	#infographic-content.ph-content .header .col{
+	#infographic-content.ph-content .header .col,
+	#infographic-content.hk-content  .col,
+	#infographic-content.hk-content .header .col{
 		width: calc(14.75% - 5px);
 	}
 
 	.infographic-data-wrapper .header .col:first-child, #data .col:first-child,
 	#infographic-content.th-content .header .col:first-child,
 	#infographic-content.vn-content .header .col:first-child,
-	#infographic-content.ph-content .header .col:first-child{
+	#infographic-content.ph-content .header .col:first-child,
+	#infographic-content.hk-content .header .col:first-child{
 		width: calc(23% - 5px);
 	}
 	.infographic-data-wrapper .header .col:last-child, #data .col:last-child{
