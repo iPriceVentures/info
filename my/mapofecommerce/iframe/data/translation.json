@@ -1,0 +1,375 @@
+{
+	"en" : {
+		"verifiedText": "Verified by Merchant",
+		"awardText": "iEMA Award Winners",
+		"filterResultsBy": "Filter by",
+		"filterYear" : "Select Data Per Quarter",
+		"filterQuartal" : "Quarter",
+		"merchantTitle" : "Merchant",
+		"monthlyTitle" : "Monthly Web Visits",
+		"iosTitle" : "AppStore Rank",
+		"androidTitle" : "PlayStore Rank",
+		"employeeTitle" : "Number of Employees",
+		"type_of_business": {
+			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
+			"marketplace" : "Marketplace"
+		},
+		"business_model" : {
+			"title": "Business Model",
+			"options": 
+				{
+					"b2c" : "Business to Consumer",
+					"c2c" : "Consumer to Consumer"
+				}
+		},
+		"quarter" : {
+			"title" : "Select Quarter",
+			"options": 
+				{
+					"q1-2017" : "Q1-2017",
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017",
+					"q1-2018" : "Q1-2018",
+					"q2-2018" : "Q2-2018",
+					"q3-2018" : "Q3-2018",
+					"q4-2018" : "Q4-2018",
+					"q1-2019" : "Q1-2019",
+					"q2-2019" : "Q2-2019",
+					"q3-2019" : "Q3-2019",
+					"q4-2019" : "Q4-2019",
+					"q1-2020" : "Q1-2020"
+				}
+		},
+		"store_type" : {
+			"title": "Store Type",
+			"options": {
+				"fashion" : "Fashion",
+				"general" : "General",
+				"tech" : "Electronics",
+				"cosmetics": "Cosmetics",
+				"others": "Others"
+			}
+		},
+		"store_origin" : {
+			"title": "Store Origin",
+			"options": {
+				"international" : "International"
+			}
+		}
+	},
+	"id" : {
+	    "verifiedText": "Diverifikasi oleh Toko Online",
+	    "awardText": "Pemenang Penghargaan iEMA",
+	    "numbersIn1000Text": "*Angka dalam 1000s",
+	    "filterYear" : "Pilih Data per Kuartal",
+		"filterQuartal" : "Kuartal",
+	    "filterResultsBy": "Filter berdasarkan",
+	    "merchantTitle" : "Toko Online",
+		"monthlyTitle" : "Pengunjung Web Bulanan",
+		"iosTitle" : "Ranking AppStore",
+		"androidTitle" : "Ranking PlayStore",
+		"employeeTitle" : "Jumlah Karyawan",
+		"type_of_business": {
+			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
+			"marketplace" : "Marketplace"
+		},
+		"business_model" : {
+			"title": "Model Bisnis",
+			"options": 
+				{
+					"b2c" : "Business to Consumer",
+					"c2c" : "Consumer to Consumer"
+				}
+		},
+		"quarter" : {
+			"title" : "Select Quarter",
+			"options": 
+				{
+					"q1-2017" : "Q1-2017",
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017",
+					"q1-2018" : "Q1-2018",
+					"q2-2018" : "Q2-2018",
+					"q3-2018" : "Q3-2018",
+					"q4-2018" : "Q4-2018",
+					"q1-2019" : "Q1-2019",
+					"q2-2019" : "Q2-2019",
+					"q3-2019" : "Q3-2019",
+					"q4-2019" : "Q4-2019",
+					"q1-2020" : "Q1-2020"
+				}
+		},
+		"store_type" : {
+			"title": "Store Type",
+			"options": {
+				"fashion" : "Fashion",
+				"general" : "General",
+				"tech" : "Elektronik",
+				"cosmetics": "Kosmetik",
+				"others": "Lainnya"
+			}
+		},
+		"store_origin" : {
+			"title": "Asal Toko",
+			"options": {
+				"indonesia" : "Indonesia",
+				"international" : "Internasional"
+			}
+		}
+	},
+	"my" : {
+	    "verifiedText": "Disahkan oleh e-dagang",
+	    "awardText": "Pemenang Anugerah iEMA",
+	    "numbersIn1000Text": "*Angka dalam 1000s",
+	    "filterYear" : "Pilih Data Suku Tahun",
+		"filterQuartal" : "Kuartal",
+	    "filterResultsBy": "Tukar filter",
+	    "merchantTitle" : "E-Dagang",
+		"monthlyTitle" : "Lawatan Laman Web Bulanan",
+		"iosTitle" : "Kedudukan App Store",
+		"androidTitle" : "Kedudukan Play Store",
+		"employeeTitle" : "Bilangan Pekerja",
+		"socialTitle" : "Twitter",
+		"type_of_business": {
+			"inventory" : "Inventori",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
+			"marketplace" : "Marketplace"
+		},
+		"business_model" : {
+			"title": "Model Perniagaan",
+			"options": 
+				{
+					"b2c" : "Peniaga ke pengguna",
+					"c2c" : "Pengguna ke pengguna"
+				}
+		},
+		"quarter" : {
+			"title" : "Pilih Kuartal",
+			"options": 
+				{
+					"q1-2017" : "Q1-2017",
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017",
+					"q1-2018" : "Q1-2018",
+					"q2-2018" : "Q2-2018",
+					"q3-2018" : "Q3-2018",
+					"q4-2018" : "Q4-2018",
+					"q1-2019" : "Q1-2019",
+					"q2-2019" : "Q2-2019",
+					"q3-2019" : "Q3-2019",
+					"q4-2019" : "Q4-2019",
+					"q1-2020" : "Q1-2020"
+				}
+		},
+		"store_type" : {
+			"title": "Jenis E-Dagang",
+			"options": {
+				"fashion" : "Fesyen",
+				"general" : "Umum",
+				"tech" : "Elektronik",
+				"cosmetics": "Kosmetik",
+				"others": "Dan Lain-Lain"
+			}
+		},
+		"store_origin" : {
+			"title": "Asal E-Dagang",
+			"options": {
+				"malaysia" : "Malaysia",
+				"international" : "International"
+			}
+		}
+	},
+	"th" : {
+		"verifiedText": "ตรวจสอบข้อมูลโดยร้านค้า",
+		"awardText": "ผู้ชนะการประกวด iEMA",
+		"filterResultsBy": "ฟิลเตอร์",
+		"filterYear" : "เลือกไตรมาส",
+		"merchantTitle" : "ร้านค้า",
+		"monthlyTitle" : "ผู้เข้าชมเว็บไซต์รายเดือน",
+		"appRank" : "จัดอันดับแอพฯ",
+		"employeeTitle" : "จำนวนพนักงาน",
+		"socialTitle" : "Line",
+		"type_of_business": {
+			"inventory" : "Inventory",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
+			"marketplace" : "Marketplace"
+		},
+		"business_model" : {
+			"title": "รูปแบบธุรกิจ",
+			"options": 
+				{
+					"b2c" : "Business to Consumer",
+					"c2c" : "Consumer to Consumer"
+				}
+		},
+		"quarter" : {
+			"title" : "ไตรมาส",
+			"options": 
+				{
+					"q2-2017" : "ไตรมาส 2-2017",
+					"q3-2017" : "ไตรมาส 3-2017",
+					"q4-2017" : "ไตรมาส 4-2017",
+					"q1-2018" : "ไตรมาส 1-2018",
+					"q2-2018" : "ไตรมาส 2-2018",
+					"q3-2018" : "ไตรมาส 3-2018",
+					"q4-2018" : "ไตรมาส 4-2018",
+					"q1-2019" : "ไตรมาส 1-2019",
+					"q2-2019" : "ไตรมาส 2-2019",
+					"q3-2019" : "ไตรมาส 3-2019",
+					"q4-2019" : "ไตรมาส 4-2019",
+					"q1-2020" : "ไตรมาส 1-2020"
+				}
+		},
+		"store_type" : {
+			"title": "ประเภทสินค้า",
+			"options": {
+				"fashion" : "Fashion",
+				"general" : "General",
+				"tech" : "Electronics",
+				"cosmetics": "Cosmetics",
+				"others": "Others"
+			}
+		},
+		"store_origin" : {
+			"title": "ที่มา",
+			"options": {
+				"thailand" : "ประเทศไทย",
+			"international" : "ต่างชาติ"
+			}
+		}
+	},
+	"vn" : {
+		"verifiedText": "Chứng thực bởi DN",
+		"awardText": "DN Thắng giải",
+		"filterResultsBy": "Lọc kết quả theo",
+		"filterYear" : "Chọn dữ liệu trên mỗi quý",
+		"merchantTitle" : "Doanh nghiệp",
+		"monthlyTitle" : "Lượng truy cập web mỗi tháng",
+		"iosTitle" : "xếp hạng iOS",
+		"androidTitle" : "xếp hạng Android",
+		"employeeTitle" : "Number of Employees",
+		"socialTitle" : "Youtube",
+		"type_of_business": {
+			"inventory" : "Cửa Hàng Trực Tuyến",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
+			"marketplace" : "Sàn Thương Mại Điện Tử"
+		},
+		"business_model" : {
+			"title": "Loại hình",
+			"options": 
+				{
+					"b2c" : "B2C",
+					"c2c" : "C2C"
+				}
+		},
+		"quarter" : {
+			"title" : "Chọn Khu phố",
+			"options": 
+				{
+					"q2-2017" : "Q2-2017",
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017",
+					"q1-2018" : "Q1-2018",
+					"q2-2018" : "Q2-2018",
+					"q3-2018" : "Q3-2018",
+					"q4-2018" : "Q4-2018",
+					"q1-2019" : "Q1-2019",
+					"q2-2019" : "Q2-2019",
+					"q3-2019" : "Q3-2019",
+					"q4-2019" : "Q4-2019",
+					"q1-2020" : "Q1-2020"
+				}
+		},
+		"store_type" : {
+			"title": "Ngành hàng",
+			"options": {
+				"fashion" : "Thời trang",
+				"general" : "Mặt Hàng Tổng Hợp",
+				"tech" : "Điện Tử",
+				"cosmetics": "Sức Khỏe & Làm Đẹp",
+				"others": "Mặt Hàng Khác"
+			}
+		},
+		"store_origin" : {
+			"title": "Xuất xứ",
+			"options": {
+				"vietnam" : "Việt Nam",
+				"international" : "Quốc tế"
+			}
+		}
+	},
+	"ph" : {
+		"verifiedText": "Verified ng Merchant",
+		"awardText": "Mga Nanalo sa Merchant Awards",
+		"filterResultsBy": "Filter by",
+		"filterYear" : "Select Data Per Quarter",
+		"filterQuartal" : "Quarter",
+		"merchantTitle" : "Merchants",
+		"monthlyTitle" : "Buwanang Website traffic",
+		"appRank" : "Rank ayon sa",
+		"employeeTitle" : "Dami ng Empleyado",
+		"businessTitle" : "Modelo ng Negosyo ",
+		"socialTitle" : "Twitter",
+		"storeTitle" : "Uri ng Negosyo",
+		"originTitle" : "Store Origin",
+		"quarterSelect" : "Select Quarter",
+		"type_of_business": {
+			"inventory" : "imbentaryo",
+			"b2c": "Business to Consumer",
+			"c2c": "Consumer to Consumer",
+			"marketplace" : "pamilihan"
+		},
+		"business_model" : {
+			"title": "Modelo ng Negosyo",
+			"options": 
+				{
+					"b2c" : "Business to Consumer",
+					"c2c" : "Consumer to Consumer"
+				}
+		},
+		"quarter" : {
+			"title" : "Select Quarter",
+			"options": 
+				{
+					"q3-2017" : "Q3-2017",
+					"q4-2017" : "Q4-2017",
+					"q1-2018" : "Q1-2018",
+					"q2-2018" : "Q2-2018",
+					"q3-2018" : "Q3-2018",
+					"q4-2018" : "Q4-2018",
+					"q1-2019" : "Q1-2019",
+					"q2-2019" : "Q2-2019",
+					"q3-2019" : "Q3-2019",
+					"q4-2019" : "Q4-2019",
+					"q1-2020" : "Q1-2020"
+				}
+		},
+		"store_type" : {
+			"title": "Uri ng Negosyo",
+			"options": {
+				"fashion" : "Fashion",
+				"general" : "Pangkalahatan",
+				"tech" : "Electronics",
+				"cosmetics": "Cosmetics",
+				"others": "Mga iba pa"
+			}
+		},
+		"store_origin" : {
+			"title": "Store Origin",
+			"options": {
+				"philippines" : "Philippines",
+				"international" : "International"
+			}
+		}
+	}
+}
