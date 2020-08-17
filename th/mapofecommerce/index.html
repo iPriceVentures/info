@@ -78,25 +78,24 @@
 		}
 		.layer {
 			position: fixed;
-			z-index: 11;
-			top: 0;
-			bottom: 0;
 			left: 0;
 			right: 0;
-			animation: fadeIn 0.3s forwards;
-			animation-delay: 0.1s;
+			animation: fadeIn 2s forwards;
+			animation-delay: 5s;
 			opacity: 0;
-			background: rgba(0,0,0,.4);
-			padding-top: 25px;
+			width: 480px;
+			margin: 0 auto;
+			box-shadow: 0 0 0 999em rgba(0,0,0,.4);
+			top: 25%;
 		}
 		.overlay1 {
-			animation-delay: 0.1s;
+			animation-delay: 5s;
 		}
 		.overlay2 {
 			animation-delay: 0s;
 		}
 		.popup {
-			margin: 35px auto 0 auto;
+			margin: 0 auto;
 			padding: 0;
 			background: #fff;
 			border-radius: 5px;
@@ -111,9 +110,12 @@
 				opacity: 1;
 			}
 		}
-		@media screen and (max-width: 768px){
-			.popup{
-				max-width: 80%;
+		@media screen and (max-width: 768px) {
+			.layer {
+				width: 90%;
+			}
+			.popup {
+				max-width: 100%;
 			}
 		}
 		.pointer {cursor: pointer}
